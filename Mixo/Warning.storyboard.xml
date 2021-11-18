@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s4h-eR-S04">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="gibson.ttf">
+            <string>GibsonLight-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WarningVC-->
+        <scene sceneID="la8-PN-NjG">
+            <objects>
+                <viewController storyboardIdentifier="WarningVC" definesPresentationContext="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="s4h-eR-S04" customClass="WarningVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="USC-Ks-mEq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-q5-hCa">
+                                <rect key="frame" x="69.666666666666686" y="374" width="275" height="148"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnV-oo-ckt">
+                                        <rect key="frame" x="10" y="10" width="255" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heads Up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lz-g7-er4">
+                                                <rect key="frame" x="8" y="8" width="239" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="WHg-N8-31a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqR-2H-W4u">
+                                                <rect key="frame" x="102.33333333333333" y="99" width="49.999999999999986" height="21"/>
+                                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
+                                                <state key="normal" title="Dismiss"/>
+                                                <connections>
+                                                    <action selector="btnDismiss:" destination="s4h-eR-S04" eventType="touchUpInside" id="6b6-Ie-zIY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-zZ-UW8">
+                                                <rect key="frame" x="2" y="31" width="251" height="66"/>
+                                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dZk-zZ-UW8" secondAttribute="trailing" constant="2" id="4SD-Zf-NA7"/>
+                                            <constraint firstItem="1Lz-g7-er4" firstAttribute="leading" secondItem="jnV-oo-ckt" secondAttribute="leadingMargin" id="GMM-cV-Nch"/>
+                                            <constraint firstItem="dZk-zZ-UW8" firstAttribute="leading" secondItem="jnV-oo-ckt" secondAttribute="leading" constant="2" id="Qmi-0v-GKO"/>
+                                            <constraint firstItem="1Lz-g7-er4" firstAttribute="centerX" secondItem="jnV-oo-ckt" secondAttribute="centerX" id="U8e-Do-P05"/>
+                                            <constraint firstItem="aqR-2H-W4u" firstAttribute="centerX" secondItem="jnV-oo-ckt" secondAttribute="centerX" id="ccf-PY-2CA"/>
+                                            <constraint firstItem="aqR-2H-W4u" firstAttribute="bottom" secondItem="jnV-oo-ckt" secondAttribute="bottomMargin" id="deA-W0-hHU"/>
+                                            <constraint firstAttribute="bottom" secondItem="1Lz-g7-er4" secondAttribute="bottom" constant="99" id="hx9-Vv-PZ6"/>
+                                            <constraint firstItem="1Lz-g7-er4" firstAttribute="top" secondItem="jnV-oo-ckt" secondAttribute="topMargin" id="iF7-yG-Lm2"/>
+                                            <constraint firstItem="aqR-2H-W4u" firstAttribute="top" secondItem="dZk-zZ-UW8" secondAttribute="bottom" constant="2" id="ida-fx-2Lp"/>
+                                            <constraint firstItem="dZk-zZ-UW8" firstAttribute="top" secondItem="1Lz-g7-er4" secondAttribute="bottom" constant="2" id="la7-ch-RLI"/>
+                                            <constraint firstItem="dZk-zZ-UW8" firstAttribute="centerX" secondItem="jnV-oo-ckt" secondAttribute="centerX" id="ql1-VS-yiQ"/>
+                                            <constraint firstItem="dZk-zZ-UW8" firstAttribute="centerY" secondItem="jnV-oo-ckt" secondAttribute="centerY" id="wvL-mc-xGY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jnV-oo-ckt" firstAttribute="top" secondItem="ZAn-q5-hCa" secondAttribute="top" constant="10" id="1PQ-Wx-cVr"/>
+                                    <constraint firstAttribute="bottom" secondItem="jnV-oo-ckt" secondAttribute="bottom" constant="10" id="4VA-gg-MW2"/>
+                                    <constraint firstAttribute="width" constant="275" id="61g-aw-fer"/>
+                                    <constraint firstItem="jnV-oo-ckt" firstAttribute="leading" secondItem="ZAn-q5-hCa" secondAttribute="leading" constant="10" id="U4z-O7-Urk"/>
+                                    <constraint firstAttribute="trailing" secondItem="jnV-oo-ckt" secondAttribute="trailing" constant="10" id="ZiR-oL-nj2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20384738869863014" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZAn-q5-hCa" firstAttribute="centerX" secondItem="USC-Ks-mEq" secondAttribute="centerX" id="IKx-Ro-b9n"/>
+                            <constraint firstItem="ZAn-q5-hCa" firstAttribute="centerY" secondItem="USC-Ks-mEq" secondAttribute="centerY" id="nX8-F4-vSx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xAC-Ag-Z5G"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDismiss" destination="aqR-2H-W4u" id="4ju-yd-8rR"/>
+                        <outlet property="inlineView" destination="jnV-oo-ckt" id="Hvk-ft-sTX"/>
+                        <outlet property="lblWarning" destination="dZk-zZ-UW8" id="ZOV-63-qPv"/>
+                        <outlet property="outlineView" destination="ZAn-q5-hCa" id="Qif-o8-mKp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QX7-0f-L81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+</document>
