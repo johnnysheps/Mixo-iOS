@@ -8,7 +8,10 @@
 
 import UIKit
 import FirebaseStorage
-import FirebaseUI
+import FirebaseAuth
+//import FirebaseUI
+//import FirebaseAuthUI
+//import FirebaseDatabaseUI
 
 @available(iOS 13.0, *)
 class DashboardVC: UIViewController {
@@ -50,6 +53,15 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var btnSettings: UIButton!
     
     @IBAction func btnSettings(_ sender: Any) {
+        try! Auth.auth().signOut()
+
+//        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let mixoStart = mainSB.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//        self.present(mixoStart, animated: false, completion: nil)
+        
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let startVC = mainSB.instantiateViewController(withIdentifier: "ViewController") as! StartVC
+        self.present(startVC, animated:true, completion:nil)
         
     }
     @IBAction func btnMixoType(_ sender: Any) {
@@ -154,7 +166,9 @@ class DashboardVC: UIViewController {
                 //user profile data
                 let user_name = document.get("name") as! String
                 let user_pic = document.get("profile_pic") as! String
-                let user_location = document.get("location") as! String
+                let user_city = document.get("city") as! String
+                let user_state = document.get("state") as! String
+                let user_location = user_city + ", " + user_state
                 let user_dob = document.get("dob") as! String
                 
                 //calcualte age of user

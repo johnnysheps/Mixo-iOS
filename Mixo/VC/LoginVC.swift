@@ -40,6 +40,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //hide the error label
         lblError.alpha = 0
         
+        //solving text clipping
+        lblError.baselineAdjustment = .none
+        lblError.lineBreakMode = .byCharWrapping
+//        let unconstrainedSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+//        lblError.heightAnchor.constraint(equalToConstant: label.sizeThatFits(unconstrainedSize).height).isActive = true
+
         //style the text fields
         //Utilities.styleTextField(txtEmail)
         //Utilities.styleTextField(txtPassword)
@@ -153,6 +159,15 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     func showError(_ message:String) {
         lblError.text = message
         lblError.alpha = 1
+        
+        //solving text clipping
+//        let lines = message.length / 60 // about 60 chars a line
+//        lblError.numberOfLines = lines+1
+        
+//        lblError.numberOfLines = 0;
+//        lblError.text = message;
+//        lblError.sizeThatFits(CGSize)
+//        lblError.preferredMaxLayoutWidth = self.frame.size.width;
     }
     
     

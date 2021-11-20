@@ -4,6 +4,11 @@
 target 'Mixo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  # use_modular_headers!
+
+  # Fix XCode No such module 'FirebaseUI'
+  pod 'Firebase/Core'
+  pod 'FirebaseUI'
 
   # Pods for Mixo
   # add the Firebase pod for Google Analytics
@@ -30,5 +35,16 @@ target 'Mixo' do
     inherit! :search_paths
     # Pods for testing
   end
+
+end
+
+post_install do |installer|
+ installer.pods_project.targets.each do |target|
+  target.build_configurations.each do |config|
+   config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+
+  end
+
+ end
 
 end

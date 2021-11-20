@@ -19,10 +19,15 @@
 		2A6ADC4A236B1B1A00687EFC /* ProfileScene4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */; };
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
-		6FDF7F76865323FEB1A57513 /* Pods_Mixo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D8CD8E5AF060E091F95949 /* Pods_Mixo.framework */; };
-		96E1B8BBA7477E3BEFF2111F /* Pods_MixoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C79A03AAD96AE09EC0204A5 /* Pods_MixoUITests.framework */; };
+		32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */; };
+		A2F433442748274B00F30D0F /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F433432748274B00F30D0F /* Results.storyboard */; };
+		A2F43346274827B600F30D0F /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F43345274827B600F30D0F /* Warning.storyboard */; };
+		A2F43348274827E800F30D0F /* TMDef.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F43347274827E700F30D0F /* TMDef.storyboard */; };
+		A2F4334A2748280B00F30D0F /* Definitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F433492748280B00F30D0F /* Definitions.storyboard */; };
+		A2F4334C2748284D00F30D0F /* Mixo.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A2F4334B2748284D00F30D0F /* Mixo.entitlements */; };
+		A2F4335027482B5700F30D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4334F27482B5700F30D0F /* Main.storyboard */; };
+		A2F4335227482BBA00F30D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */; };
 		A300E60223673C800062790C /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300E60123673C800062790C /* ResultsVC.swift */; };
-		A300E60423673CC20062790C /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A300E60323673CC20062790C /* Results.storyboard */; };
 		A30A075A2351510C002387B6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A07592351510C002387B6 /* LoginVC.swift */; };
 		A30A075E23515135002387B6 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A075D23515135002387B6 /* DashboardVC.swift */; };
 		A30A076323515194002387B6 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A076223515194002387B6 /* StartVC.swift */; };
@@ -32,19 +37,14 @@
 		A32A700E2350B9EA00B6E6A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */; };
 		A32A70102350B9EA00B6E6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */; };
 		A32A70122350B9EA00B6E6A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A70112350B9EA00B6E6A7 /* ViewController.swift */; };
-		A32A70152350B9EA00B6E6A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A70132350B9EA00B6E6A7 /* Main.storyboard */; };
 		A32A70172350B9EB00B6E6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32A70162350B9EB00B6E6A7 /* Assets.xcassets */; };
-		A32A701A2350B9EB00B6E6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A70182350B9EB00B6E6A7 /* LaunchScreen.storyboard */; };
 		A32A70252350B9EB00B6E6A7 /* MixoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A70242350B9EB00B6E6A7 /* MixoTests.swift */; };
 		A32A70302350B9EB00B6E6A7 /* MixoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A702F2350B9EB00B6E6A7 /* MixoUITests.swift */; };
 		A32A70402350C08B00B6E6A7 /* gibson.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A32A703F2350C08B00B6E6A7 /* gibson.ttf */; };
-		A363A35623563A7800672BE9 /* Definitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A363A35523563A7800672BE9 /* Definitions.storyboard */; };
 		A363A35823563AAB00672BE9 /* DefinitionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363A35723563AAB00672BE9 /* DefinitionsVC.swift */; };
 		A363C72323524DA500900766 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C72223524DA500900766 /* IntroVC.swift */; };
-		A3791E282359709B00C987D4 /* TMDef.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3791E272359709B00C987D4 /* TMDef.storyboard */; };
 		A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3791E29235970B200C987D4 /* TMDefVC.swift */; };
 		A39689D02358AF84004E5A2D /* WarningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39689CF2358AF84004E5A2D /* WarningVC.swift */; };
-		A3A62C6A2357B84F00B2659A /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A62C692357B84F00B2659A /* Warning.storyboard */; };
 		A3DB34F52369A51400DDCEC3 /* ProfileScene1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */; };
 		A3E2FD36235ABDAE00DE0474 /* MixoScene1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */; };
 		A3E2FD38235ABDC400DE0474 /* MixoScene2aVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */; };
@@ -53,7 +53,8 @@
 		A3E2FD3E235ABEA600DE0474 /* MixoScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD3D235ABEA600DE0474 /* MixoScene5VC.swift */; };
 		A3E2FD40235ABFD400DE0474 /* MixoScene2bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */; };
 		A3E2FD42235ABFEA00DE0474 /* MixoScene4bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */; };
-		C6861900E9752F82D72452D7 /* Pods_MixoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70715877FD556CB131F3317 /* Pods_MixoTests.framework */; };
+		B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */; };
+		ECAF4955BD06B2A2813EE2B1 /* Pods_MixoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,19 +81,24 @@
 		2A215A76263B1011008F32D8 /* instructions2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = instructions2.gif; sourceTree = "<group>"; };
 		2A215A77263B1012008F32D8 /* instructions3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = instructions3.gif; sourceTree = "<group>"; };
 		2A215A78263B1013008F32D8 /* instructions5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = instructions5.gif; sourceTree = "<group>"; };
-		2A215A7D263B5FE9008F32D8 /* Mixo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mixo.entitlements; sourceTree = "<group>"; };
 		2A36CEE52625D8C2000FA0EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A6ADC45236B16DB00687EFC /* ProfileScene2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene2VC.swift; sourceTree = "<group>"; };
 		2A6ADC47236B193F00687EFC /* ProfileScene3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene3VC.swift; sourceTree = "<group>"; };
 		2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene4VC.swift; sourceTree = "<group>"; };
 		2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5VC.swift; sourceTree = "<group>"; };
 		2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
-		5C79A03AAD96AE09EC0204A5 /* Pods_MixoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64D8CD8E5AF060E091F95949 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2F433432748274B00F30D0F /* Results.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		A2F43345274827B600F30D0F /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
+		A2F43347274827E700F30D0F /* TMDef.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TMDef.storyboard; sourceTree = "<group>"; };
+		A2F433492748280B00F30D0F /* Definitions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Definitions.storyboard; sourceTree = "<group>"; };
+		A2F4334B2748284D00F30D0F /* Mixo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Mixo.entitlements; sourceTree = "<group>"; };
+		A2F4334F27482B5700F30D0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A300E60123673C800062790C /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
-		A300E60323673CC20062790C /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
-		A30A07592351510C002387B6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A30A07592351510C002387B6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A30A075D23515135002387B6 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		A30A076223515194002387B6 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		A30A076523515A26002387B6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -102,9 +108,7 @@
 		A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A32A70112350B9EA00B6E6A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A32A70142350B9EA00B6E6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A32A70162350B9EB00B6E6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A32A70192350B9EB00B6E6A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32A701B2350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A70202350B9EB00B6E6A7 /* MixoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32A70242350B9EB00B6E6A7 /* MixoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoTests.swift; sourceTree = "<group>"; };
@@ -113,14 +117,11 @@
 		A32A702F2350B9EB00B6E6A7 /* MixoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoUITests.swift; sourceTree = "<group>"; };
 		A32A70312350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A703F2350C08B00B6E6A7 /* gibson.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gibson.ttf; sourceTree = "<group>"; };
-		A363A35523563A7800672BE9 /* Definitions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Definitions.storyboard; sourceTree = "<group>"; };
 		A363A35723563AAB00672BE9 /* DefinitionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsVC.swift; sourceTree = "<group>"; };
 		A363C72223524DA500900766 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
-		A3791E272359709B00C987D4 /* TMDef.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TMDef.storyboard; sourceTree = "<group>"; };
 		A3791E29235970B200C987D4 /* TMDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDefVC.swift; sourceTree = "<group>"; };
 		A37FAF3032EDC4BB80313833 /* Pods-Mixo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixo.debug.xcconfig"; path = "Target Support Files/Pods-Mixo/Pods-Mixo.debug.xcconfig"; sourceTree = "<group>"; };
 		A39689CF2358AF84004E5A2D /* WarningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningVC.swift; sourceTree = "<group>"; };
-		A3A62C692357B84F00B2659A /* Warning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
 		A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene1VC.swift; sourceTree = "<group>"; };
 		A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene1VC.swift; sourceTree = "<group>"; };
 		A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene2aVC.swift; sourceTree = "<group>"; };
@@ -133,7 +134,7 @@
 		A846302994B6AD976083A858 /* Pods-MixoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoTests.debug.xcconfig"; path = "Target Support Files/Pods-MixoTests/Pods-MixoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF8E58BED71703C0AB9BDE55 /* Pods-Mixo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixo.release.xcconfig"; path = "Target Support Files/Pods-Mixo/Pods-Mixo.release.xcconfig"; sourceTree = "<group>"; };
 		E5CCAFFC39E1AB5E7F648A20 /* Pods-MixoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.release.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E70715877FD556CB131F3317 /* Pods_MixoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FDF7F76865323FEB1A57513 /* Pods_Mixo.framework in Frameworks */,
+				B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6861900E9752F82D72452D7 /* Pods_MixoTests.framework in Frameworks */,
+				ECAF4955BD06B2A2813EE2B1 /* Pods_MixoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E1B8BBA7477E3BEFF2111F /* Pods_MixoUITests.framework in Frameworks */,
+				32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,26 +221,26 @@
 		A32A700C2350B9EA00B6E6A7 /* Mixo */ = {
 			isa = PBXGroup;
 			children = (
-				2A215A7D263B5FE9008F32D8 /* Mixo.entitlements */,
+				A2F4334B2748284D00F30D0F /* Mixo.entitlements */,
 				A30A076423515962002387B6 /* Helpers */,
 				A30A07612351515B002387B6 /* Fonts */,
 				A375FC0323510E2C00E7FC50 /* VC */,
 				A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */,
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
-				A32A70132350B9EA00B6E6A7 /* Main.storyboard */,
 				A32A70162350B9EB00B6E6A7 /* Assets.xcassets */,
 				2A215A73263B0EFE008F32D8 /* instructions1.gif */,
 				2A215A76263B1011008F32D8 /* instructions2.gif */,
 				2A215A77263B1012008F32D8 /* instructions3.gif */,
 				2A215A75263B1010008F32D8 /* instructions4.gif */,
+				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
+				A2F4334F27482B5700F30D0F /* Main.storyboard */,
 				2A215A78263B1013008F32D8 /* instructions5.gif */,
-				A32A70182350B9EB00B6E6A7 /* LaunchScreen.storyboard */,
 				A32A701B2350B9EB00B6E6A7 /* Info.plist */,
+				A2F43345274827B600F30D0F /* Warning.storyboard */,
+				A2F433432748274B00F30D0F /* Results.storyboard */,
+				A2F433492748280B00F30D0F /* Definitions.storyboard */,
+				A2F43347274827E700F30D0F /* TMDef.storyboard */,
 				2A36CEE52625D8C2000FA0EC /* GoogleService-Info.plist */,
-				A363A35523563A7800672BE9 /* Definitions.storyboard */,
-				A3A62C692357B84F00B2659A /* Warning.storyboard */,
-				A3791E272359709B00C987D4 /* TMDef.storyboard */,
-				A300E60323673CC20062790C /* Results.storyboard */,
 			);
 			path = Mixo;
 			sourceTree = "<group>";
@@ -295,9 +296,9 @@
 		FE0D2341BF81E1AE7DB54BCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				64D8CD8E5AF060E091F95949 /* Pods_Mixo.framework */,
-				E70715877FD556CB131F3317 /* Pods_MixoTests.framework */,
-				5C79A03AAD96AE09EC0204A5 /* Pods_MixoUITests.framework */,
+				6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */,
+				5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */,
+				F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,8 +314,8 @@
 				A32A70062350B9EA00B6E6A7 /* Sources */,
 				A32A70072350B9EA00B6E6A7 /* Frameworks */,
 				A32A70082350B9EA00B6E6A7 /* Resources */,
-				81257A24EA545CD39BFD2AB8 /* [CP] Embed Pods Frameworks */,
 				7F0E8717A877937B099EDD38 /* [CP] Copy Pods Resources */,
+				3EDC8D9CCB81BF9D52FAFFE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,20 +412,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32A701A2350B9EB00B6E6A7 /* LaunchScreen.storyboard in Resources */,
-				A363A35623563A7800672BE9 /* Definitions.storyboard in Resources */,
+				A2F4334C2748284D00F30D0F /* Mixo.entitlements in Resources */,
+				A2F43346274827B600F30D0F /* Warning.storyboard in Resources */,
+				A2F433442748274B00F30D0F /* Results.storyboard in Resources */,
 				2A36CEE62625D8C2000FA0EC /* GoogleService-Info.plist in Resources */,
 				2A215A7C263B1013008F32D8 /* instructions5.gif in Resources */,
-				A300E60423673CC20062790C /* Results.storyboard in Resources */,
 				2A215A7A263B1013008F32D8 /* instructions2.gif in Resources */,
 				A32A70402350C08B00B6E6A7 /* gibson.ttf in Resources */,
+				A2F4334A2748280B00F30D0F /* Definitions.storyboard in Resources */,
 				2A215A74263B0EFE008F32D8 /* instructions1.gif in Resources */,
+				A2F4335227482BBA00F30D0F /* LaunchScreen.storyboard in Resources */,
 				2A215A79263B1013008F32D8 /* instructions4.gif in Resources */,
 				A32A70172350B9EB00B6E6A7 /* Assets.xcassets in Resources */,
-				A3A62C6A2357B84F00B2659A /* Warning.storyboard in Resources */,
-				A32A70152350B9EA00B6E6A7 /* Main.storyboard in Resources */,
+				A2F43348274827E800F30D0F /* TMDef.storyboard in Resources */,
+				A2F4335027482B5700F30D0F /* Main.storyboard in Resources */,
 				2A215A7B263B1013008F32D8 /* instructions3.gif in Resources */,
-				A3791E282359709B00C987D4 /* TMDef.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +447,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3EDC8D9CCB81BF9D52FAFFE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7F0E8717A877937B099EDD38 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,23 +479,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81257A24EA545CD39BFD2AB8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87C1F99F1E48B671F566D431 /* [CP] Check Pods Manifest.lock */ = {
@@ -614,25 +616,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		A32A70132350B9EA00B6E6A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A32A70142350B9EA00B6E6A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A32A70182350B9EB00B6E6A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A32A70192350B9EB00B6E6A7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		A32A70322350B9EB00B6E6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -671,6 +654,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -685,6 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -732,6 +717,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -740,6 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -755,9 +742,9 @@
 			baseConfigurationReference = A37FAF3032EDC4BB80313833 /* Pods-Mixo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Mixo/Mixo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -765,7 +752,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.mixobeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -778,9 +765,9 @@
 			baseConfigurationReference = DF8E58BED71703C0AB9BDE55 /* Pods-Mixo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Mixo/Mixo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -788,7 +775,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.mixobeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
