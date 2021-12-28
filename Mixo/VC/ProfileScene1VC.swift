@@ -23,6 +23,8 @@ class ProfileScene1VC: UIViewController, UIImagePickerControllerDelegate, UINavi
 
         // Do any additional setup after loading the view.
         imagePicker.delegate = self
+        btnNext.isHidden = true
+        btnNext.isEnabled = false
     }
     
     @IBAction func btnCamera(_ sender: Any) {
@@ -50,6 +52,9 @@ class ProfileScene1VC: UIViewController, UIImagePickerControllerDelegate, UINavi
         if let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imgProfilePic.contentMode = .scaleAspectFill
             imgProfilePic.image = pickedImage
+            
+            btnNext.isHidden = false
+            btnNext.isEnabled = true
         }
      
         dismiss(animated: true, completion: nil)
@@ -80,7 +85,7 @@ class ProfileScene1VC: UIViewController, UIImagePickerControllerDelegate, UINavi
         let identifier = UUID().uuidString
         let stringPath = "profile_pics/" + userUID + "/" + identifier + ".jpeg"
         
-        if let uploadData = imgProfilePic.image!.jpegData(compressionQuality: 0.75){
+        if let uploadData = imgProfilePic.image?.jpegData(compressionQuality: 0.75){
             //upload image to FireStore
             let storageRef = Storage.storage().reference().child(stringPath)
             storageRef.putData(uploadData, metadata: nil) { (metadata, error) in

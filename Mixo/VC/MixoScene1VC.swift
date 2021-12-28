@@ -31,6 +31,8 @@ class MixoScene1VC: UIViewController {
     @IBOutlet weak var btnTalNavScene1: UIButton!
     @IBOutlet weak var btnColNavScene1: UIButton!
     
+    @IBOutlet weak var ivMixoState: UIImageView!
+    
     var intelDone = String()
     
     
@@ -91,6 +93,7 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyFilledButton(btnNext)
                 lblSectionTitle.text = "Section 1: Heroes"
                 lblSectionText.text = "Who Do You Aspire To Be?"
+            //ivMixoState.setImage(UIImage(named: "mixostate1"))
             break
             case 2:
                 Utilities.styleGreyOutlinedButton(btnHeroNavScene1)
@@ -100,6 +103,7 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyFilledButton(btnNext)
                 lblSectionTitle.text = "Section 2: Intelligences"
                 lblSectionText.text = "How Do You Express Yourself?"
+            
                 break
             case 3:
                 Utilities.styleGreyOutlinedButton(btnHeroNavScene1)
@@ -109,6 +113,7 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyFilledButton(btnNext)
                 lblSectionTitle.text = "Section 3: Talents"
                 lblSectionText.text = "What Are Your Innate Abilities?"
+            
                 break
             case 4:
                 Utilities.styleGreyOutlinedButton(btnHeroNavScene1)
@@ -118,6 +123,7 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyFilledButton(btnNext)
                 lblSectionTitle.text = "Section 4: Collections"
                 lblSectionText.text = "What Things Do You Value Most?"
+            
                 break
             default:
                 break

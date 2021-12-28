@@ -142,6 +142,8 @@ class MixoScene5VC: UIViewController {
         setUpUI()
         getUserData()
         progress()
+        
+        print("mixoState: " ,  mixoState)
     }
     
     //function to handle the progressBar

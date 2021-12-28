@@ -84,8 +84,8 @@ class InstructionsVC: UIViewController{
     
     
     @IBAction func btnLoadEngine(_ sender: Any) {
-        let mixoIntro = mainSB.instantiateViewController(withIdentifier: "IntroVC") as! IntroVC
-        self.present(mixoIntro, animated: true, completion: nil)
+        let mixoEngineLoad = mainSB.instantiateViewController(withIdentifier: "EngineLoad") as! EngineLoadVC
+        self.present(mixoEngineLoad, animated: true, completion: nil)
     }
     
     

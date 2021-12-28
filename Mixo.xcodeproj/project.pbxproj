@@ -20,6 +20,9 @@
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
 		32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */; };
+		A261B63B2772E5AA008D5778 /* EngineLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoad.swift */; };
+		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
+		A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F277DB277AE52500CF28AB /* Logo Square.png */; };
 		A2F433442748274B00F30D0F /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F433432748274B00F30D0F /* Results.storyboard */; };
 		A2F43346274827B600F30D0F /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F43345274827B600F30D0F /* Warning.storyboard */; };
 		A2F43348274827E800F30D0F /* TMDef.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F43347274827E700F30D0F /* TMDef.storyboard */; };
@@ -90,6 +93,9 @@
 		5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A261B63A2772E5AA008D5778 /* EngineLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoad.swift; sourceTree = "<group>"; };
+		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		A2F277DB277AE52500CF28AB /* Logo Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Square.png"; sourceTree = "<group>"; };
 		A2F433432748274B00F30D0F /* Results.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
 		A2F43345274827B600F30D0F /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
 		A2F43347274827E700F30D0F /* TMDef.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TMDef.storyboard; sourceTree = "<group>"; };
@@ -228,13 +234,14 @@
 				A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */,
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
 				A32A70162350B9EB00B6E6A7 /* Assets.xcassets */,
+				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
+				A2F4334F27482B5700F30D0F /* Main.storyboard */,
 				2A215A73263B0EFE008F32D8 /* instructions1.gif */,
 				2A215A76263B1011008F32D8 /* instructions2.gif */,
 				2A215A77263B1012008F32D8 /* instructions3.gif */,
 				2A215A75263B1010008F32D8 /* instructions4.gif */,
-				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
-				A2F4334F27482B5700F30D0F /* Main.storyboard */,
 				2A215A78263B1013008F32D8 /* instructions5.gif */,
+				A2F277DB277AE52500CF28AB /* Logo Square.png */,
 				A32A701B2350B9EB00B6E6A7 /* Info.plist */,
 				A2F43345274827B600F30D0F /* Warning.storyboard */,
 				A2F433432748274B00F30D0F /* Results.storyboard */,
@@ -274,7 +281,8 @@
 				A39689CF2358AF84004E5A2D /* WarningVC.swift */,
 				A363A35723563AAB00672BE9 /* DefinitionsVC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
-				A3791E29235970B200C987D4 /* TMDefVC.swift */,
+				A261B63A2772E5AA008D5778 /* EngineLoad.swift */,
+				2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */,
 				A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */,
 				A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */,
 				A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */,
@@ -282,13 +290,14 @@
 				A3E2FD3B235ABE8A00DE0474 /* MixoScene4aVC.swift */,
 				A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */,
 				A3E2FD3D235ABEA600DE0474 /* MixoScene5VC.swift */,
-				A300E60123673C800062790C /* ResultsVC.swift */,
+				A29EAD602772D23400350321 /* Onboarding.swift */,
 				A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */,
 				2A6ADC45236B16DB00687EFC /* ProfileScene2VC.swift */,
 				2A6ADC47236B193F00687EFC /* ProfileScene3VC.swift */,
 				2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */,
 				2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */,
-				2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */,
+				A300E60123673C800062790C /* ResultsVC.swift */,
+				A3791E29235970B200C987D4 /* TMDefVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -315,7 +324,6 @@
 				A32A70072350B9EA00B6E6A7 /* Frameworks */,
 				A32A70082350B9EA00B6E6A7 /* Resources */,
 				7F0E8717A877937B099EDD38 /* [CP] Copy Pods Resources */,
-				3EDC8D9CCB81BF9D52FAFFE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,6 +424,7 @@
 				A2F43346274827B600F30D0F /* Warning.storyboard in Resources */,
 				A2F433442748274B00F30D0F /* Results.storyboard in Resources */,
 				2A36CEE62625D8C2000FA0EC /* GoogleService-Info.plist in Resources */,
+				A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */,
 				2A215A7C263B1013008F32D8 /* instructions5.gif in Resources */,
 				2A215A7A263B1013008F32D8 /* instructions2.gif in Resources */,
 				A32A70402350C08B00B6E6A7 /* gibson.ttf in Resources */,
@@ -447,23 +456,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3EDC8D9CCB81BF9D52FAFFE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7F0E8717A877937B099EDD38 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +561,7 @@
 				A30A075E23515135002387B6 /* DashboardVC.swift in Sources */,
 				A32A700E2350B9EA00B6E6A7 /* AppDelegate.swift in Sources */,
 				A3E2FD36235ABDAE00DE0474 /* MixoScene1VC.swift in Sources */,
+				A261B63B2772E5AA008D5778 /* EngineLoad.swift in Sources */,
 				A30A076C235180B9002387B6 /* Constants.swift in Sources */,
 				A363C72323524DA500900766 /* IntroVC.swift in Sources */,
 				A3E2FD3A235ABE5A00DE0474 /* MixoScene3VC.swift in Sources */,
@@ -576,6 +569,7 @@
 				2A6ADC46236B16DB00687EFC /* ProfileScene2VC.swift in Sources */,
 				A30A075A2351510C002387B6 /* LoginVC.swift in Sources */,
 				A3E2FD3C235ABE8A00DE0474 /* MixoScene4aVC.swift in Sources */,
+				A29EAD612772D23500350321 /* Onboarding.swift in Sources */,
 				A30A076623515A26002387B6 /* Utilities.swift in Sources */,
 				A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */,
 				A3DB34F52369A51400DDCEC3 /* ProfileScene1VC.swift in Sources */,
@@ -744,7 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -767,7 +761,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
