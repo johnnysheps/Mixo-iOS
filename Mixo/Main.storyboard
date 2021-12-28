@@ -617,9 +617,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingbg" translatesAutoresizingMaskIntoConstraints="NO" id="cxZ-ea-3hO">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Square.png" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-d5-Mue">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Square.png" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-d5-Mue">
                                 <rect key="frame" x="61" y="324" width="292" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1qe-d5-Mue" secondAttribute="height" multiplier="73:49" id="Fqj-5t-zje"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j5s-3i-Vt4"/>
@@ -627,8 +629,12 @@
                         <constraints>
                             <constraint firstItem="cxZ-ea-3hO" firstAttribute="bottom" secondItem="j5s-3i-Vt4" secondAttribute="bottom" id="509-Wi-e43"/>
                             <constraint firstItem="cxZ-ea-3hO" firstAttribute="leading" secondItem="j5s-3i-Vt4" secondAttribute="leading" id="5MM-2Z-SBx"/>
+                            <constraint firstItem="1qe-d5-Mue" firstAttribute="top" secondItem="j5s-3i-Vt4" secondAttribute="top" constant="280" id="KYC-aW-2RG"/>
                             <constraint firstItem="cxZ-ea-3hO" firstAttribute="trailing" secondItem="j5s-3i-Vt4" secondAttribute="trailing" id="QMv-6k-ERh"/>
+                            <constraint firstItem="j5s-3i-Vt4" firstAttribute="bottom" secondItem="1qe-d5-Mue" secondAttribute="bottom" constant="342" id="jga-g0-72P"/>
                             <constraint firstItem="cxZ-ea-3hO" firstAttribute="top" secondItem="j5s-3i-Vt4" secondAttribute="top" id="pfe-gO-zmo"/>
+                            <constraint firstItem="j5s-3i-Vt4" firstAttribute="trailing" secondItem="1qe-d5-Mue" secondAttribute="trailing" constant="61" id="uBN-Xt-YdO"/>
+                            <constraint firstItem="1qe-d5-Mue" firstAttribute="leading" secondItem="j5s-3i-Vt4" secondAttribute="leading" constant="61" id="wdN-I1-Lcf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1166,35 +1172,87 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="1.) Introduction to the MixoType Identity System" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHL-TO-Qse">
-                                <rect key="frame" x="25" y="347" width="364" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="41b-Mf-ziz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="__________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QL-QX-GzI">
+                                <rect key="frame" x="24" y="409" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="__________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zth-9n-IAg">
+                                <rect key="frame" x="25" y="540" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="__________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EC-c7-cNi">
+                                <rect key="frame" x="25" y="641" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-he-m8N">
+                                <rect key="frame" x="30" y="345" width="354" height="394"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">1.) Introduction to the Mixotype Identity System.
+
+2.) Use the MixoType Engine to discover your own unique MixoType badge.
+
+3.) Sign up for a MIXO account and finish creating your Profile.
+
+4.) Discover, match, and connect with other Mixos through your MixoType Identity.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IwR-Uv-rdp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="ytb-bL-Muo" secondAttribute="trailing" constant="50" id="0oU-Jm-L1B"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="12g-wq-cvJ"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="2EC-c7-cNi" secondAttribute="trailing" constant="25" id="3Yg-yP-Yuq"/>
+                            <constraint firstItem="9QL-QX-GzI" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="24" id="3gk-6A-xoy"/>
                             <constraint firstItem="pyp-Ft-jGB" firstAttribute="top" secondItem="ytb-bL-Muo" secondAttribute="bottom" constant="25" id="58E-6B-6sr"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="top" secondItem="pyp-Ft-jGB" secondAttribute="bottom" constant="22" id="5Xn-Me-OZ6"/>
                             <constraint firstItem="1Gj-dl-XUP" firstAttribute="top" secondItem="IwR-Uv-rdp" secondAttribute="top" constant="15" id="74j-Nr-7XJ"/>
-                            <constraint firstAttribute="trailing" secondItem="AHL-TO-Qse" secondAttribute="trailing" constant="25" id="939-0M-xsX"/>
-                            <constraint firstItem="AHL-TO-Qse" firstAttribute="top" secondItem="pyp-Ft-jGB" secondAttribute="bottom" constant="24" id="ASb-O9-sc3"/>
-                            <constraint firstItem="AHL-TO-Qse" firstAttribute="leading" secondItem="an8-89-olW" secondAttribute="leading" constant="25" id="LST-I0-hNq"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="Zth-9n-IAg" secondAttribute="trailing" constant="25" id="8go-iR-OH6"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="30" id="Ap4-zz-aII"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="top" secondItem="9QL-QX-GzI" secondAttribute="bottom" constant="110" id="Atx-z1-x4z"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="ka6-he-m8N" secondAttribute="trailing" constant="30" id="B9Z-Os-JHK"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="Dfx-np-ULk"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="ka6-he-m8N" secondAttribute="trailing" constant="30" id="E0I-0g-VeQ"/>
+                            <constraint firstItem="2EC-c7-cNi" firstAttribute="top" secondItem="Zth-9n-IAg" secondAttribute="bottom" constant="80" id="Exx-Sr-k9o"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="Zth-9n-IAg" secondAttribute="trailing" constant="25" id="FF7-ac-O76"/>
+                            <constraint firstItem="pyp-Ft-jGB" firstAttribute="top" secondItem="ytb-bL-Muo" secondAttribute="bottom" constant="25" id="GAI-se-bGh"/>
+                            <constraint firstItem="2EC-c7-cNi" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="IUP-U5-Ye1"/>
+                            <constraint firstItem="3uH-Be-720" firstAttribute="top" secondItem="2EC-c7-cNi" secondAttribute="bottom" constant="177" id="JnX-4p-KPg"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="top" secondItem="9QL-QX-GzI" secondAttribute="bottom" constant="110" id="LbP-r7-Rjm"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="30" id="NOx-lz-wBt"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="pyp-Ft-jGB" secondAttribute="trailing" constant="25" id="NaJ-bP-hvL"/>
+                            <constraint firstItem="2EC-c7-cNi" firstAttribute="top" secondItem="Zth-9n-IAg" secondAttribute="bottom" constant="92" id="PWo-IW-7vr"/>
+                            <constraint firstItem="9QL-QX-GzI" firstAttribute="top" secondItem="pyp-Ft-jGB" secondAttribute="bottom" constant="86" id="Qxb-Xd-qsc"/>
                             <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="1Gj-dl-XUP" secondAttribute="trailing" constant="88" id="XV9-KK-uHw"/>
                             <constraint firstItem="ytb-bL-Muo" firstAttribute="top" secondItem="1Gj-dl-XUP" secondAttribute="bottom" constant="40" id="ZDZ-Gd-8ZA"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="30" id="ZUi-B7-RrX"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="top" secondItem="9QL-QX-GzI" secondAttribute="bottom" constant="106" id="b22-pb-kaf"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="9QL-QX-GzI" secondAttribute="trailing" constant="26" id="cjU-ao-j2J"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="2EC-c7-cNi" secondAttribute="trailing" constant="25" id="dLU-QP-8tk"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="ka6-he-m8N" secondAttribute="trailing" constant="30" id="dy3-wv-mPw"/>
+                            <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="Zth-9n-IAg" secondAttribute="trailing" constant="25" id="eoA-Sg-Ffr"/>
+                            <constraint firstItem="pyp-Ft-jGB" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="jAn-Co-ZQ2"/>
                             <constraint firstItem="pyp-Ft-jGB" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="kAB-fw-b9Z"/>
                             <constraint firstItem="ytb-bL-Muo" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="50" id="mY0-XE-xrs"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="top" secondItem="pyp-Ft-jGB" secondAttribute="bottom" constant="22" id="oXl-If-pq3"/>
                             <constraint firstItem="3uH-Be-720" firstAttribute="trailing" secondItem="IwR-Uv-rdp" secondAttribute="trailing" id="prp-ij-p6V"/>
                             <constraint firstItem="3uH-Be-720" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" id="r2t-ei-d8Y"/>
                             <constraint firstItem="3uH-Be-720" firstAttribute="bottom" secondItem="IwR-Uv-rdp" secondAttribute="bottom" id="rj5-DD-zAr"/>
-                            <constraint firstItem="3uH-Be-720" firstAttribute="top" secondItem="AHL-TO-Qse" secondAttribute="bottom" constant="379" id="tPx-Qa-O4G"/>
+                            <constraint firstItem="Zth-9n-IAg" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="tWI-oh-cFV"/>
+                            <constraint firstItem="3uH-Be-720" firstAttribute="top" secondItem="ka6-he-m8N" secondAttribute="bottom" constant="78" id="tcC-ez-zXO"/>
                             <constraint firstItem="IwR-Uv-rdp" firstAttribute="trailing" secondItem="pyp-Ft-jGB" secondAttribute="trailing" constant="25" id="tjx-SD-BvK"/>
+                            <constraint firstItem="2EC-c7-cNi" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="25" id="v4P-uw-GfH"/>
+                            <constraint firstItem="ka6-he-m8N" firstAttribute="top" secondItem="pyp-Ft-jGB" secondAttribute="bottom" constant="22" id="w4j-ci-qOT"/>
                             <constraint firstItem="1Gj-dl-XUP" firstAttribute="leading" secondItem="IwR-Uv-rdp" secondAttribute="leading" constant="88" id="xm5-5X-87X"/>
+                            <constraint firstItem="2EC-c7-cNi" firstAttribute="top" secondItem="Zth-9n-IAg" secondAttribute="bottom" constant="75" id="yWp-3C-Sj9"/>
                         </constraints>
                     </view>
                     <connections>
