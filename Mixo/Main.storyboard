@@ -616,7 +616,7 @@
         <!--Engine LoadVC-->
         <scene sceneID="JN0-fs-RR4">
             <objects>
-                <viewController id="l57-ua-M0R" customClass="EngineLoadVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EngineLoadVC" id="l57-ua-M0R" customClass="EngineLoadVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AEg-ZB-Fkc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1318,7 +1318,7 @@
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Swipe for Next" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-jF-mQn">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Swipe for Next" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-jF-mQn">
                                 <rect key="frame" x="20" y="705" width="374" height="39"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -1331,7 +1331,7 @@
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
                                 </variation>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="------------------------------------------&gt;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-tG-SxR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="------------------------------------------&gt;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-tG-SxR">
                                 <rect key="frame" x="20" y="744" width="374" height="55"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
