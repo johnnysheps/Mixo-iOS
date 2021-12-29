@@ -873,25 +873,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-yx-Qe7">
-                                <rect key="frame" x="0.0" y="816" width="414" height="46"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
-                                <state key="normal" backgroundImage="loadingbg">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Continue">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" metaFont="system" size="23"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnStart:" destination="S70-Kw-SES" eventType="touchUpInside" id="4c6-vH-bk6"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take this opportunity to reflect on who you are and who you want to become." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-bR-cXQ">
                                 <rect key="frame" x="69" y="307.33333333333331" width="276" height="72.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="42"/>
@@ -903,6 +884,19 @@
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="19.5"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-yx-Qe7">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PBS-Ph-jo1"/>
+                                </constraints>
+                                <state key="normal" title="Continue" backgroundImage="loadingbg">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStart:" destination="S70-Kw-SES" eventType="touchUpInside" id="M9u-Jg-waP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fz1-hg-NPg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -913,27 +907,27 @@
                             <constraint firstItem="DII-pS-rZw" firstAttribute="centerX" secondItem="1nJ-pi-RIu" secondAttribute="centerX" id="DN2-NL-kpj"/>
                             <constraint firstItem="Fz1-hg-NPg" firstAttribute="trailing" secondItem="DII-pS-rZw" secondAttribute="trailing" constant="20" id="Dn9-Mf-HSi"/>
                             <constraint firstItem="Cuw-so-PBV" firstAttribute="centerX" secondItem="1nJ-pi-RIu" secondAttribute="centerX" id="IB0-M3-E6I"/>
+                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="trailing" secondItem="Fz1-hg-NPg" secondAttribute="trailing" id="ItI-Bi-uM2"/>
+                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="bottom" secondItem="Fz1-hg-NPg" secondAttribute="bottom" id="LHF-jf-z70"/>
                             <constraint firstItem="9l8-vl-CUv" firstAttribute="centerX" secondItem="1nJ-pi-RIu" secondAttribute="centerX" id="T4a-LY-2Le"/>
                             <constraint firstItem="DII-pS-rZw" firstAttribute="top" secondItem="Fz1-hg-NPg" secondAttribute="top" constant="27" id="Zkj-af-rhb"/>
-                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="leading" secondItem="Fz1-hg-NPg" secondAttribute="leading" id="b4Y-TH-jfB"/>
                             <constraint firstItem="3fu-4S-UPP" firstAttribute="leading" secondItem="Fz1-hg-NPg" secondAttribute="leading" constant="20" id="bwK-3E-i5U"/>
                             <constraint firstItem="EWB-vi-f6W" firstAttribute="top" secondItem="Fz1-hg-NPg" secondAttribute="top" id="dze-ms-qEP"/>
                             <constraint firstItem="Cuw-so-PBV" firstAttribute="centerY" secondItem="1nJ-pi-RIu" secondAttribute="centerY" constant="91" id="haB-xF-wlY"/>
                             <constraint firstItem="EWB-vi-f6W" firstAttribute="leading" secondItem="Fz1-hg-NPg" secondAttribute="leading" id="kDJ-EA-or1"/>
+                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="leading" secondItem="Fz1-hg-NPg" secondAttribute="leading" id="p6s-aK-BOT"/>
                             <constraint firstItem="Fz1-hg-NPg" firstAttribute="trailing" secondItem="3fu-4S-UPP" secondAttribute="trailing" constant="20" id="qnY-tp-B5O"/>
                             <constraint firstItem="Fz1-hg-NPg" firstAttribute="trailing" secondItem="EWB-vi-f6W" secondAttribute="trailing" id="rSY-C3-rlE"/>
                             <constraint firstItem="Fz1-hg-NPg" firstAttribute="trailing" secondItem="JAY-bR-cXQ" secondAttribute="trailing" constant="69" id="rvg-Tw-tjP"/>
                             <constraint firstItem="9l8-vl-CUv" firstAttribute="centerX" secondItem="1nJ-pi-RIu" secondAttribute="centerX" id="suE-fU-gQM"/>
-                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="bottom" secondItem="Fz1-hg-NPg" secondAttribute="bottom" id="tIO-qo-O8S"/>
                             <constraint firstItem="JAY-bR-cXQ" firstAttribute="top" secondItem="3fu-4S-UPP" secondAttribute="bottom" constant="25" id="tix-zn-KQ1"/>
-                            <constraint firstItem="DTS-yx-Qe7" firstAttribute="trailing" secondItem="Fz1-hg-NPg" secondAttribute="trailing" id="wfO-Tq-QAo"/>
                             <constraint firstItem="9l8-vl-CUv" firstAttribute="centerY" secondItem="1nJ-pi-RIu" secondAttribute="centerY" constant="91" id="yVi-EX-KnI"/>
                             <constraint firstItem="JAY-bR-cXQ" firstAttribute="leading" secondItem="Fz1-hg-NPg" secondAttribute="leading" constant="69" id="ybE-oo-asO"/>
                             <constraint firstItem="Fz1-hg-NPg" firstAttribute="bottom" secondItem="EWB-vi-f6W" secondAttribute="bottom" id="ymZ-C3-EQV"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnStart" destination="DTS-yx-Qe7" id="lKN-qt-T87"/>
+                        <outlet property="btnStart" destination="DTS-yx-Qe7" id="16f-jS-Frf"/>
                         <outlet property="ivCircle" destination="9l8-vl-CUv" id="xSv-SG-yxr"/>
                         <outlet property="lblAssess" destination="JAY-bR-cXQ" id="8Lb-wa-NoS"/>
                         <outlet property="lblBreaths" destination="3fu-4S-UPP" id="1EN-qp-y3J"/>
