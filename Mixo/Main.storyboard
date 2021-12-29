@@ -160,28 +160,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ooC-aY-6GO">
-                                <rect key="frame" x="40" y="345.66666666666669" width="334" height="330.00000000000006"/>
+                                <rect key="frame" x="40" y="345.66666666666674" width="334" height="400"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c63-oP-AYR">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c63-oP-AYR" userLabel="Txt Name">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Jwv-5e-3lX"/>
+                                            <constraint firstAttribute="height" constant="50" id="tQE-RF-k4j"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-mv-lUt">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-59-86J">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mUS-Yq-hYc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1e-mv-lUt">
+                                        <rect key="frame" x="0.0" y="140" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RYx-dF-dOQ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X6S-F9-caN">
-                                        <rect key="frame" x="0.0" y="140" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="209.99999999999994" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CQp-lv-k6a"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naj-dq-Ocj">
-                                        <rect key="frame" x="0.0" y="209.99999999999994" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="279.99999999999994" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="KgT-VO-ga2"/>
                                         </constraints>
@@ -195,7 +209,10 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-Xc-uuF">
-                                        <rect key="frame" x="0.0" y="279.99999999999994" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="349.99999999999994" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wmk-Vi-g9a"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="26"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -205,19 +222,8 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="i1e-mv-lUt" firstAttribute="height" secondItem="naj-dq-Ocj" secondAttribute="height" id="5a5-tD-sDt"/>
-                                    <constraint firstItem="kqe-Xc-uuF" firstAttribute="leading" secondItem="ooC-aY-6GO" secondAttribute="leading" id="Jil-EB-qO2"/>
                                     <constraint firstAttribute="trailing" secondItem="naj-dq-Ocj" secondAttribute="trailing" id="K8v-rQ-uwb"/>
-                                    <constraint firstAttribute="trailing" secondItem="i1e-mv-lUt" secondAttribute="trailing" id="LG9-iS-gmL"/>
                                     <constraint firstItem="naj-dq-Ocj" firstAttribute="leading" secondItem="ooC-aY-6GO" secondAttribute="leading" id="MhD-qL-vZC"/>
-                                    <constraint firstAttribute="trailing" secondItem="kqe-Xc-uuF" secondAttribute="trailing" id="Sja-vu-6gZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="X6S-F9-caN" secondAttribute="trailing" id="aNP-ai-kpa"/>
-                                    <constraint firstAttribute="trailing" secondItem="c63-oP-AYR" secondAttribute="trailing" id="cT8-0W-nb6"/>
-                                    <constraint firstItem="c63-oP-AYR" firstAttribute="leading" secondItem="ooC-aY-6GO" secondAttribute="leading" id="igm-8P-1GA"/>
-                                    <constraint firstItem="i1e-mv-lUt" firstAttribute="leading" secondItem="ooC-aY-6GO" secondAttribute="leading" id="jvk-MO-bce"/>
-                                    <constraint firstItem="X6S-F9-caN" firstAttribute="leading" secondItem="ooC-aY-6GO" secondAttribute="leading" id="kVp-mB-QwF"/>
-                                    <constraint firstItem="X6S-F9-caN" firstAttribute="height" secondItem="naj-dq-Ocj" secondAttribute="height" id="spY-5o-Rti"/>
-                                    <constraint firstItem="kqe-Xc-uuF" firstAttribute="height" secondItem="naj-dq-Ocj" secondAttribute="height" id="xLr-sO-gzx"/>
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z3K-Tl-Yhj">
@@ -244,6 +250,7 @@
                         <outlet property="btnSignUp" destination="naj-dq-Ocj" id="IM2-aw-i7n"/>
                         <outlet property="lblError" destination="kqe-Xc-uuF" id="0KI-ms-9ap"/>
                         <outlet property="txtEmail" destination="i1e-mv-lUt" id="kyE-S4-BKi"/>
+                        <outlet property="txtLastName" destination="EpD-59-86J" id="ejA-4h-Cfc"/>
                         <outlet property="txtName" destination="c63-oP-AYR" id="I1s-Kv-97K"/>
                         <outlet property="txtPassword" destination="X6S-F9-caN" id="TVG-Nj-QnP"/>
                     </connections>

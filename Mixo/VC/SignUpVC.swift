@@ -14,6 +14,7 @@ import Firebase
 class SignUpVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
@@ -26,6 +27,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         setUpUI()
         
         txtName.delegate = self
+        txtLastName.delegate = self
         txtEmail.delegate = self
         txtPassword.delegate = self
         
@@ -54,7 +56,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     func validateFields() -> String? {
         
         //check that all fields are filled in
-        if txtName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+        if txtName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtLastName.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""  || txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in all fields."
         }
         
@@ -82,7 +84,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         } else {
             
             //create cleaned version of the data
-            let name = txtName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let nameFirst = txtName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let nameLast = txtLastName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let pass = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
@@ -99,7 +102,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                     userUID = result!.user.uid
                     
                     db.collection("users").document(userUID).setData([
-                        "name": name,
+                        "name": nameLast + ", " + nameFirst,
                         "email": email,
                         "city": "incomplete",
                         "dob": "incomplete",
