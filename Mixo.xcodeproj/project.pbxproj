@@ -20,8 +20,10 @@
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
 		32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */; };
+		A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
+		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
 		A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F277DB277AE52500CF28AB /* Logo Square.png */; };
 		A2F433442748274B00F30D0F /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F433432748274B00F30D0F /* Results.storyboard */; };
 		A2F43346274827B600F30D0F /* Warning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F43345274827B600F30D0F /* Warning.storyboard */; };
@@ -93,8 +95,10 @@
 		5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		A2F277DB277AE52500CF28AB /* Logo Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Square.png"; sourceTree = "<group>"; };
 		A2F433432748274B00F30D0F /* Results.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
 		A2F43345274827B600F30D0F /* Warning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warning.storyboard; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 		A30A07612351515B002387B6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */,
+				A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */,
 				A32A703F2350C08B00B6E6A7 /* gibson.ttf */,
 			);
 			path = Fonts;
@@ -422,7 +428,9 @@
 			files = (
 				A2F4334C2748284D00F30D0F /* Mixo.entitlements in Resources */,
 				A2F43346274827B600F30D0F /* Warning.storyboard in Resources */,
+				A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */,
 				A2F433442748274B00F30D0F /* Results.storyboard in Resources */,
+				A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */,
 				2A36CEE62625D8C2000FA0EC /* GoogleService-Info.plist in Resources */,
 				A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */,
 				2A215A7C263B1013008F32D8 /* instructions5.gif in Resources */,
