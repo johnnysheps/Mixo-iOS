@@ -608,7 +608,7 @@ DEPENDENCIES:
   - FirebaseUI/Email
   - FirebaseUI/Google
   - FirebaseUI/Storage
-  - KMPlaceholderTextView (~> 1.4.0)
+  - KMPlaceholderTextView
   - SwiftGifOrigin (~> 1.7.0)
 
 SPEC REPOS:
@@ -702,6 +702,6 @@ SPEC CHECKSUMS:
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: 90fa5cb70afaa7534d995855411bbeb789c3d155
+PODFILE CHECKSUM: 923b0807538c5bfeb35eb499f6245b86e650f857
 
 COCOAPODS: 1.10.2
