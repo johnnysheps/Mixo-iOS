@@ -19,7 +19,6 @@
 		2A6ADC4A236B1B1A00687EFC /* ProfileScene4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */; };
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
-		32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */; };
 		A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
@@ -43,8 +42,6 @@
 		A32A70102350B9EA00B6E6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */; };
 		A32A70122350B9EA00B6E6A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A70112350B9EA00B6E6A7 /* ViewController.swift */; };
 		A32A70172350B9EB00B6E6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32A70162350B9EB00B6E6A7 /* Assets.xcassets */; };
-		A32A70252350B9EB00B6E6A7 /* MixoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A70242350B9EB00B6E6A7 /* MixoTests.swift */; };
-		A32A70302350B9EB00B6E6A7 /* MixoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A702F2350B9EB00B6E6A7 /* MixoUITests.swift */; };
 		A32A70402350C08B00B6E6A7 /* gibson.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A32A703F2350C08B00B6E6A7 /* gibson.ttf */; };
 		A363A35823563AAB00672BE9 /* DefinitionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363A35723563AAB00672BE9 /* DefinitionsVC.swift */; };
 		A363C72323524DA500900766 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C72223524DA500900766 /* IntroVC.swift */; };
@@ -59,25 +56,7 @@
 		A3E2FD40235ABFD400DE0474 /* MixoScene2bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */; };
 		A3E2FD42235ABFEA00DE0474 /* MixoScene4bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */; };
 		B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */; };
-		ECAF4955BD06B2A2813EE2B1 /* Pods_MixoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A32A70212350B9EB00B6E6A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A32A70022350B9EA00B6E6A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A32A70092350B9EA00B6E6A7;
-			remoteInfo = Mixo;
-		};
-		A32A702C2350B9EB00B6E6A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A32A70022350B9EA00B6E6A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A32A70092350B9EA00B6E6A7;
-			remoteInfo = Mixo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A03F271263AF5020077DDB2 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
@@ -120,12 +99,6 @@
 		A32A70112350B9EA00B6E6A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A32A70162350B9EB00B6E6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32A701B2350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32A70202350B9EB00B6E6A7 /* MixoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32A70242350B9EB00B6E6A7 /* MixoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoTests.swift; sourceTree = "<group>"; };
-		A32A70262350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32A702B2350B9EB00B6E6A7 /* MixoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32A702F2350B9EB00B6E6A7 /* MixoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoUITests.swift; sourceTree = "<group>"; };
-		A32A70312350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A703F2350C08B00B6E6A7 /* gibson.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gibson.ttf; sourceTree = "<group>"; };
 		A363A35723563AAB00672BE9 /* DefinitionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsVC.swift; sourceTree = "<group>"; };
 		A363C72223524DA500900766 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -153,22 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A32A701D2350B9EB00B6E6A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECAF4955BD06B2A2813EE2B1 /* Pods_MixoTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A32A70282350B9EB00B6E6A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32AE1EEBDE2E82925B97B027 /* Pods_MixoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				A32A700C2350B9EA00B6E6A7 /* Mixo */,
-				A32A70232350B9EB00B6E6A7 /* MixoTests */,
-				A32A702E2350B9EB00B6E6A7 /* MixoUITests */,
 				A32A700B2350B9EA00B6E6A7 /* Products */,
 				79238042D5A1C4D01EFE44D3 /* Pods */,
 				FE0D2341BF81E1AE7DB54BCC /* Frameworks */,
@@ -224,8 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				A32A700A2350B9EA00B6E6A7 /* Mixo.app */,
-				A32A70202350B9EB00B6E6A7 /* MixoTests.xctest */,
-				A32A702B2350B9EB00B6E6A7 /* MixoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,24 +209,6 @@
 				2A36CEE52625D8C2000FA0EC /* GoogleService-Info.plist */,
 			);
 			path = Mixo;
-			sourceTree = "<group>";
-		};
-		A32A70232350B9EB00B6E6A7 /* MixoTests */ = {
-			isa = PBXGroup;
-			children = (
-				A32A70242350B9EB00B6E6A7 /* MixoTests.swift */,
-				A32A70262350B9EB00B6E6A7 /* Info.plist */,
-			);
-			path = MixoTests;
-			sourceTree = "<group>";
-		};
-		A32A702E2350B9EB00B6E6A7 /* MixoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A32A702F2350B9EB00B6E6A7 /* MixoUITests.swift */,
-				A32A70312350B9EB00B6E6A7 /* Info.plist */,
-			);
-			path = MixoUITests;
 			sourceTree = "<group>";
 		};
 		A375FC0323510E2C00E7FC50 /* VC */ = {
@@ -340,44 +275,6 @@
 			productReference = A32A700A2350B9EA00B6E6A7 /* Mixo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A32A701F2350B9EB00B6E6A7 /* MixoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A32A70372350B9EB00B6E6A7 /* Build configuration list for PBXNativeTarget "MixoTests" */;
-			buildPhases = (
-				87C1F99F1E48B671F566D431 /* [CP] Check Pods Manifest.lock */,
-				A32A701C2350B9EB00B6E6A7 /* Sources */,
-				A32A701D2350B9EB00B6E6A7 /* Frameworks */,
-				A32A701E2350B9EB00B6E6A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A32A70222350B9EB00B6E6A7 /* PBXTargetDependency */,
-			);
-			name = MixoTests;
-			productName = MixoTests;
-			productReference = A32A70202350B9EB00B6E6A7 /* MixoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A32A702A2350B9EB00B6E6A7 /* MixoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A32A703A2350B9EB00B6E6A7 /* Build configuration list for PBXNativeTarget "MixoUITests" */;
-			buildPhases = (
-				B9D8A5ED24DB52A82EA8CBFE /* [CP] Check Pods Manifest.lock */,
-				A32A70272350B9EB00B6E6A7 /* Sources */,
-				A32A70282350B9EB00B6E6A7 /* Frameworks */,
-				A32A70292350B9EB00B6E6A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A32A702D2350B9EB00B6E6A7 /* PBXTargetDependency */,
-			);
-			name = MixoUITests;
-			productName = MixoUITests;
-			productReference = A32A702B2350B9EB00B6E6A7 /* MixoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -390,14 +287,6 @@
 				TargetAttributes = {
 					A32A70092350B9EA00B6E6A7 = {
 						CreatedOnToolsVersion = 11.1;
-					};
-					A32A701F2350B9EB00B6E6A7 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = A32A70092350B9EA00B6E6A7;
-					};
-					A32A702A2350B9EB00B6E6A7 = {
-						CreatedOnToolsVersion = 11.1;
-						TestTargetID = A32A70092350B9EA00B6E6A7;
 					};
 				};
 			};
@@ -415,8 +304,6 @@
 			projectRoot = "";
 			targets = (
 				A32A70092350B9EA00B6E6A7 /* Mixo */,
-				A32A701F2350B9EB00B6E6A7 /* MixoTests */,
-				A32A702A2350B9EB00B6E6A7 /* MixoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -447,20 +334,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32A701E2350B9EB00B6E6A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A32A70292350B9EB00B6E6A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -481,28 +354,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mixo/Pods-Mixo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		87C1F99F1E48B671F566D431 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MixoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9375F571D5F4E36DC4E9229B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,28 +370,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Mixo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9D8A5ED24DB52A82EA8CBFE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MixoUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -587,36 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A32A701C2350B9EB00B6E6A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A32A70252350B9EB00B6E6A7 /* MixoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A32A70272350B9EB00B6E6A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A32A70302350B9EB00B6E6A7 /* MixoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A32A70222350B9EB00B6E6A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A32A70092350B9EA00B6E6A7 /* Mixo */;
-			targetProxy = A32A70212350B9EB00B6E6A7 /* PBXContainerItemProxy */;
-		};
-		A32A702D2350B9EB00B6E6A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A32A70092350B9EA00B6E6A7 /* Mixo */;
-			targetProxy = A32A702C2350B9EB00B6E6A7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A32A70322350B9EB00B6E6A7 /* Debug */ = {
@@ -785,94 +585,6 @@
 			};
 			name = Release;
 		};
-		A32A70382350B9EB00B6E6A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A846302994B6AD976083A858 /* Pods-MixoTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZAGCB6TL6;
-				INFOPLIST_FILE = MixoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.MixoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixo.app/Mixo";
-			};
-			name = Debug;
-		};
-		A32A70392350B9EB00B6E6A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6BC7ED9DD3E61AA92CCA4A2 /* Pods-MixoTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZAGCB6TL6;
-				INFOPLIST_FILE = MixoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.MixoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mixo.app/Mixo";
-			};
-			name = Release;
-		};
-		A32A703B2350B9EB00B6E6A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZAGCB6TL6;
-				INFOPLIST_FILE = MixoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.MixoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Mixo;
-			};
-			name = Debug;
-		};
-		A32A703C2350B9EB00B6E6A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5CCAFFC39E1AB5E7F648A20 /* Pods-MixoUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NZAGCB6TL6;
-				INFOPLIST_FILE = MixoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.MixoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Mixo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -890,24 +602,6 @@
 			buildConfigurations = (
 				A32A70352350B9EB00B6E6A7 /* Debug */,
 				A32A70362350B9EB00B6E6A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A32A70372350B9EB00B6E6A7 /* Build configuration list for PBXNativeTarget "MixoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A32A70382350B9EB00B6E6A7 /* Debug */,
-				A32A70392350B9EB00B6E6A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A32A703A2350B9EB00B6E6A7 /* Build configuration list for PBXNativeTarget "MixoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A32A703B2350B9EB00B6E6A7 /* Debug */,
-				A32A703C2350B9EB00B6E6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
