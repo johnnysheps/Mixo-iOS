@@ -12,6 +12,7 @@ target 'Mixo' do
   # pod 'KMPlaceholderTextView', '~> 1.4.0' # Multiline placeholder support
   pod 'KMPlaceholderTextView' # Multiline placeholder support
   pod 'SwiftGifOrigin', '~> 1.7.0' # Gif support with UIImage
+  pod "FontAwesome.swift"
 
 
   # Fix XCode No such module 'FirebaseUI'
@@ -35,11 +36,21 @@ target 'Mixo' do
 
 end
 
+# def info_post_install(installer)
+#  installer.pods_project.targets.each do |target|
+#      target.build_configurations.each do |config|
+#            config.build_settings['INFOPLIST_FILE'] = 'Target Support Files/'+target.name+'/'+target.name+'-Info.plist'
+#        end
+#    end
+#
+# end
+
+
 post_install do |installer|
+ # info_post_install(installer)
  installer.pods_project.targets.each do |target|
   target.build_configurations.each do |config|
    config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
-
   end
 
  end

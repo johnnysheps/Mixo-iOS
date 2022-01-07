@@ -71,9 +71,7 @@
 		2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene4VC.swift; sourceTree = "<group>"; };
 		2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5VC.swift; sourceTree = "<group>"; };
 		2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
-		5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -113,11 +111,7 @@
 		A3E2FD3D235ABEA600DE0474 /* MixoScene5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene5VC.swift; sourceTree = "<group>"; };
 		A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene2bVC.swift; sourceTree = "<group>"; };
 		A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene4bVC.swift; sourceTree = "<group>"; };
-		A6BC7ED9DD3E61AA92CCA4A2 /* Pods-MixoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoTests.release.xcconfig"; path = "Target Support Files/Pods-MixoTests/Pods-MixoTests.release.xcconfig"; sourceTree = "<group>"; };
-		A846302994B6AD976083A858 /* Pods-MixoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoTests.debug.xcconfig"; path = "Target Support Files/Pods-MixoTests/Pods-MixoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF8E58BED71703C0AB9BDE55 /* Pods-Mixo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixo.release.xcconfig"; path = "Target Support Files/Pods-Mixo/Pods-Mixo.release.xcconfig"; sourceTree = "<group>"; };
-		E5CCAFFC39E1AB5E7F648A20 /* Pods-MixoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixoUITests.release.xcconfig"; path = "Target Support Files/Pods-MixoUITests/Pods-MixoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,22 +131,18 @@
 			children = (
 				A37FAF3032EDC4BB80313833 /* Pods-Mixo.debug.xcconfig */,
 				DF8E58BED71703C0AB9BDE55 /* Pods-Mixo.release.xcconfig */,
-				A846302994B6AD976083A858 /* Pods-MixoTests.debug.xcconfig */,
-				A6BC7ED9DD3E61AA92CCA4A2 /* Pods-MixoTests.release.xcconfig */,
-				870B129A757F6F1A66334E31 /* Pods-MixoUITests.debug.xcconfig */,
-				E5CCAFFC39E1AB5E7F648A20 /* Pods-MixoUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A30A07612351515B002387B6 /* Fonts */ = {
+		A30A07612351515B002387B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */,
 				A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */,
 				A32A703F2350C08B00B6E6A7 /* gibson.ttf */,
 			);
-			path = Fonts;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A30A076423515962002387B6 /* Helpers */ = {
@@ -188,7 +178,7 @@
 			children = (
 				A2F4334B2748284D00F30D0F /* Mixo.entitlements */,
 				A30A076423515962002387B6 /* Helpers */,
-				A30A07612351515B002387B6 /* Fonts */,
+				A30A07612351515B002387B6 /* Resources */,
 				A375FC0323510E2C00E7FC50 /* VC */,
 				A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */,
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
@@ -247,8 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */,
-				5B17B521C5DD66D7219A109B /* Pods_MixoTests.framework */,
-				F13A499EDEFF2034B6B258D7 /* Pods_MixoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

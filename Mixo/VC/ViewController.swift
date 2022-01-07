@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
 let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)
@@ -16,8 +17,10 @@ let modDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let resultsSB : UIStoryboard = UIStoryboard(name: "Results", bundle: .main)
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var chevron: UITextView!
     @IBOutlet weak var btnStart: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,6 +34,8 @@ class ViewController: UIViewController {
     func setUpElements(){
         
         Utilities.styleFilledButton(btnStart)
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         
     }
 
@@ -39,6 +44,10 @@ class ViewController: UIViewController {
         
         
     }
+    
+    
+    
+    
     
 }
 

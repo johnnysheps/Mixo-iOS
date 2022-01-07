@@ -7,5 +7,6 @@ ${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFacebookAuthUI/FirebaseFacebookAuthUI.bu
 ${PODS_CONFIGURATION_BUILD_DIR}/FirebaseGoogleAuthUI/FirebaseGoogleAuthUI.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/FirebaseOAuthUI/FirebaseOAuthUI.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/FirebasePhoneAuthUI/FirebasePhoneAuthUI.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift/FontAwesome.swift.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle
 ${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle
