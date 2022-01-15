@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class IntroVC: UIViewController {
@@ -17,7 +18,7 @@ class IntroVC: UIViewController {
     @IBOutlet weak var ivCircle: UIImageView!
     @IBOutlet weak var lblCountdown: UILabel!
     @IBOutlet weak var btnStart: UIButton!
-    
+    @IBOutlet weak var chevron: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,30 @@ class IntroVC: UIViewController {
         
         setUpUI()
         
+        showAnimation()
+    }
+    
+    func setUpUI() {
+        
+        //hide the labels
+        lblSlow.alpha = 0
+        lblBreaths.alpha = 0
+        lblAssess.alpha = 0
+        lblCountdown.alpha = 0
+        btnStart.alpha = 0
+        chevron.alpha = 0
+        ivCircle.alpha = 0
+        
+        // Font awesome in iOS (not enough for it to display in storyboard)
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
+        
+        //style the button
+        Utilities.stylePurpleFilledButton(btnStart)
+        
+    }
+    
+    func showAnimation() {
         //show the slow label after 1.5 secs
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.lblSlow.alpha = 1
@@ -62,23 +87,8 @@ class IntroVC: UIViewController {
             self.lblCountdown.alpha = 0
             self.ivCircle.alpha = 0
             self.btnStart.alpha = 1
+            self.chevron.alpha = 1
         }
-    }
-    
-    func setUpUI() {
-        
-        //hide the labels
-        lblSlow.alpha = 0
-        lblBreaths.alpha = 0
-        lblAssess.alpha = 0
-        lblCountdown.alpha = 0
-        btnStart.alpha = 0
-        ivCircle.alpha = 0
-        
-        
-        //style the button
-        Utilities.stylePurpleFilledButton(btnStart)
-        
     }
     
     @IBAction func btnStart(_ sender: Any) {
