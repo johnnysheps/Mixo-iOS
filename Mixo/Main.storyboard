@@ -948,13 +948,48 @@
                                     <constraint firstItem="6ND-FZ-cxw" firstAttribute="centerX" secondItem="3yi-y9-LEa" secondAttribute="centerX" id="h5o-Ed-q9z"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dlw-5E-l4E" userLabel="Stack View Alt Actions">
+                                <rect key="frame" x="0.0" y="562" width="414" height="40"/>
+                                <subviews>
+                                    <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="Sign up?" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="fOt-3R-F37" userLabel="Lbl New user">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="6zk-rj-5mh"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" text="Sign in" translatesAutoresizingMaskIntoConstraints="NO" id="Jh0-fi-MJz" userLabel="Lbl Sign up">
+                                        <rect key="frame" x="344" y="0.0" width="70" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="oox-am-1rm"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="sP0-9h-10N"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.63921568630000003" green="0.37647058820000001" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="AmV-dt-xKQ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="OLU-fR-SL7"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZVG-ee-DUH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="iA1-Pj-gtc"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="sbt-oR-g7S"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ykq-tI-blR"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3yi-y9-LEa" firstAttribute="top" secondItem="sDY-mP-Oye" secondAttribute="bottom" constant="37.329999999999998" id="2md-aI-m1i"/>
+                            <constraint firstItem="dlw-5E-l4E" firstAttribute="centerX" secondItem="o6z-xy-blF" secondAttribute="centerX" id="3Of-Xh-Lce"/>
                             <constraint firstItem="sDY-mP-Oye" firstAttribute="centerX" secondItem="o6z-xy-blF" secondAttribute="centerX" id="8oT-hS-QKR"/>
                             <constraint firstItem="sDY-mP-Oye" firstAttribute="leading" secondItem="o6z-xy-blF" secondAttribute="leading" constant="40" id="BRU-6u-a5E"/>
+                            <constraint firstItem="dlw-5E-l4E" firstAttribute="top" secondItem="3yi-y9-LEa" secondAttribute="bottom" constant="21" id="Vfp-VL-4Ef"/>
                             <constraint firstItem="VVa-Z5-40G" firstAttribute="centerX" secondItem="sDY-mP-Oye" secondAttribute="centerX" id="WRf-fA-WXy"/>
+                            <constraint firstItem="dlw-5E-l4E" firstAttribute="top" secondItem="3yi-y9-LEa" secondAttribute="bottom" constant="21" id="dsC-l4-5Ri"/>
                             <constraint firstItem="VVa-Z5-40G" firstAttribute="top" secondItem="2mX-dD-gII" secondAttribute="bottom" constant="8" symbolic="YES" id="dzy-rH-tIt"/>
                             <constraint firstItem="sDY-mP-Oye" firstAttribute="top" secondItem="VVa-Z5-40G" secondAttribute="bottom" constant="60.670000000000002" id="eOQ-yb-Fsd"/>
                             <constraint firstItem="3yi-y9-LEa" firstAttribute="centerX" secondItem="o6z-xy-blF" secondAttribute="centerX" id="uxt-mM-8uU"/>
@@ -970,7 +1005,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hif-bY-dUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="95"/>
+            <point key="canvasLocation" x="-823.1884057971015" y="94.419642857142847"/>
         </scene>
         <!--IntroVC-->
         <scene sceneID="rKF-Nt-oon">
