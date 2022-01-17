@@ -276,7 +276,7 @@
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="WBl-CQ-vaH"/>
                                         </constraints>
                                         <color key="textColor" red="0.63921568627450975" green="0.37647058823529411" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -932,6 +932,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="btnLogin:" destination="vLy-b3-mKD" eventType="touchUpInside" id="irg-nl-d2t"/>
                                             <action selector="btnSignUp:" destination="leq-3m-0vY" eventType="touchUpInside" id="jlz-ma-sPc"/>
                                             <action selector="btnStart:" destination="S70-Kw-SES" eventType="touchUpInside" id="42r-ze-oEj"/>
                                         </connections>
@@ -995,6 +996,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7fQ-xH-JgQ"/>
                     <connections>
+                        <outlet property="btnLogin" destination="wYN-3Y-FNG" id="gfE-8V-wPC"/>
                         <outlet property="lblError" destination="BnZ-7E-SoX" id="34s-Wb-ap4"/>
                         <outlet property="txtEmail" destination="nRt-zb-4Mb" id="d1G-fY-JYk"/>
                         <outlet property="txtPassword" destination="eb5-F3-B9q" id="DAo-ba-eAZ"/>
