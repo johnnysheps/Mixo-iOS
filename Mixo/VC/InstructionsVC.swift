@@ -13,10 +13,12 @@ import SwiftGifOrigin
 class InstructionsVC: UIViewController{
     
     @IBOutlet weak var ivInstructions: UIImageView!
-    @IBOutlet weak var btnLoadEngine: UIButton!
+//    @IBOutlet weak var btnLoadEngine: UIButton!
+    
+    @IBOutlet weak var btnContinueNext: UIButton!
     @IBOutlet var uiView: UIView!
-    @IBOutlet weak var swipeText: UITextView!
-    @IBOutlet weak var arrowText: UITextView!
+//    @IBOutlet weak var swipeText: UITextView!
+//    @IBOutlet weak var arrowText: UITextView!
     
     let imageList = ["instructions1", "instructions2", "instructions3", "instructions4", "instructions5"]
     var index = 0
@@ -28,65 +30,70 @@ class InstructionsVC: UIViewController{
         
         setUpUI()
         
-        let SwipeLeft = UISwipeGestureRecognizer()
-        let SwipeRight = UISwipeGestureRecognizer()
+//        let SwipeLeft = UISwipeGestureRecognizer()
+//        let SwipeRight = UISwipeGestureRecognizer()
         
-        SwipeLeft.direction = .left
-        SwipeRight.direction = .right
-        
-        self.uiView.addGestureRecognizer(SwipeLeft)
-        self.uiView.addGestureRecognizer(SwipeRight)
-        
-        SwipeLeft.addTarget(self, action: #selector(Swipe(sender:)))
-        SwipeRight.addTarget(self, action: #selector(Swipe(sender:)))
+//        SwipeLeft.direction = .left
+//        SwipeRight.direction = .right
+//
+//        self.uiView.addGestureRecognizer(SwipeLeft)
+//        self.uiView.addGestureRecognizer(SwipeRight)
+//
+//        SwipeLeft.addTarget(self, action: #selector(Swipe(sender:)))
+//        SwipeRight.addTarget(self, action: #selector(Swipe(sender:)))
         
         
     }
     
-    @objc func Swipe(sender: UISwipeGestureRecognizer){
-        switch sender.direction{
-            case .left:
-                if index < imageList.count - 1 {
-                    index = index + 1
-                    ivInstructions.loadGif(name: imageList[index])
-                }
-                if index < 4 {
-                    btnLoadEngine.alpha = 0
-                } else {
-                    btnLoadEngine.alpha = 1
-                    swipeText.alpha = 0
-                    arrowText.alpha = 0
-                }
-            case .right:
-                if index > 0 {
-                    index = index - 1
-                    ivInstructions.loadGif(name: imageList[index])
-                }
-                
-                if index < 4 {
-                    btnLoadEngine.alpha = 0
-                } else {
-                    btnLoadEngine.alpha = 1
-                }
-            default:
-                break
-        }
-    }
-    
-    
+//    @objc func Swipe(sender: UISwipeGestureRecognizer){
+//        switch sender.direction{
+//            case .left:
+//                if index < imageList.count - 1 {
+//                    index = index + 1
+//                    ivInstructions.loadGif(name: imageList[index])
+//                }
+//                if index < 4 {
+//                    btnLoadEngine.alpha = 0
+//                } else {
+//                    btnLoadEngine.alpha = 1
+//                    swipeText.alpha = 0
+//                    arrowText.alpha = 0
+//                }
+//            case .right:
+//                if index > 0 {
+//                    index = index - 1
+//                    ivInstructions.loadGif(name: imageList[index])
+//                }
+//
+//                if index < 4 {
+//                    btnLoadEngine.alpha = 0
+//                } else {
+//                    btnLoadEngine.alpha = 1
+//                }
+//            default:
+//                break
+//        }
+//    }
     
     func setUpUI() {
         
-        ivInstructions.loadGif(name: "instructions1")
-        btnLoadEngine.alpha = 0
+        btnContinueNext.setTitle("Continue", for: .normal)
+        ivInstructions.loadGif(name: imageList[0])
         
     }
     
-    
-    @IBAction func btnLoadEngine(_ sender: Any) {
-        let mixoEngineLoad = mainSB.instantiateViewController(withIdentifier: "EngineLoadVC") as! EngineLoadVC
-        self.present(mixoEngineLoad, animated: true, completion: nil)
+    @IBAction func btnContinueNext(_ sender: Any) {
+
+        index = index + 1
+        if(index < 5) {
+            btnContinueNext.setTitle("Continue", for: .normal)
+            ivInstructions.loadGif(name: imageList[index])
+        } else if (index == 5) {
+            let mixoEngineLoad = mainSB.instantiateViewController(withIdentifier: "EngineLoadVC") as! EngineLoadVC
+            self.present(mixoEngineLoad, animated: true, completion: nil)
+        } else {
+            ivInstructions.loadGif(name: imageList[index])
+        }
+        
     }
-    
-    
 }

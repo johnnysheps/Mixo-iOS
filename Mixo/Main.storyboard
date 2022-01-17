@@ -1522,22 +1522,21 @@
                                     <constraint firstAttribute="height" constant="54" id="QUB-BR-dOg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU9-A5-pkD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU9-A5-pkD" userLabel="Btn Continue Next">
                                 <rect key="frame" x="0.0" y="817" width="414" height="45"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="PFX-nz-98j"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="28"/>
-                                <state key="normal" title="Load the MixoType Engine">
-                                    <color key="titleColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
+                                <state key="normal" title="Continue | Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnLoadEngine:" destination="uKA-Lf-xsJ" eventType="touchUpInside" id="Nmn-aS-Uwz"/>
-                                    <action selector="btnNext:" destination="tzh-FJ-HiR" eventType="touchUpInside" id="QSM-F5-Ekl"/>
+                                    <action selector="btnContinueNext:" destination="uKA-Lf-xsJ" eventType="touchUpInside" id="qro-cs-SEG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCn-sp-YOQ">
@@ -1549,62 +1548,32 @@
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Swipe for Next" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-jF-mQn">
-                                <rect key="frame" x="20" y="705" width="374" height="39"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="KbD-A6-9GP"/>
-                                </constraints>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="28"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="------------------------------------------&gt;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Fc-tG-SxR">
-                                <rect key="frame" x="20" y="744" width="374" height="55"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="28"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-Qh-wCM">
                                 <rect key="frame" x="20" y="106" width="374" height="591"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="591" id="e32-zL-qdA"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tm4-jF-mQn" firstAttribute="top" secondItem="Edq-Qh-wCM" secondAttribute="bottom" constant="8" id="1lm-FF-UDB"/>
+                            <constraint firstItem="Edq-Qh-wCM" firstAttribute="trailing" secondItem="XCn-sp-YOQ" secondAttribute="trailing" id="1bd-cJ-gjz"/>
                             <constraint firstItem="uU9-A5-pkD" firstAttribute="bottom" secondItem="CPg-4q-eXq" secondAttribute="top" id="9B7-vP-xDQ"/>
-                            <constraint firstItem="1Fc-tG-SxR" firstAttribute="leading" secondItem="dou-v5-47Q" secondAttribute="leading" constant="20" id="BjO-Ey-ESZ"/>
                             <constraint firstItem="1I7-J0-XFd" firstAttribute="trailing" secondItem="dou-v5-47Q" secondAttribute="trailing" id="CEI-gn-yzm"/>
                             <constraint firstItem="Edq-Qh-wCM" firstAttribute="top" secondItem="1I7-J0-XFd" secondAttribute="bottom" constant="8" id="H7s-Rv-P1N"/>
                             <constraint firstItem="1I7-J0-XFd" firstAttribute="leading" secondItem="dou-v5-47Q" secondAttribute="leading" id="IG0-vP-Pkc"/>
-                            <constraint firstItem="Edq-Qh-wCM" firstAttribute="trailing" secondItem="tm4-jF-mQn" secondAttribute="trailing" id="LIx-dU-LDe"/>
                             <constraint firstItem="uU9-A5-pkD" firstAttribute="leading" secondItem="dou-v5-47Q" secondAttribute="leading" id="Pbw-ez-0ua"/>
                             <constraint firstItem="1I7-J0-XFd" firstAttribute="top" secondItem="0Vv-2j-uQb" secondAttribute="bottom" id="TJ1-D9-dZ6"/>
-                            <constraint firstItem="uU9-A5-pkD" firstAttribute="top" secondItem="1Fc-tG-SxR" secondAttribute="bottom" constant="18" id="TcC-pR-Gnf"/>
-                            <constraint firstItem="Edq-Qh-wCM" firstAttribute="leading" secondItem="tm4-jF-mQn" secondAttribute="leading" id="XEp-zW-lYX"/>
                             <constraint firstItem="XCn-sp-YOQ" firstAttribute="leading" secondItem="dou-v5-47Q" secondAttribute="leading" constant="20" id="aoq-DT-G1q"/>
-                            <constraint firstAttribute="trailing" secondItem="1Fc-tG-SxR" secondAttribute="trailing" constant="20" id="beb-FI-rXE"/>
+                            <constraint firstItem="Edq-Qh-wCM" firstAttribute="leading" secondItem="XCn-sp-YOQ" secondAttribute="leading" id="cb9-76-jED"/>
                             <constraint firstAttribute="trailing" secondItem="uU9-A5-pkD" secondAttribute="trailing" id="f12-7R-IOS"/>
                             <constraint firstItem="XCn-sp-YOQ" firstAttribute="top" secondItem="0Vv-2j-uQb" secondAttribute="bottom" constant="8" id="m7V-mm-Ohr"/>
                             <constraint firstAttribute="trailing" secondItem="XCn-sp-YOQ" secondAttribute="trailing" constant="20" id="mFn-4q-o6a"/>
-                            <constraint firstAttribute="trailing" secondItem="tm4-jF-mQn" secondAttribute="trailing" constant="20" id="mue-cD-Qpb"/>
-                            <constraint firstAttribute="bottom" secondItem="tm4-jF-mQn" secondAttribute="bottom" constant="152" id="rKk-Ke-t4H"/>
-                            <constraint firstItem="1Fc-tG-SxR" firstAttribute="top" secondItem="tm4-jF-mQn" secondAttribute="bottom" id="rYd-so-SF6"/>
-                            <constraint firstItem="tm4-jF-mQn" firstAttribute="leading" secondItem="dou-v5-47Q" secondAttribute="leading" constant="20" id="vL7-8o-jT8"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="arrowText" destination="1Fc-tG-SxR" id="e2b-Wf-Wgo"/>
-                        <outlet property="btnLoadEngine" destination="uU9-A5-pkD" id="dhd-eA-GpR"/>
+                        <outlet property="btnContinueNext" destination="uU9-A5-pkD" id="bvg-RB-IsH"/>
                         <outlet property="ivInstructions" destination="Edq-Qh-wCM" id="bbt-zO-vZt"/>
-                        <outlet property="swipeText" destination="tm4-jF-mQn" id="8x0-7c-agt"/>
                         <outlet property="uiView" destination="dou-v5-47Q" id="4f6-jB-vZg"/>
                     </connections>
                 </viewController>
