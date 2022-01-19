@@ -12,14 +12,18 @@ import SwiftGifOrigin
 @available(iOS 13.0, *)
 class InstructionsVC: UIViewController{
     
+    @IBOutlet var uiView: UIView!
     @IBOutlet weak var tvInstructions: UITextView!
     @IBOutlet weak var ivInstructions: UIImageView!
-//    @IBOutlet weak var btnLoadEngine: UIButton!
+    
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
     @IBOutlet weak var btnContinueNext: UIButton!
-    @IBOutlet var uiView: UIView!
-//    @IBOutlet weak var swipeText: UITextView!
-//    @IBOutlet weak var arrowText: UITextView!
+    
         
     let instructionList = [
         "The MixoType Engine is a self-assessment that helps you visualize your unique identity through a symbol we call, your MixoType.",
@@ -60,6 +64,13 @@ class InstructionsVC: UIViewController{
         tvInstructions.text = instructionList[index]
         ivInstructions.loadGif(name: imageList[index])
         
+        // Progess indicators
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-purple")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-gray")
+        
     }
     
     @IBAction func btnContinueNext(_ sender: Any) {
@@ -78,5 +89,22 @@ class InstructionsVC: UIViewController{
             ivInstructions.image = UIImage(named:imageList[index])
         }
         
+        // Progess indicators
+        switch index {
+            case 1:
+                ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator1.image = UIImage(named:"progress-indicator-purple")
+            case 2:
+                ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator2.image = UIImage(named:"progress-indicator-purple")
+            case 3:
+                ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator3.image = UIImage(named:"progress-indicator-purple")
+            case 4:
+                ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator4.image = UIImage(named:"progress-indicator-purple")
+            default:
+                print("Error - Instructions index out of bound")
+        }
     }
 }
