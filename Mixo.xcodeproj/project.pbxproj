@@ -19,11 +19,16 @@
 		2A6ADC4A236B1B1A00687EFC /* ProfileScene4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */; };
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
-		A202E74527928EB700641E5E /* J _ MixoType Engine - Intelligences Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A202E74127928EB600641E5E /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */; };
-		A202E74627928EB700641E5E /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A202E74227928EB600641E5E /* L _ MixoType Engine - Collections Section Intro Graphic.png */; };
-		A202E74727928EB700641E5E /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A202E74327928EB600641E5E /* I _ MixoType Engine - Heroes Section Intro Graphic.png */; };
-		A202E74827928EB700641E5E /* K _ MixoType Engine - Talents Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A202E74427928EB700641E5E /* K _ MixoType Engine - Talents Section Intro Graphic.png */; };
 		A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */; };
+		A223AC5A2797D67B0034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */; };
+		A223AC5B2797D67B0034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC572797D6670034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png */; };
+		A223AC5C2797D67B0034305C /* K _ MixoType Engine - Talents Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC582797D66E0034305C /* K _ MixoType Engine - Talents Section Intro Graphic.png */; };
+		A223AC5D2797D67B0034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC592797D6740034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */; };
+		A223AC6D2797D79B0034305C /* instructions-alt-0.gif in Resources */ = {isa = PBXBuildFile; fileRef = A223AC682797D7770034305C /* instructions-alt-0.gif */; };
+		A223AC6E2797D79B0034305C /* instructions-alt-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC692797D77E0034305C /* instructions-alt-2.png */; };
+		A223AC6F2797D79B0034305C /* instructions-alt-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6A2797D7860034305C /* instructions-alt-1.png */; };
+		A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6B2797D78D0034305C /* instructions-alt-4.png */; };
+		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
 		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
@@ -78,11 +83,16 @@
 		2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5VC.swift; sourceTree = "<group>"; };
 		2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
 		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A202E74127928EB600641E5E /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J _ MixoType Engine - Intelligences Section Intro Graphic.png"; sourceTree = "<group>"; };
-		A202E74227928EB600641E5E /* L _ MixoType Engine - Collections Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L _ MixoType Engine - Collections Section Intro Graphic.png"; sourceTree = "<group>"; };
-		A202E74327928EB600641E5E /* I _ MixoType Engine - Heroes Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I _ MixoType Engine - Heroes Section Intro Graphic.png"; sourceTree = "<group>"; };
-		A202E74427928EB700641E5E /* K _ MixoType Engine - Talents Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K _ MixoType Engine - Talents Section Intro Graphic.png"; sourceTree = "<group>"; };
 		A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
+		A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L _ MixoType Engine - Collections Section Intro Graphic.png"; sourceTree = "<group>"; };
+		A223AC572797D6670034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I _ MixoType Engine - Heroes Section Intro Graphic.png"; sourceTree = "<group>"; };
+		A223AC582797D66E0034305C /* K _ MixoType Engine - Talents Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K _ MixoType Engine - Talents Section Intro Graphic.png"; sourceTree = "<group>"; };
+		A223AC592797D6740034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J _ MixoType Engine - Intelligences Section Intro Graphic.png"; sourceTree = "<group>"; };
+		A223AC682797D7770034305C /* instructions-alt-0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "instructions-alt-0.gif"; sourceTree = "<group>"; };
+		A223AC692797D77E0034305C /* instructions-alt-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-2.png"; sourceTree = "<group>"; };
+		A223AC6A2797D7860034305C /* instructions-alt-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-1.png"; sourceTree = "<group>"; };
+		A223AC6B2797D78D0034305C /* instructions-alt-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-4.png"; sourceTree = "<group>"; };
+		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
@@ -195,17 +205,22 @@
 				A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */,
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
 				A32A70162350B9EB00B6E6A7 /* Assets.xcassets */,
-				A202E74327928EB600641E5E /* I _ MixoType Engine - Heroes Section Intro Graphic.png */,
-				A202E74127928EB600641E5E /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */,
-				A202E74427928EB700641E5E /* K _ MixoType Engine - Talents Section Intro Graphic.png */,
-				A202E74227928EB600641E5E /* L _ MixoType Engine - Collections Section Intro Graphic.png */,
 				A2E0C37C2795323600C6E17D /* progress-indicator-gray.png */,
 				A2E0C37B2795323600C6E17D /* progress-indicator-purple.png */,
+				A223AC572797D6670034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png */,
+				A223AC592797D6740034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png */,
+				A223AC582797D66E0034305C /* K _ MixoType Engine - Talents Section Intro Graphic.png */,
+				A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */,
 				2A215A73263B0EFE008F32D8 /* instructions1.gif */,
 				2A215A76263B1011008F32D8 /* instructions2.gif */,
 				2A215A77263B1012008F32D8 /* instructions3.gif */,
 				2A215A75263B1010008F32D8 /* instructions4.gif */,
 				2A215A78263B1013008F32D8 /* instructions5.gif */,
+				A223AC682797D7770034305C /* instructions-alt-0.gif */,
+				A223AC6A2797D7860034305C /* instructions-alt-1.png */,
+				A223AC692797D77E0034305C /* instructions-alt-2.png */,
+				A223AC6C2797D7960034305C /* instructions-alt-3.png */,
+				A223AC6B2797D78D0034305C /* instructions-alt-4.png */,
 				A2F277DB277AE52500CF28AB /* Logo Square.png */,
 				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
 				A2F4334F27482B5700F30D0F /* Main.storyboard */,
@@ -231,7 +246,6 @@
 				A363A35723563AAB00672BE9 /* DefinitionsVC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
 				A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */,
-				2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */,
 				A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */,
 				A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */,
 				A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */,
@@ -247,6 +261,7 @@
 				2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */,
 				A300E60123673C800062790C /* ResultsVC.swift */,
 				A3791E29235970B200C987D4 /* TMDefVC.swift */,
+				2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -319,28 +334,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A223AC5D2797D67B0034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png in Resources */,
+				A223AC5B2797D67B0034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */,
 				A2F4334C2748284D00F30D0F /* Mixo.entitlements in Resources */,
-				A202E74627928EB700641E5E /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */,
 				A2F43346274827B600F30D0F /* Warning.storyboard in Resources */,
-				A202E74727928EB700641E5E /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */,
 				A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */,
+				A223AC6D2797D79B0034305C /* instructions-alt-0.gif in Resources */,
 				A2F433442748274B00F30D0F /* Results.storyboard in Resources */,
-				A202E74827928EB700641E5E /* K _ MixoType Engine - Talents Section Intro Graphic.png in Resources */,
 				A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */,
 				2A36CEE62625D8C2000FA0EC /* GoogleService-Info.plist in Resources */,
+				A223AC5C2797D67B0034305C /* K _ MixoType Engine - Talents Section Intro Graphic.png in Resources */,
+				A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */,
 				A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */,
+				A223AC6E2797D79B0034305C /* instructions-alt-2.png in Resources */,
 				2A215A7C263B1013008F32D8 /* instructions5.gif in Resources */,
 				2A215A7A263B1013008F32D8 /* instructions2.gif in Resources */,
 				A32A70402350C08B00B6E6A7 /* gibson.ttf in Resources */,
+				A223AC5A2797D67B0034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */,
 				A2E0C37E2795323600C6E17D /* progress-indicator-gray.png in Resources */,
 				A2F4334A2748280B00F30D0F /* Definitions.storyboard in Resources */,
 				2A215A74263B0EFE008F32D8 /* instructions1.gif in Resources */,
+				A223AC6F2797D79B0034305C /* instructions-alt-1.png in Resources */,
 				A2F4335227482BBA00F30D0F /* LaunchScreen.storyboard in Resources */,
 				2A215A79263B1013008F32D8 /* instructions4.gif in Resources */,
 				A32A70172350B9EB00B6E6A7 /* Assets.xcassets in Resources */,
 				A2F43348274827E800F30D0F /* TMDef.storyboard in Resources */,
 				A2E0C37D2795323600C6E17D /* progress-indicator-purple.png in Resources */,
-				A202E74527928EB700641E5E /* J _ MixoType Engine - Intelligences Section Intro Graphic.png in Resources */,
+				A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */,
 				A2F4335027482B5700F30D0F /* Main.storyboard in Resources */,
 				2A215A7B263B1013008F32D8 /* instructions3.gif in Resources */,
 			);
