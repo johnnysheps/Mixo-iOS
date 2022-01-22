@@ -1,3 +1,6 @@
+// STORYBOARD: Start is the starting screen where user chooses Login or Signup.
+// NAMESAKED: User starts their interactions
+// POSITIONED before login/signup
 //
 //  StartVC.swift
 //  Mixo

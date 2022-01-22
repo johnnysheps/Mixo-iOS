@@ -1,3 +1,5 @@
+// STORYBOARD Instructions are many screens dynamically generated. These instruct user how to choose the avatars that make up their Mixotype Identity later.
+// POSITIONED after the overview aka onboarding screen
 //
 //  InstructionsVC.swift
 //  Mixo
@@ -50,8 +52,11 @@ class InstructionsVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if(devMode) {
+            index = 4 // If developer mode, skip most instruction screens so we can get to testing faster. Index 4 first because it pre-increments before doing switch cases
+        }
         
+        // Do any additional setup after loading the view.
         setUpUI()
     }
 
@@ -61,8 +66,8 @@ class InstructionsVC: UIViewController{
         btnContinueNext.setTitle("Next", for: .normal)
         
         // index 0
-        tvInstructions.text = instructionList[index]
-        ivInstructions.loadGif(name: imageList[index])
+        tvInstructions.text = instructionList[0]
+        ivInstructions.loadGif(name: imageList[0])
         
         // Progess indicators
         ivProgressIndicator0.image = UIImage(named:"progress-indicator-purple")
@@ -77,16 +82,22 @@ class InstructionsVC: UIViewController{
         
         // On the last instructions page, change "Next" button to a "Continue" button that would load MX engine.
         index = index + 1
-        if(index == 5) {
-            let mixoEngineLoad = mainSB.instantiateViewController(withIdentifier: "EngineLoadVC") as! EngineLoadVC
-            self.present(mixoEngineLoad, animated: true, completion: nil)
-        } else if(index == 4) {
-            btnContinueNext.setTitle("Continue", for: .normal)
-            tvInstructions.text = instructionList[index]
-            ivInstructions.image = UIImage(named:imageList[index])
-        } else {
-            tvInstructions.text = instructionList[index]
-            ivInstructions.image = UIImage(named:imageList[index])
+        switch index {
+            case 5:
+                if(devMode) { // If developer mode, skip the Engine loading splash screen, so we can test faster
+                    let IntroVCLoader = mainSB.instantiateViewController(withIdentifier: "IntroVC") as! IntroVC
+                    self.present(IntroVCLoader, animated: true, completion: nil)
+                } else {
+                    let mixoEngineLoad = mainSB.instantiateViewController(withIdentifier: "EngineLoadVC") as! EngineLoadVC
+                    self.present(mixoEngineLoad, animated: true, completion: nil)
+                }
+            case 4:
+                btnContinueNext.setTitle("Continue", for: .normal)
+                tvInstructions.text = instructionList[index]
+                ivInstructions.image = UIImage(named:imageList[index])
+            default:
+                tvInstructions.text = instructionList[index]
+                ivInstructions.image = UIImage(named:imageList[index])
         }
         
         // Progess indicators

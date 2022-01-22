@@ -1,3 +1,5 @@
+// STORYBOARD Engine loading is a <splash screen> to give the user some relief after reading instructions
+// POSITIONED after the many instructions screens but before a self-reflection/breathing screen
 //
 //  EngineLoad.swift
 //  Mixo

@@ -1,3 +1,5 @@
+// STORYBOARD: Onboarding is an overview screen of what the next screens will be.
+// POSITIONED before the instruction screens
 //
 //  Onboarding.swift
 //  Mixo

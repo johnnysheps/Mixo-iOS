@@ -1,3 +1,7 @@
+// STORYBOARD This is a breathing screen that instructs user to think about who they are while they reflect and breathe.
+// AKA IntroVC aka Breathing screen
+// NAMESAKE It's called Introduction because it's an Introduction screen to the Mixotype Identity
+// POSITIONED before choosing the avatars that make up their Mixotype Identity
 //
 //  IntroVC.swift
 //  Mixo
@@ -40,6 +44,10 @@ class IntroVC: UIViewController {
         btnStart.alpha = 0
         chevron.alpha = 0
         ivCircle.alpha = 0
+        
+        if(devMode) {
+            btnStart.alpha = 1 // If developer mode, let user skip right into the Mixotype Identity choosing screens, so we can test faster.
+        }
         
         // Font awesome in iOS (not enough for it to display in storyboard)
         chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
