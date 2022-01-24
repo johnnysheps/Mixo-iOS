@@ -505,7 +505,7 @@ class MixoScene2aVC: UIViewController {
             default:
                 break
         }
-        Utilities.styleGreyFilledButton(btnNext)
+        Utilities.styleBlackFilledButton(btnNext)
         
         
     }

@@ -258,7 +258,7 @@ class MixoScene3VC: UIViewController {
                 break
         }
         
-        Utilities.styleGreyFilledButton(btnNext)
+        Utilities.styleBlackFilledButton(btnNext)
         Utilities.styleGreyFilledRoundedButton(btnTMDefs)
         
     }

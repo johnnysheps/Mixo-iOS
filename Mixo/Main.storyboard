@@ -2609,7 +2609,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="yfO-ml-s4M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="28"/>
-                                <state key="normal" title="Continue | Next">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">

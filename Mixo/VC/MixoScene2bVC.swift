@@ -760,7 +760,7 @@ class MixoScene2bVC: UIViewController {
         
         lblArchetypeText.text = "Select the (4) Talents that you best exhibit on a daily basis, and rank them in order of strength from 1(most) - 4(least)"
 
-        Utilities.styleGreyFilledButton(btnNext)
+        Utilities.styleBlackFilledButton(btnNext)
     }
     
     //function to handle the progressBar
