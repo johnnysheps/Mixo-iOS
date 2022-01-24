@@ -12,7 +12,7 @@ import FontAwesome_swift
 /* Important. Set environment!
  * If development mode, then we can code screen skips for faster testing
  */
-let devMode = false;
+let devMode = true;
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
 let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)

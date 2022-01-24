@@ -89,7 +89,8 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyOutlinedButton(btnIntelNavScene1)
                 Utilities.styleGreyOutlinedButton(btnTalNavScene1)
                 Utilities.styleGreyOutlinedButton(btnColNavScene1)
-                Utilities.styleGreyFilledButton(btnNext)
+                Utilities.styleBlackFilledButton(btnNext)
+                btnNext.setTitle("Next", for:.highlighted)
                 lblSectionTitle.text = "Section 1: Heroes"
                 lblSectionText.text = "Who Do You Aspire To Be?"
                 ivMixoState.image = UIImage(named: "I _ MixoType Engine - Heroes Section Intro Graphic")
@@ -99,7 +100,8 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyFilledButton(btnIntelNavScene1)
                 Utilities.styleGreyOutlinedButton(btnTalNavScene1)
                 Utilities.styleGreyOutlinedButton(btnColNavScene1)
-                Utilities.styleGreyFilledButton(btnNext)
+                Utilities.styleBlackFilledButton(btnNext)
+                btnNext.setTitle("Next", for:.highlighted)
                 lblSectionTitle.text = "Section 2: Intelligences"
                 lblSectionText.text = "How Do You Express Yourself?"
                 ivMixoState.image = UIImage(named: "J _ MixoType Engine - Intelligences Section Intro Graphic")
@@ -110,7 +112,8 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyOutlinedButton(btnIntelNavScene1)
                 Utilities.styleGreyFilledButton(btnTalNavScene1)
                 Utilities.styleGreyOutlinedButton(btnColNavScene1)
-                Utilities.styleGreyFilledButton(btnNext)
+                Utilities.styleBlackFilledButton(btnNext)
+                btnNext.setTitle("Next", for:.highlighted)
                 lblSectionTitle.text = "Section 3: Talents"
                 lblSectionText.text = "What Are Your Innate Abilities?"
                 ivMixoState.image = UIImage(named: "K _ MixoType Engine - Talents Section Intro Graphic")
@@ -121,7 +124,8 @@ class MixoScene1VC: UIViewController {
                 Utilities.styleGreyOutlinedButton(btnIntelNavScene1)
                 Utilities.styleGreyOutlinedButton(btnTalNavScene1)
                 Utilities.styleGreyFilledButton(btnColNavScene1)
-                Utilities.styleGreyFilledButton(btnNext)
+                Utilities.styleBlackFilledButton(btnNext)
+                btnNext.setTitle("Next", for:.highlighted)
                 lblSectionTitle.text = "Section 4: Collections"
                 lblSectionText.text = "What Things Do You Value Most?"
                 ivMixoState.image = UIImage(named: "L _ MixoType Engine - Collections Section Intro Graphic")
