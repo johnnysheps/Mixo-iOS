@@ -207,24 +207,25 @@ class MixoScene4aVC: UIViewController {
                 Utilities.styleGreyOutlinedButton(btnIntelNav)
                 Utilities.styleGreyOutlinedButton(btnTalNav)
                 Utilities.styleGreyOutlinedButton(btnColNav)
-                btnRestart.setTitle("<- Restart Heroes",for: .normal)
-                lblTitleText.text = "Your Heroes & Temperaments"
+                btnRestart.setTitle("Start Over", for: .normal)
+                lblTitleText.text = "Your Heroes"
                 break
             case 3:
                 Utilities.styleGreyOutlinedButton(btnHeroNav)
                 Utilities.styleGreyOutlinedButton(btnIntelNav)
                 Utilities.styleGreyFilledButton(btnTalNav)
                 Utilities.styleGreyOutlinedButton(btnColNav)
-                btnRestart.setTitle("<- Restart Talents",for: .normal)
-                lblTitleText.text = "Your Talents & Mind Modalities"
+                btnRestart.setTitle("Start Over", for: .normal)
+                lblTitleText.text = "Your Talents"
                 break
             case 4:
                 Utilities.styleGreyOutlinedButton(btnHeroNav)
                 Utilities.styleGreyOutlinedButton(btnIntelNav)
                 Utilities.styleGreyOutlinedButton(btnTalNav)
                 Utilities.styleGreyFilledButton(btnColNav)
-                btnRestart.setTitle("<- Restart Collections",for: .normal)
-                lblTitleText.text = "Your Collections & Modalities"
+                btnNext.setTitle("Complete My MixoType", for: .normal)
+                btnRestart.setTitle("Start Over", for: .normal)
+                lblTitleText.text = "Your Collections"
                 break
             default:
                 break
@@ -399,20 +400,38 @@ class MixoScene4aVC: UIViewController {
     
     func nextArchetype(){
         let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC
-        switch mixoState{
-            case 1:
-                self.present(mixoScene5VC, animated:true, completion:nil)
-                break
-            case 3:
-                self.present(mixoScene5VC, animated:true, completion:nil)
-                break
-            case 4:
-                self.present(mixoScene5VC, animated:true, completion:nil)
-                break
-            default:
-                break
+//        switch mixoState{
+//            case 1:
+//                self.present(mixoScene5VC, animated:true, completion:nil)
+//                break
+//            case 3:
+//                self.present(mixoScene5VC, animated:true, completion:nil)
+//                break
+//            case 4:
+//                self.present(mixoScene5VC, animated:true, completion:nil)
+//                break
+//            default:
+//                break
+//        }
+//    }
+        
+            let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
+            switch mixoState{
+                case 1:
+                    mixoState+=1;
+                    self.present(mixoScene1VC, animated:true, completion:nil)
+                    break
+                case 3:
+                    mixoState+=1;
+                    self.present(mixoScene1VC, animated:true, completion:nil)
+                    break
+                case 4:
+                    mixoState+=1;
+                    self.present(mixoScene5VC, animated:true, completion:nil)
+                    break
+                default:
+                    break
+            }
         }
-    }
-    
 
 }

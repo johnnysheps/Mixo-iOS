@@ -67,6 +67,17 @@ class MixoScene5VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mixoState+=1;
+//                        btnNext.sendActions(for: .touchUpInside)
+    
+//                        btnNext.isHidden = false
+//                        btnRestart.isHidden = false
+//                        btnComplete.isHidden = false
+//                        btnResults.isHidden = false
+    
+    let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
+    self.present(mixoScene1VC, animated:true, completion:nil)
 
         //heroes
         heroImages.append("actornb")
@@ -182,79 +193,111 @@ class MixoScene5VC: UIViewController {
     
     func setUpUI(){
         
-        //check what state in the generator the user is at
-        switch mixoState{
-            case 1://on heroes
-                Utilities.styleGreyFilledButton(btnHeroNav)
-                Utilities.styleGreyOutlinedButton(btnIntelNav)
-                Utilities.styleGreyOutlinedButton(btnTalNav)
-                Utilities.styleGreyOutlinedButton(btnColNav)
-                // show/hide buttons
-                btnNext.isHidden = false
-                btnRestart.isHidden = false
-                btnRestart.setTitle("< Restart MixoType",for: .normal)
-                btnResults.isHidden = true
-                btnComplete.isHidden = true
-                lblTitle.text = "Heroes Completed"
-                lblText.isHidden = true
-                break
-            case 2://on intels
-                // show/hide buttons
-                Utilities.styleGreyOutlinedButton(btnHeroNav)
-                Utilities.styleGreyFilledButton(btnIntelNav)
-                Utilities.styleGreyOutlinedButton(btnTalNav)
-                Utilities.styleGreyOutlinedButton(btnColNav)
-                btnNext.isHidden = false
-                btnRestart.isHidden = false
-                btnRestart.setTitle("< Restart MixoType",for: .normal)
-                btnResults.isHidden = true
-                btnComplete.isHidden = true
-                lblTitle.text = "Intelligences Completed"
-                lblText.isHidden = true
-                break
-            case 3://on talents
-                // show/hide buttons
-                Utilities.styleGreyOutlinedButton(btnHeroNav)
-                Utilities.styleGreyOutlinedButton(btnIntelNav)
-                Utilities.styleGreyFilledButton(btnTalNav)
-                Utilities.styleGreyOutlinedButton(btnColNav)
-                btnNext.isHidden = false
-                btnRestart.isHidden = false
-                btnRestart.setTitle("< Restart MixoType",for: .normal)
-                btnResults.isHidden = true
-                btnComplete.isHidden = true
-                lblTitle.text = "Talents Completed"
-                lblText.isHidden = true
-                break
-            case 4://on collections
-                Utilities.styleGreyOutlinedButton(btnHeroNav)
-                Utilities.styleGreyOutlinedButton(btnIntelNav)
-                Utilities.styleGreyOutlinedButton(btnTalNav)
-                Utilities.styleGreyFilledButton(btnColNav)
-                // show/hide buttons
-                btnNext.isHidden = false
-                btnRestart.isHidden = false
-                btnRestart.setTitle("< Restart MixoType",for: .normal)
-                btnResults.isHidden = true
-                btnComplete.isHidden = true
-                lblTitle.text = "Collections Completed"
-                lblText.isHidden = true
-                break
-            case 5:
-                //change the UI to the final state
-                btnNext.isHidden = true
-                btnRestart.isHidden = true
-                btnComplete.isHidden = false
-                btnResults.isHidden = false
-                lblTitle.text = "Thank you for sharing your Persona!"
-                lblText.text = "Here is your completed Mixotype Badge"
-                lblText.isHidden = false
-                navHolder.isHidden = true
-                progressBar.isHidden = true
-                lblTitleConstraint.constant = -30
-            default:
-                break
-        }
+        // 3. But mockups also skipped the screen that shows how many Avatar quads you finished
+                switch mixoState{
+                    case 5:
+                        //change the UI to the final state
+                        btnNext.isHidden = true
+                        btnRestart.isHidden = true
+                        btnComplete.isHidden = false
+                        btnResults.isHidden = false
+                        lblTitle.text = "You've Unlocked Your MixoType Identity!"
+//                        lblText.text = "Here is your completed Mixotype Badge"
+                        lblText.isHidden = true
+                        navHolder.isHidden = true
+                        progressBar.isHidden = true
+                        lblTitleConstraint.constant = -30
+                    default:
+                        mixoState+=1;
+//                        btnNext.sendActions(for: .touchUpInside)
+                    
+//                        btnNext.isHidden = false
+//                        btnRestart.isHidden = false
+//                        btnComplete.isHidden = false
+//                        btnResults.isHidden = false
+                    
+                    let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
+                    self.present(mixoScene1VC, animated:true, completion:nil)
+                    
+                        break
+                }
+        
+        // 2. Mockups are skipping the "Heroes Completed" etc screens, so trigger next automatically
+        // btnNext.sendActions(for: .touchUpInside)
+        
+        // 1. Check what state in the generator the user is at
+//        switch mixoState{
+//            case 1://on heroes
+//                Utilities.styleGreyFilledButton(btnHeroNav)
+//                Utilities.styleGreyOutlinedButton(btnIntelNav)
+//                Utilities.styleGreyOutlinedButton(btnTalNav)
+//                Utilities.styleGreyOutlinedButton(btnColNav)
+//                // show/hide buttons
+//                btnNext.isHidden = false
+//                btnRestart.isHidden = false
+//                btnRestart.setTitle("< Restart MixoType",for: .normal)
+//                btnResults.isHidden = true
+//                btnComplete.isHidden = true
+//                lblTitle.text = "Heroes Completed"
+//                lblText.isHidden = true
+//                break
+//            case 2://on intels
+//                // show/hide buttons
+//                Utilities.styleGreyOutlinedButton(btnHeroNav)
+//                Utilities.styleGreyFilledButton(btnIntelNav)
+//                Utilities.styleGreyOutlinedButton(btnTalNav)
+//                Utilities.styleGreyOutlinedButton(btnColNav)
+//                btnNext.isHidden = false
+//                btnRestart.isHidden = false
+//                btnRestart.setTitle("< Restart MixoType",for: .normal)
+//                btnResults.isHidden = true
+//                btnComplete.isHidden = true
+//                lblTitle.text = "Intelligences Completed"
+//                lblText.isHidden = true
+//                break
+//            case 3://on talents
+//                // show/hide buttons
+//                Utilities.styleGreyOutlinedButton(btnHeroNav)
+//                Utilities.styleGreyOutlinedButton(btnIntelNav)
+//                Utilities.styleGreyFilledButton(btnTalNav)
+//                Utilities.styleGreyOutlinedButton(btnColNav)
+//                btnNext.isHidden = false
+//                btnRestart.isHidden = false
+//                btnRestart.setTitle("< Restart MixoType",for: .normal)
+//                btnResults.isHidden = true
+//                btnComplete.isHidden = true
+//                lblTitle.text = "Talents Completed"
+//                lblText.isHidden = true
+//                break
+//            case 4://on collections
+//                Utilities.styleGreyOutlinedButton(btnHeroNav)
+//                Utilities.styleGreyOutlinedButton(btnIntelNav)
+//                Utilities.styleGreyOutlinedButton(btnTalNav)
+//                Utilities.styleGreyFilledButton(btnColNav)
+//                // show/hide buttons
+//                btnNext.isHidden = false
+//                btnRestart.isHidden = false
+//                btnRestart.setTitle("< Restart MixoType",for: .normal)
+//                btnResults.isHidden = true
+//                btnComplete.isHidden = true
+//                lblTitle.text = "Collections Completed"
+//                lblText.isHidden = true
+//                break
+//            case 5:
+//                //change the UI to the final state
+//                btnNext.isHidden = true
+//                btnRestart.isHidden = true
+//                btnComplete.isHidden = false
+//                btnResults.isHidden = false
+//                lblTitle.text = "Thank you for sharing your Persona!"
+//                lblText.text = "Here is your completed Mixotype Badge"
+//                lblText.isHidden = false
+//                navHolder.isHidden = true
+//                progressBar.isHidden = true
+//                lblTitleConstraint.constant = -30
+//            default:
+//                break
+//        }
     }
     
     func getUserData(){

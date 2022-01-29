@@ -85,7 +85,7 @@ class MixoScene4bVC: UIViewController {
     }
     
     func setUpUI(){
-        btnRestart.setTitle("<- Restart Intelligences",for: .normal)
+        btnRestart.setTitle("Start Over",for: .normal)
         lblTitleText.text = "Your Intelligences"
         
         Utilities.styleGreyOutlinedButton(btnHeroNav)
@@ -187,8 +187,12 @@ class MixoScene4bVC: UIViewController {
         restartArchetype()
     }
     @IBAction func btnNext(_ sender: Any) {
-        let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC
-        self.present(mixoScene5VC, animated:true, completion:nil)
+//        let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC
+//        self.present(mixoScene5VC, animated:true, completion:nil)
+        
+        mixoState+=1;
+        let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
+        self.present(mixoScene1VC, animated:true, completion:nil)
     }
     
 
