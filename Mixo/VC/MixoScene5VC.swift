@@ -54,7 +54,6 @@ class MixoScene5VC: UIViewController {
     @IBOutlet weak var btnComplete: UIButton!
     
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblText: UILabel!
     @IBOutlet weak var navHolder: UIStackView!
     
     @IBOutlet weak var lblTitleConstraint: NSLayoutConstraint!
@@ -203,8 +202,6 @@ class MixoScene5VC: UIViewController {
                         btnComplete.isHidden = false
                         btnResults.isHidden = false
                         lblTitle.text = "You've Unlocked Your MixoType Identity!"
-//                        lblText.text = "Here is your completed Mixotype Badge"
-                        lblText.isHidden = true
                         navHolder.isHidden = true
                         progressBar.isHidden = true
                         lblTitleConstraint.constant = -30
@@ -240,7 +237,6 @@ class MixoScene5VC: UIViewController {
 //                btnResults.isHidden = true
 //                btnComplete.isHidden = true
 //                lblTitle.text = "Heroes Completed"
-//                lblText.isHidden = true
 //                break
 //            case 2://on intels
 //                // show/hide buttons
@@ -254,7 +250,6 @@ class MixoScene5VC: UIViewController {
 //                btnResults.isHidden = true
 //                btnComplete.isHidden = true
 //                lblTitle.text = "Intelligences Completed"
-//                lblText.isHidden = true
 //                break
 //            case 3://on talents
 //                // show/hide buttons
@@ -268,7 +263,6 @@ class MixoScene5VC: UIViewController {
 //                btnResults.isHidden = true
 //                btnComplete.isHidden = true
 //                lblTitle.text = "Talents Completed"
-//                lblText.isHidden = true
 //                break
 //            case 4://on collections
 //                Utilities.styleGreyOutlinedButton(btnHeroNav)
@@ -282,7 +276,6 @@ class MixoScene5VC: UIViewController {
 //                btnResults.isHidden = true
 //                btnComplete.isHidden = true
 //                lblTitle.text = "Collections Completed"
-//                lblText.isHidden = true
 //                break
 //            case 5:
 //                //change the UI to the final state
@@ -291,8 +284,6 @@ class MixoScene5VC: UIViewController {
 //                btnComplete.isHidden = false
 //                btnResults.isHidden = false
 //                lblTitle.text = "Thank you for sharing your Persona!"
-//                lblText.text = "Here is your completed Mixotype Badge"
-//                lblText.isHidden = false
 //                navHolder.isHidden = true
 //                progressBar.isHidden = true
 //                lblTitleConstraint.constant = -30
@@ -823,8 +814,6 @@ class MixoScene5VC: UIViewController {
             btnComplete.isHidden = false
             btnResults.isHidden = false
             lblTitle.text = "Thank you for sharing your Persona!"
-            lblText.text = "Here is your completed Mixotype Badge"
-            lblText.isHidden = false
             navHolder.isHidden = true
             progressBar.isHidden = true
             lblTitleConstraint.constant = -30
