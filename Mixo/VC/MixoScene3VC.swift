@@ -162,6 +162,7 @@ class MixoScene3VC: UIViewController {
         modalityImages.append("creative")
         
         getUserData()
+        Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
         setUpUI()
         progress()
     }

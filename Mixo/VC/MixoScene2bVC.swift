@@ -303,6 +303,7 @@ class MixoScene2bVC: UIViewController {
         btnNext.isHidden = true
         
         //set up the UI
+        Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
         setUpUI()
         
         //adjust tje progress bar

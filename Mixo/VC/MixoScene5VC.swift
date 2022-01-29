@@ -150,6 +150,7 @@ class MixoScene5VC: UIViewController {
         collectImages.append("theatricalnb")
         collectImages.append("selfimprovementnb")
         
+        Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
         setUpUI()
         getUserData()
         progress()

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class Utilities {
     
@@ -25,6 +26,37 @@ class Utilities {
         
         // Add the line to the text field
         textfield.layer.addSublayer(bottomLine)
+        
+    }
+    
+    static func colorizeNavTabs(_ btnHeroNavScene1:UIButton, _ btnIntelNavScene1:UIButton, _ btnTalNavScene1:UIButton, _ btnColNavScene1:UIButton) {
+        
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                guard let roleDone = document.get("role_done")  as? String else {return}
+                guard let intelDone = document.get("intel_done")  as? String else {return}
+                guard let talentDone = document.get("talent_done")  as? String else {return}
+                guard let collectDone = document.get("collect_done")  as? String else {return}
+                
+                let tabGreen = UIColor(red: 164/255, green: 212/255, blue: 162/255, alpha: 1)
+                
+                if(roleDone=="Y") {
+                    btnHeroNavScene1.backgroundColor = tabGreen
+                }
+                if(intelDone=="Y") {
+                    btnIntelNavScene1.backgroundColor = tabGreen
+                }
+                if(talentDone=="Y") {
+                    btnTalNavScene1.backgroundColor = tabGreen
+                }
+                if(collectDone=="Y") {
+                    btnColNavScene1.backgroundColor = tabGreen
+                }
+                 
+            } else {
+                //print("Document does not exist")
+            }
+        }
         
     }
     

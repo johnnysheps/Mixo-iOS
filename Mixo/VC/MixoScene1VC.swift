@@ -39,6 +39,7 @@ class MixoScene1VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Utilities.colorizeNavTabs(btnHeroNavScene1, btnIntelNavScene1, btnTalNavScene1, btnColNavScene1)
         setUpUI()
         progress()
     }

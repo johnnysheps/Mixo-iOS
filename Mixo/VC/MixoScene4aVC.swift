@@ -10,7 +10,7 @@ import UIKit
 
 @available(iOS 13.0, *)
 class MixoScene4aVC: UIViewController {
-
+    
     @IBOutlet weak var btnHeroNav: UIButton!
     @IBOutlet weak var btnIntelNav: UIButton!
     @IBOutlet weak var btnTalNav: UIButton!
@@ -110,6 +110,7 @@ class MixoScene4aVC: UIViewController {
         modalityImages.append("creative")
         
         getUserData()
+        Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
         setUpUI()
         
         progress()

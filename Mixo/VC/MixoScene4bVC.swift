@@ -46,6 +46,7 @@ class MixoScene4bVC: UIViewController {
         intelImages.append("existentialas")
         
         progress()
+        Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
         setUpUI()
         getUserData()
     }
