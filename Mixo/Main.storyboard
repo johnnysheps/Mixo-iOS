@@ -773,14 +773,11 @@
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the camera icon to upload a profile picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-3q-ZPV">
-                                <rect key="frame" x="28" y="114" width="358" height="23.333333333333343"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-3q-ZPV">
+                                <rect key="frame" x="50" y="113.99999999999999" width="314" height="48.333333333333329"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmN-fg-3sY">
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
@@ -797,7 +794,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU0-Nh-N7s">
-                                <rect key="frame" x="157" y="181" width="100" height="99.666666666666686"/>
+                                <rect key="frame" x="157" y="206" width="100" height="99.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bU0-Nh-N7s" secondAttribute="height" multiplier="1:1" id="fQl-mb-5ks"/>
                                 </constraints>
@@ -843,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhq-I9-IHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10101" y="-240"/>
+            <point key="canvasLocation" x="12384" y="-242"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="LhQ-BP-NYD">
@@ -4966,14 +4963,11 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When were you born?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzq-sT-dfI">
-                                <rect key="frame" x="119.66666666666667" y="114" width="174.66666666666663" height="23.333333333333343"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your birthday?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzq-sT-dfI">
+                                <rect key="frame" x="32.666666666666657" y="113.99999999999999" width="348.66666666666674" height="48.333333333333329"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-lj-3QS">
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
@@ -4995,15 +4989,6 @@ MixoType Identity!</string>
                                     <action selector="dateChanged:" destination="7rF-H6-dwZ" eventType="valueChanged" id="thb-dk-0J4"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell us your birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtg-2Z-g7f">
-                                <rect key="frame" x="120.33333333333333" y="145.33333333333334" width="173.66666666666669" height="20"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5011,16 +4996,14 @@ MixoType Identity!</string>
                             <constraint firstItem="c8y-lj-3QS" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="BVR-08-JAz"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="Btu-9Z-fOO"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" constant="8" id="J5Y-tD-a1o"/>
-                            <constraint firstItem="wtg-2Z-g7f" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="K48-DL-OG2"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" id="MO4-nK-p64"/>
                             <constraint firstAttribute="trailing" secondItem="c8y-lj-3QS" secondAttribute="trailing" id="OAN-gC-z34"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="top" secondItem="ese-Ni-kfH" secondAttribute="bottom" constant="16" id="T5F-z0-LuC"/>
+                            <constraint firstItem="P90-BY-54m" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="62.000000000000057" id="cxy-Ry-lOS"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
-                            <constraint firstItem="wtg-2Z-g7f" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="8" id="eQP-cY-YH5"/>
                             <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="c8y-lj-3QS" secondAttribute="bottom" id="hjm-tq-ONb"/>
                             <constraint firstItem="P90-BY-54m" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="lYi-Oh-Zx4"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="qLE-H4-yQ8"/>
-                            <constraint firstItem="P90-BY-54m" firstAttribute="top" secondItem="wtg-2Z-g7f" secondAttribute="bottom" constant="59" id="uWS-BW-tIu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -5030,7 +5013,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="136-lu-kUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10894" y="-240"/>
+            <point key="canvasLocation" x="10414" y="-242"/>
         </scene>
         <!--Profile Scene3VC-->
         <scene sceneID="oQg-BW-hlo">
@@ -5059,14 +5042,11 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you identify yourself?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl3-En-s9A">
-                                <rect key="frame" x="92.333333333333329" y="114" width="229.66666666666669" height="23.333333333333343"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you identify?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl3-En-s9A">
+                                <rect key="frame" x="43" y="113.99999999999999" width="328.33333333333331" height="48.333333333333329"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1J-PG-vFU">
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
@@ -5082,15 +5062,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="RU0-rD-TN4" eventType="touchUpInside" id="sLZ-Za-eSv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the gender you identify with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xif-aA-oGZ">
-                                <rect key="frame" x="95.333333333333329" y="145.33333333333334" width="223.66666666666669" height="20"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUM-gw-f72">
                                 <rect key="frame" x="37.333333333333336" y="301.33333333333331" width="99.666666666666657" height="99.666666666666686"/>
                                 <constraints>
@@ -5140,30 +5111,28 @@ MixoType Identity!</string>
                             <constraint firstItem="nnj-kf-A6M" firstAttribute="centerX" secondItem="iUM-gw-f72" secondAttribute="centerX" id="3eg-u2-sda"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerY" secondItem="lHo-aD-ICs" secondAttribute="centerY" id="58R-xe-FPq"/>
                             <constraint firstItem="lHo-aD-ICs" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-3.75" id="6a2-a7-Lcs"/>
+                            <constraint firstItem="tg4-gF-5D3" firstAttribute="top" secondItem="SKJ-7x-wPv" secondAttribute="top" constant="301.33333333333326" id="6hG-q2-a3X"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerX" secondItem="lHo-aD-ICs" secondAttribute="centerX" id="8gH-Ig-rDe"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerY" secondItem="tg4-gF-5D3" secondAttribute="centerY" id="9Hv-71-Y6k"/>
                             <constraint firstItem="lHo-aD-ICs" firstAttribute="leading" secondItem="tg4-gF-5D3" secondAttribute="trailing" constant="20" id="A22-f1-si0"/>
-                            <constraint firstItem="lHo-aD-ICs" firstAttribute="top" secondItem="xif-aA-oGZ" secondAttribute="bottom" constant="136" id="AUD-kJ-J3U"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="width" secondItem="eBy-8A-bS3" secondAttribute="height" multiplier="1:1" id="BRt-xe-lOS"/>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="top" secondItem="OZL-XM-BgV" secondAttribute="bottom" constant="8" id="HDI-06-UUk"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="top" secondItem="Ky2-Tg-sPb" secondAttribute="bottom" constant="16" id="IP1-RK-akq"/>
                             <constraint firstItem="w1J-PG-vFU" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" id="IWl-YT-GVB"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="OOz-eC-Pa2"/>
-                            <constraint firstItem="iUM-gw-f72" firstAttribute="top" secondItem="xif-aA-oGZ" secondAttribute="bottom" constant="136" id="WKA-7R-lGp"/>
-                            <constraint firstItem="xif-aA-oGZ" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="WSP-oY-lqG"/>
+                            <constraint firstItem="tg4-gF-5D3" firstAttribute="baseline" secondItem="iUM-gw-f72" secondAttribute="baseline" id="QiR-zD-W6n"/>
                             <constraint firstItem="nnj-kf-A6M" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-43.75" id="XjY-tb-HeD"/>
                             <constraint firstItem="iUM-gw-f72" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-3.75" id="Yag-Ax-5sQ"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="aFw-NT-FyG"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerX" secondItem="tg4-gF-5D3" secondAttribute="centerX" id="abq-vB-YqC"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="width" secondItem="tg4-gF-5D3" secondAttribute="width" multiplier="0.25" constant="27.5" id="byI-gk-eLJ"/>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="bzf-YB-h8v"/>
+                            <constraint firstItem="tg4-gF-5D3" firstAttribute="baseline" secondItem="lHo-aD-ICs" secondAttribute="baseline" id="eRD-Em-HIf"/>
                             <constraint firstAttribute="trailing" secondItem="w1J-PG-vFU" secondAttribute="trailing" id="egu-vf-6g3"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-43.75" id="jl9-OW-7Yq"/>
                             <constraint firstItem="Ky2-Tg-sPb" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" id="lP6-Nz-xC6"/>
                             <constraint firstItem="bhR-Uj-vgi" firstAttribute="top" secondItem="w1J-PG-vFU" secondAttribute="bottom" id="mSh-rF-DCO"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="width" secondItem="ElK-Ir-2kb" secondAttribute="height" multiplier="1:1" id="ntV-pj-9m3"/>
-                            <constraint firstItem="xif-aA-oGZ" firstAttribute="top" secondItem="Rl3-En-s9A" secondAttribute="bottom" constant="8" id="pUp-EB-DEs"/>
-                            <constraint firstItem="tg4-gF-5D3" firstAttribute="top" secondItem="xif-aA-oGZ" secondAttribute="bottom" constant="136" id="r8m-02-DD0"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-3.75" id="sPk-dZ-vjU"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="leading" secondItem="iUM-gw-f72" secondAttribute="trailing" constant="20" id="uly-mC-NtK"/>
                             <constraint firstItem="Ky2-Tg-sPb" firstAttribute="trailing" secondItem="SKJ-7x-wPv" secondAttribute="trailing" id="vnr-he-F8s"/>
@@ -5182,7 +5151,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwN-Yh-xKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11617" y="-240"/>
+            <point key="canvasLocation" x="11074" y="-242"/>
         </scene>
         <!--Profile Scene4VC-->
         <scene sceneID="je9-Hy-8nJ">
@@ -5211,14 +5180,11 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you located?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J55-Uo-Zeg">
-                                <rect key="frame" x="114.66666666666669" y="114" width="185" height="23.333333333333343"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you from?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J55-Uo-Zeg">
+                                <rect key="frame" x="40.333333333333343" y="113.99999999999999" width="333.33333333333326" height="48.333333333333329"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-mk-rCT">
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
@@ -5234,15 +5200,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="L8d-wy-Yo2" eventType="touchUpInside" id="GcE-e2-s9G"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell us the place where you live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-KE-QeM">
-                                <rect key="frame" x="85" y="145.33333333333334" width="244" height="20"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frf-uv-EEH">
                                 <rect key="frame" x="100" y="212.33333333333334" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5262,19 +5219,17 @@ MixoType Identity!</string>
                         <constraints>
                             <constraint firstItem="vQ6-mk-rCT" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" id="2Sg-6S-8nD"/>
                             <constraint firstItem="N7t-ma-FwK" firstAttribute="top" secondItem="frf-uv-EEH" secondAttribute="bottom" constant="18" id="2qK-7N-cEV"/>
-                            <constraint firstItem="frf-uv-EEH" firstAttribute="top" secondItem="T4K-KE-QeM" secondAttribute="bottom" constant="47" id="332-FJ-64j"/>
                             <constraint firstItem="frf-uv-EEH" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" constant="100" id="8Cx-Zu-Rou"/>
                             <constraint firstItem="J55-Uo-Zeg" firstAttribute="top" secondItem="GoU-cl-aTA" secondAttribute="bottom" constant="16" id="8y4-S6-3cS"/>
                             <constraint firstItem="GoU-cl-aTA" firstAttribute="top" secondItem="Jjy-wY-2nF" secondAttribute="bottom" id="Ar6-K6-ZwQ"/>
                             <constraint firstItem="GoU-cl-aTA" firstAttribute="trailing" secondItem="FJH-3W-dSh" secondAttribute="trailing" id="B50-Bm-ouw"/>
                             <constraint firstItem="GoU-cl-aTA" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" id="CNm-h0-B0R"/>
-                            <constraint firstItem="T4K-KE-QeM" firstAttribute="top" secondItem="J55-Uo-Zeg" secondAttribute="bottom" constant="8" id="DKg-Qo-0bM"/>
                             <constraint firstItem="J55-Uo-Zeg" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="EX2-5F-CMw"/>
                             <constraint firstAttribute="trailing" secondItem="vQ6-mk-rCT" secondAttribute="trailing" id="I8U-jP-65g"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="OZW-pY-kJM"/>
                             <constraint firstAttribute="trailing" secondItem="frf-uv-EEH" secondAttribute="trailing" constant="100" id="Yiw-Rl-cWg"/>
+                            <constraint firstItem="frf-uv-EEH" firstAttribute="top" secondItem="J55-Uo-Zeg" secondAttribute="bottom" constant="50.000000000000028" id="avI-OC-h0v"/>
                             <constraint firstItem="frf-uv-EEH" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="ck4-zM-Dzm"/>
-                            <constraint firstItem="T4K-KE-QeM" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="jqR-DA-d6J"/>
                             <constraint firstItem="42n-xr-kF3" firstAttribute="top" secondItem="vQ6-mk-rCT" secondAttribute="bottom" id="kV6-xn-hDt"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="top" secondItem="Jjy-wY-2nF" secondAttribute="bottom" constant="8" id="klf-qb-Yad"/>
                             <constraint firstItem="N7t-ma-FwK" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="sO6-Ad-KKX"/>
@@ -5288,7 +5243,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjH-lf-hwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12336" y="-242"/>
+            <point key="canvasLocation" x="11732" y="-242"/>
         </scene>
         <!--Profile Scene5VC-->
         <scene sceneID="mD2-Y4-vUo">
@@ -5317,8 +5272,8 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Tagline to your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-8g-dmm">
-                                <rect key="frame" x="97.666666666666686" y="114" width="219" height="23.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Mission Statement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-8g-dmm">
+                                <rect key="frame" x="112.33333333333333" y="114" width="189.66666666666669" height="23.333333333333343"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -5340,15 +5295,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say something unique about yourself" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-2b-Yqz">
-                                <rect key="frame" x="88.333333333333329" y="145.33333333333334" width="237.66666666666669" height="20"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-LF-DUT" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
                                 <rect key="frame" x="47" y="230.33333333333337" width="320" height="169"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5369,11 +5315,10 @@ MixoType Identity!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="022-QN-9Ww"/>
-                            <constraint firstItem="Gpp-2b-Yqz" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="1WH-An-9NM"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" constant="8" id="1ZS-Dm-rsk"/>
                             <constraint firstItem="ua2-LF-DUT" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="5Vm-I4-1Sb"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
-                            <constraint firstItem="Gpp-2b-Yqz" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="8" id="A9f-Ws-oTD"/>
+                            <constraint firstItem="ua2-LF-DUT" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="93.000000000000028" id="8UQ-5F-wBy"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailing" id="FgO-QG-WSr"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
@@ -5381,7 +5326,6 @@ MixoType Identity!</string>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
                             <constraint firstItem="ua2-LF-DUT" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="47" id="WYd-sb-BE5"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
-                            <constraint firstItem="ua2-LF-DUT" firstAttribute="top" secondItem="Gpp-2b-Yqz" secondAttribute="bottom" constant="65" id="t6y-Fa-EJ8"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
                         </constraints>
                     </view>
