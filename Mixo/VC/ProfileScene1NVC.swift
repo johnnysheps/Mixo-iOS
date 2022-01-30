@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class ProfileScene2VC: UIViewController {
+class ProfileScene1NVC: UIViewController {
 
     @IBOutlet weak var dpBirthday: UIDatePicker!
     @IBOutlet weak var btnNext: UIButton!
@@ -44,8 +44,8 @@ class ProfileScene2VC: UIViewController {
                 if let err = err {
                     print("Error updating document: \(err)")
                 } else {
-                    let profileScene3VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene3VC") as! ProfileScene3VC
-                    self.present(profileScene3VC, animated:true, completion:nil)
+                    let profileScene2NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2NVC") as! ProfileScene2NVC
+                    self.present(profileScene2NVC, animated:true, completion:nil)
                 }
             }
         }

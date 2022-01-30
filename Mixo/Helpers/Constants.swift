@@ -23,11 +23,11 @@ struct Constants {
         static let mixoScene4bVC = "MixoScene4bVC"
         static let mixoScene5VC = "MixoScene5VC"
         static let resultsVC = "ResultsVC"
-        static let profileScene1VC = "ProfileScene1VC"
-        static let profileScene2VC = "ProfileScene2VC"
-        static let profileScene3VC = "ProfileScene3VC"
-        static let profileScene4VC = "ProfileScene4VC"
-        static let profileScene5VC = "ProfileScene5VC"
+        static let profileScene1NVC = "ProfileScene1NVC"
+        static let profileScene2NVC = "ProfileScene2NVC"
+        static let profileScene3NVC = "ProfileScene3NVC"
+        static let profileScene4NVC = "ProfileScene4NVC"
+        static let profileScene5NVC = "ProfileScene5NVC"
     }
     
 }

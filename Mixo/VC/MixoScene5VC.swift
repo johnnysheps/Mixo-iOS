@@ -676,8 +676,8 @@ class MixoScene5VC: UIViewController {
 
     @IBAction func btnComplete(_ sender: Any) {
         //proceed to the Profile Creation Scenes
-        let profileScene1VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1VC") as! ProfileScene1VC
-        self.present(profileScene1VC, animated:true, completion:nil)
+        let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
+        self.present(profileScene1NVC, animated:true, completion:nil)
     }
     
     

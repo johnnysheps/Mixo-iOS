@@ -14,10 +14,10 @@
 		2A215A7B263B1013008F32D8 /* instructions3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A215A77263B1012008F32D8 /* instructions3.gif */; };
 		2A215A7C263B1013008F32D8 /* instructions5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A215A78263B1013008F32D8 /* instructions5.gif */; };
 		2A36CEE62625D8C2000FA0EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A36CEE52625D8C2000FA0EC /* GoogleService-Info.plist */; };
-		2A6ADC46236B16DB00687EFC /* ProfileScene2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC45236B16DB00687EFC /* ProfileScene2VC.swift */; };
-		2A6ADC48236B193F00687EFC /* ProfileScene3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC47236B193F00687EFC /* ProfileScene3VC.swift */; };
-		2A6ADC4A236B1B1A00687EFC /* ProfileScene4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */; };
-		2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */; };
+		2A6ADC46236B16DB00687EFC /* ProfileScene1NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC45236B16DB00687EFC /* ProfileScene1NVC.swift */; };
+		2A6ADC48236B193F00687EFC /* ProfileScene2NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC47236B193F00687EFC /* ProfileScene2NVC.swift */; };
+		2A6ADC4A236B1B1A00687EFC /* ProfileScene3NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */; };
+		2A6ADC4C236B1C5200687EFC /* ProfileScene5NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
 		A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */; };
 		A223AC5A2797D67B0034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */; };
@@ -58,7 +58,7 @@
 		A363C72323524DA500900766 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C72223524DA500900766 /* IntroVC.swift */; };
 		A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3791E29235970B200C987D4 /* TMDefVC.swift */; };
 		A39689D02358AF84004E5A2D /* WarningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39689CF2358AF84004E5A2D /* WarningVC.swift */; };
-		A3DB34F52369A51400DDCEC3 /* ProfileScene1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */; };
+		A3DB34F52369A51400DDCEC3 /* ProfileScene4NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB34F42369A51400DDCEC3 /* ProfileScene4NVC.swift */; };
 		A3E2FD36235ABDAE00DE0474 /* MixoScene1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */; };
 		A3E2FD38235ABDC400DE0474 /* MixoScene2aVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */; };
 		A3E2FD3A235ABE5A00DE0474 /* MixoScene3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD39235ABE5A00DE0474 /* MixoScene3VC.swift */; };
@@ -77,10 +77,10 @@
 		2A215A77263B1012008F32D8 /* instructions3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = instructions3.gif; sourceTree = "<group>"; };
 		2A215A78263B1013008F32D8 /* instructions5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = instructions5.gif; sourceTree = "<group>"; };
 		2A36CEE52625D8C2000FA0EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2A6ADC45236B16DB00687EFC /* ProfileScene2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene2VC.swift; sourceTree = "<group>"; };
-		2A6ADC47236B193F00687EFC /* ProfileScene3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene3VC.swift; sourceTree = "<group>"; };
-		2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene4VC.swift; sourceTree = "<group>"; };
-		2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5VC.swift; sourceTree = "<group>"; };
+		2A6ADC45236B16DB00687EFC /* ProfileScene1NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene1NVC.swift; sourceTree = "<group>"; };
+		2A6ADC47236B193F00687EFC /* ProfileScene2NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene2NVC.swift; sourceTree = "<group>"; };
+		2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene3NVC.swift; sourceTree = "<group>"; };
+		2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5NVC.swift; sourceTree = "<group>"; };
 		2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
 		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		A3791E29235970B200C987D4 /* TMDefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDefVC.swift; sourceTree = "<group>"; };
 		A37FAF3032EDC4BB80313833 /* Pods-Mixo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixo.debug.xcconfig"; path = "Target Support Files/Pods-Mixo/Pods-Mixo.debug.xcconfig"; sourceTree = "<group>"; };
 		A39689CF2358AF84004E5A2D /* WarningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningVC.swift; sourceTree = "<group>"; };
-		A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene1VC.swift; sourceTree = "<group>"; };
+		A3DB34F42369A51400DDCEC3 /* ProfileScene4NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene4NVC.swift; sourceTree = "<group>"; };
 		A3E2FD35235ABDAE00DE0474 /* MixoScene1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene1VC.swift; sourceTree = "<group>"; };
 		A3E2FD37235ABDC400DE0474 /* MixoScene2aVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene2aVC.swift; sourceTree = "<group>"; };
 		A3E2FD39235ABE5A00DE0474 /* MixoScene3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixoScene3VC.swift; sourceTree = "<group>"; };
@@ -253,11 +253,11 @@
 				A3E2FD3B235ABE8A00DE0474 /* MixoScene4aVC.swift */,
 				A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */,
 				A3E2FD3D235ABEA600DE0474 /* MixoScene5VC.swift */,
-				A3DB34F42369A51400DDCEC3 /* ProfileScene1VC.swift */,
-				2A6ADC45236B16DB00687EFC /* ProfileScene2VC.swift */,
-				2A6ADC47236B193F00687EFC /* ProfileScene3VC.swift */,
-				2A6ADC49236B1B1A00687EFC /* ProfileScene4VC.swift */,
-				2A6ADC4B236B1C5200687EFC /* ProfileScene5VC.swift */,
+				2A6ADC45236B16DB00687EFC /* ProfileScene1NVC.swift */,
+				2A6ADC47236B193F00687EFC /* ProfileScene2NVC.swift */,
+				2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */,
+				A3DB34F42369A51400DDCEC3 /* ProfileScene4NVC.swift */,
+				2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */,
 				A29EAD602772D23400350321 /* Onboarding.swift */,
 				2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */,
 				A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */,
@@ -420,7 +420,7 @@
 				2A03F272263AF5020077DDB2 /* UIImage+Gif.swift in Sources */,
 				2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */,
 				A32A70122350B9EA00B6E6A7 /* ViewController.swift in Sources */,
-				2A6ADC48236B193F00687EFC /* ProfileScene3VC.swift in Sources */,
+				2A6ADC48236B193F00687EFC /* ProfileScene2NVC.swift in Sources */,
 				A30A076A23515CFD002387B6 /* SignUpVC.swift in Sources */,
 				A39689D02358AF84004E5A2D /* WarningVC.swift in Sources */,
 				A3E2FD38235ABDC400DE0474 /* MixoScene2aVC.swift in Sources */,
@@ -434,17 +434,17 @@
 				A30A076C235180B9002387B6 /* Constants.swift in Sources */,
 				A363C72323524DA500900766 /* IntroVC.swift in Sources */,
 				A3E2FD3A235ABE5A00DE0474 /* MixoScene3VC.swift in Sources */,
-				2A6ADC4C236B1C5200687EFC /* ProfileScene5VC.swift in Sources */,
-				2A6ADC46236B16DB00687EFC /* ProfileScene2VC.swift in Sources */,
+				2A6ADC4C236B1C5200687EFC /* ProfileScene5NVC.swift in Sources */,
+				2A6ADC46236B16DB00687EFC /* ProfileScene1NVC.swift in Sources */,
 				A30A075A2351510C002387B6 /* LoginVC.swift in Sources */,
 				A3E2FD3C235ABE8A00DE0474 /* MixoScene4aVC.swift in Sources */,
 				A29EAD612772D23500350321 /* Onboarding.swift in Sources */,
 				A30A076623515A26002387B6 /* Utilities.swift in Sources */,
 				A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */,
-				A3DB34F52369A51400DDCEC3 /* ProfileScene1VC.swift in Sources */,
+				A3DB34F52369A51400DDCEC3 /* ProfileScene4NVC.swift in Sources */,
 				A32A70102350B9EA00B6E6A7 /* SceneDelegate.swift in Sources */,
 				A30A076323515194002387B6 /* StartVC.swift in Sources */,
-				2A6ADC4A236B1B1A00687EFC /* ProfileScene4VC.swift in Sources */,
+				2A6ADC4A236B1B1A00687EFC /* ProfileScene3NVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

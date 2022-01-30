@@ -17,7 +17,7 @@ var city = String()
 var state = String()
 
 @available(iOS 13.0, *)
-class ProfileScene4VC: UIViewController, UITextFieldDelegate {
+class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtZipCode: UITextField!
     @IBOutlet weak var lblCityState: UILabel!
@@ -85,9 +85,9 @@ class ProfileScene4VC: UIViewController, UITextFieldDelegate {
     
     //go to ProfileScene5
     func transitionToProfileScene5VC(){
-        let profileScene5VC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileScene5VC) as? ProfileScene5VC
+        let profileScene4NVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileScene4NVC) as? ProfileScene4NVC
         
-        view.window?.rootViewController = profileScene5VC
+        view.window?.rootViewController = profileScene4NVC
         view.window?.makeKeyAndVisible()
     }
     

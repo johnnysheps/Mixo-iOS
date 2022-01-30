@@ -10,7 +10,7 @@ import UIKit
 import FirebaseStorage
 
 @available(iOS 13.0, *)
-class ProfileScene1VC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate {
+class ProfileScene4NVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate {
 
     @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var imgProfilePic: UIImageView!
@@ -104,8 +104,8 @@ class ProfileScene1VC: UIViewController, UIImagePickerControllerDelegate, UINavi
             if let err = err {
                 print("Error updating document: \(err)")
             } else {
-                let profileScene2VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2VC") as! ProfileScene2VC
-                self.present(profileScene2VC, animated:true, completion:nil)
+                let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
+                self.present(profileScene5NVC, animated:true, completion:nil)
             }
         }
         

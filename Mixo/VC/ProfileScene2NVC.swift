@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class ProfileScene3VC: UIViewController {
+class ProfileScene2NVC: UIViewController {
 
     @IBOutlet weak var btnMale: UIButton!
     @IBOutlet weak var btnOther: UIButton!
@@ -101,8 +101,8 @@ class ProfileScene3VC: UIViewController {
                 if let err = err {
                     print("Error updating document: \(err)")
                 } else {
-                    let profileScene4VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene4VC") as! ProfileScene4VC
-                    self.present(profileScene4VC, animated:true, completion:nil)
+                    let profileScene3NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene3NVC") as! ProfileScene3NVC
+                    self.present(profileScene3NVC, animated:true, completion:nil)
                 }
             }
         }

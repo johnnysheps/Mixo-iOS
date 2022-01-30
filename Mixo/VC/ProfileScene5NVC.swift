@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class ProfileScene5VC: UIViewController {
+class ProfileScene5NVC: UIViewController {
 
     @IBOutlet weak var tvTagline: UITextView!
     @IBOutlet weak var btnNext: UIButton!

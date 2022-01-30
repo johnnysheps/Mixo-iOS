@@ -174,8 +174,8 @@ class DashboardVC: UIViewController {
                 
                 // inspect failed dob
                 if(user_dob=="incomplete" || user_pic == "incomplete" || user_city == "incomplete" || user_state == "incomplete"){
-                    let profileScene1VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1VC") as! ProfileScene1VC
-                    self.present(profileScene1VC, animated:true, completion:nil)
+                    let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
+                    self.present(profileScene1NVC, animated:true, completion:nil)
                     
                 } else {
                     //calcualte age of user
