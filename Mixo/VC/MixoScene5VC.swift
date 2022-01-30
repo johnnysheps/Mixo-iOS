@@ -50,7 +50,6 @@ class MixoScene5VC: UIViewController {
     
     @IBOutlet weak var btnResults: UIButton!
     @IBOutlet weak var btnRestart: UIButton!
-    @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var btnComplete: UIButton!
     
     @IBOutlet weak var lblTitle: UILabel!
@@ -67,16 +66,9 @@ class MixoScene5VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mixoState+=1;
-//                        btnNext.sendActions(for: .touchUpInside)
-    
-//                        btnNext.isHidden = false
-//                        btnRestart.isHidden = false
-//                        btnComplete.isHidden = false
-//                        btnResults.isHidden = false
-    
-    let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
-    self.present(mixoScene1VC, animated:true, completion:nil)
+//        mixoState+=1;
+//        let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
+//        self.present(mixoScene1VC, animated:true, completion:nil)
 
         //heroes
         heroImages.append("actornb")
@@ -154,7 +146,7 @@ class MixoScene5VC: UIViewController {
         getUserData()
         progress()
         
-        print("mixoState: " ,  mixoState)
+        //print("mixoState: " ,  mixoState)
     }
     
     //function to handle the progressBar
@@ -192,104 +184,7 @@ class MixoScene5VC: UIViewController {
     }
     
     func setUpUI(){
-        
-        // 3. But mockups also skipped the screen that shows how many Avatar quads you finished
-                switch mixoState{
-                    case 5:
-                        //change the UI to the final state
-                        btnNext.isHidden = true
-                        btnRestart.isHidden = true
-                        btnComplete.isHidden = false
-                        btnResults.isHidden = false
-                        lblTitle.text = "You've Unlocked Your MixoType Identity!"
-                        navHolder.isHidden = true
-                        progressBar.isHidden = true
-                        lblTitleConstraint.constant = -30
-                    default:
-                        mixoState+=1;
-//                        btnNext.sendActions(for: .touchUpInside)
-                    
-//                        btnNext.isHidden = false
-//                        btnRestart.isHidden = false
-//                        btnComplete.isHidden = false
-//                        btnResults.isHidden = false
-                    
-                    let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
-                    self.present(mixoScene1VC, animated:true, completion:nil)
-                    
-                        break
-                }
-        
-        // 2. Mockups are skipping the "Heroes Completed" etc screens, so trigger next automatically
-        // btnNext.sendActions(for: .touchUpInside)
-        
-        // 1. Check what state in the generator the user is at
-//        switch mixoState{
-//            case 1://on heroes
-//                Utilities.styleGreyFilledButton(btnHeroNav)
-//                Utilities.styleGreyOutlinedButton(btnIntelNav)
-//                Utilities.styleGreyOutlinedButton(btnTalNav)
-//                Utilities.styleGreyOutlinedButton(btnColNav)
-//                // show/hide buttons
-//                btnNext.isHidden = false
-//                btnRestart.isHidden = false
-//                btnRestart.setTitle("< Restart MixoType",for: .normal)
-//                btnResults.isHidden = true
-//                btnComplete.isHidden = true
-//                lblTitle.text = "Heroes Completed"
-//                break
-//            case 2://on intels
-//                // show/hide buttons
-//                Utilities.styleGreyOutlinedButton(btnHeroNav)
-//                Utilities.styleGreyFilledButton(btnIntelNav)
-//                Utilities.styleGreyOutlinedButton(btnTalNav)
-//                Utilities.styleGreyOutlinedButton(btnColNav)
-//                btnNext.isHidden = false
-//                btnRestart.isHidden = false
-//                btnRestart.setTitle("< Restart MixoType",for: .normal)
-//                btnResults.isHidden = true
-//                btnComplete.isHidden = true
-//                lblTitle.text = "Intelligences Completed"
-//                break
-//            case 3://on talents
-//                // show/hide buttons
-//                Utilities.styleGreyOutlinedButton(btnHeroNav)
-//                Utilities.styleGreyOutlinedButton(btnIntelNav)
-//                Utilities.styleGreyFilledButton(btnTalNav)
-//                Utilities.styleGreyOutlinedButton(btnColNav)
-//                btnNext.isHidden = false
-//                btnRestart.isHidden = false
-//                btnRestart.setTitle("< Restart MixoType",for: .normal)
-//                btnResults.isHidden = true
-//                btnComplete.isHidden = true
-//                lblTitle.text = "Talents Completed"
-//                break
-//            case 4://on collections
-//                Utilities.styleGreyOutlinedButton(btnHeroNav)
-//                Utilities.styleGreyOutlinedButton(btnIntelNav)
-//                Utilities.styleGreyOutlinedButton(btnTalNav)
-//                Utilities.styleGreyFilledButton(btnColNav)
-//                // show/hide buttons
-//                btnNext.isHidden = false
-//                btnRestart.isHidden = false
-//                btnRestart.setTitle("< Restart MixoType",for: .normal)
-//                btnResults.isHidden = true
-//                btnComplete.isHidden = true
-//                lblTitle.text = "Collections Completed"
-//                break
-//            case 5:
-//                //change the UI to the final state
-//                btnNext.isHidden = true
-//                btnRestart.isHidden = true
-//                btnComplete.isHidden = false
-//                btnResults.isHidden = false
-//                lblTitle.text = "Thank you for sharing your Persona!"
-//                navHolder.isHidden = true
-//                progressBar.isHidden = true
-//                lblTitleConstraint.constant = -30
-//            default:
-//                break
-//        }
+
     }
     
     func getUserData(){
@@ -303,11 +198,6 @@ class MixoScene5VC: UIViewController {
                 guard let talentDone = document.get("talent_done") as? String else {return}
                 guard let collectDone = document.get("collect_done") as? String else {return}
                 
-                
-                //let roleDone = document.get("role_done") as? String
-                //let intelDone = document.get("intel_done") as? String
-                //let talentDone = document.get("talent_done") as? String
-                //let collectDone = document.get("collect_done") as? String
 
                 //heroes
                 if roleDone == "Y"{
@@ -776,53 +666,14 @@ class MixoScene5VC: UIViewController {
                 print("Error updating document: \(err)")
             } else {
                 //data saved
+                restarted = 1
                 mixoState = 1
                 let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
                 self.present(mixoScene1VC, animated:true, completion:nil)
             }
         }
     }
-    
-    @IBAction func btnNext(_ sender: Any) {
-        switch mixoState{
-        case 1:
-            //advance mixoState
-            mixoState = 2
-            //go to intels
-            let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
-            self.present(mixoScene1VC, animated:true, completion:nil)
-            break
-        case 2:
-            //advance mixoState
-            mixoState = 3
-            //go to talents
-            let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
-            self.present(mixoScene1VC, animated:true, completion:nil)
-            break
-        case 3:
-            //advance mixoState
-            mixoState = 4
-            //go to collections
-            let mixoScene1VC = mainSB.instantiateViewController(withIdentifier: "MixoScene1VC") as! MixoScene1VC
-            self.present(mixoScene1VC, animated:true, completion:nil)
-            break
-        case 4:
-            mixoState = 5
-            //change the UI to the final state
-            btnNext.isHidden = true
-            btnRestart.isHidden = true
-            btnComplete.isHidden = false
-            btnResults.isHidden = false
-            lblTitle.text = "Thank you for sharing your Persona!"
-            navHolder.isHidden = true
-            progressBar.isHidden = true
-            lblTitleConstraint.constant = -30
-            break
-        default:
-            break
-        }
-    }
-    
+
     @IBAction func btnComplete(_ sender: Any) {
         //proceed to the Profile Creation Scenes
         let profileScene1VC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1VC") as! ProfileScene1VC

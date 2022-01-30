@@ -2482,7 +2482,7 @@
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
-                                <state key="normal" title="Start Over">
+                                <state key="normal" title="Start Over 4a">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -3458,7 +3458,7 @@
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
-                                <state key="normal" title="Start Over">
+                                <state key="normal" title="Start Over 4b">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -3741,45 +3741,6 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqw-5K-O8j" userLabel="SPACER">
-                                <rect key="frame" x="202" y="812" width="10" height="50"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="10" id="LAJ-Dv-V5T"/>
-                                    <constraint firstAttribute="height" constant="50" id="vNG-Q3-3M6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmf-PY-0DZ">
-                                <rect key="frame" x="0.0" y="829" width="202" height="33"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
-                                <state key="normal" title="Button Text">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                                <connections>
-                                    <action selector="btnRestart:" destination="QRY-5C-EL1" eventType="touchUpInside" id="HGu-qj-o6x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxK-gX-6oW">
-                                <rect key="frame" x="210.66666666666663" y="829" width="203.33333333333337" height="33"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
-                                <state key="normal" title="NEXT &gt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
-                                </variation>
-                                <connections>
-                                    <action selector="btnNext:" destination="QRY-5C-EL1" eventType="touchUpInside" id="tTd-GC-Omk"/>
-                                </connections>
-                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-8g-wVc" userLabel="VertSpacer">
                                 <rect key="frame" x="202" y="284.66666666666669" width="10" height="250.00000000000006"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3864,7 +3825,7 @@ MixoType Identity!</string>
                                 <rect key="frame" x="279" y="494.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-ln-ssZ">
-                                <rect key="frame" x="177" y="693" width="60" height="60"/>
+                                <rect key="frame" x="177" y="660" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="XxZ-aJ-u4Q"/>
                                     <constraint firstAttribute="height" constant="60" id="zpc-nU-P3z"/>
@@ -3874,8 +3835,22 @@ MixoType Identity!</string>
                                     <action selector="btnResults:" destination="QRY-5C-EL1" eventType="touchUpInside" id="PGw-bh-Z2m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-eF-dZj">
+                                <rect key="frame" x="0.0" y="819" width="414" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Over">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnRestart:" destination="QRY-5C-EL1" eventType="touchUpInside" id="2o6-A1-qyT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41H-rf-9MQ">
-                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="778" width="414" height="41"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Create My Profile">
@@ -3895,14 +3870,12 @@ MixoType Identity!</string>
                             <constraint firstAttribute="trailing" secondItem="eqs-ZD-LdC" secondAttribute="trailing" id="0ob-fk-Mx1"/>
                             <constraint firstItem="5FJ-Kj-aN5" firstAttribute="top" secondItem="75A-8N-nYg" secondAttribute="bottom" id="2i4-8s-h0c"/>
                             <constraint firstItem="pts-3n-EFR" firstAttribute="leading" secondItem="4TF-sF-FI4" secondAttribute="trailing" id="3Fz-bU-8io"/>
-                            <constraint firstAttribute="trailing" secondItem="41H-rf-9MQ" secondAttribute="trailing" id="3dD-Y6-3ta"/>
                             <constraint firstItem="um0-MF-2eX" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="3lr-o7-Pl4"/>
                             <constraint firstItem="GfB-yB-EhD" firstAttribute="top" secondItem="aDU-Y4-QP3" secondAttribute="bottom" id="3zo-1b-flV"/>
                             <constraint firstItem="dA3-pE-BAK" firstAttribute="width" secondItem="dA3-pE-BAK" secondAttribute="height" multiplier="1:1" id="49G-wL-fc2"/>
                             <constraint firstItem="7AF-nN-tHk" firstAttribute="width" secondItem="7AF-nN-tHk" secondAttribute="height" multiplier="1:1" id="4ny-iU-HAr"/>
-                            <constraint firstItem="41H-rf-9MQ" firstAttribute="leading" secondItem="BMW-Mt-GlJ" secondAttribute="leading" id="6dp-hr-0BH"/>
-                            <constraint firstItem="QxK-gX-6oW" firstAttribute="bottom" secondItem="2VD-pS-x9X" secondAttribute="top" id="7c7-HP-mP6"/>
                             <constraint firstItem="75A-8N-nYg" firstAttribute="width" secondItem="75A-8N-nYg" secondAttribute="height" multiplier="1:1" id="7uP-fc-FUs"/>
+                            <constraint firstAttribute="trailing" secondItem="hwI-eF-dZj" secondAttribute="trailing" id="8YO-S8-cAN"/>
                             <constraint firstItem="2r1-Pe-MHj" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="9UU-jG-KII"/>
                             <constraint firstItem="GfB-yB-EhD" firstAttribute="leading" secondItem="dAd-8g-wVc" secondAttribute="trailing" constant="1" id="9YO-F6-Kac"/>
                             <constraint firstItem="dA3-pE-BAK" firstAttribute="top" secondItem="AHZ-6N-SiU" secondAttribute="bottom" constant="40.333333333333343" id="9zt-Ep-vdX"/>
@@ -3910,14 +3883,14 @@ MixoType Identity!</string>
                             <constraint firstItem="AHZ-6N-SiU" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="A8H-pC-QBn"/>
                             <constraint firstItem="2r1-Pe-MHj" firstAttribute="leading" secondItem="mX7-pG-2Vb" secondAttribute="trailing" id="Amr-mg-MP7"/>
                             <constraint firstItem="4l7-IE-xLT" firstAttribute="trailing" secondItem="dAd-8g-wVc" secondAttribute="leading" constant="-1" id="B0X-bt-DBn"/>
+                            <constraint firstItem="hwI-eF-dZj" firstAttribute="top" secondItem="41H-rf-9MQ" secondAttribute="bottom" id="BXb-Ma-hfq"/>
                             <constraint firstItem="75A-8N-nYg" firstAttribute="top" secondItem="GfB-yB-EhD" secondAttribute="bottom" constant="12" id="CSe-rB-Rgb"/>
                             <constraint firstItem="4TF-sF-FI4" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="CTT-7V-taT"/>
                             <constraint firstItem="ozW-NJ-a7l" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="CUA-aH-CJh"/>
-                            <constraint firstItem="kqw-5K-O8j" firstAttribute="top" secondItem="xis-ln-ssZ" secondAttribute="bottom" constant="59" id="DIx-Bq-QXW"/>
                             <constraint firstItem="pts-3n-EFR" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="EZG-Pj-Kwy"/>
                             <constraint firstItem="aDU-Y4-QP3" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="Ein-hQ-CQx"/>
                             <constraint firstItem="0vZ-fq-yds" firstAttribute="leading" secondItem="BMW-Mt-GlJ" secondAttribute="leading" id="F1f-U6-eAx"/>
-                            <constraint firstItem="kqw-5K-O8j" firstAttribute="leading" secondItem="wmf-PY-0DZ" secondAttribute="trailing" id="FuK-nd-c18"/>
+                            <constraint firstItem="2VD-pS-x9X" firstAttribute="top" secondItem="hwI-eF-dZj" secondAttribute="bottom" id="FX8-8P-esF"/>
                             <constraint firstItem="ozW-NJ-a7l" firstAttribute="top" secondItem="2r1-Pe-MHj" secondAttribute="bottom" id="GEN-cv-kli"/>
                             <constraint firstItem="mX7-pG-2Vb" firstAttribute="width" secondItem="mX7-pG-2Vb" secondAttribute="height" multiplier="1:1" id="GG5-r7-7uM"/>
                             <constraint firstItem="Sgw-kB-C1A" firstAttribute="top" secondItem="CeZ-Z2-ZWI" secondAttribute="bottom" id="HHE-WT-JZp"/>
@@ -3936,6 +3909,7 @@ MixoType Identity!</string>
                             <constraint firstItem="um0-MF-2eX" firstAttribute="top" secondItem="Ct7-ef-eBC" secondAttribute="bottom" constant="8" id="OPA-VE-rrC"/>
                             <constraint firstItem="4l7-IE-xLT" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="SYw-gr-Nxo"/>
                             <constraint firstItem="pts-3n-EFR" firstAttribute="top" secondItem="9rp-Ci-OfI" secondAttribute="bottom" id="ShM-pc-C6U"/>
+                            <constraint firstItem="41H-rf-9MQ" firstAttribute="top" secondItem="xis-ln-ssZ" secondAttribute="bottom" constant="58" id="TRI-px-R2v"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="leading" secondItem="ozW-NJ-a7l" secondAttribute="trailing" constant="1" id="TYm-hY-hiN"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="ULs-FX-fun"/>
                             <constraint firstItem="5zy-YS-zzC" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="UST-EQ-tTW"/>
@@ -3943,20 +3917,16 @@ MixoType Identity!</string>
                             <constraint firstItem="4TF-sF-FI4" firstAttribute="top" secondItem="dA3-pE-BAK" secondAttribute="bottom" id="WqK-IS-pMN"/>
                             <constraint firstItem="AHZ-6N-SiU" firstAttribute="top" secondItem="eqs-ZD-LdC" secondAttribute="bottom" constant="20" identifier="lblConstraint" id="Xbk-9r-Y33"/>
                             <constraint firstItem="aDU-Y4-QP3" firstAttribute="width" secondItem="aDU-Y4-QP3" secondAttribute="height" multiplier="1:1" id="Y6P-GE-8vF"/>
-                            <constraint firstItem="QxK-gX-6oW" firstAttribute="leading" secondItem="kqw-5K-O8j" secondAttribute="trailing" constant="-1.5" id="YKh-hL-NBi"/>
                             <constraint firstItem="7AF-nN-tHk" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="Zll-5V-gLx"/>
                             <constraint firstItem="dA3-pE-BAK" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="a08-ul-43J"/>
                             <constraint firstItem="9rp-Ci-OfI" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="aIK-y6-Jtc"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="leading" secondItem="9rp-Ci-OfI" secondAttribute="trailing" constant="1" id="bMj-pu-u1V"/>
-                            <constraint firstItem="wmf-PY-0DZ" firstAttribute="leading" secondItem="BMW-Mt-GlJ" secondAttribute="leading" id="bZx-sa-jEU"/>
                             <constraint firstItem="CeZ-Z2-ZWI" firstAttribute="top" secondItem="7AF-nN-tHk" secondAttribute="bottom" constant="12" id="bcJ-1I-ICO"/>
                             <constraint firstItem="mX7-pG-2Vb" firstAttribute="top" secondItem="4TF-sF-FI4" secondAttribute="bottom" constant="12" id="bka-92-46g"/>
                             <constraint firstItem="0vZ-fq-yds" firstAttribute="top" secondItem="OxU-us-4oC" secondAttribute="bottom" id="bzO-7w-ynj"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="leading" secondItem="IWQ-CO-ems" secondAttribute="trailing" constant="1" id="c00-z2-Its"/>
                             <constraint firstItem="LPj-h2-g1G" firstAttribute="leading" secondItem="dAd-8g-wVc" secondAttribute="trailing" constant="1" id="cF9-fq-Cmq"/>
-                            <constraint firstItem="2VD-pS-x9X" firstAttribute="top" secondItem="41H-rf-9MQ" secondAttribute="bottom" id="ch0-Jv-ROa"/>
-                            <constraint firstItem="kqw-5K-O8j" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="dGb-Dw-SAW"/>
-                            <constraint firstAttribute="trailing" secondItem="QxK-gX-6oW" secondAttribute="trailing" id="dbe-dd-cB1"/>
+                            <constraint firstItem="41H-rf-9MQ" firstAttribute="leading" secondItem="hwI-eF-dZj" secondAttribute="leading" id="cia-mA-hFM"/>
                             <constraint firstItem="75A-8N-nYg" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="e22-Rl-WH0"/>
                             <constraint firstItem="aDU-Y4-QP3" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="eJn-34-tva"/>
                             <constraint firstItem="IN6-pp-2mQ" firstAttribute="top" secondItem="mX7-pG-2Vb" secondAttribute="bottom" id="g42-uU-gKy"/>
@@ -3968,7 +3938,6 @@ MixoType Identity!</string>
                             <constraint firstItem="2r1-Pe-MHj" firstAttribute="top" secondItem="pts-3n-EFR" secondAttribute="bottom" constant="12" id="hXw-f3-wIG"/>
                             <constraint firstItem="mX7-pG-2Vb" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="haX-S0-r4Q"/>
                             <constraint firstItem="5FJ-Kj-aN5" firstAttribute="leading" secondItem="dAd-8g-wVc" secondAttribute="trailing" constant="1" id="hpy-Jf-dgN"/>
-                            <constraint firstItem="wmf-PY-0DZ" firstAttribute="bottom" secondItem="2VD-pS-x9X" secondAttribute="top" id="iJs-77-G84"/>
                             <constraint firstItem="Tt8-Ps-OSZ" firstAttribute="width" secondItem="Tt8-Ps-OSZ" secondAttribute="height" multiplier="1:1" id="iQk-Ku-VKy"/>
                             <constraint firstItem="Tt8-Ps-OSZ" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="idK-oG-0Gv"/>
                             <constraint firstItem="5zy-YS-zzC" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.3" constant="7.5" id="ih1-ql-1Bb"/>
@@ -3976,7 +3945,9 @@ MixoType Identity!</string>
                             <constraint firstItem="IN6-pp-2mQ" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="jTQ-QH-d6E"/>
                             <constraint firstItem="Tt8-Ps-OSZ" firstAttribute="leading" secondItem="aDU-Y4-QP3" secondAttribute="trailing" id="jvz-sX-ihh"/>
                             <constraint firstAttribute="trailing" secondItem="0vZ-fq-yds" secondAttribute="trailing" id="knj-rB-PKg"/>
+                            <constraint firstItem="2VD-pS-x9X" firstAttribute="top" secondItem="41H-rf-9MQ" secondAttribute="bottom" constant="43" id="mUa-uU-3GL"/>
                             <constraint firstItem="Sgw-kB-C1A" firstAttribute="leading" secondItem="5FJ-Kj-aN5" secondAttribute="trailing" id="mjZ-mD-7bm"/>
+                            <constraint firstItem="41H-rf-9MQ" firstAttribute="trailing" secondItem="hwI-eF-dZj" secondAttribute="trailing" id="nWA-6y-cXr"/>
                             <constraint firstItem="5FJ-Kj-aN5" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="pRX-PB-8pp"/>
                             <constraint firstItem="GfB-yB-EhD" firstAttribute="width" secondItem="GfB-yB-EhD" secondAttribute="height" multiplier="1:1" id="pew-8n-odM"/>
                             <constraint firstItem="5zy-YS-zzC" firstAttribute="width" secondItem="5zy-YS-zzC" secondAttribute="height" multiplier="1:1" id="pgu-Sz-tpP"/>
@@ -3985,10 +3956,10 @@ MixoType Identity!</string>
                             <constraint firstItem="9rp-Ci-OfI" firstAttribute="leading" secondItem="dA3-pE-BAK" secondAttribute="trailing" id="qfM-66-8ms"/>
                             <constraint firstItem="OxU-us-4oC" firstAttribute="top" secondItem="Ct7-ef-eBC" secondAttribute="bottom" id="qt0-84-2ej"/>
                             <constraint firstItem="ozW-NJ-a7l" firstAttribute="leading" secondItem="IN6-pp-2mQ" secondAttribute="trailing" id="rnU-Fb-dG0"/>
-                            <constraint firstItem="2VD-pS-x9X" firstAttribute="top" secondItem="kqw-5K-O8j" secondAttribute="bottom" id="rw6-xb-38X"/>
+                            <constraint firstItem="hwI-eF-dZj" firstAttribute="top" secondItem="41H-rf-9MQ" secondAttribute="bottom" id="sis-51-OX0"/>
+                            <constraint firstItem="hwI-eF-dZj" firstAttribute="leading" secondItem="BMW-Mt-GlJ" secondAttribute="leading" id="tdk-C6-5PQ"/>
                             <constraint firstItem="IWQ-CO-ems" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.3" constant="7.5" id="te1-Lz-eMq"/>
                             <constraint firstAttribute="trailing" secondItem="AHZ-6N-SiU" secondAttribute="trailing" id="thM-GW-nzw"/>
-                            <constraint firstItem="41H-rf-9MQ" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="uo6-Kc-2Vo"/>
                             <constraint firstItem="CeZ-Z2-ZWI" firstAttribute="width" secondItem="BMW-Mt-GlJ" secondAttribute="width" multiplier="0.15" constant="3.75" id="upY-N0-mkH"/>
                             <constraint firstItem="OxU-us-4oC" firstAttribute="leading" secondItem="BMW-Mt-GlJ" secondAttribute="leading" id="w1Q-NP-s4y"/>
                             <constraint firstItem="pts-3n-EFR" firstAttribute="width" secondItem="pts-3n-EFR" secondAttribute="height" multiplier="1:1" id="x1h-mL-YAc"/>
@@ -4006,8 +3977,7 @@ MixoType Identity!</string>
                         <outlet property="btnComplete" destination="41H-rf-9MQ" id="GRB-Gw-rFg"/>
                         <outlet property="btnHeroNav" destination="ZTu-UI-Dre" id="rV1-Vg-lTu"/>
                         <outlet property="btnIntelNav" destination="yBv-xw-PTY" id="PS2-LW-5Kw"/>
-                        <outlet property="btnNext" destination="QxK-gX-6oW" id="oTX-fS-1iw"/>
-                        <outlet property="btnRestart" destination="wmf-PY-0DZ" id="mRj-yq-Wyf"/>
+                        <outlet property="btnRestart" destination="hwI-eF-dZj" id="caj-KU-eFy"/>
                         <outlet property="btnResults" destination="xis-ln-ssZ" id="XOa-tX-Au3"/>
                         <outlet property="btnTalNav" destination="rrz-qU-L9d" id="rm5-6J-Fek"/>
                         <outlet property="imgM1BLC" destination="4TF-sF-FI4" id="oSg-iR-PEW"/>

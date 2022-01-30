@@ -57,7 +57,12 @@ class MixoScene1VC: UIViewController {
                 guard let intelDone = document.get("intel_done")  as? String else {return}
                 guard let talentDone = document.get("talent_done")  as? String else {return}
                 guard let collectDone = document.get("collect_done")  as? String else {return}
-                    
+                
+                // <-- Conditional breakpoint restarted 1. Breakpoint inside async updateDoc does not work at MixoScene5VC
+                if restarted == 1 {
+                    restarted = 0;
+                }
+                
                 //combine all the Y's into 1 string
                 let dones = roleDone + intelDone + talentDone + collectDone
                 let done: Character = "Y"

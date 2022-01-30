@@ -12,6 +12,7 @@
 import UIKit
 
 var mixoState: Int = 0
+var restarted: Int = 0
 
 @available(iOS 13.0, *)
 class StartVC: UIViewController {
