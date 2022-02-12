@@ -5060,10 +5060,10 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUM-gw-f72">
-                                <rect key="frame" x="37.333333333333336" y="301.33333333333331" width="99.666666666666657" height="99.666666666666686"/>
+                                <rect key="frame" x="37" y="301.33333333333331" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="99.670000000000002" id="7rO-rM-F9n"/>
-                                    <constraint firstAttribute="height" constant="99.670000000000002" id="JNA-m9-i4J"/>
+                                    <constraint firstAttribute="width" constant="100" id="OOo-5r-IET"/>
+                                    <constraint firstAttribute="height" constant="100" id="pf9-eK-ZuQ"/>
                                     <constraint firstAttribute="width" secondItem="iUM-gw-f72" secondAttribute="height" multiplier="1:1" id="ySY-2r-Lln"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="maleicon"/>
@@ -5072,10 +5072,10 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHo-aD-ICs">
-                                <rect key="frame" x="277" y="301.33333333333331" width="99.666666666666686" height="99.666666666666686"/>
+                                <rect key="frame" x="277" y="301.33333333333331" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="99.670000000000002" id="9Qa-zO-w28"/>
-                                    <constraint firstAttribute="height" constant="99.670000000000002" id="EIo-YI-uW7"/>
+                                    <constraint firstAttribute="height" constant="100" id="6PR-RA-b1q"/>
+                                    <constraint firstAttribute="width" constant="100" id="VYj-qb-gGK"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="femaleicon"/>
                                 <connections>
@@ -5083,10 +5083,10 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg4-gF-5D3">
-                                <rect key="frame" x="157" y="301.33333333333331" width="100" height="99.666666666666686"/>
+                                <rect key="frame" x="157" y="301.33333333333331" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Pdd-fp-nPI"/>
-                                    <constraint firstAttribute="height" constant="99.670000000000002" id="SE6-QQ-dux"/>
+                                    <constraint firstAttribute="height" constant="100" id="Pqg-Ok-FSL"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="nonbinary"/>
                                 <connections>
@@ -5094,16 +5094,16 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-kf-A6M">
-                                <rect key="frame" x="57.333333333333343" y="321.33333333333331" width="59.666666666666657" height="59.666666666666686"/>
+                                <rect key="frame" x="57" y="321.33333333333331" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nnj-kf-A6M" secondAttribute="height" multiplier="1:1" id="7lc-h0-HlQ"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="ElK-Ir-2kb">
-                                <rect key="frame" x="180.66666666666666" y="325" width="52.666666666666657" height="52.333333333333314"/>
+                                <rect key="frame" x="180.66666666666666" y="325" width="52.666666666666657" height="52.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="eBy-8A-bS3">
-                                <rect key="frame" x="297" y="321.33333333333331" width="59.666666666666686" height="59.666666666666686"/>
+                                <rect key="frame" x="297" y="321.33333333333331" width="60" height="60"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5111,7 +5111,6 @@ MixoType Identity!</string>
                             <constraint firstItem="Ky2-Tg-sPb" firstAttribute="top" secondItem="OZL-XM-BgV" secondAttribute="bottom" id="183-Wm-sdh"/>
                             <constraint firstItem="nnj-kf-A6M" firstAttribute="centerX" secondItem="iUM-gw-f72" secondAttribute="centerX" id="3eg-u2-sda"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerY" secondItem="lHo-aD-ICs" secondAttribute="centerY" id="58R-xe-FPq"/>
-                            <constraint firstItem="tg4-gF-5D3" firstAttribute="top" secondItem="SKJ-7x-wPv" secondAttribute="top" constant="301.33333333333326" id="6hG-q2-a3X"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerX" secondItem="lHo-aD-ICs" secondAttribute="centerX" id="8gH-Ig-rDe"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerY" secondItem="tg4-gF-5D3" secondAttribute="centerY" id="9Hv-71-Y6k"/>
                             <constraint firstItem="lHo-aD-ICs" firstAttribute="leading" secondItem="tg4-gF-5D3" secondAttribute="trailing" constant="20" id="A22-f1-si0"/>
@@ -5119,6 +5118,7 @@ MixoType Identity!</string>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="top" secondItem="OZL-XM-BgV" secondAttribute="bottom" constant="8" id="HDI-06-UUk"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="top" secondItem="Ky2-Tg-sPb" secondAttribute="bottom" constant="16" id="IP1-RK-akq"/>
                             <constraint firstItem="w1J-PG-vFU" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" id="IWl-YT-GVB"/>
+                            <constraint firstItem="iUM-gw-f72" firstAttribute="top" secondItem="SKJ-7x-wPv" secondAttribute="top" constant="301.33333333333331" id="KhI-lZ-QP7"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="OOz-eC-Pa2"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="baseline" secondItem="iUM-gw-f72" secondAttribute="baseline" id="QiR-zD-W6n"/>
                             <constraint firstItem="nnj-kf-A6M" firstAttribute="width" secondItem="SKJ-7x-wPv" secondAttribute="width" multiplier="0.25" constant="-43.75" id="XjY-tb-HeD"/>

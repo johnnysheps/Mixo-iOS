@@ -84,12 +84,12 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
     }
     
     //go to ProfileScene5
-    func transitionToProfileScene5VC(){
-        let profileScene4NVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileScene4NVC) as? ProfileScene4NVC
-        
-        view.window?.rootViewController = profileScene4NVC
-        view.window?.makeKeyAndVisible()
-    }
+//    func transitionToProfileScene5VC(){
+//        let profileScene4NVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileScene4NVC) as? ProfileScene4NVC
+//        
+//        view.window?.rootViewController = profileScene4NVC
+//        view.window?.makeKeyAndVisible()
+//    }
     
 
     @IBAction func btnNext(_ sender: Any) {
@@ -107,8 +107,10 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
                 if let err = err {
                     print("Error updating document: \(err)")
                 } else {
-                    let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-                    self.present(dashboardVC, animated:true, completion:nil)
+//                    let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+//                    self.present(dashboardVC, animated:true, completion:nil)
+                    let profileScene4NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene4NVC") as! ProfileScene4NVC
+                    self.present(profileScene4NVC, animated:true, completion:nil)
                 }
             }
             
