@@ -13,6 +13,8 @@ import FontAwesome_swift
  * If development mode, then we can code screen skips for faster testing
  */
 let devMode = true;
+let skipToScreen = true;
+
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
 let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)
@@ -21,6 +23,7 @@ let tempDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let modDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let resultsSB : UIStoryboard = UIStoryboard(name: "Results", bundle: .main)
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
     @IBOutlet weak var chevron: UITextView!
     @IBOutlet weak var btnStart: UIButton!
@@ -41,12 +44,15 @@ class ViewController: UIViewController {
         Utilities.styleFilledButton(btnStart)
         chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
-        
     }
 
     @IBAction func btnStart(_ sender: Any) {
         
-        
+        // Interaction required to load a screen?
+        if(skipToScreen) {
+            let profileScene2NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2NVC") as! ProfileScene2NVC
+            self.present(profileScene2NVC, animated:true, completion:nil)
+        }
         
     }
     
