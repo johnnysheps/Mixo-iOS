@@ -8,6 +8,11 @@ target 'Mixo' do
   use_frameworks! :linkage => :static
   # use_modular_headers!
 
+  # Dropdowns
+  # Instructions: https://youtu.be/FJuSezRmEQI
+  # Docs: https://github.com/AssistoLab/DropDown
+  pod 'DropDown'
+
 
   # pod 'KMPlaceholderTextView', '~> 1.4.0' # Multiline placeholder support
   pod 'KMPlaceholderTextView' # Multiline placeholder support

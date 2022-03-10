@@ -351,6 +351,7 @@ PODS:
   - BoringSSL-GRPC/Interface (0.0.7)
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
+  - DropDown (2.3.13)
   - Fabric (1.10.2)
   - FBAEMKit (11.2.1):
     - FBAEMKit/AEM (= 11.2.1)
@@ -599,6 +600,7 @@ PODS:
 
 DEPENDENCIES:
   - Crashlytics (~> 3.14.0)
+  - DropDown
   - Fabric (~> 1.10.2)
   - Firebase/Analytics
   - Firebase/Auth
@@ -619,6 +621,7 @@ SPEC REPOS:
     - AppAuth
     - BoringSSL-GRPC
     - Crashlytics
+    - DropDown
     - Fabric
     - FBAEMKit
     - FBSDKCoreKit
@@ -665,6 +668,7 @@ SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   FBAEMKit: 5de0a7aaa854eec69bb5be20795952a63d38a5f6
   FBSDKCoreKit: bf655f808b040ed66a72b9922911b39d703e64f4
@@ -706,6 +710,6 @@ SPEC CHECKSUMS:
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: 6ba851587effdad6f1445d9ce341a4746646b862
+PODFILE CHECKSUM: f98e263d6da6d96db98496318c716b870eff0b9a
 
 COCOAPODS: 1.10.2
