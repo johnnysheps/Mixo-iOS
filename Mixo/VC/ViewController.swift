@@ -13,7 +13,7 @@ import FontAwesome_swift
  * If development mode, then we can code screen skips for faster testing
  */
 let devMode = true;
-let skipToScreen = true;
+let skipToScreen = true; // if true, go to referenced to setup which screen
 
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
@@ -50,8 +50,8 @@ class ViewController: UIViewController {
         
         // Interaction required to load a screen?
         if(skipToScreen) {
-            let profileScene2NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2NVC") as! ProfileScene2NVC
-            self.present(profileScene2NVC, animated:true, completion:nil)
+            let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
+            self.present(profileScene1NVC, animated:true, completion:nil)
         }
         
     }
