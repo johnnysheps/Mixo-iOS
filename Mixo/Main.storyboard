@@ -5020,7 +5020,7 @@ MixoType Identity!</string>
                         <viewControllerLayoutGuide type="top" id="OZL-XM-BgV"/>
                         <viewControllerLayoutGuide type="bottom" id="bhR-Uj-vgi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SKJ-7x-wPv">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SKJ-7x-wPv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
