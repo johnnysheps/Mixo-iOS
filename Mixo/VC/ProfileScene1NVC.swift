@@ -11,6 +11,7 @@
 
 import UIKit
 import DropDown
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class ProfileScene1NVC: UIViewController {
@@ -21,6 +22,7 @@ class ProfileScene1NVC: UIViewController {
     // Transition to three dropdowns
     @IBOutlet weak var ddYear: UIView!
     @IBOutlet weak var ddYearButton: UIButton!
+    @IBOutlet weak var chevron1: UITextView!
     
     var dateString = String()
     let dropDown = DropDown()
@@ -32,6 +34,9 @@ class ProfileScene1NVC: UIViewController {
         ddYear.backgroundColor = UIColor.white
         ddYear.layer.cornerRadius = 10
         ddYear.layer.masksToBounds = true
+        
+        chevron1.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron1.text = String.fontAwesomeIcon(name: FontAwesome.chevronDown)
         
         // Action triggered on selection
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in

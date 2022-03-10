@@ -5003,12 +5003,24 @@ MixoType Identity!</string>
                                             <action selector="showDdYearOptions:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="4od-7M-Z4t"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmP-TN-mi2" userLabel="chevron1">
+                                        <rect key="frame" x="342" y="0.0" width="32" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="0of-ty-oHh"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HmP-TN-mi2" secondAttribute="trailing" id="3c8-Bu-Z6f"/>
+                                    <constraint firstAttribute="bottom" secondItem="HmP-TN-mi2" secondAttribute="bottom" id="6wZ-VO-r86"/>
                                     <constraint firstItem="kDK-LE-tRK" firstAttribute="leading" secondItem="vcH-3e-NXT" secondAttribute="leading" id="IEp-DB-sij"/>
                                     <constraint firstItem="kDK-LE-tRK" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="top" id="Jzl-gC-Omf"/>
+                                    <constraint firstItem="HmP-TN-mi2" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="top" id="KRo-gI-eXm"/>
                                     <constraint firstAttribute="height" constant="40" id="WQw-F2-Vh8"/>
                                     <constraint firstAttribute="bottom" secondItem="kDK-LE-tRK" secondAttribute="bottom" id="hF6-DW-IUi"/>
                                     <constraint firstAttribute="trailing" secondItem="kDK-LE-tRK" secondAttribute="trailing" id="p1Y-zV-MZX"/>
@@ -5036,6 +5048,7 @@ MixoType Identity!</string>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="c8y-lj-3QS" id="rv6-8s-ARi"/>
+                        <outlet property="chevron1" destination="HmP-TN-mi2" id="rS6-xq-7vi"/>
                         <outlet property="ddYear" destination="vcH-3e-NXT" id="zbh-Fg-CPh"/>
                         <outlet property="ddYearButton" destination="kDK-LE-tRK" id="gdR-gB-AoZ"/>
                         <outlet property="dpBirthday" destination="P90-BY-54m" id="i6h-AF-DST"/>
