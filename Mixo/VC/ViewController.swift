@@ -8,6 +8,7 @@
 
 import UIKit
 import FontAwesome_swift
+import Foundation
 
 /* Important. Set environment!
  * If development mode, then we can code screen skips for faster testing

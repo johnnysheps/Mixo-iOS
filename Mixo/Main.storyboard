@@ -5026,10 +5026,85 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="trailing" secondItem="kDK-LE-tRK" secondAttribute="trailing" id="p1Y-zV-MZX"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36P-Iy-pmY" userLabel="ddMonth">
+                                <rect key="frame" x="20" y="559" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K44-CA-lW5" userLabel="ddMonthButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Month">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="showDdMonthOptions:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="tTL-U4-pV3"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaP-bF-qMb" userLabel="chevron2">
+                                        <rect key="frame" x="342" y="0.0" width="32" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="ZeT-9b-Djo"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oaP-bF-qMb" secondAttribute="trailing" id="8Y7-xd-2so"/>
+                                    <constraint firstAttribute="trailing" secondItem="K44-CA-lW5" secondAttribute="trailing" id="ERo-kO-Pe9"/>
+                                    <constraint firstItem="oaP-bF-qMb" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="top" id="Ln8-ci-5RW"/>
+                                    <constraint firstAttribute="bottom" secondItem="K44-CA-lW5" secondAttribute="bottom" id="ZtW-Wg-g8m"/>
+                                    <constraint firstAttribute="bottom" secondItem="oaP-bF-qMb" secondAttribute="bottom" id="a60-a5-gKz"/>
+                                    <constraint firstItem="K44-CA-lW5" firstAttribute="leading" secondItem="36P-Iy-pmY" secondAttribute="leading" id="gll-An-Crl"/>
+                                    <constraint firstAttribute="height" constant="40" id="jbv-ph-Tum"/>
+                                    <constraint firstItem="K44-CA-lW5" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="top" id="q2e-q7-vgI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-ei-YKO" userLabel="ddDay">
+                                <rect key="frame" x="20" y="622" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCZ-dX-aIA" userLabel="ddDayButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Day">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="showDdDayOptions:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="2eY-Rt-f5y"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-W9-5fI" userLabel="chevron3">
+                                        <rect key="frame" x="342" y="0.0" width="32" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="cTn-jq-9ed"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0po-AI-pMY"/>
+                                    <constraint firstItem="UCZ-dX-aIA" firstAttribute="top" secondItem="HbU-ei-YKO" secondAttribute="top" id="Gk4-Me-nDh"/>
+                                    <constraint firstAttribute="bottom" secondItem="UCZ-dX-aIA" secondAttribute="bottom" id="KLl-4o-f7L"/>
+                                    <constraint firstItem="UCZ-dX-aIA" firstAttribute="leading" secondItem="HbU-ei-YKO" secondAttribute="leading" id="QfU-Cp-5kg"/>
+                                    <constraint firstItem="DVm-W9-5fI" firstAttribute="top" secondItem="HbU-ei-YKO" secondAttribute="top" id="kYd-DR-KGQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="DVm-W9-5fI" secondAttribute="trailing" id="nRt-Ze-7yH"/>
+                                    <constraint firstAttribute="trailing" secondItem="UCZ-dX-aIA" secondAttribute="trailing" id="qMj-Xd-OaB"/>
+                                    <constraint firstAttribute="bottom" secondItem="DVm-W9-5fI" secondAttribute="bottom" id="qRY-5E-9SH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="top" secondItem="P90-BY-54m" secondAttribute="bottom" constant="53.670000000000002" id="4MH-zL-20h"/>
+                            <constraint firstItem="HbU-ei-YKO" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="5yU-Tt-LLE"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="8ID-Bd-abh"/>
                             <constraint firstItem="c8y-lj-3QS" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="BVR-08-JAz"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="Btu-9Z-fOO"/>
@@ -5037,18 +5112,29 @@ MixoType Identity!</string>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" id="MO4-nK-p64"/>
                             <constraint firstAttribute="trailing" secondItem="c8y-lj-3QS" secondAttribute="trailing" id="OAN-gC-z34"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="top" secondItem="ese-Ni-kfH" secondAttribute="bottom" constant="16" id="T5F-z0-LuC"/>
+                            <constraint firstItem="36P-Iy-pmY" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="YaV-G1-dfb"/>
                             <constraint firstItem="P90-BY-54m" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="62.000000000000057" id="cxy-Ry-lOS"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="ghm-Z8-iRH"/>
                             <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="c8y-lj-3QS" secondAttribute="bottom" id="hjm-tq-ONb"/>
                             <constraint firstItem="P90-BY-54m" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="lYi-Oh-Zx4"/>
+                            <constraint firstItem="HbU-ei-YKO" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="nZB-OJ-sdD"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="qLE-H4-yQ8"/>
+                            <constraint firstItem="HbU-ei-YKO" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="bottom" constant="23" id="qmb-Qy-854"/>
+                            <constraint firstItem="36P-Iy-pmY" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="thA-Zr-W25"/>
+                            <constraint firstItem="36P-Iy-pmY" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="bottom" constant="25" id="wFw-4k-4Ho"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vcH-3e-NXT" secondAttribute="trailing" id="z0F-MU-ALT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="c8y-lj-3QS" id="rv6-8s-ARi"/>
                         <outlet property="chevron1" destination="HmP-TN-mi2" id="rS6-xq-7vi"/>
+                        <outlet property="chevron2" destination="oaP-bF-qMb" id="Yhq-Bo-fBX"/>
+                        <outlet property="chevron3" destination="DVm-W9-5fI" id="tDQ-bA-x1k"/>
+                        <outlet property="ddDay" destination="HbU-ei-YKO" id="SOa-94-i43"/>
+                        <outlet property="ddDayButton" destination="UCZ-dX-aIA" id="nZT-Yw-jB9"/>
+                        <outlet property="ddMonth" destination="36P-Iy-pmY" id="dL8-I1-sge"/>
+                        <outlet property="ddMonthButton" destination="K44-CA-lW5" id="Qyi-eo-x2Z"/>
                         <outlet property="ddYear" destination="vcH-3e-NXT" id="zbh-Fg-CPh"/>
                         <outlet property="ddYearButton" destination="kDK-LE-tRK" id="gdR-gB-AoZ"/>
                         <outlet property="dpBirthday" destination="P90-BY-54m" id="i6h-AF-DST"/>
