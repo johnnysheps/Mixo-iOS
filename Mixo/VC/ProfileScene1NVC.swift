@@ -145,6 +145,8 @@ class ProfileScene1NVC: UIViewController {
         formatter.dateFormat = "yyyy-MM-dd"
         
         dateString = formatter.string(from: dpBirthday.date)
+        print("Raw: \(dpBirthday.date); Converted dateString: \(dateString)")
+        // Raw: 2022-03-12 06:28:00 +0000; Converted dateString: 2022-03-11
     
     }
     
