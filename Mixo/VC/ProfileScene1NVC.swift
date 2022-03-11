@@ -16,7 +16,6 @@ import FontAwesome_swift
 @available(iOS 13.0, *)
 class ProfileScene1NVC: UIViewController {
 
-    @IBOutlet weak var dpBirthday: UIDatePicker!
     var dateString = String()
 
     @IBOutlet weak var btnNext: UIButton!
@@ -102,16 +101,6 @@ class ProfileScene1NVC: UIViewController {
         
     }
     
-    @IBAction func dateChanged(_ sender: Any) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        
-        dateString = formatter.string(from: dpBirthday.date)
-        print("Raw: \(dpBirthday.date); Converted dateString: \(dateString)")
-        // Raw: 2022-03-12 06:28:00 +0000; Converted dateString: 2022-03-11
-    
-    }
-    
     @IBAction func showDdYearOptions(_ sender:Any) {
         dropDown1.show()
     }
@@ -170,21 +159,19 @@ class ProfileScene1NVC: UIViewController {
             dateString = yyyy + "-" + mm + "-" + dd
             print("Converted dateString: \(dateString)")
             
-            // Raw: 2022-03-12 06:28:00 +0000; Converted dateString: 2022-03-11
             
-//            //save the users birthdate to Firebase
-//            docRef.updateData([
-//                "dob": dateString,
-//            ]) { err in
-//                if let err = err {
-//                    print("Error updating document: \(err)")
-//                } else {
-//                    let profileScene2NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2NVC") as! ProfileScene2NVC
-//                    self.present(profileScene2NVC, animated:true, completion:nil)
-//                }
-//            }
-        }
-        
+            //save the users birthdate to Firebase
+            docRef.updateData([
+                "dob": dateString,
+            ]) { err in
+                if let err = err {
+                    print("Error updating document: \(err)")
+                } else {
+                    let profileScene2NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene2NVC") as! ProfileScene2NVC
+                    self.present(profileScene2NVC, animated:true, completion:nil)
+                }
+            }
+        } // else
         
     } // btnNext
     /*

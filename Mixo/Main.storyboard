@@ -4983,14 +4983,8 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="bL7-pf-LpQ"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="P90-BY-54m">
-                                <rect key="frame" x="47" y="224.33333333333337" width="320" height="216"/>
-                                <connections>
-                                    <action selector="dateChanged:" destination="7rF-H6-dwZ" eventType="valueChanged" id="thb-dk-0J4"/>
-                                </connections>
-                            </datePicker>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-3e-NXT" userLabel="ddYear">
-                                <rect key="frame" x="20" y="494" width="374" height="40"/>
+                                <rect key="frame" x="20" y="208" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDK-LE-tRK" userLabel="ddYearButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -5017,6 +5011,7 @@ MixoType Identity!</string>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="HmP-TN-mi2" secondAttribute="trailing" id="3c8-Bu-Z6f"/>
+                                    <constraint firstItem="kDK-LE-tRK" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="top" id="4Nz-iK-LAk"/>
                                     <constraint firstAttribute="bottom" secondItem="HmP-TN-mi2" secondAttribute="bottom" id="6wZ-VO-r86"/>
                                     <constraint firstItem="kDK-LE-tRK" firstAttribute="leading" secondItem="vcH-3e-NXT" secondAttribute="leading" id="IEp-DB-sij"/>
                                     <constraint firstItem="kDK-LE-tRK" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="top" id="Jzl-gC-Omf"/>
@@ -5027,7 +5022,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36P-Iy-pmY" userLabel="ddMonth">
-                                <rect key="frame" x="20" y="559" width="374" height="40"/>
+                                <rect key="frame" x="20" y="273" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K44-CA-lW5" userLabel="ddMonthButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -5064,7 +5059,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-ei-YKO" userLabel="ddDay">
-                                <rect key="frame" x="20" y="622" width="374" height="40"/>
+                                <rect key="frame" x="20" y="336" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCZ-dX-aIA" userLabel="ddDayButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -5103,21 +5098,19 @@ MixoType Identity!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vcH-3e-NXT" firstAttribute="top" secondItem="P90-BY-54m" secondAttribute="bottom" constant="53.670000000000002" id="4MH-zL-20h"/>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="5yU-Tt-LLE"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="8ID-Bd-abh"/>
                             <constraint firstItem="c8y-lj-3QS" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="BVR-08-JAz"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="Btu-9Z-fOO"/>
+                            <constraint firstItem="vcH-3e-NXT" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="45.666666666666686" id="CzW-gx-kl6"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" constant="8" id="J5Y-tD-a1o"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" id="MO4-nK-p64"/>
                             <constraint firstAttribute="trailing" secondItem="c8y-lj-3QS" secondAttribute="trailing" id="OAN-gC-z34"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="top" secondItem="ese-Ni-kfH" secondAttribute="bottom" constant="16" id="T5F-z0-LuC"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="YaV-G1-dfb"/>
-                            <constraint firstItem="P90-BY-54m" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="62.000000000000057" id="cxy-Ry-lOS"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="ghm-Z8-iRH"/>
                             <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="c8y-lj-3QS" secondAttribute="bottom" id="hjm-tq-ONb"/>
-                            <constraint firstItem="P90-BY-54m" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="lYi-Oh-Zx4"/>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="nZB-OJ-sdD"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="qLE-H4-yQ8"/>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="bottom" constant="23" id="qmb-Qy-854"/>
@@ -5137,7 +5130,6 @@ MixoType Identity!</string>
                         <outlet property="ddMonthButton" destination="K44-CA-lW5" id="Qyi-eo-x2Z"/>
                         <outlet property="ddYear" destination="vcH-3e-NXT" id="zbh-Fg-CPh"/>
                         <outlet property="ddYearButton" destination="kDK-LE-tRK" id="gdR-gB-AoZ"/>
-                        <outlet property="dpBirthday" destination="P90-BY-54m" id="i6h-AF-DST"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="136-lu-kUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
