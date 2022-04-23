@@ -17,7 +17,7 @@ import Firebase
  */
 let devMode = true;
 let skipToScreen = false; // if true, go to screenToSkipTo() to setup which screen
-let autoLogin = true; // if true, go to reference to setup your credentials
+let autoLogin = false; // if true, go to reference to setup your credentials
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
 let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)
@@ -41,11 +41,11 @@ class ViewController: UIViewController {
         
         if(autoLogin) {
             //signing in the user
-            Auth.auth().signIn(withEmail: "test2@test.com", password: "Testtest2!") { (result, error) in
+            Auth.auth().signIn(withEmail: "donotremove@mixotype.com", password: "DoNotRemove1!") { (result, error) in
                 if error != nil {
                     //couldnt sign in
-                    print("Error: Your test account for developmental autologin failed")
-                    fatalError("App purposely crashed")
+                    print("Error: Your test account for development mode's automatic login failed. Please make sure to create an account donotremove@mixotype.com:DoNotRemove1!")
+//                    fatalError("App purposely crashed")
                 } else {
                     //check if users are finished the generator before going any further
                     userUID = result!.user.uid

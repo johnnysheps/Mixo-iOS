@@ -51,7 +51,7 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
             
             var urlComponents = URLComponents()
             urlComponents.scheme = "http"
-            urlComponents.host = "mixotype.com"
+            urlComponents.host = "engine.mixotype.com"
             urlComponents.path = "/app/webapis/ios/zipcode.php"
             urlComponents.setQueryItems(with: queryParams)
             let urlString = urlComponents.url?.absoluteString
