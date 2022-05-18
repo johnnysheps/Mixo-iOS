@@ -705,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1d8-Vt-vae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8267" y="-243"/>
+            <point key="canvasLocation" x="14490" y="-244"/>
         </scene>
         <!--Engine LoadVC-->
         <scene sceneID="JN0-fs-RR4">
@@ -5084,7 +5084,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="136-lu-kUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10414" y="-242"/>
+            <point key="canvasLocation" x="9613" y="-242"/>
         </scene>
         <!--Profile Scene2NVC-->
         <scene sceneID="oQg-BW-hlo">
@@ -5289,7 +5289,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwN-Yh-xKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11193" y="-242"/>
+            <point key="canvasLocation" x="10394" y="-242"/>
         </scene>
         <!--Profile Scene3NVC-->
         <scene sceneID="je9-Hy-8nJ">
@@ -5381,7 +5381,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjH-lf-hwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11851" y="-242"/>
+            <point key="canvasLocation" x="11052" y="-242"/>
         </scene>
         <!--Profile Scene5NVC-->
         <scene sceneID="mD2-Y4-vUo">
@@ -5474,7 +5474,7 @@ MixoType Identity!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZj-LH-trj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13177" y="-242"/>
+            <point key="canvasLocation" x="12378" y="-242"/>
         </scene>
         <!--Profile Scene4NVC-->
         <scene sceneID="bdN-tb-R9J">
@@ -5569,49 +5569,8 @@ MixoType Identity!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhq-I9-IHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" id="7NU-LT-T2h">
-                    <rect key="frame" x="0.0" y="0.0" width="374" height="111"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wZ4-6H-WY2" userLabel="Iv Progress 0">
-                            <rect key="frame" x="0.0" y="45.666666666666664" width="20" height="19.999999999999993"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="20" id="Ah3-uk-7fB"/>
-                                <constraint firstAttribute="height" constant="20" id="eex-vA-2XP"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FTJ-O1-qjg" userLabel="Iv Progress 1">
-                            <rect key="frame" x="88.666666666666671" y="45.666666666666664" width="20" height="19.999999999999993"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="YQx-il-6al"/>
-                                <constraint firstAttribute="width" constant="20" id="qsD-Fg-9rL"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DON-oc-aHh" userLabel="Iv Progress 2">
-                            <rect key="frame" x="177" y="45.666666666666664" width="20" height="19.999999999999993"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="N86-Ws-shr"/>
-                                <constraint firstAttribute="width" constant="20" id="fw9-D5-4TG"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-1I-c3U" userLabel="Iv Progress 3">
-                            <rect key="frame" x="265.66666666666669" y="45.666666666666664" width="20" height="19.999999999999993"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="VrD-vd-tz2"/>
-                                <constraint firstAttribute="width" constant="20" id="qb0-Ax-4eh"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-GB-9Z0" userLabel="Iv Progress 4">
-                            <rect key="frame" x="354" y="45.666666666666664" width="20" height="19.999999999999993"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="OMe-os-9ap"/>
-                                <constraint firstAttribute="width" constant="20" id="wQO-b7-ONe"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                </stackView>
             </objects>
-            <point key="canvasLocation" x="12501" y="-242"/>
+            <point key="canvasLocation" x="11703" y="-242"/>
         </scene>
     </scenes>
     <resources>
