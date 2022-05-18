@@ -199,9 +199,11 @@ class DashboardVC: UIViewController {
                     let imgRef = "gs://mixotype-4a74b.appspot.com/" + user_pic
                     reference = storage.reference(forURL: imgRef)
                     reference.downloadURL { (url, err) in
-                        let data = NSData(contentsOf: url!)
-                        let image = UIImage(data: data! as Data)
-                        self.profilePic.image = image
+                        if(url != nil) {
+                            let data = NSData(contentsOf: url!)
+                            let image = UIImage(data: data! as Data)
+                            self.profilePic.image = image
+                        }
                     }
                     
                     
