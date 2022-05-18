@@ -19,7 +19,15 @@ class ProfileScene1NVC: UIViewController {
     var dateString = String()
 
     @IBOutlet weak var btnNext: UIButton!
-
+    
+    // Buttons
+    
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
+    
     // Transition to three dropdowns
     @IBOutlet weak var ddYear: UIView!
     @IBOutlet weak var ddYearButton: UIButton!
@@ -99,7 +107,21 @@ class ProfileScene1NVC: UIViewController {
         dropDown3.bottomOffset = CGPoint(x: 0, y:(dropDown3.anchorView?.plainView.bounds.height)!)
         dropDown3.dataSource = ["1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",  "10",  "11",  "12",  "13",  "14",  "15",  "16",  "17",  "18",  "19",  "20",  "21",  "22",  "23",  "24",  "25",  "26",  "27",  "28",  "29",  "30", "31"]
         
+        // Do any additional setup after loading the view.
+        setUpUI()
     }
+    
+    func setUpUI() {
+        
+        // Progess indicators
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-purple")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-gray")
+        
+    }
+    
     
     @IBAction func showDdYearOptions(_ sender:Any) {
         dropDown1.show()

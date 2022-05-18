@@ -5080,11 +5080,16 @@ MixoType Identity!</string>
                         <outlet property="ddMonthButton" destination="K44-CA-lW5" id="Qyi-eo-x2Z"/>
                         <outlet property="ddYear" destination="vcH-3e-NXT" id="zbh-Fg-CPh"/>
                         <outlet property="ddYearButton" destination="kDK-LE-tRK" id="gdR-gB-AoZ"/>
+                        <outlet property="ivProgressIndicator0" destination="I9d-uE-x9R" id="Gsh-6B-D0o"/>
+                        <outlet property="ivProgressIndicator1" destination="BvW-rf-uQg" id="g00-mE-2Pd"/>
+                        <outlet property="ivProgressIndicator2" destination="uvt-A8-ibH" id="FQC-Xu-z80"/>
+                        <outlet property="ivProgressIndicator3" destination="aW0-oB-VWy" id="Biv-r6-QTg"/>
+                        <outlet property="ivProgressIndicator4" destination="qqN-2p-FPc" id="I76-tE-MeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="136-lu-kUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9613" y="-242"/>
+            <point key="canvasLocation" x="9611.5942028985519" y="-242.41071428571428"/>
         </scene>
         <!--Profile Scene2NVC-->
         <scene sceneID="oQg-BW-hlo">
