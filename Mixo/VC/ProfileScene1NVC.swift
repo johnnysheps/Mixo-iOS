@@ -20,7 +20,7 @@ class ProfileScene1NVC: UIViewController {
 
     @IBOutlet weak var btnNext: UIButton!
     
-    // Buttons
+    // Multistep progress bar
     
     @IBOutlet weak var ivProgressIndicator0: UIImageView!
     @IBOutlet weak var ivProgressIndicator1: UIImageView!
@@ -32,6 +32,8 @@ class ProfileScene1NVC: UIViewController {
     @IBOutlet weak var ddYear: UIView!
     @IBOutlet weak var ddYearButton: UIButton!
     @IBOutlet weak var chevron1: UITextView!
+    
+    // Buttons
     
     @IBOutlet weak var ddMonth: UIView!
     @IBOutlet weak var ddMonthButton: UIButton!
@@ -113,7 +115,7 @@ class ProfileScene1NVC: UIViewController {
     
     func setUpUI() {
         
-        // Progess indicators
+        // Progess indicators - Render appropriately
         ivProgressIndicator0.image = UIImage(named:"progress-indicator-purple")
         ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
         ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")

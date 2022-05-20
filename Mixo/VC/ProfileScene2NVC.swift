@@ -11,6 +11,16 @@ import UIKit
 @available(iOS 13.0, *)
 class ProfileScene2NVC: UIViewController {
 
+    // Multistep progress bar
+    
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
+    
+    // Buttons
+
     @IBOutlet weak var btnMale: UIButton!
     @IBOutlet weak var btnOther: UIButton!
     @IBOutlet weak var btnFemale: UIButton!
@@ -29,9 +39,21 @@ class ProfileScene2NVC: UIViewController {
         imgCheck2.isHidden = true
         imgCheck3.isHidden = true
         
+        // Do any additional setup after loading the view.
+        setUpUI()
         
     }
     
+    func setUpUI() {
+        
+        // Progess indicators - Render appropriately
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-purple")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-gray")
+        
+    }
 
     @IBAction func btnMale(_ sender: Any) {
         if(imgCheck1.isHidden == false){
