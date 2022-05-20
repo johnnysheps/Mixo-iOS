@@ -30,6 +30,7 @@
 		A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6B2797D78D0034305C /* instructions-alt-4.png */; };
 		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
+		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
 		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
@@ -95,6 +96,7 @@
 		A223AC6B2797D78D0034305C /* instructions-alt-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-4.png"; sourceTree = "<group>"; };
 		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
+		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				A223AC6C2797D7960034305C /* instructions-alt-3.png */,
 				A223AC6B2797D78D0034305C /* instructions-alt-4.png */,
 				A2F277DB277AE52500CF28AB /* Logo Square.png */,
+				A25D7FC328377D5C0054444B /* Ruled lines.png */,
 				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
 				A32A701B2350B9EB00B6E6A7 /* Info.plist */,
 				A2F43345274827B600F30D0F /* Warning.storyboard */,
@@ -367,6 +370,7 @@
 				A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */,
 				A2F4335027482B5700F30D0F /* Main.storyboard in Resources */,
 				2A215A7B263B1013008F32D8 /* instructions3.gif in Resources */,
+				A25D7FC428377D690054444B /* Ruled lines.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
