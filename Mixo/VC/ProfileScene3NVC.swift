@@ -79,9 +79,9 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
                     let decoder = JSONDecoder()
                     let info = try decoder.decode([Location].self, from: data)
                     
-//                    print(self.zipCode);
-//                    print(data);
-//                    print(city);
+                    print(self.zipCode);
+                    print(data);
+                    print(city);
                     
                     city = info[0].city
                     state = info[0].state

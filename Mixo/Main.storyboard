@@ -399,7 +399,7 @@
                                 <rect key="frame" x="0.0" y="354" width="204.66666666666666" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name, Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-NE-SAd">
-                                        <rect key="frame" x="39.666666666666657" y="45" width="125" height="20"/>
+                                        <rect key="frame" x="47.666666666666657" y="45" width="109" height="20"/>
                                         <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -415,7 +415,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-rP-RAs">
-                                        <rect key="frame" x="5" y="85" width="194.66666666666666" height="17.666666666666671"/>
+                                        <rect key="frame" x="5" y="85" width="194.66666666666666" height="18.333333333333329"/>
                                         <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -800,7 +800,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumScaleFactor="0.5" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-7E-SoX">
-                                <rect key="frame" x="189.66666666666666" y="766.66666666666663" width="34.666666666666657" height="18.666666666666629"/>
+                                <rect key="frame" x="190.66666666666666" y="766" width="32.666666666666657" height="19.333333333333371"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="26"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -923,7 +923,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slow down.  Don't Rush." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DII-pS-rZw">
-                                <rect key="frame" x="20" y="71" width="374" height="102.33333333333331"/>
+                                <rect key="frame" x="20" y="71" width="374" height="105.66666666666669"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="49"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -934,7 +934,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Several Deep Breaths." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fu-4S-UPP">
-                                <rect key="frame" x="20" y="173.33333333333334" width="374" height="102.33333333333334"/>
+                                <rect key="frame" x="20" y="176.66666666666666" width="374" height="105.66666666666666"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="49"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -952,13 +952,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuw-so-PBV">
-                                <rect key="frame" x="176" y="474.33333333333331" width="62" height="129.33333333333331"/>
+                                <rect key="frame" x="180.33333333333334" y="472.33333333333331" width="53.666666666666657" height="133.66666666666669"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="111"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take this opportunity to reflect on who you are and who you want to become." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-bR-cXQ">
-                                <rect key="frame" x="69" y="300.66666666666669" width="276" height="70.333333333333314"/>
+                                <rect key="frame" x="69" y="307.33333333333331" width="276" height="72.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1055,7 +1055,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfZ-NP-fcQ">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1129,7 +1129,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLg-I6-tTt">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1146,7 +1146,7 @@
                                 <color key="progressTintColor" red="0.60784313729999995" green="0.25490196079999999" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ObA-2c-9hb">
-                                <rect key="frame" x="0.0" y="368" width="414" height="354"/>
+                                <rect key="frame" x="0.0" y="367" width="414" height="354"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="YaO-Vn-B7m"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="nxj-2Y-Cna"/>
@@ -1154,10 +1154,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jws-8d-OVJ" userLabel="Stack View Headers">
-                                <rect key="frame" x="0.0" y="226.99999999999997" width="414" height="64.666666666666657"/>
+                                <rect key="frame" x="0.0" y="224.99999999999997" width="414" height="65.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXg-6n-SHD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31.333333333333332"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="nL2-BO-PI2"/>
                                         </constraints>
@@ -1169,7 +1169,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAv-2q-vBI">
-                                        <rect key="frame" x="0.0" y="30.333333333333314" width="414" height="10"/>
+                                        <rect key="frame" x="0.0" y="31.333333333333314" width="414" height="10"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="ejI-eW-uKx"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="g9w-UY-Qp6"/>
@@ -1179,7 +1179,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Text" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHZ-3V-2rr">
-                                        <rect key="frame" x="0.0" y="40.333333333333314" width="414" height="24.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="41.333333333333314" width="414" height="24.333333333333329"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="414" id="FTN-yR-7id"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24.329999999999998" id="VAY-48-Cmy"/>
@@ -1298,7 +1298,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-bL-Muo">
-                                <rect key="frame" x="50" y="233" width="314" height="42"/>
+                                <rect key="frame" x="50" y="233" width="314" height="43.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1307,7 +1307,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________________________" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-Ft-jGB">
-                                <rect key="frame" x="25" y="300" width="364" height="21"/>
+                                <rect key="frame" x="25" y="301.66666666666669" width="364" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1331,7 +1331,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-he-m8N">
-                                <rect key="frame" x="30" y="343" width="354" height="396"/>
+                                <rect key="frame" x="30" y="344.66666666666674" width="354" height="394.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">1.) Introduction to the Mixotype Identity System.
 
@@ -1417,7 +1417,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCn-sp-YOQ">
-                                <rect key="frame" x="20" y="52" width="374" height="35"/>
+                                <rect key="frame" x="20" y="52" width="374" height="36.333333333333343"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1570,7 +1570,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psr-Xf-blH">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1644,7 +1644,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycp-yD-iKA">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Next">
@@ -1740,7 +1740,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-k2-lPi">
-                                <rect key="frame" x="125.66666666666667" y="287.66666666666669" width="9.6666666666666714" height="20"/>
+                                <rect key="frame" x="126.99999999999999" y="287.66666666666669" width="8.3333333333333286" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1749,7 +1749,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY9-Sn-DdF">
-                                <rect key="frame" x="239" y="287.66666666666669" width="9.6666666666666572" height="20"/>
+                                <rect key="frame" x="240.33333333333334" y="287.66666666666669" width="8.3333333333333428" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1758,7 +1758,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-GW-z3N">
-                                <rect key="frame" x="351.66666666666669" y="287.66666666666669" width="9.6666666666666856" height="20"/>
+                                <rect key="frame" x="353" y="287.66666666666669" width="8.3333333333333144" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1767,7 +1767,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3N-Kb-FMx">
-                                <rect key="frame" x="125.66666666666667" y="401.33333333333331" width="9.6666666666666714" height="20"/>
+                                <rect key="frame" x="126.99999999999999" y="401.33333333333331" width="8.3333333333333286" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1776,7 +1776,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifD-no-Pgf">
-                                <rect key="frame" x="239" y="401.33333333333331" width="9.6666666666666572" height="20"/>
+                                <rect key="frame" x="240.33333333333334" y="401.33333333333331" width="8.3333333333333428" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1785,7 +1785,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29W-g8-ofx">
-                                <rect key="frame" x="352.66666666666669" y="401.33333333333331" width="9.6666666666666856" height="20"/>
+                                <rect key="frame" x="354" y="401.33333333333331" width="8.3333333333333144" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1794,7 +1794,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E3-2Y-PbG">
-                                <rect key="frame" x="125.66666666666667" y="514.66666666666663" width="9.6666666666666714" height="20"/>
+                                <rect key="frame" x="126.99999999999999" y="514.66666666666663" width="8.3333333333333286" height="20.666666666666629"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1803,7 +1803,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rT-pw-Yqo">
-                                <rect key="frame" x="239" y="514.66666666666663" width="9.6666666666666572" height="20"/>
+                                <rect key="frame" x="240.33333333333334" y="514.66666666666663" width="8.3333333333333428" height="20.666666666666629"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1812,7 +1812,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLS-GM-U4k">
-                                <rect key="frame" x="352.66666666666669" y="514.66666666666663" width="9.6666666666666856" height="20"/>
+                                <rect key="frame" x="354" y="514.66666666666663" width="8.3333333333333144" height="20.666666666666629"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -1985,7 +1985,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wr-cl-wMy">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2059,7 +2059,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-oK-VIf" userLabel="BtnNext">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Next">
@@ -2089,7 +2089,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3C-eY-8HT">
-                                <rect key="frame" x="189" y="343.66666666666669" width="36" height="20"/>
+                                <rect key="frame" x="192" y="343.66666666666669" width="30.333333333333343" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2098,7 +2098,7 @@
                                 </variation>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUR-O7-cCM">
-                                <rect key="frame" x="202" y="383.66666666666669" width="10" height="100"/>
+                                <rect key="frame" x="202" y="384.33333333333331" width="10" height="100"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="cBk-5z-cih"/>
@@ -2109,7 +2109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87p-7o-vpP" userLabel="spacer2">
-                                <rect key="frame" x="202" y="493.66666666666674" width="10" height="100"/>
+                                <rect key="frame" x="202" y="494.33333333333326" width="10" height="100"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="Snj-pJ-cHd"/>
@@ -2120,7 +2120,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVr-Kc-Aqg" userLabel="btnHeroTemp1">
-                                <rect key="frame" x="92.333333333333314" y="383.66666666666669" width="109.66666666666669" height="109.66666666666669"/>
+                                <rect key="frame" x="92.333333333333314" y="384.33333333333331" width="109.66666666666669" height="109.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sVr-Kc-Aqg" secondAttribute="height" multiplier="1:1" id="6Iw-e8-L4j"/>
                                 </constraints>
@@ -2130,7 +2130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e3-DB-koV" userLabel="btnHeroTemp2">
-                                <rect key="frame" x="211.99999999999997" y="383.66666666666669" width="109.66666666666666" height="109.66666666666669"/>
+                                <rect key="frame" x="211.99999999999997" y="384.33333333333331" width="109.66666666666666" height="109.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5e3-DB-koV" secondAttribute="height" multiplier="1:1" id="2La-Bm-ui8"/>
                                 </constraints>
@@ -2140,7 +2140,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-qg-Sbu" userLabel="btnHeroTemp3">
-                                <rect key="frame" x="92.333333333333314" y="503.33333333333331" width="109.66666666666669" height="109.66666666666669"/>
+                                <rect key="frame" x="92.333333333333314" y="504.00000000000006" width="109.66666666666669" height="109.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zSm-qg-Sbu" secondAttribute="height" multiplier="1:1" id="wcc-m3-mzS"/>
                                 </constraints>
@@ -2150,7 +2150,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-AA-VxB" userLabel="btnHeroTemp4">
-                                <rect key="frame" x="211.99999999999997" y="503.33333333333331" width="109.66666666666666" height="109.66666666666669"/>
+                                <rect key="frame" x="211.99999999999997" y="504.00000000000006" width="109.66666666666666" height="109.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QcL-AA-VxB" secondAttribute="height" multiplier="1:1" id="Sdi-5q-1Pi"/>
                                 </constraints>
@@ -2160,28 +2160,28 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="qlh-kU-qIv" userLabel="check1">
-                                <rect key="frame" x="117.33333333333333" y="408.66666666666669" width="59.666666666666671" height="59.666666666666686"/>
+                                <rect key="frame" x="117.33333333333333" y="409.33333333333331" width="59.666666666666671" height="59.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qlh-kU-qIv" secondAttribute="height" multiplier="1:1" id="ae4-i3-ED9"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="g0Y-cR-a1H" userLabel="check2">
-                                <rect key="frame" x="236.99999999999997" y="408.66666666666669" width="59.666666666666657" height="59.666666666666686"/>
+                                <rect key="frame" x="236.99999999999997" y="409.33333333333331" width="59.666666666666657" height="59.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="MJu-KD-k86" userLabel="check3">
-                                <rect key="frame" x="117.33333333333333" y="528.33333333333337" width="59.666666666666671" height="59.666666666666629"/>
+                                <rect key="frame" x="117.33333333333333" y="529" width="59.666666666666671" height="59.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MJu-KD-k86" secondAttribute="height" multiplier="1:1" id="RZY-XL-1sa"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="HMa-bU-qbw" userLabel="check4">
-                                <rect key="frame" x="236.99999999999997" y="528.33333333333337" width="59.666666666666657" height="59.666666666666629"/>
+                                <rect key="frame" x="236.99999999999997" y="529" width="59.666666666666657" height="59.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HMa-bU-qbw" secondAttribute="height" multiplier="1:1" id="RCZ-4v-iaU"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj7-ov-eno" userLabel="btnTempDefs">
-                                <rect key="frame" x="94.666666666666686" y="643" width="225" height="35"/>
+                                <rect key="frame" x="94.666666666666686" y="643.66666666666663" width="225" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="ghp-OC-cuu"/>
                                 </constraints>
@@ -2302,7 +2302,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE9-2B-F8l">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2380,7 +2380,7 @@
                                 <color key="progressTintColor" red="0.60784313729999995" green="0.25490196079999999" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbn-sn-SAj">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Start Over">
@@ -2427,7 +2427,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-t3-aFO">
-                                <rect key="frame" x="200" y="375.33333333333331" width="14" height="82.666666666666686"/>
+                                <rect key="frame" x="201" y="375.33333333333331" width="12.333333333333343" height="82.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2436,7 +2436,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u87-rS-ngo">
-                                <rect key="frame" x="200" y="478.00000000000006" width="14" height="82.666666666666686"/>
+                                <rect key="frame" x="201" y="478.00000000000006" width="12.333333333333343" height="82.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2445,7 +2445,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBf-Eb-gOn">
-                                <rect key="frame" x="200" y="580.66666666666663" width="14" height="83"/>
+                                <rect key="frame" x="201" y="580.66666666666663" width="12.333333333333343" height="83"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2454,7 +2454,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2m1-k9-oFb">
-                                <rect key="frame" x="200" y="272.33333333333331" width="14" height="83"/>
+                                <rect key="frame" x="201" y="272.33333333333331" width="12.333333333333343" height="83"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2463,40 +2463,40 @@
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder1" translatesAutoresizingMaskIntoConstraints="NO" id="PUB-lt-5YZ" userLabel="imgArchetype1">
-                                <rect key="frame" x="73.666666666666671" y="272" width="83.000000000000014" height="82.666666666666686"/>
+                                <rect key="frame" x="74.666666666666657" y="272" width="82.666666666666657" height="82.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PUB-lt-5YZ" secondAttribute="height" multiplier="1:1" id="ZJr-kB-2aY"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder1" translatesAutoresizingMaskIntoConstraints="NO" id="7gz-nN-r61" userLabel="imgTM1">
-                                <rect key="frame" x="257.66666666666669" y="272" width="82.666666666666686" height="82.666666666666686"/>
+                                <rect key="frame" x="256.66666666666669" y="272" width="82.666666666666686" height="82.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder2" translatesAutoresizingMaskIntoConstraints="NO" id="9kl-cX-eig" userLabel="imgArchetype2">
-                                <rect key="frame" x="73.666666666666671" y="375.33333333333331" width="83.000000000000014" height="82.666666666666686"/>
+                                <rect key="frame" x="74.666666666666657" y="375.33333333333331" width="82.666666666666657" height="82.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9kl-cX-eig" secondAttribute="height" multiplier="1:1" id="LuV-DY-tJa"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder2" translatesAutoresizingMaskIntoConstraints="NO" id="pCQ-Ky-3jC" userLabel="imgTM2">
-                                <rect key="frame" x="257.66666666666669" y="375.33333333333331" width="82.666666666666686" height="82.666666666666686"/>
+                                <rect key="frame" x="256.66666666666669" y="375.33333333333331" width="82.666666666666686" height="82.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pCQ-Ky-3jC" secondAttribute="height" multiplier="1:1" id="5cD-gm-JSh"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder3" translatesAutoresizingMaskIntoConstraints="NO" id="J6H-9y-dVb" userLabel="imgArchetype3">
-                                <rect key="frame" x="73.666666666666671" y="478.66666666666669" width="83.000000000000014" height="82.666666666666686"/>
+                                <rect key="frame" x="74.666666666666657" y="478.66666666666669" width="82.666666666666657" height="82.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder3" translatesAutoresizingMaskIntoConstraints="NO" id="5lD-1O-rGh" userLabel="imgTM3">
-                                <rect key="frame" x="257.66666666666669" y="478.66666666666669" width="82.666666666666686" height="82.666666666666686"/>
+                                <rect key="frame" x="256.66666666666669" y="478.66666666666669" width="82.666666666666686" height="82.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder4" translatesAutoresizingMaskIntoConstraints="NO" id="uei-Pq-9By" userLabel="imgArchetype4">
-                                <rect key="frame" x="73.666666666666671" y="581.66666666666663" width="83.000000000000014" height="83"/>
+                                <rect key="frame" x="74.666666666666657" y="581.66666666666663" width="82.666666666666657" height="83"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder4" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-76-zxJ" userLabel="imgTM4">
-                                <rect key="frame" x="257.66666666666669" y="581.66666666666663" width="82.666666666666686" height="83"/>
+                                <rect key="frame" x="256.66666666666669" y="581.66666666666663" width="82.666666666666686" height="83"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjf-37-wl1">
-                                <rect key="frame" x="0.0" y="781" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="780" width="414" height="41"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="2gR-1x-LJY"/>
@@ -2516,7 +2516,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqk-7C-Fr4">
-                                <rect key="frame" x="158" y="191" width="98" height="46.666666666666657"/>
+                                <rect key="frame" x="166" y="191" width="82.333333333333314" height="48.333333333333343"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2654,7 +2654,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-1E-OQ1">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2728,7 +2728,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-gJ-fIf">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Next">
@@ -2884,7 +2884,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuy-4X-tgw" userLabel="lblArchetype1">
-                                <rect key="frame" x="96.333333333333329" y="298.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="97.333333333333329" y="298.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2893,7 +2893,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUG-4g-Yq6" userLabel="lblArchetype2">
-                                <rect key="frame" x="186" y="298.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="187" y="298.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2902,7 +2902,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zc-l8-DUS" userLabel="lblArchetype3">
-                                <rect key="frame" x="273.66666666666669" y="298.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="274.66666666666669" y="298.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2911,7 +2911,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-Qz-naA" userLabel="lblArchetype4">
-                                <rect key="frame" x="361.66666666666669" y="298.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="362.66666666666669" y="298.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2920,7 +2920,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtP-0Z-Wd4" userLabel="lblArchetype5">
-                                <rect key="frame" x="98.333333333333329" y="386.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="99.333333333333329" y="386.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2929,7 +2929,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-l9-OGG" userLabel="lblArchetype6">
-                                <rect key="frame" x="186" y="386.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="187" y="386.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2938,7 +2938,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-H9-upu" userLabel="lblArchetype7">
-                                <rect key="frame" x="273.66666666666669" y="386.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="274.66666666666669" y="386.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2947,7 +2947,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-LJ-aDh" userLabel="lblArchetype8">
-                                <rect key="frame" x="361.66666666666669" y="386.33333333333331" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="362.66666666666669" y="386.33333333333331" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2956,7 +2956,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nW-7w-rkP" userLabel="lblArchetype9">
-                                <rect key="frame" x="98.333333333333329" y="474" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="99.333333333333329" y="474" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2965,7 +2965,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-xP-bqp" userLabel="lblArchetype9">
-                                <rect key="frame" x="186" y="474" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="187" y="474" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2974,7 +2974,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yh-SY-z3U" userLabel="lblArchetype12">
-                                <rect key="frame" x="361.66666666666669" y="474" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="362.66666666666669" y="474" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2983,7 +2983,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB5-DJ-vSS" userLabel="lblArchetype13">
-                                <rect key="frame" x="98.333333333333329" y="561.66666666666663" width="8" height="16.333333333333371"/>
+                                <rect key="frame" x="99.333333333333329" y="561.66666666666663" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -2992,7 +2992,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-HP-Ccd" userLabel="lblArchetype14">
-                                <rect key="frame" x="186" y="561.66666666666663" width="8" height="16.333333333333371"/>
+                                <rect key="frame" x="187" y="561.66666666666663" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3001,7 +3001,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-r4-C9g" userLabel="lblArchetype15">
-                                <rect key="frame" x="273.66666666666669" y="561.66666666666663" width="8" height="16.333333333333371"/>
+                                <rect key="frame" x="274.66666666666669" y="561.66666666666663" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3010,7 +3010,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl4-KL-eo0" userLabel="lblArchetype16">
-                                <rect key="frame" x="361.66666666666669" y="561.66666666666663" width="8" height="16.333333333333371"/>
+                                <rect key="frame" x="362.66666666666669" y="561.66666666666663" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3019,7 +3019,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyU-Za-OuV" userLabel="lblArchetype9">
-                                <rect key="frame" x="273.66666666666669" y="474" width="8" height="16.333333333333314"/>
+                                <rect key="frame" x="274.66666666666669" y="474" width="7" height="17"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3278,7 +3278,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-xz-v3e">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3356,7 +3356,7 @@
                                 <color key="progressTintColor" red="0.60784313729999995" green="0.25490196079999999" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNI-hL-iv7" userLabel="btnRestart">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Start Over">
@@ -3396,7 +3396,7 @@
                                 <rect key="frame" x="235.66666666666666" y="581.66666666666663" width="82.666666666666657" height="83"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlQ-TV-XWe">
-                                <rect key="frame" x="147.66666666666666" y="375.33333333333331" width="14" height="82.666666666666686"/>
+                                <rect key="frame" x="149.33333333333334" y="375.33333333333331" width="12.333333333333343" height="82.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3405,7 +3405,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmG-ws-4gj">
-                                <rect key="frame" x="147.66666666666666" y="273" width="14" height="81.666666666666686"/>
+                                <rect key="frame" x="149.33333333333334" y="273" width="12.333333333333343" height="81.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3414,7 +3414,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUN-n1-7c3">
-                                <rect key="frame" x="147.66666666666666" y="478.66666666666669" width="14" height="82.666666666666686"/>
+                                <rect key="frame" x="149.33333333333334" y="478.66666666666669" width="12.333333333333343" height="82.666666666666686"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3423,7 +3423,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-GU-9ZI">
-                                <rect key="frame" x="147.66666666666666" y="581.66666666666663" width="14" height="83"/>
+                                <rect key="frame" x="149.33333333333334" y="581.66666666666663" width="12.333333333333343" height="83"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="45"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -3432,7 +3432,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5W-iq-UIw">
-                                <rect key="frame" x="0.0" y="781" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="780" width="414" height="41"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="aNj-QR-Ph7"/>
@@ -3449,7 +3449,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XZ-iO-Ao4">
-                                <rect key="frame" x="158" y="191" width="98" height="46.666666666666657"/>
+                                <rect key="frame" x="166" y="191" width="82.333333333333314" height="48.333333333333343"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -3566,7 +3566,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixoType Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um0-MF-2eX">
-                                <rect key="frame" x="92.666666666666671" y="52" width="228.66666666666663" height="38"/>
+                                <rect key="frame" x="107.66666666666667" y="52" width="198.66666666666663" height="38"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3632,7 +3632,7 @@
                                 <color key="progressTintColor" red="0.60784313729999995" green="0.25490196079999999" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHZ-6N-SiU">
-                                <rect key="frame" x="0.0" y="172" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="172" width="414" height="72.333333333333314"/>
                                 <string key="text">You've Unlocked Your 
 MixoType Identity!</string>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
@@ -3643,7 +3643,7 @@ MixoType Identity!</string>
                                 </variation>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-8g-wVc" userLabel="VertSpacer">
-                                <rect key="frame" x="202" y="282.33333333333331" width="10" height="249.99999999999994"/>
+                                <rect key="frame" x="202" y="284.66666666666669" width="10" height="250.00000000000006"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="4SS-1s-If7"/>
@@ -3654,76 +3654,76 @@ MixoType Identity!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder1nb" translatesAutoresizingMaskIntoConstraints="NO" id="4l7-IE-xLT" userLabel="Mixo1">
-                                <rect key="frame" x="69.333333333333329" y="282.33333333333331" width="131.66666666666669" height="131.66666666666669"/>
+                                <rect key="frame" x="69.333333333333329" y="284.66666666666669" width="131.66666666666669" height="131.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4l7-IE-xLT" secondAttribute="height" multiplier="1:1" id="W3q-l6-U8i"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertlc" translatesAutoresizingMaskIntoConstraints="NO" id="dA3-pE-BAK" userLabel="mixo1tlc">
-                                <rect key="frame" x="69.333333333333314" y="282.33333333333331" width="65.666666666666686" height="66"/>
+                                <rect key="frame" x="69.333333333333314" y="284.66666666666669" width="65.666666666666686" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertrc" translatesAutoresizingMaskIntoConstraints="NO" id="9rp-Ci-OfI" userLabel="mixo1trc">
-                                <rect key="frame" x="135" y="282.33333333333331" width="66" height="66"/>
+                                <rect key="frame" x="135" y="284.66666666666669" width="66" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9rp-Ci-OfI" secondAttribute="height" multiplier="1:1" id="f5e-Oy-KVT"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderblc" translatesAutoresizingMaskIntoConstraints="NO" id="4TF-sF-FI4" userLabel="mixo1blc">
-                                <rect key="frame" x="69.333333333333314" y="348.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
+                                <rect key="frame" x="69.333333333333314" y="350.66666666666669" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderbrc" translatesAutoresizingMaskIntoConstraints="NO" id="pts-3n-EFR" userLabel="mixo1brc">
-                                <rect key="frame" x="135" y="348.33333333333331" width="66" height="65.666666666666686"/>
+                                <rect key="frame" x="135" y="350.66666666666669" width="66" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder2nb" translatesAutoresizingMaskIntoConstraints="NO" id="5zy-YS-zzC" userLabel="Mixo2">
-                                <rect key="frame" x="213" y="282.33333333333331" width="131.66666666666663" height="131.66666666666669"/>
+                                <rect key="frame" x="213" y="284.66666666666669" width="131.66666666666663" height="131.66666666666669"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertlc" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-Y4-QP3" userLabel="mixo2tlc">
-                                <rect key="frame" x="213" y="282.33333333333331" width="66" height="66"/>
+                                <rect key="frame" x="213" y="284.66666666666669" width="66" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertrc" translatesAutoresizingMaskIntoConstraints="NO" id="Tt8-Ps-OSZ" userLabel="mixo2trc">
-                                <rect key="frame" x="279" y="282.33333333333331" width="65.666666666666686" height="66"/>
+                                <rect key="frame" x="279" y="284.66666666666669" width="65.666666666666686" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderblc" translatesAutoresizingMaskIntoConstraints="NO" id="GfB-yB-EhD" userLabel="mixo2blc">
-                                <rect key="frame" x="213" y="348.33333333333331" width="66" height="65.666666666666686"/>
+                                <rect key="frame" x="213" y="350.66666666666669" width="66" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderbrc" translatesAutoresizingMaskIntoConstraints="NO" id="7AF-nN-tHk" userLabel="mixo2brc">
-                                <rect key="frame" x="279" y="348.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
+                                <rect key="frame" x="279" y="350.66666666666669" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder3nb" translatesAutoresizingMaskIntoConstraints="NO" id="IWQ-CO-ems" userLabel="Mixo3">
-                                <rect key="frame" x="69.333333333333329" y="436" width="131.66666666666669" height="131.66666666666663"/>
+                                <rect key="frame" x="69.333333333333329" y="438.33333333333331" width="131.66666666666669" height="131.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IWQ-CO-ems" secondAttribute="height" multiplier="1:1" id="vt1-gt-LgL"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertlc" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-pG-2Vb" userLabel="mixo3tlc">
-                                <rect key="frame" x="69.333333333333314" y="426" width="65.666666666666686" height="66"/>
+                                <rect key="frame" x="69.333333333333314" y="428.33333333333331" width="65.666666666666686" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertrc" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-Pe-MHj" userLabel="mixo3trc">
-                                <rect key="frame" x="135" y="426" width="66" height="66"/>
+                                <rect key="frame" x="135" y="428.33333333333331" width="66" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2r1-Pe-MHj" secondAttribute="height" multiplier="1:1" id="p0z-kC-9OG"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderblc" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-pp-2mQ" userLabel="mixo3blc">
-                                <rect key="frame" x="69.333333333333314" y="492.00000000000006" width="65.666666666666686" height="65.666666666666686"/>
+                                <rect key="frame" x="69.333333333333314" y="494.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderbrc" translatesAutoresizingMaskIntoConstraints="NO" id="ozW-NJ-a7l" userLabel="mixo3brc">
-                                <rect key="frame" x="135" y="492.00000000000006" width="66" height="65.666666666666686"/>
+                                <rect key="frame" x="135" y="494.33333333333331" width="66" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder4nb" translatesAutoresizingMaskIntoConstraints="NO" id="LPj-h2-g1G" userLabel="Mixo4">
-                                <rect key="frame" x="213" y="436" width="131.66666666666663" height="131.66666666666663"/>
+                                <rect key="frame" x="213" y="438.33333333333331" width="131.66666666666663" height="131.66666666666669"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertlc" translatesAutoresizingMaskIntoConstraints="NO" id="75A-8N-nYg" userLabel="mixo4tlc">
-                                <rect key="frame" x="213" y="426" width="66" height="66"/>
+                                <rect key="frame" x="213" y="428.33333333333331" width="66" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholdertrc" translatesAutoresizingMaskIntoConstraints="NO" id="CeZ-Z2-ZWI" userLabel="mixo4trc">
-                                <rect key="frame" x="279" y="426" width="65.666666666666686" height="66"/>
+                                <rect key="frame" x="279" y="428.33333333333331" width="65.666666666666686" height="66"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderblc" translatesAutoresizingMaskIntoConstraints="NO" id="5FJ-Kj-aN5" userLabel="mixo4blc">
-                                <rect key="frame" x="213" y="492.00000000000006" width="66" height="65.666666666666686"/>
+                                <rect key="frame" x="213" y="494.33333333333331" width="66" height="65.666666666666686"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderbrc" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-kB-C1A" userLabel="mixo4brc">
-                                <rect key="frame" x="279" y="492.00000000000006" width="65.666666666666686" height="65.666666666666686"/>
+                                <rect key="frame" x="279" y="494.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-ln-ssZ">
                                 <rect key="frame" x="177" y="660" width="60" height="60"/>
@@ -4859,7 +4859,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-h7-wSN">
-                                <rect key="frame" x="61" y="52" width="292" height="35"/>
+                                <rect key="frame" x="76.333333333333343" y="52" width="261.33333333333326" height="36.333333333333343"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -4868,13 +4868,13 @@ MixoType Identity!</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your birthday?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzq-sT-dfI">
-                                <rect key="frame" x="6" y="114.00000000000001" width="402.33333333333331" height="46.666666666666671"/>
+                                <rect key="frame" x="32.666666666666657" y="113.99999999999999" width="348.66666666666674" height="48.333333333333329"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-lj-3QS">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
                                 <state key="normal" title="Next">
@@ -4888,7 +4888,7 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-3e-NXT" userLabel="ddYear">
-                                <rect key="frame" x="20" y="206.33333333333334" width="374" height="40"/>
+                                <rect key="frame" x="20" y="208" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDK-LE-tRK" userLabel="ddYearButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -4926,7 +4926,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36P-Iy-pmY" userLabel="ddMonth">
-                                <rect key="frame" x="20" y="271.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="273" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K44-CA-lW5" userLabel="ddMonthButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -4963,7 +4963,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-ei-YKO" userLabel="ddDay">
-                                <rect key="frame" x="20" y="334.33333333333331" width="374" height="40"/>
+                                <rect key="frame" x="20" y="336" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCZ-dX-aIA" userLabel="ddDayButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -5000,7 +5000,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-0y-rc4">
-                                <rect key="frame" x="20" y="701" width="374" height="111"/>
+                                <rect key="frame" x="20" y="700" width="374" height="111"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9d-uE-x9R" userLabel="Iv Progress 0">
                                         <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
@@ -5642,7 +5642,7 @@ MixoType Identity!</string>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bU0-Nh-N7s" secondAttribute="height" multiplier="1:1" id="fQl-mb-5ks"/>
                                 </constraints>
-                                <state key="normal" image="camera"/>
+                                <state key="normal" image="cameraN"/>
                                 <connections>
                                     <action selector="btnCamera:" destination="P7Z-3j-91D" eventType="touchUpInside" id="Ngy-ZG-yLk"/>
                                 </connections>
@@ -5740,7 +5740,7 @@ MixoType Identity!</string>
     <resources>
         <image name="Logo Square.png" width="178" height="181"/>
         <image name="Logout" width="840" height="869"/>
-        <image name="camera" width="450" height="450"/>
+        <image name="cameraN" width="418" height="418"/>
         <image name="check" width="298" height="264"/>
         <image name="circle" width="512" height="512"/>
         <image name="deepbreathe" width="1319" height="2258"/>
