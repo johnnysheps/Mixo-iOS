@@ -10,17 +10,35 @@ import UIKit
 
 @available(iOS 13.0, *)
 class ProfileScene5NVC: UIViewController {
-
+    
+    // Multistep progress bar
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
+    
+    // Buttons
     @IBOutlet weak var tvTagline: UITextView!
     @IBOutlet weak var btnNext: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        // Do any additional setup after loading the view.
+        setUpUI()
     }
     
-
+    func setUpUI() {
+        
+        // Progess indicators - Render appropriately
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-purple")
+    }
+    
     @IBAction func btnNext(_ sender: Any) {
         //save tagline
         docRef.updateData([

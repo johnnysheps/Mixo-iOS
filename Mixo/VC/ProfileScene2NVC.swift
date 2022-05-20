@@ -41,7 +41,6 @@ class ProfileScene2NVC: UIViewController {
         
         // Do any additional setup after loading the view.
         setUpUI()
-        
     }
     
     func setUpUI() {

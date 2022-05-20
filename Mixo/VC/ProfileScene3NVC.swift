@@ -19,6 +19,15 @@ var state = String()
 @available(iOS 13.0, *)
 class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
 
+    // Multistep progress bar
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
+    
+    // Buttons
+    
     @IBOutlet weak var txtZipCode: UITextField!
     @IBOutlet weak var lblCityState: UILabel!
     @IBOutlet weak var btnNext: UIButton!
@@ -30,6 +39,10 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
         lblCityState.isHidden = true
         txtZipCode.delegate = self
         txtZipCode.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
+        
+        // Do any additional setup after loading the view.
+        setUpUI()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
@@ -66,6 +79,10 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
                     let decoder = JSONDecoder()
                     let info = try decoder.decode([Location].self, from: data)
                     
+//                    print(self.zipCode);
+//                    print(data);
+//                    print(city);
+                    
                     city = info[0].city
                     state = info[0].state
                     
@@ -83,7 +100,7 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    //go to ProfileScene5
+//go to ProfileScene5
 //    func transitionToProfileScene5VC(){
 //        let profileScene4NVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileScene4NVC) as? ProfileScene4NVC
 //        
@@ -125,6 +142,14 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
         
         //style the text fields
         Utilities.styleTextField(txtZipCode)
+        
+        // Progess indicators - Render appropriately
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-purple")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-gray")
+            
         
     }
     

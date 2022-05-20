@@ -11,7 +11,15 @@ import FirebaseStorage
 
 @available(iOS 13.0, *)
 class ProfileScene4NVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate {
-
+    
+    // Multistep progress bar
+    @IBOutlet weak var ivProgressIndicator0: UIImageView!
+    @IBOutlet weak var ivProgressIndicator1: UIImageView!
+    @IBOutlet weak var ivProgressIndicator2: UIImageView!
+    @IBOutlet weak var ivProgressIndicator3: UIImageView!
+    @IBOutlet weak var ivProgressIndicator4: UIImageView!
+    
+    // Buttons
     @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var imgProfilePic: UIImageView!
     @IBOutlet weak var btnNext: UIButton!
@@ -25,6 +33,10 @@ class ProfileScene4NVC: UIViewController, UIImagePickerControllerDelegate, UINav
         imagePicker.delegate = self
         btnNext.isHidden = true
         btnNext.isEnabled = false
+        
+        
+        // Do any additional setup after loading the view.
+        setUpUI()
     }
     
     @IBAction func btnCamera(_ sender: Any) {
@@ -112,7 +124,15 @@ class ProfileScene4NVC: UIViewController, UIImagePickerControllerDelegate, UINav
     }
     
     
-    
+    func setUpUI() {
+        
+        // Progess indicators - Render appropriately
+        ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+        ivProgressIndicator3.image = UIImage(named:"progress-indicator-purple")
+        ivProgressIndicator4.image = UIImage(named:"progress-indicator-gray")
+    }
 
 }
 
