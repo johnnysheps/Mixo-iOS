@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DALinedTextView
 
 @available(iOS 13.0, *)
 class ProfileScene5NVC: UIViewController {
@@ -18,6 +19,8 @@ class ProfileScene5NVC: UIViewController {
     @IBOutlet weak var ivProgressIndicator3: UIImageView!
     @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
+    var textView: DALinedTextView!
+    
     // Buttons
     @IBOutlet weak var tvTagline: UITextView!
     @IBOutlet weak var btnNext: UIButton!
@@ -27,6 +30,21 @@ class ProfileScene5NVC: UIViewController {
         
         // Do any additional setup after loading the view.
         setUpUI()
+        //title = "DALinedTextView"
+
+        textView = DALinedTextView()
+        textView.frame = view.bounds
+        textView.alwaysBounceVertical = true
+        textView.textContainerInset = UIEdgeInsets(top: 18.0, left: 10.0, bottom: 8.0, right: 10.0)
+        textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        view.addSubview(textView)
+        
+        textView.text = "";
+        textView.text += "`DALinedTextView` is a `UITextView` subclass that draws ruled lines to the view, similar to iOS' built-in Notes app. The lines conform to the appropriate line-height for the currently set `UIFont`.\n\n";
+        
+        textView.text += "`DALinedTextView` is special because it was built with performance and appropriate behavior in mind. Most Q&A and OSS solutions involve image-based backgrounds or overzealous drawing code. For most applications such implementations are great, but `DALinedTextView` was built with 1000-line (or more) `UITextView`s in mind.\n\n";
+
+        textView.text += "Performance decisions are commented so as to provide insight into the thought process behind `DALinedTextView`. The current `-drawRect:` implementation takes as little as 1ms on an iPhone 5."
     }
     
     func setUpUI() {
