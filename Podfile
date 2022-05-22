@@ -17,8 +17,8 @@ target 'Mixo' do
   # pod 'KMPlaceholderTextView', '~> 1.4.0' # Multiline placeholder support
   pod 'KMPlaceholderTextView' # Multiline placeholder support
   pod 'SwiftGifOrigin', '~> 1.7.0' # Gif support with UIImage
-  pod "FontAwesome.swift"
-
+  pod "FontAwesome.swift" # Font awesome icons for chevron
+  pod 'DALinedTextView', '~> 0.0' # Ruled line text iview
 
   # Fix XCode No such module 'FirebaseUI'
   pod 'Firebase/Core'
