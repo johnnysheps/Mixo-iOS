@@ -33,11 +33,13 @@ class ProfileScene5NVC: UIViewController {
         //title = "DALinedTextView"
 
         textView = DALinedTextView()
+        textView.horizontalLineColor = UIColor.black;
+        textView.backgroundColor = UIColor.white;
         textView.frame = view.bounds
         textView.alwaysBounceVertical = true
         textView.textContainerInset = UIEdgeInsets(top: 18.0, left: 10.0, bottom: 8.0, right: 10.0)
         textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        view.addSubview(textView)
+        view.addSubview(textView);
         
         textView.text = "";
         textView.text += "`DALinedTextView` is a `UITextView` subclass that draws ruled lines to the view, similar to iOS' built-in Notes app. The lines conform to the appropriate line-height for the currently set `UIFont`.\n\n";

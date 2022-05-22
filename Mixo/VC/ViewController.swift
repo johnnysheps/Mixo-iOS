@@ -16,7 +16,7 @@ import Firebase
  * If development mode, then we can code screen skips for faster testing
  */
 let devMode = true;
-let skipToScreen = false; // if true, go to screenToSkipTo() to setup which screen
+let skipToScreen = true; // if true, go to screenToSkipTo() to setup which screen
 let autoLogin = false; // if true, go to reference to setup your credentials
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
@@ -120,8 +120,10 @@ class ViewController: UIViewController {
     }
     
     func screenToSkipTo() {
-        let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
-        self.present(profileScene1NVC, animated:true, completion:nil)
+//        let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
+//        self.present(profileScene1NVC, animated:true, completion:nil)
+        let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
+        self.present(profileScene5NVC, animated:true, completion:nil)
     }
 
     @IBAction func btnStart(_ sender: Any) {
