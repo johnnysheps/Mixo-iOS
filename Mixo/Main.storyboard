@@ -5496,9 +5496,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" image="ruledLines" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-LN-8xg">
-                                <rect key="frame" x="47" y="231" width="320" height="170"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-LF-DUT" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
                                 <rect key="frame" x="47" y="231.33333333333337" width="320" height="169.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5512,6 +5509,9 @@ MixoType Identity!</string>
                                     <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
                                 </variation>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" image="ruledLines" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-LN-8xg">
+                                <rect key="frame" x="47" y="231" width="320" height="170"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="cmy-Mz-jqs">
                                 <rect key="frame" x="20" y="710" width="376" height="111"/>
                                 <subviews>

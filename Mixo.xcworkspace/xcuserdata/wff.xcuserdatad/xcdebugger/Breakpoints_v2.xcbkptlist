@@ -31,7 +31,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A1A819E9-B796-493C-9080-9DE71AD3F267"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             condition = "restarted==1"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
