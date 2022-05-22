@@ -8,6 +8,7 @@
 
 import UIKit
 import DALinedTextView
+import KMPlaceholderTextView
 
 @available(iOS 13.0, *)
 class ProfileScene5NVC: UIViewController {
@@ -19,6 +20,7 @@ class ProfileScene5NVC: UIViewController {
     @IBOutlet weak var ivProgressIndicator3: UIImageView!
     @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
+    @IBOutlet weak var parentView: UIStackView!
     var textView: DALinedTextView!
     
     // Buttons
@@ -33,13 +35,15 @@ class ProfileScene5NVC: UIViewController {
         //title = "DALinedTextView"
 
         textView = DALinedTextView()
+        textView.verticalLineColor = UIColor.clear;
         textView.horizontalLineColor = UIColor.black;
         textView.backgroundColor = UIColor.white;
         textView.frame = view.bounds
         textView.alwaysBounceVertical = true
         textView.textContainerInset = UIEdgeInsets(top: 18.0, left: 10.0, bottom: 8.0, right: 10.0)
         textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        view.addSubview(textView);
+        //view.addSubview(textView);
+        parentView.addSubview(textView);
         
         textView.text = "";
         textView.text += "`DALinedTextView` is a `UITextView` subclass that draws ruled lines to the view, similar to iOS' built-in Notes app. The lines conform to the appropriate line-height for the currently set `UIFont`.\n\n";

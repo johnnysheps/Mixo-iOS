@@ -5496,22 +5496,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-LF-DUT" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
-                                <rect key="frame" x="47" y="231.33333333333337" width="320" height="169.66666666666663"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="_____"/>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="20"/>
-                                </variation>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" image="ruledLines" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-LN-8xg">
-                                <rect key="frame" x="47" y="231" width="320" height="170"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="cmy-Mz-jqs">
                                 <rect key="frame" x="20" y="710" width="376" height="111"/>
                                 <subviews>
@@ -5555,28 +5539,31 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="c79-75-Aij"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-DJ-bSg">
+                                <rect key="frame" x="-20" y="214" width="454" height="528"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nQf-nV-8b6">
+                                        <rect key="frame" x="28" y="-14" width="397" height="507"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="022-QN-9Ww"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" constant="8" id="1ZS-Dm-rsk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lFe-LN-8xg" secondAttribute="trailing" constant="27" id="3AK-l7-F3V"/>
-                            <constraint firstItem="ua2-LF-DUT" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="5Vm-I4-1Sb"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
-                            <constraint firstItem="ua2-LF-DUT" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="93.000000000000028" id="8UQ-5F-wBy"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailing" id="FgO-QG-WSr"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="top" secondItem="KpM-IA-Tkb" secondAttribute="bottom" constant="16" id="MCE-7x-scM"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
-                            <constraint firstItem="ua2-LF-DUT" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="47" id="WYd-sb-BE5"/>
-                            <constraint firstItem="lFe-LN-8xg" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="92.670000000000002" id="XvL-zP-iRY"/>
-                            <constraint firstItem="cmy-Mz-jqs" firstAttribute="top" secondItem="ua2-LF-DUT" secondAttribute="bottom" constant="309" id="Y3E-63-BFa"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
-                            <constraint firstItem="cmy-Mz-jqs" firstAttribute="top" secondItem="lFe-LN-8xg" secondAttribute="bottom" constant="309" id="mTF-PD-ONS"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="cmy-Mz-jqs" secondAttribute="bottom" id="vKQ-3Q-PgP"/>
-                            <constraint firstItem="lFe-LN-8xg" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" constant="27" id="vm9-sm-3JW"/>
                             <constraint firstItem="cmy-Mz-jqs" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="xyY-0a-xBN"/>
                         </constraints>
                     </view>
@@ -5587,7 +5574,7 @@ MixoType Identity!</string>
                         <outlet property="ivProgressIndicator2" destination="QR5-mz-zuW" id="BhE-a3-LuD"/>
                         <outlet property="ivProgressIndicator3" destination="w1u-Ek-wuo" id="pZO-IP-lA5"/>
                         <outlet property="ivProgressIndicator4" destination="Xoe-73-mjL" id="glU-hl-VgQ"/>
-                        <outlet property="tvTagline" destination="ua2-LF-DUT" id="xU9-1G-efC"/>
+                        <outlet property="parentView" destination="nQf-nV-8b6" id="nu4-GZ-mFU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZj-LH-trj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5766,7 +5753,6 @@ MixoType Identity!</string>
         <image name="placeholdertlc" width="218" height="218"/>
         <image name="placeholdertrc" width="218" height="218"/>
         <image name="resultsbtn" width="265" height="265"/>
-        <image name="ruledLines" width="260" height="162"/>
         <image name="signback" width="1319" height="2258"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
