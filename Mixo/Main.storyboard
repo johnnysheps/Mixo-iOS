@@ -5496,6 +5496,10 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-DJ-bSg" userLabel="ViewWillContainLinedTextView">
+                                <rect key="frame" x="0.0" y="148.33333333333331" width="414" height="565.66666666666674"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="cmy-Mz-jqs">
                                 <rect key="frame" x="20" y="710" width="376" height="111"/>
                                 <subviews>
@@ -5539,42 +5543,35 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="c79-75-Aij"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sua-DJ-bSg">
-                                <rect key="frame" x="-20" y="214" width="454" height="528"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nQf-nV-8b6">
-                                        <rect key="frame" x="28" y="-14" width="397" height="507"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="022-QN-9Ww"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" constant="8" id="1ZS-Dm-rsk"/>
+                            <constraint firstItem="Sua-DJ-bSg" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="10" id="3sa-IX-ej5"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
+                            <constraint firstItem="Sua-DJ-bSg" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="6pn-Wm-i1Q"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailing" id="FgO-QG-WSr"/>
+                            <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="Sua-DJ-bSg" secondAttribute="bottom" constant="107" id="Gi7-3D-K2y"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="top" secondItem="KpM-IA-Tkb" secondAttribute="bottom" constant="16" id="MCE-7x-scM"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
+                            <constraint firstAttribute="trailing" secondItem="Sua-DJ-bSg" secondAttribute="trailing" id="lnj-Bh-cfc"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="cmy-Mz-jqs" secondAttribute="bottom" id="vKQ-3Q-PgP"/>
                             <constraint firstItem="cmy-Mz-jqs" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="xyY-0a-xBN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ViewWillContainLinedTextView" destination="Sua-DJ-bSg" id="wlE-hN-lIf"/>
                         <outlet property="btnNext" destination="qbb-GA-FCZ" id="mQg-Lm-dMN"/>
                         <outlet property="ivProgressIndicator0" destination="ape-Zt-qN0" id="c6W-we-TWy"/>
                         <outlet property="ivProgressIndicator1" destination="op5-jw-dfb" id="VSD-Ea-MWx"/>
                         <outlet property="ivProgressIndicator2" destination="QR5-mz-zuW" id="BhE-a3-LuD"/>
                         <outlet property="ivProgressIndicator3" destination="w1u-Ek-wuo" id="pZO-IP-lA5"/>
                         <outlet property="ivProgressIndicator4" destination="Xoe-73-mjL" id="glU-hl-VgQ"/>
-                        <outlet property="parentView" destination="nQf-nV-8b6" id="nu4-GZ-mFU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZj-LH-trj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5759,6 +5756,9 @@ MixoType Identity!</string>
         </systemColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
