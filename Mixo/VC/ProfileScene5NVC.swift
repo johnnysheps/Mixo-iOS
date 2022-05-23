@@ -46,12 +46,18 @@ class ProfileScene5NVC: UIViewController {
         textView.frame = viewWillContainLinedTextView.bounds
         textView.alwaysBounceVertical = true
 //        textView.textContainerInset = UIEdgeInsets(top: 18.0, left: 10.0, bottom: 8.0, right: 10.0)
-        textView.textContainerInset = UIEdgeInsets(top: 28.0, left: 10.0, bottom: 8.0, right: 10.0)
+        textView.textContainerInset = UIEdgeInsets(top: 28.0, left: 15.0, bottom: 8.0, right: 15.0)
         textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
         textView.text = "";
         textView.text += "This is a multiline textview with ruled lines as if it's ruled paper per mockup.\n\n";
         textView.text += "So far and so far and so far and so far.";
+        
+        textView.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        textView.becomeFirstResponder()
     }
     
     func setUpUI() {
