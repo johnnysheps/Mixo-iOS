@@ -29,6 +29,7 @@
 		A223AC6F2797D79B0034305C /* instructions-alt-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6A2797D7860034305C /* instructions-alt-1.png */; };
 		A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6B2797D78D0034305C /* instructions-alt-4.png */; };
 		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
+		A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */; };
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
 		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
@@ -95,6 +96,7 @@
 		A223AC6A2797D7860034305C /* instructions-alt-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-1.png"; sourceTree = "<group>"; };
 		A223AC6B2797D78D0034305C /* instructions-alt-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-4.png"; sourceTree = "<group>"; };
 		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
+		A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeMyAvatar.png; sourceTree = "<group>"; };
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
 		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
 				A2F4334F27482B5700F30D0F /* Main.storyboard */,
 				A32A70162350B9EB00B6E6A7 /* Assets.xcassets */,
+				A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */,
 				A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */,
 				A2E0C37C2795323600C6E17D /* progress-indicator-gray.png */,
 				A2E0C37B2795323600C6E17D /* progress-indicator-purple.png */,
@@ -371,6 +374,7 @@
 				A2F4335027482B5700F30D0F /* Main.storyboard in Resources */,
 				2A215A7B263B1013008F32D8 /* instructions3.gif in Resources */,
 				A25D7FC428377D690054444B /* Ruled lines.png in Resources */,
+				A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@ import Firebase
  * If development mode, then we can code screen skips for faster testing
  */
 let devMode = true;
-let skipToScreen = true; // if true, go to screenToSkipTo() to setup which screen
+let skipToScreen = false; // if true, go to screenToSkipTo() to setup which screen
 let autoLogin = false; // if true, go to reference to setup your credentials
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
