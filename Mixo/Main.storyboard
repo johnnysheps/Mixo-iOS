@@ -5555,7 +5555,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
-                                <rect key="frame" x="20" y="173" width="374" height="212"/>
+                                <rect key="frame" x="20" y="153.33333333333337" width="374" height="212"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="212" id="7ln-qG-ddy"/>
@@ -5574,7 +5574,7 @@ MixoType Identity!</string>
                                 </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6J-hw-GVO" userLabel="CharLimit">
-                                <rect key="frame" x="306" y="411" width="90" height="20.333333333333314"/>
+                                <rect key="frame" x="306" y="391.33333333333331" width="90" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="XqA-hE-kz7"/>
                                     <constraint firstAttribute="height" constant="20.329999999999998" id="eS8-Mj-PJQ"/>
@@ -5597,7 +5597,7 @@ MixoType Identity!</string>
                             <constraint firstItem="K6J-hw-GVO" firstAttribute="top" secondItem="xa0-8Q-8NG" secondAttribute="bottom" constant="26" id="eTl-X4-ydo"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="gUx-MW-D9N"/>
-                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="34.670000000000002" id="khB-CL-zdK"/>
+                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="15" id="khB-CL-zdK"/>
                             <constraint firstAttribute="trailing" secondItem="K6J-hw-GVO" secondAttribute="trailing" constant="18" id="l4W-6Q-Ar3"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="cmy-Mz-jqs" secondAttribute="bottom" id="vKQ-3Q-PgP"/>

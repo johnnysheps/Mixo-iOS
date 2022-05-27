@@ -44,8 +44,18 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     }
     
     internal func textViewDidChange(_ textView: UITextView) {
-        let count = String(userInput.text.count);
-        charLimit.text = "(" + count + "/60)";
+        let countInt = userInput.text.count;
+        let count = String(countInt);
+        if(countInt<60) {
+            charLimit.textColor = UIColor.black;
+            charLimit.text = "(" + count + "/60)";
+        } else if(countInt==60) {
+            charLimit.textColor = UIColor.red;
+            charLimit.text = "(60/60)";
+        } else {
+            charLimit.textColor = UIColor.red;
+            charLimit.text = "(60/60)";
+        }
     }
     
     
