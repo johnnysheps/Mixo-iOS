@@ -18,7 +18,6 @@ target 'Mixo' do
   pod 'KMPlaceholderTextView' # Multiline placeholder support
   pod 'SwiftGifOrigin', '~> 1.7.0' # Gif support with UIImage
   pod "FontAwesome.swift" # Font awesome icons for chevron
-  pod 'DALinedTextView', '~> 0.0' # Ruled line text iview
   pod 'IQKeyboardManager' # Keyboard manager to force screen keyboard to appear on DALinedTextView
 
   # Fix XCode No such module 'FirebaseUI'

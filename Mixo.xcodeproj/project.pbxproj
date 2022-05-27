@@ -31,6 +31,8 @@
 		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
 		A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */; };
 		A2518710284060FB00A8DB2A /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = A251870F284060B700A8DB2A /* Calendar.png */; };
+		A25187132840B34F00A8DB2A /* progress-indicator-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = A25187112840B34F00A8DB2A /* progress-indicator-purple.png */; };
+		A25187142840B34F00A8DB2A /* progress-indicator-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A25187122840B34F00A8DB2A /* progress-indicator-gray.png */; };
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
 		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
@@ -97,6 +99,8 @@
 		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
 		A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeMyAvatar.png; sourceTree = "<group>"; };
 		A251870F284060B700A8DB2A /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		A25187112840B34F00A8DB2A /* progress-indicator-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-indicator-purple.png"; sourceTree = "<group>"; };
+		A25187122840B34F00A8DB2A /* progress-indicator-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-indicator-gray.png"; sourceTree = "<group>"; };
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
 		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
@@ -228,6 +232,8 @@
 				A223AC6C2797D7960034305C /* instructions-alt-3.png */,
 				A223AC6B2797D78D0034305C /* instructions-alt-4.png */,
 				A2F277DB277AE52500CF28AB /* Logo Square.png */,
+				A25187122840B34F00A8DB2A /* progress-indicator-gray.png */,
+				A25187112840B34F00A8DB2A /* progress-indicator-purple.png */,
 				A25D7FC328377D5C0054444B /* Ruled lines.png */,
 				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
 				A32A701B2350B9EB00B6E6A7 /* Info.plist */,
@@ -344,6 +350,7 @@
 				A223AC5D2797D67B0034305C /* J _ MixoType Engine - Intelligences Section Intro Graphic.png in Resources */,
 				A223AC5B2797D67B0034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */,
 				A2F4334C2748284D00F30D0F /* Mixo.entitlements in Resources */,
+				A25187142840B34F00A8DB2A /* progress-indicator-gray.png in Resources */,
 				A2F43346274827B600F30D0F /* Warning.storyboard in Resources */,
 				A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */,
 				A223AC6D2797D79B0034305C /* instructions-alt-0.gif in Resources */,
@@ -360,6 +367,7 @@
 				A223AC5A2797D67B0034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */,
 				A2F4334A2748280B00F30D0F /* Definitions.storyboard in Resources */,
 				2A215A74263B0EFE008F32D8 /* instructions1.gif in Resources */,
+				A25187132840B34F00A8DB2A /* progress-indicator-purple.png in Resources */,
 				A223AC6F2797D79B0034305C /* instructions-alt-1.png in Resources */,
 				A2F4335227482BBA00F30D0F /* LaunchScreen.storyboard in Resources */,
 				2A215A79263B1013008F32D8 /* instructions4.gif in Resources */,

@@ -11,7 +11,7 @@ import DALinedTextView
 import KMPlaceholderTextView
 
 @available(iOS 13.0, *)
-class ProfileScene5NVC: UIViewController {
+class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     
     // Multistep progress bar
     @IBOutlet weak var ivProgressIndicator0: UIImageView!
@@ -20,11 +20,10 @@ class ProfileScene5NVC: UIViewController {
     @IBOutlet weak var ivProgressIndicator3: UIImageView!
     @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
-    @IBOutlet weak var viewWillContainLinedTextView: UIView!
-    var textView: DALinedTextView!
+    // Controls
     
-    // Buttons
-    @IBOutlet weak var tvTagline: UITextView!
+    @IBOutlet weak var userInput: KMPlaceholderTextView!
+    @IBOutlet weak var charLimit: UILabel!
     @IBOutlet weak var btnNext: UIButton!
     
     override func viewDidLoad() {
@@ -32,32 +31,6 @@ class ProfileScene5NVC: UIViewController {
         
         // Do any additional setup after loading the view.
         setUpUI()
-
-        setupLinedTextView();
-    }
-    
-    func setupLinedTextView() {
-        textView = DALinedTextView()
-        viewWillContainLinedTextView.addSubview(textView);
-        textView.font = UIFont(name: "Heiti TC", size: 16);
-        textView.verticalLineColor = UIColor.clear;
-        textView.horizontalLineColor = UIColor.black;
-        textView.backgroundColor = UIColor.white;
-        textView.frame = viewWillContainLinedTextView.bounds
-        textView.alwaysBounceVertical = true
-//        textView.textContainerInset = UIEdgeInsets(top: 18.0, left: 10.0, bottom: 8.0, right: 10.0)
-        textView.textContainerInset = UIEdgeInsets(top: 28.0, left: 15.0, bottom: 8.0, right: 15.0)
-        textView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        
-        textView.text = "";
-        textView.text += "This is a multiline textview with ruled lines as if it's ruled paper per mockup.\n\n";
-        textView.text += "So far and so far and so far and so far.";
-        
-        textView.becomeFirstResponder()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        textView.becomeFirstResponder()
     }
     
     func setUpUI() {
@@ -70,10 +43,16 @@ class ProfileScene5NVC: UIViewController {
         ivProgressIndicator4.image = UIImage(named:"progress-indicator-purple")
     }
     
+    internal func textViewDidChange(_ textView: UITextView) {
+        let count = String(userInput.text.count);
+        charLimit.text = "(" + count + "/60)";
+    }
+    
+    
     @IBAction func btnNext(_ sender: Any) {
         //save tagline
         docRef.updateData([
-            "tagline": textView.text!,
+            "tagline": userInput.text!,
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
