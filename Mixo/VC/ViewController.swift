@@ -15,7 +15,7 @@ import Firebase
 /* Important. Set environment!
  * If development mode, then we can code screen skips for faster testing
  */
-let devMode = true;
+let devMode = false;
 let skipToScreen = false; // if true, go to screenToSkipTo() to setup which screen
 let autoLogin = false; // if true, go to reference to setup your credentials
 

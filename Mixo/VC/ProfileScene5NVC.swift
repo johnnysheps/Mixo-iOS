@@ -73,7 +73,7 @@ class ProfileScene5NVC: UIViewController {
     @IBAction func btnNext(_ sender: Any) {
         //save tagline
         docRef.updateData([
-            "tagline": tvTagline.text!,
+            "tagline": textView.text!,
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")

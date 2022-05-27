@@ -3725,17 +3725,6 @@ MixoType Identity!</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderbrc" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-kB-C1A" userLabel="mixo4brc">
                                 <rect key="frame" x="279" y="494.33333333333331" width="65.666666666666686" height="65.666666666666686"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-ln-ssZ">
-                                <rect key="frame" x="177" y="660" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="XxZ-aJ-u4Q"/>
-                                    <constraint firstAttribute="height" constant="60" id="zpc-nU-P3z"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="AnalyzeMyAvatar"/>
-                                <connections>
-                                    <action selector="btnResults:" destination="QRY-5C-EL1" eventType="touchUpInside" id="PGw-bh-Z2m"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-eF-dZj">
                                 <rect key="frame" x="0.0" y="819" width="414" height="43"/>
                                 <state key="normal" title="Button"/>
@@ -3759,6 +3748,17 @@ MixoType Identity!</string>
                                 </state>
                                 <connections>
                                     <action selector="btnComplete:" destination="QRY-5C-EL1" eventType="touchUpInside" id="Ek1-PW-3DS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xis-ln-ssZ">
+                                <rect key="frame" x="149" y="620" width="116" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="XxZ-aJ-u4Q"/>
+                                    <constraint firstAttribute="height" constant="116" id="zpc-nU-P3z"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="AnalyzeMyAvatar"/>
+                                <connections>
+                                    <action selector="btnResults:" destination="QRY-5C-EL1" eventType="touchUpInside" id="PGw-bh-Z2m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3807,7 +3807,7 @@ MixoType Identity!</string>
                             <constraint firstItem="um0-MF-2eX" firstAttribute="top" secondItem="Ct7-ef-eBC" secondAttribute="bottom" constant="8" id="OPA-VE-rrC"/>
                             <constraint firstItem="4l7-IE-xLT" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="SYw-gr-Nxo"/>
                             <constraint firstItem="pts-3n-EFR" firstAttribute="top" secondItem="9rp-Ci-OfI" secondAttribute="bottom" id="ShM-pc-C6U"/>
-                            <constraint firstItem="41H-rf-9MQ" firstAttribute="top" secondItem="xis-ln-ssZ" secondAttribute="bottom" constant="58" id="TRI-px-R2v"/>
+                            <constraint firstItem="41H-rf-9MQ" firstAttribute="top" secondItem="xis-ln-ssZ" secondAttribute="bottom" constant="42" id="TRI-px-R2v"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="leading" secondItem="ozW-NJ-a7l" secondAttribute="trailing" constant="1" id="TYm-hY-hiN"/>
                             <constraint firstItem="dAd-8g-wVc" firstAttribute="centerX" secondItem="BMW-Mt-GlJ" secondAttribute="centerX" id="ULs-FX-fun"/>
                             <constraint firstItem="5zy-YS-zzC" firstAttribute="top" secondItem="dAd-8g-wVc" secondAttribute="top" id="UST-EQ-tTW"/>
@@ -4873,22 +4873,19 @@ MixoType Identity!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-lj-3QS">
-                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
-                                </variation>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-Dl-gA9" userLabel="CalendarIcon">
+                                <rect key="frame" x="177" y="170" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Fw7-Mo-esP"/>
+                                    <constraint firstAttribute="width" secondItem="Xyq-Dl-gA9" secondAttribute="height" multiplier="1:1" id="ceM-lz-HR8"/>
+                                </constraints>
+                                <state key="normal" image="Calendar"/>
                                 <connections>
-                                    <action selector="btnNext:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="bL7-pf-LpQ"/>
+                                    <action selector="btnCamera:" destination="P7Z-3j-91D" eventType="touchUpInside" id="5Tp-sg-YIE"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcH-3e-NXT" userLabel="ddYear">
-                                <rect key="frame" x="20" y="208" width="374" height="40"/>
+                                <rect key="frame" x="20" y="254" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDK-LE-tRK" userLabel="ddYearButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -4926,7 +4923,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36P-Iy-pmY" userLabel="ddMonth">
-                                <rect key="frame" x="20" y="273" width="374" height="40"/>
+                                <rect key="frame" x="20" y="319" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K44-CA-lW5" userLabel="ddMonthButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -4963,7 +4960,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-ei-YKO" userLabel="ddDay">
-                                <rect key="frame" x="20" y="336" width="374" height="40"/>
+                                <rect key="frame" x="20" y="382" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCZ-dX-aIA" userLabel="ddDayButton">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -4999,6 +4996,20 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="bottom" secondItem="DVm-W9-5fI" secondAttribute="bottom" id="qRY-5E-9SH"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-lj-3QS">
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="34"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="GibsonLight-Regular" family="GibsonLight" pointSize="24"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnNext:" destination="7rF-H6-dwZ" eventType="touchUpInside" id="bL7-pf-LpQ"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-0y-rc4">
                                 <rect key="frame" x="20" y="700" width="374" height="111"/>
                                 <subviews>
@@ -5050,12 +5061,14 @@ MixoType Identity!</string>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="8ID-Bd-abh"/>
                             <constraint firstItem="c8y-lj-3QS" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leading" id="BVR-08-JAz"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="Btu-9Z-fOO"/>
-                            <constraint firstItem="vcH-3e-NXT" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="45.666666666666686" id="CzW-gx-kl6"/>
+                            <constraint firstItem="vcH-3e-NXT" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="91.666666666666686" id="CzW-gx-kl6"/>
                             <constraint firstItem="c8y-lj-3QS" firstAttribute="top" secondItem="iKa-0y-rc4" secondAttribute="bottom" constant="10" id="Czx-9N-H4O"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" constant="8" id="J5Y-tD-a1o"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" id="MO4-nK-p64"/>
+                            <constraint firstItem="Xyq-Dl-gA9" firstAttribute="width" secondItem="Xyq-Dl-gA9" secondAttribute="height" multiplier="1:1" id="Maj-PJ-5Gr"/>
                             <constraint firstAttribute="trailing" secondItem="c8y-lj-3QS" secondAttribute="trailing" id="OAN-gC-z34"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="top" secondItem="ese-Ni-kfH" secondAttribute="bottom" constant="16" id="T5F-z0-LuC"/>
+                            <constraint firstItem="Xyq-Dl-gA9" firstAttribute="top" secondItem="9JU-oP-pNv" secondAttribute="top" constant="170" id="TR8-KS-9i6"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="YaV-G1-dfb"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="ghm-Z8-iRH"/>
@@ -5065,6 +5078,8 @@ MixoType Identity!</string>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="bottom" constant="23" id="qmb-Qy-854"/>
                             <constraint firstItem="iKa-0y-rc4" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="sgo-tm-FS1"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="thA-Zr-W25"/>
+                            <constraint firstItem="Xyq-Dl-gA9" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="7.6699999999999999" id="uAN-bf-UfS"/>
+                            <constraint firstItem="Xyq-Dl-gA9" firstAttribute="centerX" secondItem="gzq-sT-dfI" secondAttribute="centerX" id="v18-bj-fge"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="top" secondItem="vcH-3e-NXT" secondAttribute="bottom" constant="25" id="wFw-4k-4Ho"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vcH-3e-NXT" secondAttribute="trailing" id="z0F-MU-ALT"/>
                         </constraints>
@@ -5727,6 +5742,7 @@ MixoType Identity!</string>
     </scenes>
     <resources>
         <image name="AnalyzeMyAvatar" width="97.333335876464844" height="97.333335876464844"/>
+        <image name="Calendar" width="75" height="75"/>
         <image name="Logo Square.png" width="178" height="181"/>
         <image name="Logout" width="840" height="869"/>
         <image name="cameraN" width="418" height="418"/>
