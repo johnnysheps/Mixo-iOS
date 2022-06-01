@@ -5554,7 +5554,7 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="c79-75-Aij"/>
                                 </constraints>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput">
                                 <rect key="frame" x="20" y="153.33333333333337" width="374" height="212"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>

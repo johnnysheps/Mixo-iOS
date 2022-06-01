@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import DALinedTextView
-import KMPlaceholderTextView
 
 @available(iOS 13.0, *)
 class ProfileScene5NVC: UIViewController, UITextViewDelegate {
+    var lastTextEntered = "";
     
     // Multistep progress bar
     @IBOutlet weak var ivProgressIndicator0: UIImageView!
@@ -22,7 +21,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     
     // Controls
     
-    @IBOutlet weak var userInput: KMPlaceholderTextView!
+    @IBOutlet weak var userInput: UITextView!
     @IBOutlet weak var charLimit: UILabel!
     @IBOutlet weak var btnNext: UIButton!
     
@@ -44,17 +43,20 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     }
     
     internal func textViewDidChange(_ textView: UITextView) {
-        let countInt = userInput.text.count;
-        let count = String(countInt);
+        let countInt = userInput.text!.count
+        let countStr = String(countInt);
         if(countInt<60) {
             charLimit.textColor = UIColor.black;
-            charLimit.text = "(" + count + "/60)";
+            charLimit.text = "(" + countStr + "/60)";
+            lastTextEntered = userInput.text!;
         } else if(countInt==60) {
             charLimit.textColor = UIColor.red;
             charLimit.text = "(60/60)";
-        } else {
+            lastTextEntered = userInput.text!;
+        } else if(countInt>60) {
             charLimit.textColor = UIColor.red;
             charLimit.text = "(60/60)";
+            userInput.text = lastTextEntered;
         }
     }
     

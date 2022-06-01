@@ -44,5 +44,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50900251-90A9-442D-B41B-8DDD08893FD6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mixo/VC/ProfileScene4NVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "ProfileScene4NVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "50900251-90A9-442D-B41B-8DDD08893FD6 - 2ddfb9ab0302a961"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mixo.ProfileScene4NVC.imagePicker.getter : __C.UIImagePickerController"
+                  moduleName = "Mixo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wff/dev/ios/Mixo/Mixo/VC/ProfileScene4NVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "50900251-90A9-442D-B41B-8DDD08893FD6 - 1be2e91a7947908a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mixo.ProfileScene4NVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mixo.ProfileScene4NVC"
+                  moduleName = "Mixo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wff/dev/ios/Mixo/Mixo/VC/ProfileScene4NVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "543">
+               </Location>
+               <Location
+                  uuid = "50900251-90A9-442D-B41B-8DDD08893FD6 - e0d1266076d8eb60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mixo.ProfileScene4NVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mixo.ProfileScene4NVC&gt;"
+                  moduleName = "Mixo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wff/dev/ios/Mixo/Mixo/VC/ProfileScene4NVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "500">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
