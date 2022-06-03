@@ -26,9 +26,10 @@ class InstructionsVC: UIViewController{
     
     @IBOutlet weak var btnContinueNext: UIButton!
     
-        
+    
+    //"The MixoType Engine is a self-assessment that helps you visualize your unique identity through a symbol we call, your MixoType.",
     let instructionList = [
-        "The MixoType Engine is a self-assessment that helps you visualize your unique identity through a symbol we call, your MixoType.",
+        "(Will be overridden manually) The [MixoType Engine] is a self-guided tool designed to help you visualize and better understand who you are at your core.",
 
         "A Mixotype Identity represents your Heroes, Intelligences, Talents, and Collections, which are what you value that speak to who you are.",
 
@@ -63,10 +64,20 @@ class InstructionsVC: UIViewController{
     
     func setUpUI() {
         
-        btnContinueNext.setTitle("Next", for: .normal)
+        btnContinueNext.setTitle("Continue", for: .normal)
         
-        // index 0
-        tvInstructions.text = instructionList[0]
+        // index 0: Initial Condition
+        let attributsNormal = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .regular)]
+        let attributsBold = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .bold)]
+        // -
+        let attributedString = NSMutableAttributedString(string: "The ", attributes:attributsNormal)
+        let boldStringPart = NSMutableAttributedString(string: "MixoType Engine ", attributes:attributsBold)
+        let attributedString2 = NSMutableAttributedString(string: "is a self-guided tool designed to help you visualize and better understand who you are at your core.", attributes:attributsNormal)
+        attributedString.append(boldStringPart)
+        attributedString.append(attributedString2)
+        tvInstructions.attributedText = attributedString
+        tvInstructions.textAlignment = NSTextAlignment.center
+        
         ivInstructions.loadGif(name: imageList[0])
         
         // Progess indicators
@@ -92,7 +103,7 @@ class InstructionsVC: UIViewController{
                     self.present(mixoEngineLoad, animated: true, completion: nil)
                 }
             case 4:
-                btnContinueNext.setTitle("Continue", for: .normal)
+                btnContinueNext.setTitle("Next", for: .normal)
                 tvInstructions.text = instructionList[index]
                 ivInstructions.image = UIImage(named:imageList[index])
             default:
