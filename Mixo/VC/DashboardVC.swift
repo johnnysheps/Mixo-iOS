@@ -15,10 +15,16 @@ import FirebaseAuth
 
 @available(iOS 13.0, *)
 class DashboardVC: UIViewController {
+    
+    var menuActive = false;
 
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var lblNameAge: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
+    @IBOutlet weak var menuIcon: UIButton!
+    @IBOutlet weak var btnLogout: UIButton!
+    @IBOutlet weak var menuItems: UIStackView!
+    @IBOutlet weak var stackViewHeight: NSLayoutConstraint!
     
     //hero mixo
     @IBOutlet weak var imgHero: UIImageView!
@@ -52,16 +58,17 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var btnMixoType: UIButton!
     @IBOutlet weak var btnSettings: UIButton!
     
-    @IBAction func btnSettings(_ sender: Any) {
-        try! Auth.auth().signOut()
+    
+    func signOut() {
+            try! Auth.auth().signOut()
 
-//        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//        let mixoStart = mainSB.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//        self.present(mixoStart, animated: false, completion: nil)
-        
-        
-        let mainVC = mainSB.instantiateViewController(withIdentifier: "MainVC") as! ViewController
-        self.present(mainVC, animated: true, completion: nil)
+    //        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    //        let mixoStart = mainSB.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+    //        self.present(mixoStart, animated: false, completion: nil)
+            
+            
+            let mainVC = mainSB.instantiateViewController(withIdentifier: "MainVC") as! ViewController
+            self.present(mainVC, animated: true, completion: nil)
     }
     @IBAction func btnMixoType(_ sender: Any) {
         
@@ -153,9 +160,35 @@ class DashboardVC: UIViewController {
     }
     
     func setUpUI() {
+        
+        menuItems.isHidden = true;
+        stackViewHeight.constant = 0;
+        menuItems.layoutIfNeeded()
+        
         profilePic.layer.masksToBounds = true
         profilePic.layer.cornerRadius = profilePic.bounds.width / 2
+        
     }
+    
+
+    @IBAction func menuIconClicked(_ sender: Any) {
+        if(menuActive) {
+            menuItems.isHidden = true;
+            menuActive=false;
+            stackViewHeight.constant = 0;
+            menuItems.layoutIfNeeded();
+        } else {
+            menuItems.isHidden = false;
+            menuActive=true;
+            stackViewHeight.constant = 74;
+            menuItems.layoutIfNeeded();
+        }
+    }
+    
+    @IBAction func logoutClicked(_ sender: Any) {
+        signOut();
+    }
+    
     
     func getUserData() {
         //get the users choices

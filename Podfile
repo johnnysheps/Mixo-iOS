@@ -31,10 +31,11 @@ target 'Mixo' do
   # https://firebase.google.com/docs/ios/setup#available-pods
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'Firebase/Storage'
-  pod 'FirebaseUI/Google'
-  pod 'FirebaseUI/Email'
-  pod 'FirebaseUI/Storage'
+  # pod 'FirebaseFirestoreSwift'
+  # pod 'Firebase/Storage'
+  # pod 'FirebaseUI/Google'
+  # pod 'FirebaseUI/Email'
+  # pod 'FirebaseUI/Storage'
   pod 'Fabric', '~> 1.10.2'
   pod 'Crashlytics', '~> 3.14.0' # Firebase Crashlytics
 

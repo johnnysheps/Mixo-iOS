@@ -15,9 +15,9 @@ import Firebase
 /* Important. Set environment!
  * If development mode, then we can code screen skips for faster testing
  */
-let devMode = false;
-let skipToScreen = false; // if true, go to screenToSkipTo() to setup which screen
-let autoLogin = false; // if true, go to reference to setup your credentials
+let devMode = true;
+let skipToScreen = true; // if true, go to screenToSkipTo() to setup which screen
+let autoLogin = true; // if true, go to reference to setup your credentials
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
 let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)
@@ -25,6 +25,8 @@ let warningSB : UIStoryboard = UIStoryboard(name: "Warning", bundle: .main)
 let tempDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let modDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let resultsSB : UIStoryboard = UIStoryboard(name: "Results", bundle: .main)
+
+
 
 @available(iOS 13.0, *)
 class ViewController: UIViewController {
@@ -120,10 +122,10 @@ class ViewController: UIViewController {
     }
     
     func screenToSkipTo() {
-//        let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
-//        self.present(profileScene1NVC, animated:true, completion:nil)
-        let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
-        self.present(profileScene5NVC, animated:true, completion:nil)
+//        let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
+//        self.present(profileScene5NVC, animated:true, completion:nil)
+        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+        self.present(dashboardVC, animated:true, completion:nil)
     }
 
     @IBAction func btnStart(_ sender: Any) {

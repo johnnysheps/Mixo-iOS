@@ -64,6 +64,8 @@ class InstructionsVC: UIViewController{
     
     func setUpUI() {
         
+        setupSwipeLeft()
+        
         btnContinueNext.setTitle("Continue", for: .normal)
         
         // index 0: Initial Condition
@@ -89,8 +91,45 @@ class InstructionsVC: UIViewController{
         
     }
     
+    func setupSwipeLeft() {
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeFunc(gesture:)))
+        swipeLeft.direction = .left;
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
+    @objc func swipeFunc(gesture: UISwipeGestureRecognizer) {
+        if gesture.direction == .left {
+//            print("Swiped left");
+            nextScreenLoad()
+        }
+    }
+    
     @IBAction func btnContinueNext(_ sender: Any) {
         
+        // Progess indicators (Hidden for now per latest mockup)
+        switch index {
+            case 1:
+                ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator1.image = UIImage(named:"progress-indicator-purple")
+            case 2:
+                ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator2.image = UIImage(named:"progress-indicator-purple")
+            case 3:
+                ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator3.image = UIImage(named:"progress-indicator-purple")
+            case 4:
+                ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
+                ivProgressIndicator4.image = UIImage(named:"progress-indicator-purple")
+            default:
+                print("Error - Instructions index out of bound")
+        }
+        
+        // Continue to next dynamically loaded screen
+        nextScreenLoad()
+        
+    } // btnContinueNext
+    
+    func nextScreenLoad() {
         // On the last instructions page, change "Next" button to a "Continue" button that would load MX engine.
         index = index + 1
         switch index {
@@ -109,24 +148,6 @@ class InstructionsVC: UIViewController{
             default:
                 tvInstructions.text = instructionList[index]
                 ivInstructions.image = UIImage(named:imageList[index])
-        }
-        
-        // Progess indicators
-        switch index {
-            case 1:
-                ivProgressIndicator0.image = UIImage(named:"progress-indicator-gray")
-                ivProgressIndicator1.image = UIImage(named:"progress-indicator-purple")
-            case 2:
-                ivProgressIndicator1.image = UIImage(named:"progress-indicator-gray")
-                ivProgressIndicator2.image = UIImage(named:"progress-indicator-purple")
-            case 3:
-                ivProgressIndicator2.image = UIImage(named:"progress-indicator-gray")
-                ivProgressIndicator3.image = UIImage(named:"progress-indicator-purple")
-            case 4:
-                ivProgressIndicator3.image = UIImage(named:"progress-indicator-gray")
-                ivProgressIndicator4.image = UIImage(named:"progress-indicator-purple")
-            default:
-                print("Error - Instructions index out of bound")
         }
     }
 }
