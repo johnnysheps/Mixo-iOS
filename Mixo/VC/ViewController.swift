@@ -11,12 +11,13 @@ import FontAwesome_swift
 import Foundation
 import FirebaseAuth
 import Firebase
+import FirebaseFirestore
 
 /* Important. Set environment!
  * If development mode, then we can code screen skips for faster testing
  */
 let devMode = true;
-let skipToScreen = true; // if true, go to screenToSkipTo() to setup which screen
+let skipToScreen = true; // if true, go to skipToScreenAt() to setup which screen
 let autoLogin = true; // if true, go to reference to setup your credentials
 
 let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle:.main)
@@ -26,7 +27,8 @@ let tempDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let modDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let resultsSB : UIStoryboard = UIStoryboard(name: "Results", bundle: .main)
 
-
+var userUID = String();
+var db = Firestore.firestore()
 
 @available(iOS 13.0, *)
 class ViewController: UIViewController {
@@ -38,6 +40,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        // Clear Firebase cache to fix the: Document path must not be empty
+//        FirebaseFirestore.instance.clearPersistence();
                 
         setUpElements()
         
@@ -55,7 +60,7 @@ class ViewController: UIViewController {
                         if let document = document, document.exists {
                             
                             if(skipToScreen) {
-                                self.screenToSkipTo();
+                                self.skipToScreenAt();
                             }
                             
                             let roleDone = document.get("role_done")  as! String
@@ -121,9 +126,12 @@ class ViewController: UIViewController {
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
     }
     
-    func screenToSkipTo() {
+    func skipToScreenAt() {
 //        let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
 //        self.present(profileScene5NVC, animated:true, completion:nil)
+//        let discovery2VC = mainSB.instantiateViewController(withIdentifier: "Discovery2VC") as! Discovery2VC
+//        self.present(discovery2VC, animated:true, completion:nil)
+        
         let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
         self.present(dashboardVC, animated:true, completion:nil)
     }
@@ -133,7 +141,7 @@ class ViewController: UIViewController {
         
         // Interaction required to load a screen?
         if(skipToScreen) {
-            self.screenToSkipTo();
+            self.skipToScreenAt();
         }
         
     }

@@ -30,6 +30,7 @@
 		A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6B2797D78D0034305C /* instructions-alt-4.png */; };
 		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
 		A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */; };
+		A23014DC284C774200F71495 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23014DB284C774200F71495 /* DiscoveryVC.swift */; };
 		A23A10AF284ADDE60014D9C5 /* icon-mobile-rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */; };
 		A2518710284060FB00A8DB2A /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = A251870F284060B700A8DB2A /* Calendar.png */; };
 		A25187132840B34F00A8DB2A /* progress-indicator-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = A25187112840B34F00A8DB2A /* progress-indicator-purple.png */; };
@@ -37,6 +38,7 @@
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
 		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
+		A2634920284C186F00A76D8D /* Discovery2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A263491F284C186F00A76D8D /* Discovery2VC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
 		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
 		A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F277DB277AE52500CF28AB /* Logo Square.png */; };
@@ -99,6 +101,7 @@
 		A223AC6B2797D78D0034305C /* instructions-alt-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-4.png"; sourceTree = "<group>"; };
 		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
 		A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeMyAvatar.png; sourceTree = "<group>"; };
+		A23014DB284C774200F71495 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-mobile-rainbow.png"; sourceTree = "<group>"; };
 		A251870F284060B700A8DB2A /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		A25187112840B34F00A8DB2A /* progress-indicator-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-indicator-purple.png"; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
 		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
+		A263491F284C186F00A76D8D /* Discovery2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery2VC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		A2F277DB277AE52500CF28AB /* Logo Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Square.png"; sourceTree = "<group>"; };
@@ -260,6 +264,9 @@
 		A375FC0323510E2C00E7FC50 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				A23014DB284C774200F71495 /* DiscoveryVC.swift */,
+				A263491F284C186F00A76D8D /* Discovery2VC.swift */,
+				A30A075D23515135002387B6 /* DashboardVC.swift */,
 				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
 				A30A076223515194002387B6 /* StartVC.swift */,
 				A30A07592351510C002387B6 /* LoginVC.swift */,
@@ -280,7 +287,6 @@
 				2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */,
 				A3DB34F42369A51400DDCEC3 /* ProfileScene4NVC.swift */,
 				2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */,
-				A30A075D23515135002387B6 /* DashboardVC.swift */,
 				A3791E29235970B200C987D4 /* TMDefVC.swift */,
 				A300E60123673C800062790C /* ResultsVC.swift */,
 				A363A35723563AAB00672BE9 /* DefinitionsVC.swift */,
@@ -485,10 +491,12 @@
 				A30A075A2351510C002387B6 /* LoginVC.swift in Sources */,
 				A3E2FD3C235ABE8A00DE0474 /* MixoScene4aVC.swift in Sources */,
 				A29EAD612772D23500350321 /* Onboarding.swift in Sources */,
+				A2634920284C186F00A76D8D /* Discovery2VC.swift in Sources */,
 				A30A076623515A26002387B6 /* Utilities.swift in Sources */,
 				A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */,
 				A3DB34F52369A51400DDCEC3 /* ProfileScene4NVC.swift in Sources */,
 				A32A70102350B9EA00B6E6A7 /* SceneDelegate.swift in Sources */,
+				A23014DC284C774200F71495 /* DiscoveryVC.swift in Sources */,
 				A30A076323515194002387B6 /* StartVC.swift in Sources */,
 				2A6ADC4A236B1B1A00687EFC /* ProfileScene3NVC.swift in Sources */,
 			);
@@ -550,7 +558,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -607,7 +615,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -627,7 +635,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,7 +658,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8JNQY7452J;
 				INFOPLIST_FILE = Mixo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

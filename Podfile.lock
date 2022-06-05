@@ -633,6 +633,9 @@ PODS:
   - Firebase/Firestore (9.1.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 9.1.0)
+  - Firebase/Storage (9.1.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 9.1.0)
   - FirebaseAnalytics (9.1.0):
     - FirebaseAnalytics/AdIdSupport (= 9.1.0)
     - FirebaseCore (~> 9.0)
@@ -708,6 +711,8 @@ PODS:
     - "gRPC-C++ (~> 1.44.0)"
     - leveldb-library (~> 1.22)
     - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseFirestoreSwift (9.1.0):
+    - FirebaseFirestore (~> 9.0)
   - FirebaseFirestoreUI (12.2.0):
     - FirebaseFirestore (< 10.0, >= 8.0)
   - FirebaseGoogleAuthUI (12.2.0):
@@ -900,7 +905,12 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - Firebase/Storage
+  - FirebaseFirestoreSwift
   - FirebaseUI
+  - FirebaseUI/Email
+  - FirebaseUI/Google
+  - FirebaseUI/Storage
   - FontAwesome.swift
   - IQKeyboardManager
   - KMPlaceholderTextView
@@ -934,6 +944,7 @@ SPEC REPOS:
     - FirebaseEmailAuthUI
     - FirebaseFacebookAuthUI
     - FirebaseFirestore
+    - FirebaseFirestoreSwift
     - FirebaseFirestoreUI
     - FirebaseGoogleAuthUI
     - FirebaseInstallations
@@ -988,6 +999,7 @@ SPEC CHECKSUMS:
   FirebaseEmailAuthUI: 9d6de47961cd1fa9be0003ad3cc4763fdd20560f
   FirebaseFacebookAuthUI: ff51c10537c7a617961e8dcb60ea70a43ddb56c9
   FirebaseFirestore: 20b1df7d65058b038745ecebb60f741a10e40a6f
+  FirebaseFirestoreSwift: 5d57539cec470bf3c9a752db009ff7e9d1a77d09
   FirebaseFirestoreUI: 6d4a0f183573a38b90c1c37577f0ba2cd12d165d
   FirebaseGoogleAuthUI: 978ae1845a5c9111fdf4c2e05708edb0a224bed3
   FirebaseInstallations: a91c74276b544524ce144c8315d8cdbce2dbe30b
@@ -1015,6 +1027,6 @@ SPEC CHECKSUMS:
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: 77e41a8995eb42a46f9f9a0569d627e1c0cc5bd4
+PODFILE CHECKSUM: 0a292134994d9b5d038c24675c6c3198fc035b30
 
 COCOAPODS: 1.10.2

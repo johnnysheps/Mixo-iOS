@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 import FirebaseStorage
 import FirebaseAuth
 //import FirebaseUI
@@ -17,7 +18,12 @@ import FirebaseAuth
 class DashboardVC: UIViewController {
     
     var menuActive = false;
-
+    var originalHeightMenuItems:CGFloat = 0;
+    
+    @IBOutlet weak var discoveryBtn: UIButton!
+    
+    @IBOutlet weak var btnDiscovery: UIButton!
+    
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var lblNameAge: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
@@ -81,8 +87,27 @@ class DashboardVC: UIViewController {
     var collectImages: [String] = []//array that holds the collections
     
     
+    @IBAction func discoveryClicked(_ sender: Any) {
+        let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
+//        fileprivate let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
+        addChild(contentViewInHC)
+        view.addSubview(contentViewInHC.view)
+        contentViewInHC.didMove(toParent: self)
+        contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
+        contentViewInHC.view?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
+        contentViewInHC.view?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
+        contentViewInHC.view?.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true;
+        contentViewInHC.view?.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true;
+
+    }
+    
+    fileprivate func setupHCConstraints() {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupHCConstraints()
 
         //heroes
         heroImages.append("actornb")
@@ -160,16 +185,25 @@ class DashboardVC: UIViewController {
     }
     
     func setUpUI() {
+        setupProfilePic();
+        setUpMenuIcon();
+    }
+    
+    func setupProfilePic() {
+        profilePic.layer.masksToBounds = true
+        profilePic.layer.cornerRadius = profilePic.bounds.width / 2
+    }
+    
+    func setUpMenuIcon() {
+        // Prepare menu icon clicked height
+        originalHeightMenuItems = stackViewHeight.constant
         
+        // Collapsed menu initially
         menuItems.isHidden = true;
         stackViewHeight.constant = 0;
         menuItems.layoutIfNeeded()
         
-        profilePic.layer.masksToBounds = true
-        profilePic.layer.cornerRadius = profilePic.bounds.width / 2
-        
     }
-    
 
     @IBAction func menuIconClicked(_ sender: Any) {
         if(menuActive) {
@@ -180,7 +214,7 @@ class DashboardVC: UIViewController {
         } else {
             menuItems.isHidden = false;
             menuActive=true;
-            stackViewHeight.constant = 74;
+            stackViewHeight.constant = originalHeightMenuItems;
             menuItems.layoutIfNeeded();
         }
     }

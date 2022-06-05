@@ -10,5 +10,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in SignUpVC.btnSignUp(_:):SignUpVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userUID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "one-time initialization function for docRef:LoginVC.swift">
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

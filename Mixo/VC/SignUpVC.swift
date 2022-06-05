@@ -13,6 +13,8 @@ import Firebase
 @available(iOS 13.0, *)
 class SignUpVC: UIViewController, UITextFieldDelegate {
 
+    var errored = false
+    
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
@@ -74,15 +76,16 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnSignUp(_ sender: Any) {
-        
+
         //validate the fields
         let error = validateFields()
-        
+
         if error != nil {
             //somethign wrong, show error
             showError(error!)
+            errored = true
         } else {
-            
+
             //create cleaned version of the data
             let nameFirst = txtName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let nameLast = txtLastName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -96,9 +99,11 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                 if err != nil {
                     //error creating user
                     self.showError("Error creating user.")
+                    print(err!);
+                    self.errored = true
                 } else {
-                    //user created
-                    let db = Firestore.firestore()
+//                    user created
+                    //let db = Firestore.firestore()
                     userUID = result!.user.uid
                     
                     db.collection("users").document(userUID).setData([
@@ -151,6 +156,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                     ]) { (error) in
                         if error != nil {
                             self.showError("error saving user data")
+                            print(error!);
+                            self.errored = true
                         }
                     }
                     
@@ -158,8 +165,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             }
             
             //transition to the Instructions
-            let instructionsVC = mainSB.instantiateViewController(withIdentifier: "InstructionsVC") as! InstructionsVC
-            self.present(instructionsVC, animated: true, completion: nil)
+                if(!self.errored) {
+                    let instructionsVC = mainSB.instantiateViewController(withIdentifier: "InstructionsVC") as! InstructionsVC
+                    self.present(instructionsVC, animated: true, completion: nil)
+            }
         }
         
         

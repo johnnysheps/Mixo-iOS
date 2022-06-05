@@ -10,9 +10,10 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-var userUID = String()
-let db = Firestore.firestore()
-let docRef = db.collection("users").document(userUID)
+//var userUID = String()
+//let db = Firestore.firestore()
+// If errored next line in console stating document path must not be empty: Delete the user you're receating at both the Firestore and Authentication
+var docRef = db.collection("users").document(userUID)
 
 @available(iOS 13.0, *)
 class LoginVC: UIViewController, UITextFieldDelegate {
@@ -25,6 +26,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            
+        }
+        
+        
+        print(db.collection("users"));
+        
 
         // Do any additional setup after loading the view.
         
@@ -43,8 +52,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         //solving text clipping
         lblError.baselineAdjustment = .none
         lblError.lineBreakMode = .byCharWrapping
-//        let unconstrainedSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
-//        lblError.heightAnchor.constraint(equalToConstant: label.sizeThatFits(unconstrainedSize).height).isActive = true
+        
+        // let unconstrainedSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        // lblError.heightAnchor.constraint(equalToConstant: label.sizeThatFits(unconstrainedSize).height).isActive = true
 
         //style the text fields
         //Utilities.styleTextField(txtEmail)
