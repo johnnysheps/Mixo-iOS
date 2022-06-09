@@ -12,18 +12,40 @@ import SwiftUI
 struct Row: View {
     let age: Int;
     var screenWidth: CGFloat;
+    var postHeight: CGFloat;
     
     var body: some View {
         VStack(alignment:.leading, spacing:0) {
 
             HStack(alignment:.top, spacing:0) {
-                Rectangle()
-                    .fill(Color.red)
-                    .frame(height: 130)
+                
+                VStack(alignment:.leading, spacing:0) {
+                    GeometryReader { geo in
+                        Rectangle()
+                            .fill(Color.yellow)
+                            .overlay(
+                                Image("maleicon")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .offset(x: 0, y: 0)
+                            ).frame(width: geo.size.width*0.5, height: geo.size.width*0.5, alignment: .center)
+                            .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY)
+                    } // Geometry Reader
+                    
+                    Rectangle()
+                        .fill(Color.orange)
+                        .frame(width: self.screenWidth/2, height: self.postHeight*0.125)
+                        .overlay(
+                            Text("FN LN")
+                                .frame(alignment:.center)
+                        )
+                    
+                }.frame(width: self.screenWidth/2, height: self.postHeight)
+                
             
                 Rectangle()
                     .fill(Color.blue)
-                    .frame(height: 130)
+                    .frame(width: self.screenWidth/2, height: self.postHeight)
             }.frame(width: self.screenWidth, height: 130)
             
             Image("loadingbg")
@@ -40,10 +62,11 @@ struct Row: View {
     
     } // View
                     
-    init(age: Int) {
+    init(age: Int, postHeight: CGFloat) {
         print("Person age: \(age)")
         self.age = age;
         self.screenWidth = UIScreen.main.bounds.width;
+        self.postHeight = CGFloat(postHeight);
     }
 }
 
@@ -64,7 +87,7 @@ struct DiscoveryVC: View {
             ScrollView {
                 LazyHGrid(rows: rows, alignment: .center, spacing:0, pinnedViews: []) {
                     ForEach((0...persons.count-1), id:\.self) {
-                        Row.init(age: persons[$0].age)
+                        Row.init(age: persons[$0].age, postHeight: self.postHeight)
                     }
                 }.frame(width: UIScreen.main.bounds.width).padding(0)
             }.frame(width: UIScreen.main.bounds.width).padding(0)
