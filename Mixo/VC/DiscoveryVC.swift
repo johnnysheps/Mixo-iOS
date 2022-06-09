@@ -42,11 +42,38 @@ struct Row: View {
                     
                 }.frame(width: self.screenWidth/2, height: self.postHeight)
                 
-            
-                Rectangle()
-                    .fill(Color.blue)
-                    .frame(width: self.screenWidth/2, height: self.postHeight)
-            }.frame(width: self.screenWidth, height: 130)
+                VStack(alignment: .leading, spacing: 0) {
+                    
+                    GeometryReader { geo in
+                        Rectangle()
+                            .fill(Color.gray)
+                            .frame(width: self.screenWidth/2, height: self.postHeight)
+                            .overlay(
+                                Rectangle()
+                                    .fill(Color.red)
+                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.25)
+                            ).overlay(
+                                Rectangle()
+                                    .fill(Color.orange)
+                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.25)
+                            ).overlay(
+                                Rectangle()
+                                    .fill(Color.yellow)
+                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.75)
+                            ).overlay(
+                                Rectangle()
+                                    .fill(Color.green)
+                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.75)
+                            )
+                    }
+                }.frame(width: self.screenWidth/2, height: 130)
+                
+                
+            }.frame(width: self.screenWidth, height: 130) // top horizontal - main content
             
             Image("loadingbg")
                     .resizable()
