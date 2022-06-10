@@ -1,0 +1,239 @@
+commit e9786f8d3e8d54e3e8929f355e6c5c40edfda091
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Jun 10 00:39:06 2022 -0700
+
+    Completed corners at BL avatar
+
+commit 8aae528c95b9ee8064a0230ff42f021ce9237c68
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 22:34:10 2022 -0700
+
+    Completed corners at TL avatar
+
+commit 84962a2fe1998023a50af208732863c7fbc416ce
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 22:14:55 2022 -0700
+
+    Refactored: Simplified avatar code for maintainability
+
+commit 22bff41ddb409c2ef2f0ccf9067f1891d5093aba
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 22:09:03 2022 -0700
+
+    Avatar quadrants no longer cut off or misaligned on different devices
+
+commit 2ebf181d1464a8ccd7de6a82a60caebf2f5fe58f
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 21:22:24 2022 -0700
+
+    Quadrants with proper padding
+
+commit 85fd1197019f96c11f3d2735ec06ab9c179454e4
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 01:54:32 2022 -0700
+
+    Avatar: Right side aligned but missing margins
+
+commit 4d278b7409ea540a0a95a7cfc31aad2d5a985c7d
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu Jun 9 01:24:58 2022 -0700
+
+    Avatar: Left side aligned
+
+commit 6798b380f2ce823d7fcaeabcbc00e2726ea6043e
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat Jun 4 17:04:43 2022 -0700
+
+    Discovery screen SwiftUI mixed into UIKit/Storyboards
+
+commit f7bb6309a4885ae19ce2dbc5d22057f6b2ea4ee6
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Jun 3 20:09:53 2022 -0700
+
+    Completed collapsible/Expandable menu that pushes other UI controls down or up
+
+commit ba15227357990574402bc83d7d4ca53e5cdabf15
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Jun 3 00:22:00 2022 -0700
+
+    Mixed bold normal centered text for Onboarding instructions
+
+commit 7aa94519d2c69ad4fc239d28460159636f38405a
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Wed Jun 1 01:19:31 2022 -0700
+
+    Character limit implemented
+
+commit f870978ef578db3722c13c15a7d7006068b7a0b0
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri May 27 01:48:04 2022 -0700
+
+    Character limit label with black/red text color
+
+commit 0affb307ad272889c24afa1ca6c1847d2689ebb2
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri May 27 01:42:05 2022 -0700
+
+    Character limit label tracking textViewDidChange but not restricting input yet
+
+commit cbf631b08cb99d0db910436286eb33d8356f8672
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri May 27 00:20:29 2022 -0700
+
+    Tweaks after meeting
+
+commit d69149e021bebecb3ccfeb63589fd8c282a8c49e
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Wed May 25 23:49:03 2022 -0700
+
+    Freshened UI: Replaced icon 'Analyze my avatar icon'
+
+commit 1f2d00565dd5d071a221b63dbbc9b45c7554c323
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Mon May 23 00:17:52 2022 -0700
+
+    Keyboard problem fixed
+
+commit de973fcd7c0bb89b4ceb7d79323895b905f694e8
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sun May 22 20:22:40 2022 -0700
+
+    Installed pod IQKeyboard Manager
+
+commit 79d86a93259f108b4ee4757b926a730b1a503a25
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sun May 22 20:20:36 2022 -0700
+
+    Before adding keyboard manager
+
+commit d0f1df698ad2c4669040aa022206a04e50b9d24d
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sun May 22 19:56:35 2022 -0700
+
+    Ruled lines textview - adjusted margins
+
+commit 0218f076b9685fa819fc02824d6ae00fc728f296
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sun May 22 00:48:07 2022 -0700
+
+    Lined Text View further refined, however need to adjust margins; Also the on-screen keyboard not appearing
+
+commit 5c834f340659329d9cdd4bbb7da43ea9314a473f
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 23:13:13 2022 -0700
+
+    Able to attach DALinedTextView to view but spacing incorrect and screen keyboard not triggering
+
+commit 4649255b3c18a2b973c4b4bf74bbb32972438267
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 22:56:37 2022 -0700
+
+    Core file restored without affecting custom colors
+
+commit 832f533f9384f9ab6545db42370e13c2c14a6505
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 22:49:16 2022 -0700
+
+    Able to set horizontal line color and background color outside the core files
+
+commit 56cf6a16efc44db5fe71d5509db01f0bf30a6bf5
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 22:16:27 2022 -0700
+
+    Removed red line (was simulating college ruled paper)
+
+commit e187584e7aa8cf7d59c23797c3533c22411ed5e0
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 21:39:56 2022 -0700
+
+    Unrefined ruled lines text view
+
+commit f7184e9c6e9ae9a050e18efe0647960591e2c7b5
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 21:09:06 2022 -0700
+
+    Cocoa pod installed'
+
+commit e86412ad7d163cd3b08da6eed9c013a32a6624e0
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat May 21 20:55:15 2022 -0700
+
+    Before adding lined text view cocoa pod
+
+commit e0fac03d9026681e02431bace28b64491a930f2f
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri May 20 01:10:57 2022 -0700
+
+    Still attempting to put textview in front of imageview
+
+commit 06aee050e6df8beae1f70f1ec0a559f122bbfee1
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri May 20 00:23:33 2022 -0700
+
+    Swapped out camera icon
+
+commit 9bef35d927f86b371fc3f078b47065037100ec81
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu May 19 23:38:29 2022 -0700
+
+    All multistep progress bars done
+
+commit e33185f81a793fa8c4a974814882e019d161e225
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Thu May 19 21:05:45 2022 -0700
+
+    Second screen of multi progress bar setup
+
+commit fc3637d733090f4b386c42968a0a15a2267ca379
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Wed May 18 00:31:10 2022 -0700
+
+    Multi step progress indicator added to screen 1 of Create Your Profile bday
+
+commit a11c700f5f7f7b614ff3827cd3cfa4444b9cb5d4
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Tue May 17 22:30:08 2022 -0700
+
+    Rearranged main storyboards in sequence at head
+
+commit 7aa8ae5c3eafbfd0d8334034d815abd47c62a294
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Tue May 17 22:20:18 2022 -0700
+
+    Rearranged main storyboards to be in sequence
+
+commit f4acba166a053f5bc6f39e6bef2922d696e638ba
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Tue May 17 22:02:34 2022 -0700
+
+    Code lost; Fixed random crashes with probs getting image url for user_pic
+
+commit c76dd9dcbb8a1e6858616f5888319b527bff6da0
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat Apr 23 07:17:12 2022 -0700
+
+    Hint which to open for Xcode
+
+commit 73168a34a25fbe28a62f3ced17fa263ec39696ba
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Sat Apr 23 05:53:41 2022 -0700
+
+    Zip code problem solved
+
+commit 281b7fede4f9e9f859fbd2e1ed498b99a0e9daac
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Mar 11 02:46:43 2022 -0800
+
+    Attempt solve zip code problem (looks to be server sided error)
+
+commit 15a874449f278a599a1ce16d82c0ccf361522ede
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Mar 11 02:13:23 2022 -0800
+
+    Autologin for developmental phase added
+
+commit ecebdf151b94e9cea7309cfb490599fe08d6fec3
+Author: Weng Fei Fung <weffung@ucdavis.edu>
+Date:   Fri Mar 11 01:32:18 2022 -0800
+
+    Removed old birthday selection
