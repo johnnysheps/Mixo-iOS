@@ -52,27 +52,23 @@ struct Row: View {
                             .overlay(
                                 Rectangle()
                                     .fill(Color.red)
-                                    .offset(x:40, y:10)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.25)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.orange)
-                                    .offset(x:-20, y:10)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.25)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.purple)
-                                    .offset(x:40, y: -10)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.75)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.blue)
-                                    .offset(x:-20, y:-10)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.75)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
                             )
                     }
                 }.frame(width: self.screenWidth/2, height: 130)
