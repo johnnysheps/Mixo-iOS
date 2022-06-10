@@ -13,6 +13,8 @@ var postHeight:CGFloat = 140;
 var dividerHeight:CGFloat = 5;
 var rowHeight:CGFloat = 145; // Combined postHeight + dividerHeight + ...; Doing it here for maintainability
 
+
+
 struct Row: View {
     let age: Int;
     var screenWidth: CGFloat;
@@ -59,22 +61,22 @@ struct Row: View {
                                     .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
                                         .overlay(
                                             ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - (avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - (avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - 0)
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - 0)
+                                                Rectangle()
+                                                    .fill(Color.green)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.yellow)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.black)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - 0)
+                                                Rectangle()
+                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - 0)
                                             }
                                         )
                             ).overlay(
@@ -82,51 +84,51 @@ struct Row: View {
                                     .fill(Color.orange)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
-//                                        .overlay(
-//                                            ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
-//                                            }
-//                                        )
+                                        .overlay(
+                                            ZStack {
+                                                Rectangle()
+                                                    .fill(Color.green)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.yellow)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.black)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
+                                            }
+                                        )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.purple)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
-//                                        .overlay(
-//                                            ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (2*avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (2*avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (avatarQuadrant/2))
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-//                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (avatarQuadrant/2))
-//                                            }
-//                                        )
+                                        .overlay(
+                                            ZStack {
+                                                Rectangle()
+                                                    .fill(Color.green)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (2*avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.yellow)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (2*avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.black)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (avatarQuadrant/2))
+                                            }
+                                        )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.blue)
