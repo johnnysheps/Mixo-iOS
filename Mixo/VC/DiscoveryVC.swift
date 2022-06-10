@@ -16,7 +16,7 @@ var rowHeight:CGFloat = 145; // Combined postHeight + dividerHeight + ...; Doing
 struct Row: View {
     let age: Int;
     var screenWidth: CGFloat;
-    var avatarQuadrant:CGFloat = 43.0;
+    var avatarQuadrant:CGFloat = 45;
     
     var body: some View {
         VStack(alignment:.leading, spacing:0) {
@@ -56,22 +56,42 @@ struct Row: View {
                                 Rectangle()
                                     .fill(Color.red)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
+                                        .overlay(
+                                            ZStack {
+                                                Rectangle()
+                                                    .fill(Color.black)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(Color.yellow)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - 0)
+                                                Rectangle()
+                                                    .fill(Color.green)
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                Rectangle()
+                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
+                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
+                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - 0)
+                                            }
+                                        )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.orange)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.purple)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.blue)
                                     .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
                             )
                     }
                 }.frame(width: self.screenWidth/2, height: postHeight)
