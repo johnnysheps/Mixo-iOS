@@ -9,10 +9,13 @@
 import SwiftUI
 
 
+var postHeight:CGFloat = 140;
+var dividerHeight:CGFloat = 5;
+var rowHeight:CGFloat = 145; // Combined postHeight + dividerHeight + ...; Doing it here for maintainability
+
 struct Row: View {
     let age: Int;
     var screenWidth: CGFloat;
-    var postHeight: CGFloat;
     var avatarQuadrant:CGFloat = 43.0;
     
     var body: some View {
@@ -41,14 +44,14 @@ struct Row: View {
                     } // Geometry Reader
                     
                     
-                }.frame(width: self.screenWidth/2, height: self.postHeight)
+                }.frame(width: self.screenWidth/2, height: postHeight)
                 
                 VStack(alignment: .leading, spacing: 0) {
                     
                     GeometryReader { geo in
                         Rectangle()
                             .fill(Color.gray)
-                            .frame(width: self.screenWidth/2, height: self.postHeight)
+                            .frame(width: self.screenWidth/2, height: postHeight)
                             .overlay(
                                 Rectangle()
                                     .fill(Color.red)
@@ -71,30 +74,23 @@ struct Row: View {
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
                             )
                     }
-                }.frame(width: self.screenWidth/2, height: 130)
+                }.frame(width: self.screenWidth/2, height: postHeight)
                 
                 
-            }.frame(width: self.screenWidth, height: 130) // top horizontal - main content
+            }.frame(width: self.screenWidth, height: postHeight) // top horizontal - main content
             
             Image("loadingbg")
                     .resizable()
-                    .frame(width: self.screenWidth, height: 5)
+                    .frame(width: self.screenWidth, height: dividerHeight)
         
-//            Rectangle()
-//                .fill(Color.white)
-//                .frame(width:self.screenWidth, height: 10)
-//                .scaledToFill()
-            // If re-enabling Rectangle for .overlay(), add the extra height to the postHeight (>140)
-            
         }.frame(width: self.screenWidth).padding(0)
     
     } // View
                     
-    init(age: Int, postHeight: CGFloat) {
+    init(age: Int) {
         print("Person age: \(age)")
         self.age = age;
         self.screenWidth = UIScreen.main.bounds.width;
-        self.postHeight = CGFloat(postHeight);
     }
 }
 
@@ -108,14 +104,13 @@ class Person {
 struct DiscoveryVC: View {
     var rows:Array<GridItem> = Array();
     var persons:Array<Person> = Array()
-    let postHeight = 140.0;
     
     var body: some View {
         GeometryReader { geo in
             ScrollView {
                 LazyHGrid(rows: rows, alignment: .center, spacing:0, pinnedViews: []) {
                     ForEach((0...persons.count-1), id:\.self) {
-                        Row.init(age: persons[$0].age, postHeight: self.postHeight)
+                        Row.init(age: persons[$0].age)
                     }
                 }.frame(width: UIScreen.main.bounds.width).padding(0)
             }.frame(width: UIScreen.main.bounds.width).padding(0)
@@ -132,7 +127,7 @@ struct DiscoveryVC: View {
         self.persons.append(Person.init(age: 22))
         self.persons.append(Person.init(age: 22))
         /** The .fixed is the row height! */
-        self.rows = Array(repeating: GridItem(.fixed(self.postHeight), spacing:0), count:persons.count);
+        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
     }
 }
 
