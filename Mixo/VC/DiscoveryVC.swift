@@ -13,6 +13,7 @@ struct Row: View {
     let age: Int;
     var screenWidth: CGFloat;
     var postHeight: CGFloat;
+    var avatarQuadrant:CGFloat = 43.0;
     
     var body: some View {
         VStack(alignment:.leading, spacing:0) {
@@ -28,17 +29,17 @@ struct Row: View {
                                     .resizable()
                                     .scaledToFit()
                                     .offset(x: 0, y: 0)
-                            ).frame(width: geo.size.width*0.5, height: geo.size.width*0.5, alignment: .center)
+                                    .overlay(
+                                        GeometryReader { geo in
+                                            Text("FN LN")
+                                                .frame(width: self.screenWidth/2, height: 20)
+                                                .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).maxY+10)
+                                        } // Geo
+                                    ) // Overlay
+                            ).frame(width: avatarQuadrant*2, height: avatarQuadrant*2, alignment: .center)
                             .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY)
                     } // Geometry Reader
                     
-                    Rectangle()
-                        .fill(Color.orange)
-                        .frame(width: self.screenWidth/2, height: self.postHeight*0.125)
-                        .overlay(
-                            Text("FN LN")
-                                .frame(alignment:.center)
-                        )
                     
                 }.frame(width: self.screenWidth/2, height: self.postHeight)
                 
@@ -51,22 +52,26 @@ struct Row: View {
                             .overlay(
                                 Rectangle()
                                     .fill(Color.red)
-                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .offset(x:40, y:10)
+                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.25)
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.orange)
-                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .offset(x:-20, y:10)
+                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.25)
                             ).overlay(
                                 Rectangle()
-                                    .fill(Color.yellow)
-                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .fill(Color.purple)
+                                    .offset(x:40, y: -10)
+                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).width*0.25, y: geo.frame(in: .local).height*0.75)
                             ).overlay(
                                 Rectangle()
-                                    .fill(Color.green)
-                                    .frame(width: self.screenWidth/4, height: self.screenWidth/4)
+                                    .fill(Color.blue)
+                                    .offset(x:-20, y:-10)
+                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
                                     .position(x: geo.frame(in: .local).width*0.75, y: geo.frame(in: .local).height*0.75)
                             )
                     }
@@ -77,7 +82,7 @@ struct Row: View {
             
             Image("loadingbg")
                     .resizable()
-                    .frame(width: self.screenWidth, height: 10)
+                    .frame(width: self.screenWidth, height: 5)
         
 //            Rectangle()
 //                .fill(Color.white)
