@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftUI
+import SwiftUI // Needed to open a SwiftUI screen from Discovery button
 import FirebaseStorage
 import FirebaseAuth
 //import FirebaseUI

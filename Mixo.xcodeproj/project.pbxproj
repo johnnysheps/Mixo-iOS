@@ -38,7 +38,6 @@
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
 		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
-		A2634920284C186F00A76D8D /* Discovery2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A263491F284C186F00A76D8D /* Discovery2VC.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
 		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
 		A2F277DC277AE52500CF28AB /* Logo Square.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F277DB277AE52500CF28AB /* Logo Square.png */; };
@@ -109,7 +108,6 @@
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
 		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
-		A263491F284C186F00A76D8D /* Discovery2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discovery2VC.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		A2F277DB277AE52500CF28AB /* Logo Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo Square.png"; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				A23014DB284C774200F71495 /* DiscoveryVC.swift */,
-				A263491F284C186F00A76D8D /* Discovery2VC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
 				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
 				A30A076223515194002387B6 /* StartVC.swift */,
@@ -332,6 +329,9 @@
 		A32A70022350B9EA00B6E6A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Discovery,
+				);
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Sean Hall";
@@ -491,7 +491,6 @@
 				A30A075A2351510C002387B6 /* LoginVC.swift in Sources */,
 				A3E2FD3C235ABE8A00DE0474 /* MixoScene4aVC.swift in Sources */,
 				A29EAD612772D23500350321 /* Onboarding.swift in Sources */,
-				A2634920284C186F00A76D8D /* Discovery2VC.swift in Sources */,
 				A30A076623515A26002387B6 /* Utilities.swift in Sources */,
 				A3791E2A235970B200C987D4 /* TMDefVC.swift in Sources */,
 				A3DB34F52369A51400DDCEC3 /* ProfileScene4NVC.swift in Sources */,
