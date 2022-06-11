@@ -17,6 +17,7 @@ target 'Mixo' do
   # pod 'KMPlaceholderTextView', '~> 1.4.0' # Multiline placeholder support
   pod 'KMPlaceholderTextView' # Multiline placeholder support
   pod 'SwiftGifOrigin', '~> 1.7.0' # Gif support with UIImage
+  pod 'SDWebImageSwiftUI' # Load network image into Swift UI image
   pod "FontAwesome.swift" # Font awesome icons for chevron
   pod 'IQKeyboardManager' # Keyboard manager to force screen keyboard to appear on DALinedTextView
 

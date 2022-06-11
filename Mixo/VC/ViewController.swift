@@ -143,12 +143,7 @@ class ViewController: UIViewController {
         if(skipToScreen) {
             self.skipToScreenAt();
         }
-        
     }
     
-    
-    
-    
-    
-}
+} // View Controller
 
