@@ -21,6 +21,141 @@ var talentImages: [String] = []//array that holds the talents
 var collectImages: [String] = []//array that holds the collections
 var response: [String: String] = [:]
 
+//func getUserData(_ userUID:String) async throws -> String  {
+func getUserData(_ userUID:String) {
+    let docRef = db.collection("users").document(userUID)
+
+//    var response = [
+//        "user_name":"",
+//        "user_pic":"",
+//        "user_city":"",
+//        "user_state":"",
+//        "user_location":"",
+//        "user_dob":"",
+//        "age_year":""
+//    ]
+    
+    //get the users choices
+    docRef.getDocument { (document, error) in
+        if let document = document, document.exists {
+            
+            //user profile data
+            
+            let user_name = document.get("name") as! String
+            let user_pic = document.get("profile_pic") as! String
+            let user_city = document.get("city") as! String
+            let user_state = document.get("state") as! String
+            let user_location = user_city + ", " + user_state
+            let user_dob = document.get("dob") as! String
+            
+            response["user_name"] = user_name;
+            response["user_pic"] = user_pic;
+            response["user_city"] = user_city;
+            response["user_state"] = user_state;
+            response["user_location"] = user_location;
+            response["user_dob"] = user_dob;
+            
+       
+            //calcualte age of user
+            let today = Date()
+            
+            //convert user_dob to Date,
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let date = dateFormatter.date(from: user_dob)!
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.year, .month, .day], from: date, to:today)
+        
+            let ageYear = components.year;
+            response["user_dob"] = user_dob;
+            response["age_year"] = String(ageYear!);
+            
+            // get user pic
+            let storage = Storage.storage()
+            var reference: StorageReference!
+            let imgRef = "gs://mixotype-4a74b.appspot.com/" + user_pic
+            response["gsImgRef"] = imgRef;
+        
+            let imgRefWillPart = imgRef.replacingOccurrences(of: "gs://", with: "")
+            let imgRefParted = imgRefWillPart.components(separatedBy: "/")
+
+            let domain = imgRefParted[0];
+            var subPathsArr:Array<String> = [];
+
+            for i in 2...imgRefParted.count {
+                subPathsArr.append(imgRefParted[i-1])
+            }
+
+            let trailingPath = subPathsArr.joined(separator: "%2F");
+            let publicUrl = "https://firebasestorage.googleapis.com/v0/b/\(domain)/o/\(trailingPath)?alt=media";
+            response["httpsImgRef"] = publicUrl;
+            
+            
+            //check the users dones
+            response["roleDone"] = document.get("role_done") as? String;
+            response["intelDone"] = document.get("intel_done") as? String;
+            response["talentDone"] = document.get("intel_done") as? String;
+            response["collectDone"] = document.get("collect_done") as? String;
+            
+
+            //heroes
+            if response["roleDone"] == "Y"{
+                //get the users hero data
+                guard let role_nest = document.get("role_nest")  as? String else {return};
+                guard let role_basket_nest = document.get("role_basket_nest") as? String else {return};
+                
+                response["role_nest_1"] = role_nest[0]
+                response["role_basket_nest_1"] = role_basket_nest[0]
+                response["role_basket_nest_2"] = role_basket_nest[1]
+                response["role_basket_nest_3"] = role_basket_nest[2]
+                response["role_basket_nest_4"] = role_basket_nest[3]
+    
+            } // if
+
+            //intels
+            if response["intelDone"]  == "Y"{
+                //get the users intel data
+                guard let intel_nest = document.get("intel_nest")  as? String else {return}
+                response["intel_nest_1"] = intel_nest[0]
+                response["intel_nest_2"] = intel_nest[1]
+                response["intel_nest_3"] = intel_nest[2]
+                response["intel_nest_4"] = intel_nest[3]
+            }
+            
+            //talents
+            if response["talentDone"]  == "Y"{
+                //get the users talent choices
+                guard let talent_nest = document.get("talent_nest")  as? String else {return}
+                guard let talent_basket_nest = document.get("talent_basket_nest") as? String else {return}
+                let talent_nestArr = talent_nest.components(separatedBy: "_")
+                response["talent_nest_1"] = talent_nestArr[0]
+                response["talent_basket_nest_1"] = talent_basket_nest[0]
+                response["talent_basket_nest_2"] = talent_basket_nest[1]
+                response["talent_basket_nest_3"] = talent_basket_nest[2]
+                response["talent_basket_nest_4"] = talent_basket_nest[3]
+
+            }
+            
+            //collections
+            if response["collectDone"]  == "Y"{
+                //get the users collection choices
+                guard let collect_nest = document.get("collect_nest") as? String else {return}
+                guard let collect_basket_nest = document.get("collect_basket_nest") as? String else {return}
+                response["collect_nest_1"] = collect_nest[0]
+                response["collect_basket_nest_1"] = collect_basket_nest[0]
+                response["collect_basket_nest_2"] = collect_basket_nest[1]
+                response["collect_basket_nest_3"] = collect_basket_nest[2]
+                response["collect_basket_nest_4"] = collect_basket_nest[3]
+            }
+        } else {
+            print("Document does not exist")
+        }
+    }
+//        return response;
+//    return "Attempted"
+    
+} // getUserData
+
 func setupAvatars() {
     
     //heroes
@@ -325,17 +460,18 @@ struct DiscoveryVC: View {
         } // GeometryReader
     } // body
     
-    init() async {
+    init() {
         setupAvatars();
         
         // print(userUID);
-        do {
-            try await getUserData(userUID);
-            print(response)
-        } catch {
-            print("Fetching user data into global response failed")
-        }
-        
+//        do {
+//            try await getUserData(userUID);
+//            print(response)
+//        } catch {
+//            print("Fetching user data into global response failed")
+//        }
+        getUserData(userUID);
+
         
         self.persons.append(Person.init(age: 20))
         self.persons.append(Person.init(age: 22))
@@ -348,146 +484,12 @@ struct DiscoveryVC: View {
         /** The .fixed is the row height! */
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
     } // init
-    
-    
-    func getUserData(_ userUID:String) async throws -> String  {
-        let docRef = db.collection("users").document(userUID)
 
-        var response = [
-            "user_name":"",
-            "user_pic":"",
-            "user_city":"",
-            "user_state":"",
-            "user_location":"",
-            "user_dob":"",
-            "age_year":""
-        ]
-        
-        //get the users choices
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                
-                //user profile data
-                
-                let user_name = document.get("name") as! String
-                let user_pic = document.get("profile_pic") as! String
-                let user_city = document.get("city") as! String
-                let user_state = document.get("state") as! String
-                let user_location = user_city + ", " + user_state
-                let user_dob = document.get("dob") as! String
-                
-                response["user_name"] = user_name;
-                response["user_pic"] = user_pic;
-                response["user_city"] = user_city;
-                response["user_state"] = user_state;
-                response["user_location"] = user_location;
-                response["user_dob"] = user_dob;
-                
-           
-                //calcualte age of user
-                let today = Date()
-                
-                //convert user_dob to Date,
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "yyyy-MM-dd"
-                let date = dateFormatter.date(from: user_dob)!
-                let calendar = Calendar.current
-                let components = calendar.dateComponents([.year, .month, .day], from: date, to:today)
-            
-                let ageYear = components.year;
-                response["user_dob"] = user_dob;
-                response["age_year"] = String(ageYear!);
-                
-                // get user pic
-                let storage = Storage.storage()
-                var reference: StorageReference!
-                let imgRef = "gs://mixotype-4a74b.appspot.com/" + user_pic
-                response["gsImgRef"] = imgRef;
-            
-                let imgRefWillPart = imgRef.replacingOccurrences(of: "gs://", with: "")
-                let imgRefParted = imgRefWillPart.components(separatedBy: "/")
-
-                let domain = imgRefParted[0];
-                var subPathsArr:Array<String> = [];
-
-                for i in 2...imgRefParted.count {
-                    subPathsArr.append(imgRefParted[i-1])
-                }
-
-                let trailingPath = subPathsArr.joined(separator: "%2F");
-                let publicUrl = "https://firebasestorage.googleapis.com/v0/b/\(domain)/o/\(trailingPath)?alt=media";
-                response["httpsImgRef"] = publicUrl;
-                
-                
-                //check the users dones
-                response["roleDone"] = document.get("role_done") as? String;
-                response["intelDone"] = document.get("intel_done") as? String;
-                response["talentDone"] = document.get("intel_done") as? String;
-                response["collectDone"] = document.get("collect_done") as? String;
-                
-
-                //heroes
-                if response["roleDone"] == "Y"{
-                    //get the users hero data
-                    guard let role_nest = document.get("role_nest")  as? String else {return};
-                    guard let role_basket_nest = document.get("role_basket_nest") as? String else {return};
-                    
-                    response["role_nest_1"] = role_nest[0]
-                    response["role_basket_nest_1"] = role_basket_nest[0]
-                    response["role_basket_nest_2"] = role_basket_nest[1]
-                    response["role_basket_nest_3"] = role_basket_nest[2]
-                    response["role_basket_nest_4"] = role_basket_nest[3]
-        
-                } // if
-
-                //intels
-                if response["intelDone"]  == "Y"{
-                    //get the users intel data
-                    guard let intel_nest = document.get("intel_nest")  as? String else {return}
-                    response["intel_nest_1"] = intel_nest[0]
-                    response["intel_nest_2"] = intel_nest[1]
-                    response["intel_nest_3"] = intel_nest[2]
-                    response["intel_nest_4"] = intel_nest[3]
-                }
-                
-                //talents
-                if response["talentDone"]  == "Y"{
-                    //get the users talent choices
-                    guard let talent_nest = document.get("talent_nest")  as? String else {return}
-                    guard let talent_basket_nest = document.get("talent_basket_nest") as? String else {return}
-                    let talent_nestArr = talent_nest.components(separatedBy: "_")
-                    response["talent_nest_1"] = talent_nestArr[0]
-                    response["talent_basket_nest_1"] = talent_basket_nest[0]
-                    response["talent_basket_nest_2"] = talent_basket_nest[1]
-                    response["talent_basket_nest_3"] = talent_basket_nest[2]
-                    response["talent_basket_nest_4"] = talent_basket_nest[3]
-
-                }
-                
-                //collections
-                if response["collectDone"]  == "Y"{
-                    //get the users collection choices
-                    guard let collect_nest = document.get("collect_nest") as? String else {return}
-                    guard let collect_basket_nest = document.get("collect_basket_nest") as? String else {return}
-                    response["collect_nest_1"] = collect_nest[0]
-                    response["collect_basket_nest_1"] = collect_basket_nest[0]
-                    response["collect_basket_nest_2"] = collect_basket_nest[1]
-                    response["collect_basket_nest_3"] = collect_basket_nest[2]
-                    response["collect_basket_nest_4"] = collect_basket_nest[3]
-                }
-            } else {
-                print("Document does not exist")
-            }
-        }
-//        return response;
-        return "Attempted"
-        
-    } // getUserData
     
 } // DisoveryVC
 
 //struct DiscoveryVC_Previews: PreviewProvider {
 //    static var previews: some View {
-//        await DiscoveryVC()
+//        DiscoveryVC()
 //    }
 //}
