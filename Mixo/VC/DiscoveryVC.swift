@@ -133,6 +133,8 @@ func getUserData(_ userUID:String) {
                 response["talent_basket_nest_2"] = talent_basket_nest[1]
                 response["talent_basket_nest_3"] = talent_basket_nest[2]
                 response["talent_basket_nest_4"] = talent_basket_nest[3]
+                print("/*****/ Runtime response at pulling talent")
+                print(response)
 
             }
             
@@ -470,7 +472,6 @@ struct DiscoveryVC: View {
 //        } catch {
 //            print("Fetching user data into global response failed")
 //        }
-        getUserData(userUID);
 
         
         self.persons.append(Person.init(age: 20))
@@ -482,7 +483,10 @@ struct DiscoveryVC: View {
         self.persons.append(Person.init(age: 22))
         self.persons.append(Person.init(age: 22))
         /** The .fixed is the row height! */
+//        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
+        
+        getUserData(userUID);
     } // init
 
     
