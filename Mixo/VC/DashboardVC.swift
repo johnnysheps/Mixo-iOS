@@ -20,8 +20,6 @@ class DashboardVC: UIViewController {
     var menuActive = false;
     var originalHeightMenuItems:CGFloat = 0;
     
-    @IBOutlet weak var discoveryBtn: UIButton!
-    
     @IBOutlet weak var btnDiscovery: UIButton!
     
     @IBOutlet weak var profilePic: UIImageView!
@@ -87,8 +85,8 @@ class DashboardVC: UIViewController {
     var collectImages: [String] = []//array that holds the collections
     
     
-    @IBAction func discoveryClicked(_ sender: Any) {
-        let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
+    @IBAction func discoveryClicked(_ sender: Any) async {
+        let contentViewInHC = await UIHostingController(rootView: DiscoveryVC())
 //        fileprivate let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
         addChild(contentViewInHC)
         view.addSubview(contentViewInHC.view)
