@@ -106,6 +106,9 @@ class DashboardVC: UIViewController {
                 // print("/****/ document.data() RET")
                 // print(data);
                 
+                print("/****/ responses count :| runtime")
+                print(responses!.count);
+                
                 responses!.append(data)
                 //if(i==1) {
                 //    print("/****/ responses")

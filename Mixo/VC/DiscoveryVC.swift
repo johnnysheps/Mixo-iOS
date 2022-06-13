@@ -275,7 +275,7 @@ struct ProfilePic: View {
 }
 
 struct Row: View {
-    let age: Int;
+    let responseIndex: Int;
     var screenWidth: CGFloat;
     var avatarQuadrant:CGFloat = 45;
     
@@ -415,9 +415,9 @@ struct Row: View {
     
     } // View
                     
-    init(_ age:Int) {
-        print("Person age: \(age)")
-        self.age = age;
+    init(_ index:Int) {
+        print("responseIndex: \(index)")
+        self.responseIndex = index;
         self.screenWidth = UIScreen.main.bounds.width;
     }
 }
@@ -437,8 +437,9 @@ struct DiscoveryVC: View {
         GeometryReader { geo in
             ScrollView {
                 LazyHGrid(rows: rows, alignment: .center, spacing:0, pinnedViews: []) {
-                    ForEach((0...persons.count-1), id:\.self) {
-                        Row.init(persons[$0].age)
+                    ForEach((0...responses!.count-1), id:\.self) {
+                        let _ = print("Iterator \($0)");
+                        Row.init($0)
                     }
                 }.frame(width: UIScreen.main.bounds.width).padding(0)
             }.frame(width: UIScreen.main.bounds.width).padding(0)
@@ -448,24 +449,19 @@ struct DiscoveryVC: View {
     init() {
         setupAvatars();
         
-        self.persons.append(Person.init(age: 20))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
-        self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 20))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        //self.persons.append(Person.init(age: 22))
+        
         /** The .fixed is the row height! */
-//        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
-        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
+        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:responses!.count);
         
-//        getUserData(userUID);
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-//            print("/*********/")
-//            print(response)
-//        }
+        // getUserData(userUID);
     } // init
 
     

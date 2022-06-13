@@ -9,6 +9,7 @@
 import Foundation
 
 var responses:[[String:Any]]? = []
+//var responses: [Dictionary<String, Any>] = []
 
 var response = [
     "user_id":"",
