@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI // Needed to open a SwiftUI screen from Discovery button
 import FirebaseStorage
 import FirebaseAuth
+import FirebaseFirestore
 //import FirebaseUI
 //import FirebaseAuthUI
 //import FirebaseDatabaseUI
@@ -86,15 +87,36 @@ class DashboardVC: UIViewController {
     
     
     @IBAction func discoveryClicked(_ sender: Any)  {
-        let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
-        addChild(contentViewInHC)
-        view.addSubview(contentViewInHC.view)
-        contentViewInHC.didMove(toParent: self)
-        contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
-        contentViewInHC.view?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
-        contentViewInHC.view?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
-        contentViewInHC.view?.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true;
-        contentViewInHC.view?.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true;
+        
+        
+        
+        let docRef = db.collection("users").getDocuments(completion: { FIRQuerySnapshot, Error in
+            // Used reference at:
+            // https://firebase.google.com/docs/reference/swift/firebasefirestore/api/reference/Classes/QueryDocumentSnapshot
+            
+            // print("/****/ query {")
+            // print(FIRQuerySnapshot!.query)
+            
+            for document in FIRQuerySnapshot!.documents {
+                // print("/****/ document<?>");
+                // print(document); // Confirmed documents is type QueryDocumentSnapshot
+                var data = document.data();
+                print("/****/ document.data() RET")
+                print(data);
+                
+                /** Render Discover **/
+                let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
+                addChild(contentViewInHC)
+                self.view.addSubview(contentViewInHC.view)
+                contentViewInHC.didMove(toParent: self)
+                contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
+                contentViewInHC.view?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
+                contentViewInHC.view?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
+                contentViewInHC.view?.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true;
+                contentViewInHC.view?.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true;
+            }
+        })
+        
 
     }
     

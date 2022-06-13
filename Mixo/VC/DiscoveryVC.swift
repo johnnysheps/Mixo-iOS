@@ -19,22 +19,11 @@ var heroImages: [String] = [] //array that holds the heroes
 var intelImages: [String] = [] //array that holds the intels
 var talentImages: [String] = []//array that holds the talents
 var collectImages: [String] = []//array that holds the collections
-var response: [String: String] = [:]
 
 //func getUserData(_ userUID:String) async throws -> String  {
 func getUserData(_ userUID:String) {
     let docRef = db.collection("users").document(userUID)
 
-//    var response = [
-//        "user_name":"",
-//        "user_pic":"",
-//        "user_city":"",
-//        "user_state":"",
-//        "user_location":"",
-//        "user_dob":"",
-//        "age_year":""
-//    ]
-    
     //get the users choices
     docRef.getDocument { (document, error) in
         if let document = document, document.exists {
@@ -68,7 +57,7 @@ func getUserData(_ userUID:String) {
         
             let ageYear = components.year;
             response["user_dob"] = user_dob;
-            response["age_year"] = String(ageYear!);
+            response["user_age_year"] = String(ageYear!);
             
             // get user pic
             let storage = Storage.storage()
@@ -133,8 +122,6 @@ func getUserData(_ userUID:String) {
                 response["talent_basket_nest_2"] = talent_basket_nest[1]
                 response["talent_basket_nest_3"] = talent_basket_nest[2]
                 response["talent_basket_nest_4"] = talent_basket_nest[3]
-                print("/*****/ Runtime response at pulling talent")
-                print(response)
 
             }
             
@@ -153,8 +140,6 @@ func getUserData(_ userUID:String) {
             print("Document does not exist")
         }
     }
-//        return response;
-//    return "Attempted"
     
 } // getUserData
 
@@ -282,8 +267,6 @@ struct ProfilePic: View {
         
     }
     init(screenWidth:CGFloat, avatarQuadrant:CGFloat, midX:CGFloat, midY:CGFloat) {
-        print("/******/ Response at ProfilePic")
-        print(response);
         self.screenWidth = screenWidth;
         self.avatarQuadrant = avatarQuadrant;
         self.midX = midX;
@@ -465,15 +448,6 @@ struct DiscoveryVC: View {
     init() {
         setupAvatars();
         
-        // print(userUID);
-//        do {
-//            try await getUserData(userUID);
-//            print(response)
-//        } catch {
-//            print("Fetching user data into global response failed")
-//        }
-
-        
         self.persons.append(Person.init(age: 20))
         self.persons.append(Person.init(age: 22))
         self.persons.append(Person.init(age: 22))
@@ -486,7 +460,12 @@ struct DiscoveryVC: View {
 //        self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:persons.count);
         
-        getUserData(userUID);
+//        getUserData(userUID);
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+//            print("/*********/")
+//            print(response)
+//        }
     } // init
 
     
