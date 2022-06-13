@@ -97,23 +97,31 @@ class DashboardVC: UIViewController {
             // print("/****/ query {")
             // print(FIRQuerySnapshot!.query)
             
-            for document in FIRQuerySnapshot!.documents {
+                    
+            for i in 0...min(FIRQuerySnapshot!.documents.count-1, 2-1) {
                 // print("/****/ document<?>");
                 // print(document); // Confirmed documents is type QueryDocumentSnapshot
-                var data = document.data();
-                print("/****/ document.data() RET")
-                print(data);
+                var doc = FIRQuerySnapshot!.documents[i];
+                var data = doc.data();
+                // print("/****/ document.data() RET")
+                // print(data);
+                
+                responses!.append(data)
+                //if(i==1) {
+                //    print("/****/ responses")
+                //    print(responses!);
+                //}
                 
                 /** Render Discover **/
                 let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
-                addChild(contentViewInHC)
+                self.addChild(contentViewInHC)
                 self.view.addSubview(contentViewInHC.view)
                 contentViewInHC.didMove(toParent: self)
                 contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
-                contentViewInHC.view?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
-                contentViewInHC.view?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
-                contentViewInHC.view?.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true;
-                contentViewInHC.view?.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true;
+                contentViewInHC.view?.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true;
+                contentViewInHC.view?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true;
+                contentViewInHC.view?.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true;
+                contentViewInHC.view?.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true;
             }
         })
         
