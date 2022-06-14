@@ -10,9 +10,9 @@ import Foundation
 
 class MVMc {
     static var name = "name";
+    static var profile_pic = "profile_pic";
     static var userId = "userId";
     static var userName = "userName";
-    static var profile_pic = "profile_pic";
     static var userCity = "userCity";
     static var userState = "userState";
     static var userLocation = "userLocation";
@@ -56,7 +56,7 @@ class MVMConverters {
         switch type {
 
         case "name":
-            return String(describing: response["name"]);
+            return String(describing: response["name"]!);
             
         case "profile_pic":
             

@@ -249,7 +249,7 @@ struct ProfilePic: View {
         .position(x: self.midX, y: self.midY)
         .overlay(
             GeometryReader { geo in
-                Text("FN LN")
+                Text( MVMConverters.to(responses![responseIndex], MVMc.name) )
                     .frame(width: self.screenWidth/2, height: avatarQuadrantWidth)
                     .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY+avatarQuadrantWidth+13)
             } // Geo
