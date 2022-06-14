@@ -227,20 +227,9 @@ struct ProfilePic: View {
     var midY:CGFloat;
     
     var body: some View {
-        /*
-         
-         reference = storage.reference(forURL: imgRef)
-         reference.downloadURL { (url, err) in
-             if(url != nil) {
-                 let data = NSData(contentsOf: url!)
-                 let image = UIImage(data: data! as Data)
-                 self.profilePic.image = image
-             }
-         }
-         */ // gsImgRef []
-//        WebImage(url: URL(string: "https://nokiatech.github.io/heif/content/images/ski_jump_1440x960.heic"))
+//        WebImage(url: URL(string: "https:/... .png"))
         
-        WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.userPic)))
+        WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.profile_pic)))
         // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
         .onSuccess { image, data, cacheType in
             // Success

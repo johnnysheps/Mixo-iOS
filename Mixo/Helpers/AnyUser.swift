@@ -12,7 +12,7 @@ class MVMc {
     static var name = "name";
     static var userId = "userId";
     static var userName = "userName";
-    static var userPic = "userPic";
+    static var profile_pic = "profile_pic";
     static var userCity = "userCity";
     static var userState = "userState";
     static var userLocation = "userLocation";
@@ -58,7 +58,7 @@ class MVMConverters {
         case "name":
             return String(describing: response["name"]);
             
-        case "userPic":
+        case "profile_pic":
             
             if String(describing: response["profile_pic"]!)=="incomplete" {
                 return "https://engine.mixotype.com/mobile/ios/graphics/profile-pic-placeholder.png";
@@ -69,25 +69,25 @@ class MVMConverters {
             let imgRefWillPart = imgRef.replacingOccurrences(of: "gs://", with: "")
             let imgRefParted = imgRefWillPart.components(separatedBy: "/")
             
-            print("/****/ imgRefParted")
-            print(imgRefParted)
+//            print("/****/ imgRefParted")
+//            print(imgRefParted)
             
             let domain = imgRefParted[0];
             var subPathsArr:Array<String> = [];
-            print("/****/ domain")
-            print(domain)
+//            print("/****/ domain")
+//            print(domain)
             
             for i in 2...imgRefParted.count {
                 subPathsArr.append(imgRefParted[i-1])
             }
             
-            print("/****/ subPathsArr")
-            print(subPathsArr)
+//            print("/****/ subPathsArr")
+//            print(subPathsArr)
 
             let trailingPath = subPathsArr.joined(separator: "%2F");
             let publicUrl = "https://firebasestorage.googleapis.com/v0/b/\(domain)/o/\(trailingPath)?alt=media";
-            print("/****/ publicUrl")
-            print(publicUrl)
+//            print("/****/ publicUrl")
+//            print(publicUrl)
             return publicUrl;
             
         default:
