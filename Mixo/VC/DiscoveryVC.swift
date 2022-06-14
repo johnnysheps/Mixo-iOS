@@ -227,8 +227,7 @@ struct ProfilePic: View {
     var midY:CGFloat;
     
     var body: some View {
-//        WebImage(url: URL(string: "https:/... .png"))
-        
+        // WebImage(url: URL(string: "https://engine.mixotype.com/mobile/ios/graphics/profile-pic-placeholder.png"))
         WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.profile_pic)))
         // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
         .onSuccess { image, data, cacheType in
@@ -289,33 +288,53 @@ struct Row: View {
                     
                     GeometryReader { geo in
                         Rectangle()
-                            .fill(Color.gray)
+                            .fill(Color.white)
                             .frame(width: self.screenWidth/2, height: postHeight)
                             .overlay(
-                                Rectangle()
-                                    .fill(Color.red)
-                                    .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
-                                    .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
-                                        .overlay(
-                                            ZStack {
-                                                Rectangle()
-                                                    .fill(Color.green)
-                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-                                                Rectangle()
-                                                    .fill(Color.yellow)
-                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-                                                Rectangle()
-                                                    .fill(Color.black)
-                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - 0)
-                                                Rectangle()
-                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - 0)
-                                            }
-                                        )
+                                WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.role_nest)))
+                                // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
+                                .onSuccess { image, data, cacheType in
+                                    // Success
+                                    // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
+                                }
+                                .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                .placeholder(Image(systemName: "profile-pic-placeholder")) // Placeholder Image
+                                // Supports ViewBuilder as well
+                                .placeholder {
+                                    Rectangle().foregroundColor(Color.gray)
+                                }
+                                .indicator(.activity) // Activity Indicator
+                                .transition(.fade(duration: 0.5)) // Fade Transition with duration
+                                .scaledToFill()
+                                .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
+                                .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
+                                .overlay(
+                                    GeometryReader { geo in
+                                        Text( MVMConverters.to(responses![responseIndex], MVMc.name) )
+                                            .frame(width: self.screenWidth/2, height: avatarQuadrantWidth)
+                                            .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY+avatarQuadrantWidth+13)
+                                    } // Geo
+                                ) // Overlay
+//                                        .overlay(
+//                                            ZStack {
+//                                                Rectangle()
+//                                                    .fill(Color.green)
+//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+//                                                Rectangle()
+//                                                    .fill(Color.yellow)
+//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+//                                                Rectangle()
+//                                                    .fill(Color.black)
+//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - 0)
+//                                                Rectangle()
+//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
+//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - 0)
+//                                            }
+//                                        )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.orange)

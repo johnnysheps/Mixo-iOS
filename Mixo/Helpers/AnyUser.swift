@@ -27,7 +27,7 @@ class MVMc {
     static var talentDone = "talentDone";
     static var collectDone = "collectDone";
 
-    static var roleNest1 = "roleNest1";
+    static var role_nest = "role_nest";
     static var roleBasketNest1 = "roleBasketNest1";
     static var roleBasketNest2 = "roleBasketNest2";
     static var roleBasketNest3 = "roleBasketNest3";
@@ -89,6 +89,12 @@ class MVMConverters {
 //            print("/****/ publicUrl")
 //            print(publicUrl)
             return publicUrl;
+            
+        case "role_nest": // eg. 2453 that represents your most to least looked up heroes / role models
+            var role_nest_1 = String(describing: response["role_nest"]!);
+            role_nest_1 = role_nest_1.substring(toIndex: 0);
+            // Numerical values from the database not 0th-starting
+            return heroImages[Int(role_nest_1)! - 1]
             
         default:
             return "Error: None found";
