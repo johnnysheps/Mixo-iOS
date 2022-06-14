@@ -60,11 +60,11 @@ class MVMConverters {
             
         case "userPic":
             
-            if String(describing: response["profile_pic"])=="incomplete" {
+            if String(describing: response["profile_pic"]!)=="incomplete" {
                 return "https://engine.mixotype.com/mobile/ios/graphics/profile-pic-placeholder.png";
             }
             
-            let imgRef = "gs://mixotype-4a74b.appspot.com/" + String(describing: response["profile_pic"]);
+            let imgRef = "gs://mixotype-4a74b.appspot.com/" + String(describing: response["profile_pic"]!);
 
             let imgRefWillPart = imgRef.replacingOccurrences(of: "gs://", with: "")
             let imgRefParted = imgRefWillPart.components(separatedBy: "/")
