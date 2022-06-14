@@ -37,12 +37,12 @@ func getUserData(_ userUID:String) {
             let user_location = user_city + ", " + user_state
             let user_dob = document.get("dob") as! String
             
-            response["user_name"] = user_name;
-            response["user_pic"] = user_pic;
-            response["user_city"] = user_city;
-            response["user_state"] = user_state;
-            response["user_location"] = user_location;
-            response["user_dob"] = user_dob;
+//            response["user_name"] = user_name;
+//            response["user_pic"] = user_pic;
+//            response["user_city"] = user_city;
+//            response["user_state"] = user_state;
+//            response["user_location"] = user_location;
+//            response["user_dob"] = user_dob;
             
        
             //calcualte age of user
@@ -220,8 +220,9 @@ func setupAvatars() {
 
 
 struct ProfilePic: View {
+    var responseIndex:Int;
     var screenWidth:CGFloat;
-    var avatarQuadrant:CGFloat;
+    var avatarQuadrantWidth:CGFloat;
     var midX:CGFloat;
     var midY:CGFloat;
     
@@ -237,9 +238,9 @@ struct ProfilePic: View {
              }
          }
          */ // gsImgRef []
-        WebImage(url: URL(string: "https://nokiatech.github.io/heif/content/images/ski_jump_1440x960.heic"))
+//        WebImage(url: URL(string: "https://nokiatech.github.io/heif/content/images/ski_jump_1440x960.heic"))
         
-//        WebImage(url: URL(string: response["httpsImgRef"]!))
+        WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.userPic)))
         // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
         .onSuccess { image, data, cacheType in
             // Success
@@ -254,21 +255,22 @@ struct ProfilePic: View {
         .indicator(.activity) // Activity Indicator
         .transition(.fade(duration: 0.5)) // Fade Transition with duration
         .scaledToFill()
-        .frame(width: self.avatarQuadrant*2, height: self.avatarQuadrant*2, alignment: .center)
-        .cornerRadius(avatarQuadrant)
+        .frame(width: self.avatarQuadrantWidth*2, height: self.avatarQuadrantWidth*2, alignment: .center)
+        .cornerRadius(avatarQuadrantWidth)
         .position(x: self.midX, y: self.midY)
         .overlay(
             GeometryReader { geo in
                 Text("FN LN")
-                    .frame(width: self.screenWidth/2, height: avatarQuadrant)
-                    .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY+avatarQuadrant+13)
+                    .frame(width: self.screenWidth/2, height: avatarQuadrantWidth)
+                    .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).midY+avatarQuadrantWidth+13)
             } // Geo
         ) // Overlay
         
     }
-    init(screenWidth:CGFloat, avatarQuadrant:CGFloat, midX:CGFloat, midY:CGFloat) {
+    init(responseIndex:Int, screenWidth:CGFloat, avatarQuadrantWidth:CGFloat, midX:CGFloat, midY:CGFloat) {
+        self.responseIndex = responseIndex;
         self.screenWidth = screenWidth;
-        self.avatarQuadrant = avatarQuadrant;
+        self.avatarQuadrantWidth = avatarQuadrantWidth;
         self.midX = midX;
         self.midY = midY;
     }
@@ -277,7 +279,7 @@ struct ProfilePic: View {
 struct Row: View {
     let responseIndex: Int;
     var screenWidth: CGFloat;
-    var avatarQuadrant:CGFloat = 45;
+    var avatarQuadrantWidth:CGFloat = 45;
     
     var body: some View {
         VStack(alignment:.leading, spacing:0) {
@@ -287,7 +289,7 @@ struct Row: View {
                 VStack(alignment:.leading, spacing:0) {
                     GeometryReader { geo in
                         
-                        ProfilePic.init(screenWidth: self.screenWidth, avatarQuadrant: self.avatarQuadrant, midX: geo.frame(in: .local).midX, midY: geo.frame(in: .local).midY)
+                        ProfilePic.init(responseIndex: responseIndex, screenWidth: self.screenWidth, avatarQuadrantWidth: self.avatarQuadrantWidth, midX: geo.frame(in: .local).midX, midY: geo.frame(in: .local).midY)
                             .cornerRadius(50)
                     } // Geometry Reader
                     
@@ -303,101 +305,101 @@ struct Row: View {
                             .overlay(
                                 Rectangle()
                                     .fill(Color.red)
-                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
+                                    .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
                                         .overlay(
                                             ZStack {
                                                 Rectangle()
                                                     .fill(Color.green)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.yellow)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.black)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 - 0)
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - 0)
                                                 Rectangle()
                                                     .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 - 0)
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - 0)
                                             }
                                         )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.orange)
-                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX - avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
+                                    .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
+                                    .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
                                         .overlay(
                                             ZStack {
                                                 Rectangle()
                                                     .fill(Color.green)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.yellow)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.black)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - (avatarQuadrant/2), y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: -avatarQuadrant/4 - 0, y: -avatarQuadrant/4 + (2*avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
                                             }
                                         )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.purple)
-                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY - avatarQuadrant/2)
+                                    .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
                                         .overlay(
                                             ZStack {
                                                 Rectangle()
                                                     .fill(Color.green)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (2*avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.yellow)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (2*avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(Color.black)
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 - (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
                                                 Rectangle()
                                                     .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-                                                    .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                    .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 - (avatarQuadrant/2))
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
                                             }
                                         )
                             ).overlay(
                                 Rectangle()
                                     .fill(Color.blue)
-                                    .frame(width: avatarQuadrant, height: avatarQuadrant)
-                                    .position(x: geo.frame(in: .local).midX + avatarQuadrant/2, y: geo.frame(in: .local).midY + avatarQuadrant/2)
+                                    .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
+                                    .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
                                     .overlay(
                                         ZStack {
                                             Rectangle()
                                                 .fill(Color.green)
-                                                .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                .offset(x: avatarQuadrant/4 + 0, y: avatarQuadrant/4 + 0)
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 + 0)
                                             Rectangle()
                                                 .fill(Color.yellow)
-                                                .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 + 0)
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + 0)
                                             Rectangle()
                                                 .fill(Color.black)
-                                                .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                .offset(x: avatarQuadrant/4, y: avatarQuadrant/4 + (avatarQuadrant/2))
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4, y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
                                             Rectangle()
                                                 .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-                                                .frame(width: avatarQuadrant/2, height: avatarQuadrant/2)
-                                                .offset(x: avatarQuadrant/4 + (avatarQuadrant/2), y: avatarQuadrant/4 + (avatarQuadrant/2))
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
                                         }
                                     )
                             )
@@ -438,7 +440,8 @@ struct DiscoveryVC: View {
             ScrollView {
                 LazyHGrid(rows: rows, alignment: .center, spacing:0, pinnedViews: []) {
                     ForEach((0...responses!.count-1), id:\.self) {
-                        let _ = print("Iterator \($0)");
+                            // let _ = print("Iterator \($0)");
+//                        let _ = print(MVMConverters.to(responses![$0], "name"));
                         Row.init($0)
                     }
                 }.frame(width: UIScreen.main.bounds.width).padding(0)
