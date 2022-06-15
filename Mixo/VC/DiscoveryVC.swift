@@ -291,8 +291,8 @@ struct Row: View {
                             .fill(Color.white)
                             .frame(width: self.screenWidth/2, height: postHeight)
                             .overlay(
-                                // Top left quadrant
-                                Image(MVMConverters.to(responses![responseIndex], MVMc.role_nest))
+                                // Top left quadrant: Hero/Role
+                                Image(MVMConverters.to(responses![responseIndex], MVMc.role_basket_nest_1))
                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                     .scaledToFill()
                                     .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
@@ -322,7 +322,7 @@ struct Row: View {
                                             } // Zstack
                                         ) // overlay
                             ).overlay(
-                                // Bottom left quadrant
+                                // Bottom left quadrant: Talent
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                     .scaledToFill()
@@ -353,7 +353,7 @@ struct Row: View {
                                             } // Z Stack
                                         ) // Overlay
                             ).overlay(
-                                // Top right quadrant
+                                // Top right quadrant: Intel
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest))
                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                     .scaledToFill()
@@ -384,7 +384,7 @@ struct Row: View {
                                             }
                                         )
                             ).overlay(
-                                // Bottom right quadrant
+                                // Bottom right quadrant: Collection
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.collect_nest))
                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                     .scaledToFill()

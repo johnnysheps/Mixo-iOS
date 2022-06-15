@@ -28,6 +28,8 @@ class MVMc {
     static var collectDone = "collectDone";
 
     static var role_nest = "role_nest";
+    static var role_basket_nest_1 = "role_basket_nest_1";
+    
     static var roleBasketNest1 = "roleBasketNest1";
     static var roleBasketNest2 = "roleBasketNest2";
     static var roleBasketNest3 = "roleBasketNest3";
@@ -103,6 +105,31 @@ class MVMConverters {
 //            print(heroImages[Int(role_nest_1)! - 1])
             
             return heroImages[Int(role_nest_1)! - 1]
+
+        case "role_basket_nest_1": // eg. 2453 that represents your most to least looked up heroes / role models
+            var role_basket_nest_1 = String(describing: response["role_basket_nest"]!);
+            print("/*****/ role_basket_nest")
+            print(role_basket_nest_1)
+            role_basket_nest_1 = role_basket_nest_1.substring(toIndex: 1); /***/
+            print("/*****/ role_basket_nest_1 char")
+            print(role_basket_nest_1)
+            // Numerical values from the database not 0th-starting
+//            print("/****/ heroImages XCode image name")
+//            print(heroImages[Int(role_nest_1)! - 1])
+            
+            switch role_basket_nest_1{
+                case "1":
+                    return "ktlc"
+                case "2":
+                    return "wtlc"
+                case "3":
+                    return "mtlc"
+                case "4":
+                    return "ltlc"
+                default:
+                    return ""
+            }
+            
             
         case "intel_nest":
             var intel_nest_1 = String(describing: response["intel_nest"]!);
