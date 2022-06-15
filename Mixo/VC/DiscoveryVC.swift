@@ -297,27 +297,30 @@ struct Row: View {
                                     .scaledToFill()
                                     .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
                                     .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
-//                                ) // Overlay
-//                                        .overlay(
-//                                            ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - 0)
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - 0)
-//                                            }
-//                                        ) // overlay
+                                        .overlay(
+                                            ZStack {
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 - 0)
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 - 0)
+                                            } // Zstack
+                                        ) // overlay
                             ).overlay(
                                 // Bottom left quadrant
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
@@ -325,26 +328,30 @@ struct Row: View {
                                     .scaledToFill()
                                     .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
                                     .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
-//                                        .overlay(
-//                                            ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
-//                                            } // Z Stack
-//                                        ) // Overlay
+                                        .overlay(
+                                            ZStack {
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
+                                            } // Z Stack
+                                        ) // Overlay
                             ).overlay(
                                 // Top right quadrant
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest))
@@ -352,26 +359,30 @@ struct Row: View {
                                     .scaledToFill()
                                     .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
-//                                        .overlay(
-//                                            ZStack {
-//                                                Rectangle()
-//                                                    .fill(Color.green)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.yellow)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(Color.black)
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-//                                                Rectangle()
-//                                                    .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-//                                            }
-//                                        )
+                                        .overlay(
+                                            ZStack {
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                    .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                    .scaledToFill()
+                                                    .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                    .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
+                                            }
+                                        )
                             ).overlay(
                                 // Bottom right quadrant
                                 Image(MVMConverters.to(responses![responseIndex], MVMc.collect_nest))
@@ -379,26 +390,30 @@ struct Row: View {
                                     .scaledToFill()
                                     .frame(width: avatarQuadrantWidth, height: avatarQuadrantWidth)
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
-//                                    .overlay(
-//                                        ZStack {
-//                                            Rectangle()
-//                                                .fill(Color.green)
-//                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 + 0)
-//                                            Rectangle()
-//                                                .fill(Color.yellow)
-//                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + 0)
-//                                            Rectangle()
-//                                                .fill(Color.black)
-//                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                .offset(x: avatarQuadrantWidth/4, y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-//                                            Rectangle()
-//                                                .fill(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom))
-//                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
-//                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-//                                        }
-//                                    )
+                                    .overlay(
+                                        ZStack {
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                .scaledToFill()
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 + 0)
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                .scaledToFill()
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + 0)
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                .scaledToFill()
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4, y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                                .scaledToFill()
+                                                .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
+                                                .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
+                                        }
+                                    )
                             ) // overlay
                     } // Geometry reader
                 }.frame(width: self.screenWidth/2, height: postHeight) // VStack
