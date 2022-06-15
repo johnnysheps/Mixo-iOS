@@ -468,15 +468,6 @@ struct DiscoveryVC: View {
     init() {
         setupAvatars();
         
-        //self.persons.append(Person.init(age: 20))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        //self.persons.append(Person.init(age: 22))
-        
         /** The .fixed is the row height! */
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:responses!.count);
         
@@ -485,9 +476,3 @@ struct DiscoveryVC: View {
 
     
 } // DisoveryVC
-
-//struct DiscoveryVC_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DiscoveryVC()
-//    }
-//}

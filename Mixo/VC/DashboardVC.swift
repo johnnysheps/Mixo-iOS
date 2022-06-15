@@ -98,7 +98,7 @@ class DashboardVC: UIViewController {
             // print(FIRQuerySnapshot!.query)
             
                     
-            for i in 0...min(FIRQuerySnapshot!.documents.count-1, 2-1) {
+            for i in 0...min(FIRQuerySnapshot!.documents.count-1, 6-1) {
                 // print("/****/ document<?>");
                 // print(document); // Confirmed documents is type QueryDocumentSnapshot
                 var doc = FIRQuerySnapshot!.documents[i];

@@ -93,6 +93,9 @@ class MVMConverters {
             
         case "role_nest": // eg. 2453 that represents your most to least looked up heroes / role models
             var role_nest_1 = String(describing: response["role_nest"]!);
+            if(role_nest_1=="incomplete") {
+                return "";
+            }
 //            print("/*****/ role_nest_1")
 //            print(role_nest_1)
             role_nest_1 = role_nest_1.substring(toIndex: 1);
@@ -106,6 +109,9 @@ class MVMConverters {
 
         case "role_basket_nest_1": // eg. 2453 that represents your most to least looked up heroes / role models
             let role_basket_nest_1 = String(describing: response["role_basket_nest"]!);
+            if(role_basket_nest_1=="incomplete") {
+                return "";
+            }
 //            print("/*****/ role_basket_nest")
 //            print(role_basket_nest_1)
             let char = role_basket_nest_1[role_basket_nest_1.index(role_basket_nest_1.startIndex, offsetBy: 0)]
@@ -130,6 +136,9 @@ class MVMConverters {
 
         case "role_basket_nest_2": // eg. 2453 that represents your most to least looked up heroes / role models
             let role_basket_nest_2 = String(describing: response["role_basket_nest"]!);
+            if(role_basket_nest_2=="incomplete") {
+                return "";
+            }
 //                    print("/*****/ role_basket_nest")
 //                    print(role_basket_nest_2)
             let char = role_basket_nest_2[role_basket_nest_2.index(role_basket_nest_2.startIndex, offsetBy: 1)]
@@ -151,6 +160,9 @@ class MVMConverters {
                     
         case "role_basket_nest_3": // eg. 2453 that represents your most to least looked up heroes / role models
             let role_basket_nest_3 = String(describing: response["role_basket_nest"]!);
+            if(role_basket_nest_3=="incomplete") {
+                return "";
+            }
 //                    print("/*****/ role_basket_nest")
 //                    print(role_basket_nest_3)
             let char = role_basket_nest_3[role_basket_nest_3.index(role_basket_nest_3.startIndex, offsetBy: 2)]
@@ -173,6 +185,9 @@ class MVMConverters {
             
         case "role_basket_nest_4": // eg. 2453 that represents your most to least looked up heroes / role models
             let role_basket_nest_4 = String(describing: response["role_basket_nest"]!);
+            if(role_basket_nest_4=="incomplete") {
+                return "";
+            }
 //                    print("/*****/ role_basket_nest")
 //                    print(role_basket_nest_4)
             let char = role_basket_nest_4[role_basket_nest_4.index(role_basket_nest_4.startIndex, offsetBy: 3)]
@@ -195,6 +210,9 @@ class MVMConverters {
             
         case "intel_nest":
             var intel_nest_1 = String(describing: response["intel_nest"]!);
+            if(intel_nest_1=="incomplete") {
+                return "";
+            }
 //            print("/*****/ role_nest_1")
 //            print(role_nest_1)
             intel_nest_1 = intel_nest_1.substring(toIndex: 1);
@@ -208,6 +226,9 @@ class MVMConverters {
 
         case "talent_nest":
             var talent_nest_1 = String(describing: response["talent_nest"]!);
+            if(talent_nest_1=="incomplete") {
+                return "";
+            }
 //            print("/*****/ role_nest_1")
 //            print(role_nest_1)
             talent_nest_1 = talent_nest_1.components(separatedBy: "_")[0]
@@ -217,10 +238,14 @@ class MVMConverters {
 //            print("/****/ heroImages XCode image name")
 //            print(heroImages[Int(role_nest_1)! - 1])
             
+
             return talentImages[Int(talent_nest_1)! - 1]
-       
+            
         case "collect_nest":
             var collect_nest_1 = String(describing: response["collect_nest"]!);
+            if(collect_nest_1=="incomplete") {
+                return "";
+            }
 //            print("/*****/ role_nest_1")
 //            print(role_nest_1)
               collect_nest_1 = collect_nest_1.substring(toIndex: 1);
