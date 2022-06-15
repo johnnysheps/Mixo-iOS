@@ -92,8 +92,15 @@ class MVMConverters {
             
         case "role_nest": // eg. 2453 that represents your most to least looked up heroes / role models
             var role_nest_1 = String(describing: response["role_nest"]!);
-            role_nest_1 = role_nest_1.substring(toIndex: 0);
+//            print("/*****/ role_nest_1")
+//            print(role_nest_1)
+            role_nest_1 = role_nest_1.substring(toIndex: 1);
+//            print("/*****/ role_nest_1 char")
+//            print(role_nest_1)
             // Numerical values from the database not 0th-starting
+            print("/****/ heroImages XCode image name")
+            print(heroImages[Int(role_nest_1)! - 1])
+            
             return heroImages[Int(role_nest_1)! - 1]
             
         default:
