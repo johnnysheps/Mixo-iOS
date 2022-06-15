@@ -33,18 +33,19 @@ class MVMc {
     static var roleBasketNest3 = "roleBasketNest3";
     static var roleBasketNest4 = "roleBasketNest4";
 
+    static var intel_nest = "intel_nest";
     static var intelNest1 = "intelNest1";
     static var intelNest2 = "intelNest2";
     static var intelNest3 = "intelNest3";
     static var intelNest4 = "intelNest4";
 
-    static var talentNest1 = "talentNest1";
+    static var talent_nest = "talent_nest";
     static var talentBasketNest1 = "talentBasketNest1";
     static var talentBasketNest2 = "talentBasketNest2";
     static var talentBasketNest3 = "talentBasketNest3";
     static var talentBasketNest4 = "talentBasketNest4";
 
-    static var collectNest1 = "collectNest1";
+    static var collect_nest = "collect_nest";
     static var collectBasketNest1 = "collectBasketNest1";
     static var collectBasketNest2 = "collectBasketNest2";
     static var collectBasketNest3 = "collectBasketNest3";
@@ -98,10 +99,51 @@ class MVMConverters {
 //            print("/*****/ role_nest_1 char")
 //            print(role_nest_1)
             // Numerical values from the database not 0th-starting
-            print("/****/ heroImages XCode image name")
-            print(heroImages[Int(role_nest_1)! - 1])
+//            print("/****/ heroImages XCode image name")
+//            print(heroImages[Int(role_nest_1)! - 1])
             
             return heroImages[Int(role_nest_1)! - 1]
+            
+        case "intel_nest":
+            var intel_nest_1 = String(describing: response["intel_nest"]!);
+//            print("/*****/ role_nest_1")
+//            print(role_nest_1)
+            intel_nest_1 = intel_nest_1.substring(toIndex: 1);
+//            print("/*****/ role_nest_1 char")
+//            print(role_nest_1)
+            // Numerical values from the database not 0th-starting
+//            print("/****/ heroImages XCode image name")
+//            print(heroImages[Int(role_nest_1)! - 1])
+            
+            return intelImages[Int(intel_nest_1)! - 1]
+
+        case "talent_nest":
+            var talent_nest_1 = String(describing: response["talent_nest"]!);
+//            print("/*****/ role_nest_1")
+//            print(role_nest_1)
+            talent_nest_1 = talent_nest_1.components(separatedBy: "_")[0]
+//            print("/*****/ role_nest_1 char")
+//            print(role_nest_1)
+            // Numerical values from the database not 0th-starting
+//            print("/****/ heroImages XCode image name")
+//            print(heroImages[Int(role_nest_1)! - 1])
+            
+            return talentImages[Int(talent_nest_1)! - 1]
+       
+        case "collect_nest":
+            var collect_nest_1 = String(describing: response["collect_nest"]!);
+//            print("/*****/ role_nest_1")
+//            print(role_nest_1)
+              collect_nest_1 = collect_nest_1.substring(toIndex: 1);
+//            print("/*****/ role_nest_1 char")
+//            print(role_nest_1)
+            // Numerical values from the database not 0th-starting
+//            print("/****/ heroImages XCode image name")
+//            print(heroImages[Int(role_nest_1)! - 1])
+            
+            return talentImages[Int(collect_nest_1)! - 1]
+       
+            
             
         default:
             return "Error: None found";
