@@ -29,11 +29,9 @@ class MVMc {
 
     static var role_nest = "role_nest";
     static var role_basket_nest_1 = "role_basket_nest_1";
-    
-    static var roleBasketNest1 = "roleBasketNest1";
-    static var roleBasketNest2 = "roleBasketNest2";
-    static var roleBasketNest3 = "roleBasketNest3";
-    static var roleBasketNest4 = "roleBasketNest4";
+    static var role_basket_nest_2 = "role_basket_nest_2";
+    static var role_basket_nest_3 = "role_basket_nest_3";
+    static var role_basket_nest_4 = "role_basket_nest_4";
 
     static var intel_nest = "intel_nest";
     static var intelNest1 = "intelNest1";
@@ -107,17 +105,17 @@ class MVMConverters {
             return heroImages[Int(role_nest_1)! - 1]
 
         case "role_basket_nest_1": // eg. 2453 that represents your most to least looked up heroes / role models
-            var role_basket_nest_1 = String(describing: response["role_basket_nest"]!);
-            print("/*****/ role_basket_nest")
-            print(role_basket_nest_1)
-            role_basket_nest_1 = role_basket_nest_1.substring(toIndex: 1); /***/
-            print("/*****/ role_basket_nest_1 char")
-            print(role_basket_nest_1)
+            let role_basket_nest_1 = String(describing: response["role_basket_nest"]!);
+//            print("/*****/ role_basket_nest")
+//            print(role_basket_nest_1)
+            let char = role_basket_nest_1[role_basket_nest_1.index(role_basket_nest_1.startIndex, offsetBy: 0)]
+//            print("/*****/ role_basket_nest_1 char")
+//            print(role_basket_nest_1)
             // Numerical values from the database not 0th-starting
 //            print("/****/ heroImages XCode image name")
 //            print(heroImages[Int(role_nest_1)! - 1])
             
-            switch role_basket_nest_1{
+            switch char {
                 case "1":
                     return "ktlc"
                 case "2":
@@ -129,7 +127,71 @@ class MVMConverters {
                 default:
                     return ""
             }
+
+        case "role_basket_nest_2": // eg. 2453 that represents your most to least looked up heroes / role models
+            let role_basket_nest_2 = String(describing: response["role_basket_nest"]!);
+//                    print("/*****/ role_basket_nest")
+//                    print(role_basket_nest_2)
+            let char = role_basket_nest_2[role_basket_nest_2.index(role_basket_nest_2.startIndex, offsetBy: 1)]
+//                    print("/*****/ role_basket_nest_2 char")
+//                    print(role_basket_nest_2)
             
+            switch char {
+                case "1":
+                    return "ktrc"
+                case "2":
+                    return "wtrc"
+                case "3":
+                    return "mtrc"
+                case "4":
+                    return "ltrc"
+                default:
+                    return ""
+            }
+                    
+        case "role_basket_nest_3": // eg. 2453 that represents your most to least looked up heroes / role models
+            let role_basket_nest_3 = String(describing: response["role_basket_nest"]!);
+//                    print("/*****/ role_basket_nest")
+//                    print(role_basket_nest_3)
+            let char = role_basket_nest_3[role_basket_nest_3.index(role_basket_nest_3.startIndex, offsetBy: 2)]
+//                    print("/*****/ role_basket_nest_3 char")
+//                    print(role_basket_nest_3)
+            
+            switch char {
+                case "1":
+                    return "kblc"
+                case "2":
+                    return "wblc"
+                case "3":
+                    return "mblc"
+                case "4":
+                    return "lblc"
+                default:
+                    return ""
+            }
+
+            
+        case "role_basket_nest_4": // eg. 2453 that represents your most to least looked up heroes / role models
+            let role_basket_nest_4 = String(describing: response["role_basket_nest"]!);
+//                    print("/*****/ role_basket_nest")
+//                    print(role_basket_nest_4)
+            let char = role_basket_nest_4[role_basket_nest_4.index(role_basket_nest_4.startIndex, offsetBy: 3)]
+//                    print("/*****/ role_basket_nest_4 char")
+//                    print(role_basket_nest_4)
+            
+            switch char {
+                case "1":
+                    return "kbrc"
+                case "2":
+                    return "wbrc"
+                case "3":
+                    return "mbrc"
+                case "4":
+                    return "lbrc"
+                default:
+                    return ""
+            }
+        
             
         case "intel_nest":
             var intel_nest_1 = String(describing: response["intel_nest"]!);
