@@ -530,7 +530,6 @@ class MVMConverters {
 }
 
 var responses:[[String:Any]]? = []
-//var responses: [Dictionary<String, Any>] = []
 
 var response = [
     "city":"",

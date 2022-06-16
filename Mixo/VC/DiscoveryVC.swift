@@ -79,13 +79,11 @@ func getUserData(_ userUID:String) {
             let publicUrl = "https://firebasestorage.googleapis.com/v0/b/\(domain)/o/\(trailingPath)?alt=media";
             response["httpsImgRef"] = publicUrl;
             
-            
             //check the users dones
             response["roleDone"] = document.get("role_done") as? String;
             response["intelDone"] = document.get("intel_done") as? String;
             response["talentDone"] = document.get("intel_done") as? String;
             response["collectDone"] = document.get("collect_done") as? String;
-            
 
             //heroes
             if response["roleDone"] == "Y"{
@@ -98,7 +96,6 @@ func getUserData(_ userUID:String) {
                 response["role_basket_nest_2"] = role_basket_nest[1]
                 response["role_basket_nest_3"] = role_basket_nest[2]
                 response["role_basket_nest_4"] = role_basket_nest[3]
-    
             } // if
 
             //intels
@@ -122,7 +119,6 @@ func getUserData(_ userUID:String) {
                 response["talent_basket_nest_2"] = talent_basket_nest[1]
                 response["talent_basket_nest_3"] = talent_basket_nest[2]
                 response["talent_basket_nest_4"] = talent_basket_nest[3]
-
             }
             
             //collections
@@ -449,9 +445,7 @@ class Person {
 
 struct DiscoveryVC: View {
     var rows:Array<GridItem> = Array();
-    var persons:Array<Person> = Array();
-    var dismissAction: (() -> Void)?
-    var closeSubViews: (() -> Void)?
+    var returnToUIKit: (() -> Void)?
     
     var body: some View {
         GeometryReader { geo in
@@ -465,12 +459,12 @@ struct DiscoveryVC: View {
                                     .frame(alignment: .center)
                                     .foregroundColor(Color.white)
                                     .font(Font.system(size: 20, weight: .bold))
-//                                    Button(action: self.dismissAction!) {
-                                    Button(action: self.closeSubViews!) {
-                                        Text("<- Back")
+                                    Button(action: self.returnToUIKit!) {
+                                        Text(" <- Back")
                                         .foregroundColor(Color.gray)
                                         .opacity(0.5)
                                     }.frame(maxWidth: .infinity, maxHeight: 40, alignment: .topLeading)
+                                    .position(x: geo.frame(in: .local).midX, y: geo.frame(in: .local).minY+30) // geo is entire screen
                                     
                             }
                         ) // overlay
@@ -486,19 +480,14 @@ struct DiscoveryVC: View {
     } // body
     
     
-    init(dismissAction:(()->Void)?, closeSubViews:(()->Void)?) {
-        self.closeSubViews = closeSubViews;
+    init(returnToUIKit:(()->Void)?) {
+        self.returnToUIKit = returnToUIKit;
         
-        self.dismissAction = dismissAction;
         setupAvatars();
         
         /** The .fixed is the row height! */
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:responses!.count);
         
-        
-//        self.presentationMode.wrappedValue.dismiss()
-        
-        // getUserData(userUID);
     } // init
 
     

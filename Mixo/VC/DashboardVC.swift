@@ -88,8 +88,6 @@ class DashboardVC: UIViewController {
     
     @IBAction func discoveryClicked(_ sender: Any)  {
         
-        
-        
         let docRef = db.collection("users").getDocuments(completion: { FIRQuerySnapshot, Error in
             // Used reference at:
             // https://firebase.google.com/docs/reference/swift/firebasefirestore/api/reference/Classes/QueryDocumentSnapshot
@@ -97,7 +95,7 @@ class DashboardVC: UIViewController {
             // print("/****/ query {")
             // print(FIRQuerySnapshot!.query)
             
-                    
+            responses = []
             for i in 0...min(FIRQuerySnapshot!.documents.count-1, 20-1) {
                 // print("/****/ document<?>");
                 // print(document); // Confirmed documents is type QueryDocumentSnapshot
@@ -118,18 +116,20 @@ class DashboardVC: UIViewController {
                 
                 /** Render Discover **/
                 let settingsView = DiscoveryVC(
-                    dismissAction: {self.dismiss( animated: true, completion: nil )},
-                    closeSubViews: {
+                    returnToUIKit: {
                         for view in self.view.subviews {
                             view.removeFromSuperview()
                         }
+                        
+                        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+                        self.present(dashboardVC, animated: true, completion: nil)
                     }
                 )
                 let contentViewInHC = UIHostingController(rootView: settingsView )
 
                 self.addChild(contentViewInHC)
                 self.view.addSubview(contentViewInHC.view)
-//                contentViewInHC.didMove(toParent: self)
+                contentViewInHC.didMove(toParent: self)
                 contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
                 contentViewInHC.view?.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true;
                 contentViewInHC.view?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true;
@@ -223,6 +223,7 @@ class DashboardVC: UIViewController {
     }
     
     func setupProfilePic() {
+        if(profilePic == nil) { return; }
         profilePic.layer.masksToBounds = true
         profilePic.layer.cornerRadius = profilePic.bounds.width / 2
     }
