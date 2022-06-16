@@ -449,11 +449,31 @@ class Person {
 
 struct DiscoveryVC: View {
     var rows:Array<GridItem> = Array();
-    var persons:Array<Person> = Array()
+    var persons:Array<Person> = Array();
+    var dismissAction: (() -> Void)?
+    var closeSubViews: (() -> Void)?
     
     var body: some View {
         GeometryReader { geo in
             ScrollView {
+                Image("loadingbg")
+                        .resizable()
+                        .frame(width: UIScreen.main.bounds.width, height: 40)
+                        .overlay(
+                            ZStack {
+                                Text("Discovery")
+                                    .frame(alignment: .center)
+                                    .foregroundColor(Color.white)
+                                    .font(Font.system(size: 20, weight: .bold))
+//                                    Button(action: self.dismissAction!) {
+                                    Button(action: self.closeSubViews!) {
+                                        Text("<- Back")
+                                        .foregroundColor(Color.gray)
+                                        .opacity(0.5)
+                                    }.frame(maxWidth: .infinity, maxHeight: 40, alignment: .topLeading)
+                                    
+                            }
+                        ) // overlay
                 LazyHGrid(rows: rows, alignment: .center, spacing:0, pinnedViews: []) {
                     ForEach((0...responses!.count-1), id:\.self) {
                             // let _ = print("Iterator \($0)");
@@ -465,11 +485,18 @@ struct DiscoveryVC: View {
         } // GeometryReader
     } // body
     
-    init() {
+    
+    init(dismissAction:(()->Void)?, closeSubViews:(()->Void)?) {
+        self.closeSubViews = closeSubViews;
+        
+        self.dismissAction = dismissAction;
         setupAvatars();
         
         /** The .fixed is the row height! */
         self.rows = Array(repeating: GridItem(.fixed(rowHeight), spacing:0), count:responses!.count);
+        
+        
+//        self.presentationMode.wrappedValue.dismiss()
         
         // getUserData(userUID);
     } // init

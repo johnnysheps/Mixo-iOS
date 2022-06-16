@@ -117,10 +117,19 @@ class DashboardVC: UIViewController {
                 //}
                 
                 /** Render Discover **/
-                let contentViewInHC = UIHostingController(rootView: DiscoveryVC())
+                let settingsView = DiscoveryVC(
+                    dismissAction: {self.dismiss( animated: true, completion: nil )},
+                    closeSubViews: {
+                        for view in self.view.subviews {
+                            view.removeFromSuperview()
+                        }
+                    }
+                )
+                let contentViewInHC = UIHostingController(rootView: settingsView )
+
                 self.addChild(contentViewInHC)
                 self.view.addSubview(contentViewInHC.view)
-                contentViewInHC.didMove(toParent: self)
+//                contentViewInHC.didMove(toParent: self)
                 contentViewInHC.view?.translatesAutoresizingMaskIntoConstraints = false;
                 contentViewInHC.view?.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true;
                 contentViewInHC.view?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true;
@@ -128,17 +137,10 @@ class DashboardVC: UIViewController {
                 contentViewInHC.view?.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true;
             }
         })
-        
-
-    }
-    
-    fileprivate func setupHCConstraints() {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupHCConstraints()
 
         //heroes
         heroImages.append("actornb")
