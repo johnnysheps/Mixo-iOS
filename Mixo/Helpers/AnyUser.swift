@@ -58,13 +58,13 @@ class MVMConverters {
         switch type {
 
             case "name":
-                if(response["name"]==nil) { return ""; }
+                if(response["name"]==nil) { return "incomplete"; }
                 return String(describing: response["name"]!);
                 
             case "profile_pic":
                 print("/****/ profile_pic **DEBUG** If crash this was the last user ID")
                 print(response["flattened_user_id"]);
-                if(response["profile_pic"]==nil) { return ""; }
+                if(response["profile_pic"]==nil) { return "incomplete"; }
                     
                 if String(describing: response["profile_pic"]!)=="incomplete" {
                     return "https://engine.mixotype.com/mobile/ios/graphics/profile-pic-placeholder.png";
@@ -97,20 +97,20 @@ class MVMConverters {
                 return publicUrl;
                 
             case "role_nest": // eg. 2453 that represents your most to least looked up heroes / role models
-                if(response["role_nest"]==nil) { return "" }
+                if(response["role_nest"]==nil) { return "incomplete"; }
                 var role_nest_1 = String(describing: response["role_nest"]!);
                 if(role_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 role_nest_1 = role_nest_1.substring(toIndex: 1);
                 
                 return heroImages[Int(role_nest_1)! - 1]
 
             case "role_basket_nest_1":
-                if(response["role_basket_nest_1"]==nil) { return "" }
+                if(response["role_basket_nest"]==nil) { return "incomplete"; }
                 let role_basket_nest_1 = String(describing: response["role_basket_nest"]!);
                 if(role_basket_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = role_basket_nest_1[role_basket_nest_1.index(role_basket_nest_1.startIndex, offsetBy: 0)]
                 
@@ -124,14 +124,14 @@ class MVMConverters {
                     case "4":
                         return "ltlc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
 
             case "role_basket_nest_2":
-                if(response["role_basket_nest_2"]==nil) { return "" }
+                if(response["role_basket_nest"]==nil) { return "incomplete"; }
                 let role_basket_nest_2 = String(describing: response["role_basket_nest"]!);
                 if(role_basket_nest_2=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = role_basket_nest_2[role_basket_nest_2.index(role_basket_nest_2.startIndex, offsetBy: 1)]
                 
@@ -145,14 +145,14 @@ class MVMConverters {
                     case "4":
                         return "ltrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                         
             case "role_basket_nest_3":
-                if(response["role_basket_nest_3"]==nil) { return "" }
+                if(response["role_basket_nest"]==nil) { return "incomplete"; }
                 let role_basket_nest_3 = String(describing: response["role_basket_nest"]!);
                 if(role_basket_nest_3=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = role_basket_nest_3[role_basket_nest_3.index(role_basket_nest_3.startIndex, offsetBy: 2)]
                 
@@ -166,15 +166,15 @@ class MVMConverters {
                     case "4":
                         return "lblc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
 
                 
             case "role_basket_nest_4":
-                if(response["role_basket_nest_4"]==nil) { return "" }
+                if(response["role_basket_nest"]==nil) { return "incomplete"; }
                 let role_basket_nest_4 = String(describing: response["role_basket_nest"]!);
                 if(role_basket_nest_4=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = role_basket_nest_4[role_basket_nest_4.index(role_basket_nest_4.startIndex, offsetBy: 3)]
                 
@@ -188,25 +188,25 @@ class MVMConverters {
                     case "4":
                         return "lbrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
             
                 
             case "intel_nest":
-                if(response["intel_nest"]==nil) { return "" }
+                if(response["intel_nest"]==nil) { return "incomplete"; }
                 var intel_nest_1 = String(describing: response["intel_nest"]!);
                 if(intel_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 intel_nest_1 = intel_nest_1.substring(toIndex: 1);
                 
                 return intelImages[Int(intel_nest_1)! - 1]
                 
             case "intel_nest_1":
-                if(response["intel_nest_1"]==nil) { return "" }
+                if(response["intel_nest"]==nil) { return "incomplete"; }
                 let intel_nest_1 = String(describing: response["intel_nest"]!);
                 if(intel_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = intel_nest_1[intel_nest_1.index(intel_nest_1.startIndex, offsetBy: 0)]
                 
@@ -230,14 +230,14 @@ class MVMConverters {
                     case "9":
                         return "existentialtlc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
 
             case "intel_nest_2":
-                if(response["intel_nest_2"]==nil) { return "" }
+                if(response["intel_nest"]==nil) { return "incomplete"; }
                 let intel_nest_2 = String(describing: response["intel_nest"]!);
                 if(intel_nest_2=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = intel_nest_2[intel_nest_2.index(intel_nest_2.startIndex, offsetBy: 1)]
                 
@@ -261,14 +261,14 @@ class MVMConverters {
                     case "9":
                         return "existentialtrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                 
             case "intel_nest_3":
-                if(response["intel_nest_3"]==nil) { return "" }
+                if(response["intel_nest"]==nil) { return "incomplete"; }
                 let intel_nest_3 = String(describing: response["intel_nest"]!);
                 if(intel_nest_3=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = intel_nest_3[intel_nest_3.index(intel_nest_3.startIndex, offsetBy: 2)]
                 
@@ -292,14 +292,14 @@ class MVMConverters {
                     case "9":
                         return "existentialblc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                 
             case "intel_nest_4":
-                if(response["intel_nest_4"]==nil) { return "" }
+                if(response["intel_nest"]==nil) { return "incomplete"; }
                 let intel_nest_4 = String(describing: response["intel_nest"]!);
                 if(intel_nest_4=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = intel_nest_4[intel_nest_4.index(intel_nest_4.startIndex, offsetBy: 3)]
                 
@@ -323,13 +323,13 @@ class MVMConverters {
                     case "9":
                         return "existentialbrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
             case "talent_nest":
-                if(response["talent_nest"]==nil) { return "" }
+                if(response["talent_nest"]==nil) { return "incomplete"; }
                 var talent_nest_1 = String(describing: response["talent_nest"]!);
                 if(talent_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 talent_nest_1 = talent_nest_1.components(separatedBy: "_")[0]
                 
@@ -337,10 +337,10 @@ class MVMConverters {
                 return talentImages[Int(talent_nest_1)! - 1]
 
             case "talent_basket_nest_1":
-                if(response["talent_basket_nest_1"]==nil) { return "" }
+                if(response["talent_basket_nest"]==nil) { return "incomplete"; }
                 let talent_basket_nest_1 = String(describing: response["talent_basket_nest"]!);
                 if(talent_basket_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = talent_basket_nest_1[talent_basket_nest_1.index(talent_basket_nest_1.startIndex, offsetBy: 0)]
                 
@@ -354,14 +354,14 @@ class MVMConverters {
                     case "4":
                         return "creativetlc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                 
             case "talent_basket_nest_2":
-                if(response["talent_basket_nest_2"]==nil) { return "" }
+                if(response["talent_basket_nest"]==nil) { return "incomplete"; }
                 let talent_basket_nest_2 = String(describing: response["talent_basket_nest"]!);
                 if(talent_basket_nest_2=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = talent_basket_nest_2[talent_basket_nest_2.index(talent_basket_nest_2.startIndex, offsetBy: 1)]
                 
@@ -375,14 +375,14 @@ class MVMConverters {
                     case "4":
                         return "creativetrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                 
             case "talent_basket_nest_3":
-                if(response["talent_basket_nest_3"]==nil) { return "" }
+                if(response["talent_basket_nest"]==nil) { return "incomplete"; }
                 let talent_basket_nest_3 = String(describing: response["talent_basket_nest"]!);
                 if(talent_basket_nest_3=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = talent_basket_nest_3[talent_basket_nest_3.index(talent_basket_nest_3.startIndex, offsetBy: 2)]
                 
@@ -396,14 +396,14 @@ class MVMConverters {
                     case "4":
                         return "creativeblc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
      
             case "talent_basket_nest_4":
-                if(response["talent_basket_nest_4"]==nil) { return "" }
+                if(response["talent_basket_nest"]==nil) { return "incomplete"; }
                 let talent_basket_nest_4 = String(describing: response["talent_basket_nest"]!);
                 if(talent_basket_nest_4=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = talent_basket_nest_4[talent_basket_nest_4.index(talent_basket_nest_4.startIndex, offsetBy: 3)]
                 
@@ -417,15 +417,15 @@ class MVMConverters {
                     case "4":
                         return "creativebrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
             
                 
             case "collect_nest":
-                if(response["collect_nest"]==nil) { return "" }
+                if(response["collect_nest"]==nil) { return "incomplete"; }
                 var collect_nest_1 = String(describing: response["collect_nest"]!);
                 if(collect_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 collect_nest_1 = collect_nest_1.substring(toIndex: 1);
                 
@@ -433,10 +433,10 @@ class MVMConverters {
            
      
             case "collect_basket_nest_1":
-                if(response["collect_basket_nest_1"]==nil) { return "" }
+                if(response["collect_basket_nest"]==nil) { return "incomplete"; }
                 let collect_basket_nest_1 = String(describing: response["collect_basket_nest"]!);
                 if(collect_basket_nest_1=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = collect_basket_nest_1[collect_basket_nest_1.index(collect_basket_nest_1.startIndex, offsetBy: 0)]
                 
@@ -450,15 +450,15 @@ class MVMConverters {
                     case "4":
                         return "creativetlc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
 
                 
            case "collect_basket_nest_2":
-                if(response["collect_basket_nest_2"]==nil) { return "" }
+                if(response["collect_basket_nest"]==nil) { return "incomplete"; }
                let collect_basket_nest_2 = String(describing: response["collect_basket_nest"]!);
                if(collect_basket_nest_2=="incomplete") {
-                   return "";
+                   return "incomplete";
                }
                let char = collect_basket_nest_2[collect_basket_nest_2.index(collect_basket_nest_2.startIndex, offsetBy: 1)]
                
@@ -472,14 +472,14 @@ class MVMConverters {
                    case "4":
                        return "creativetrc"
                    default:
-                       return ""
+                       return "incomplete"
                }
                 
             case "collect_basket_nest_3":
-                if(response["collect_basket_nest_3"]==nil) { return "" }
+                if(response["collect_basket_nest"]==nil) { return "incomplete"; }
                 let collect_basket_nest_3 = String(describing: response["collect_basket_nest"]!);
                 if(collect_basket_nest_3=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = collect_basket_nest_3[collect_basket_nest_3.index(collect_basket_nest_3.startIndex, offsetBy: 2)]
                 
@@ -493,14 +493,14 @@ class MVMConverters {
                     case "4":
                         return "creativeblc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
                  
             case "collect_basket_nest_4":
-                if(response["collect_basket_nest_4"]==nil) { return "" }
+                if(response["collect_basket_nest"]==nil) { return "incomplete"; }
                 let collect_basket_nest_4 = String(describing: response["collect_basket_nest"]!);
                 if(collect_basket_nest_4=="incomplete") {
-                    return "";
+                    return "incomplete";
                 }
                 let char = collect_basket_nest_4[collect_basket_nest_4.index(collect_basket_nest_4.startIndex, offsetBy: 3)]
                 
@@ -514,7 +514,7 @@ class MVMConverters {
                     case "4":
                         return "creativebrc"
                     default:
-                        return ""
+                        return "incomplete"
                 }
         
             default:
