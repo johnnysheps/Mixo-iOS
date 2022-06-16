@@ -12,7 +12,7 @@ import Firebase
 
 //var userUID = String()
 //let db = Firestore.firestore()
-// If errored next line in console stating document path must not be empty: Delete the user you're receating at both the Firestore and Authentication
+// ERRORED? Document path must not be empty? Delete the user you're receating at both the Firestore and Authentication
 var docRef = db.collection("users").document(userUID)
 
 @available(iOS 13.0, *)

@@ -31,6 +31,7 @@ var cmText4 = String()
 
 @available(iOS 13.0, *)
 class ResultsVC: UIViewController {
+    var previousScreen:(()->Void)?
 
     @IBOutlet weak var hero1: UIImageView!
     @IBOutlet weak var hero2: UIImageView!
@@ -194,6 +195,11 @@ class ResultsVC: UIViewController {
         modalityImages.append("creative")
         
         getUserData()
+    }
+    
+    
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.previousScreen!()
     }
     
     func getUserData(){
@@ -717,7 +723,6 @@ class ResultsVC: UIViewController {
         
         
     }
-    
     
     @IBAction func btnDismiss(_ sender: Any) {
         let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC

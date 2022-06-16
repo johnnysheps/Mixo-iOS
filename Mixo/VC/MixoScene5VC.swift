@@ -620,8 +620,23 @@ class MixoScene5VC: UIViewController {
     
     
     @IBAction func btnResults(_ sender: Any) {
+        // Modally:
         let resultsVC = mainSB.instantiateViewController(withIdentifier: "ResultsVC") as! ResultsVC
+        resultsVC.previousScreen = {
+            self.dismiss(animated:true, completion: nil );
+        }
         self.present(resultsVC, animated:true, completion:nil)
+        
+//        let parentViewContainsChild = ResultsVC();
+//        parentViewContainsChild.previousScreen = {
+//            parentViewContainsChild.willMove(toParent: nil)
+//            parentViewContainsChild.view.removeFromSuperview()
+//            parentViewContainsChild.removeFromParent()
+//        }
+//
+//        self.addChild(parentViewContainsChild)
+//        self.view.addSubview(parentViewContainsChild.view)
+//        parentViewContainsChild.didMove(toParent: self)
     }
     
     @IBAction func btnRestart(_ sender: Any) {
