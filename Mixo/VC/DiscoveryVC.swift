@@ -334,22 +334,22 @@ struct Row: View {
                                     .position(x: geo.frame(in: .local).midX - avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
                                         .overlay(
                                             ZStack {
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_basket_nest_1))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_basket_nest_2))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: -avatarQuadrantWidth/4 - 0, y: -avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_basket_nest_3))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: -avatarQuadrantWidth/4 - (avatarQuadrantWidth/2), y: -avatarQuadrantWidth/4 + (2*avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_basket_nest_4))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
@@ -365,22 +365,22 @@ struct Row: View {
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY - avatarQuadrantWidth/2)
                                         .overlay(
                                             ZStack {
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest_1))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest_2))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 - (2*avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest_3))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                     .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 - (avatarQuadrantWidth/2))
-                                                Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                                Image(MVMConverters.to(responses![responseIndex], MVMc.intel_nest_4))
                                                     .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                     .scaledToFill()
                                                     .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
@@ -396,22 +396,22 @@ struct Row: View {
                                     .position(x: geo.frame(in: .local).midX + avatarQuadrantWidth/2, y: geo.frame(in: .local).midY + avatarQuadrantWidth/2)
                                     .overlay(
                                         ZStack {
-                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.collect_basket_nest_1))
                                                 .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                 .scaledToFill()
                                                 .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                 .offset(x: avatarQuadrantWidth/4 + 0, y: avatarQuadrantWidth/4 + 0)
-                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.collect_basket_nest_2))
                                                 .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                 .scaledToFill()
                                                 .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                 .offset(x: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2), y: avatarQuadrantWidth/4 + 0)
-                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.collect_basket_nest_3))
                                                 .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                 .scaledToFill()
                                                 .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
                                                 .offset(x: avatarQuadrantWidth/4, y: avatarQuadrantWidth/4 + (avatarQuadrantWidth/2))
-                                            Image(MVMConverters.to(responses![responseIndex], MVMc.talent_nest))
+                                            Image(MVMConverters.to(responses![responseIndex], MVMc.collect_basket_nest_4))
                                                 .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
                                                 .scaledToFill()
                                                 .frame(width: avatarQuadrantWidth/2, height: avatarQuadrantWidth/2)
