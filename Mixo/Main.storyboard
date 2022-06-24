@@ -5110,7 +5110,7 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-0y-rc4">
-                                <rect key="frame" x="20" y="700" width="374" height="111"/>
+                                <rect key="frame" x="60" y="700" width="294" height="111"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9d-uE-x9R" userLabel="Iv Progress 0">
                                         <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
@@ -5120,28 +5120,28 @@ MixoType Identity!</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-rf-uQg" userLabel="Iv Progress 1">
-                                        <rect key="frame" x="88.666666666666671" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="68.666666666666657" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="1e3-rf-k2p"/>
                                             <constraint firstAttribute="height" constant="20" id="W39-Xe-qbg"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-A8-ibH" userLabel="Iv Progress 2">
-                                        <rect key="frame" x="177" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="137" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="5zG-n9-ikf"/>
                                             <constraint firstAttribute="width" constant="20" id="qDr-8E-gBC"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-oB-VWy" userLabel="Iv Progress 3">
-                                        <rect key="frame" x="265.66666666666669" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="205.66666666666669" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="BjB-Tb-pGm"/>
                                             <constraint firstAttribute="width" constant="20" id="wTF-8Y-xgS"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qqN-2p-FPc" userLabel="Iv Progress 4">
-                                        <rect key="frame" x="354" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="274" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="DAI-68-fs5"/>
                                             <constraint firstAttribute="width" constant="20" id="gKM-0c-qjk"/>
@@ -5150,7 +5150,6 @@ MixoType Identity!</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="Ug8-S5-Thx"/>
-                                    <constraint firstAttribute="width" constant="374" id="rBk-QF-l3H"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -5172,9 +5171,11 @@ MixoType Identity!</string>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="ghm-Z8-iRH"/>
                             <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="c8y-lj-3QS" secondAttribute="bottom" id="hjm-tq-ONb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iKa-0y-rc4" secondAttribute="trailing" constant="40" id="ibg-yz-cYT"/>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="nZB-OJ-sdD"/>
                             <constraint firstItem="YlB-h7-wSN" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="qLE-H4-yQ8"/>
                             <constraint firstItem="HbU-ei-YKO" firstAttribute="top" secondItem="36P-Iy-pmY" secondAttribute="bottom" constant="23" id="qmb-Qy-854"/>
+                            <constraint firstItem="iKa-0y-rc4" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" constant="40" id="qnF-mf-8U0"/>
                             <constraint firstItem="iKa-0y-rc4" firstAttribute="centerX" secondItem="9JU-oP-pNv" secondAttribute="centerX" id="sgo-tm-FS1"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="thA-Zr-W25"/>
                             <constraint firstItem="Xyq-Dl-gA9" firstAttribute="top" secondItem="gzq-sT-dfI" secondAttribute="bottom" constant="7.6699999999999999" id="uAN-bf-UfS"/>
@@ -5320,7 +5321,7 @@ MixoType Identity!</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I85-3C-Byl">
-                                <rect key="frame" x="20" y="702" width="374" height="111"/>
+                                <rect key="frame" x="60" y="702" width="294" height="111"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRJ-uy-ed5" userLabel="Iv Progress 0">
                                         <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
@@ -5330,28 +5331,28 @@ MixoType Identity!</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="snx-jT-aNX" userLabel="Iv Progress 1">
-                                        <rect key="frame" x="88.666666666666671" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="68.666666666666657" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="8rN-2W-bkD"/>
                                             <constraint firstAttribute="height" constant="20" id="siG-1Y-2QQ"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6I5-pQ-wXL" userLabel="Iv Progress 2">
-                                        <rect key="frame" x="177" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="137" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="A8I-PB-QAd"/>
                                             <constraint firstAttribute="width" constant="20" id="AEY-fs-kWY"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="62E-hk-Fpu" userLabel="Iv Progress 3">
-                                        <rect key="frame" x="265.66666666666669" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="205.66666666666669" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="OIU-25-4kz"/>
                                             <constraint firstAttribute="height" constant="20" id="aPW-9h-JRq"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oeC-qf-r9J" userLabel="Iv Progress 4">
-                                        <rect key="frame" x="354" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="274" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="YYm-22-0Gd"/>
                                             <constraint firstAttribute="height" constant="20" id="i29-Ot-RLG"/>
@@ -5359,10 +5360,7 @@ MixoType Identity!</string>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="147-Of-V6u"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="Bwt-EM-Azj"/>
-                                    <constraint firstAttribute="height" constant="111" id="K5Q-Vi-UW5"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="mgL-5T-bTS"/>
+                                    <constraint firstAttribute="height" constant="111" id="K5Q-Vi-UW5" userLabel="Stack view.trailing = 20"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -5378,14 +5376,15 @@ MixoType Identity!</string>
                             <constraint firstItem="lHo-aD-ICs" firstAttribute="leading" secondItem="tg4-gF-5D3" secondAttribute="trailing" constant="20" id="A22-f1-si0"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="width" secondItem="eBy-8A-bS3" secondAttribute="height" multiplier="1:1" id="BRt-xe-lOS"/>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="top" secondItem="OZL-XM-BgV" secondAttribute="bottom" constant="8" id="HDI-06-UUk"/>
-                            <constraint firstItem="I85-3C-Byl" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leadingMargin" id="I7L-rI-YdC"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="top" secondItem="Ky2-Tg-sPb" secondAttribute="bottom" constant="16" id="IP1-RK-akq"/>
                             <constraint firstItem="w1J-PG-vFU" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" id="IWl-YT-GVB"/>
+                            <constraint firstItem="I85-3C-Byl" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" constant="60" id="JHs-SV-jBS"/>
                             <constraint firstItem="iUM-gw-f72" firstAttribute="top" secondItem="SKJ-7x-wPv" secondAttribute="top" constant="200" id="KhI-lZ-QP7"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="OOz-eC-Pa2"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="aFw-NT-FyG"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerX" secondItem="tg4-gF-5D3" secondAttribute="centerX" id="abq-vB-YqC"/>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="bzf-YB-h8v"/>
+                            <constraint firstAttribute="trailing" secondItem="I85-3C-Byl" secondAttribute="trailing" constant="60" id="dGd-Uj-BDY"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="baseline" secondItem="lHo-aD-ICs" secondAttribute="baseline" id="eRD-Em-HIf"/>
                             <constraint firstAttribute="trailing" secondItem="w1J-PG-vFU" secondAttribute="trailing" id="egu-vf-6g3"/>
                             <constraint firstItem="Ky2-Tg-sPb" firstAttribute="leading" secondItem="SKJ-7x-wPv" secondAttribute="leading" id="lP6-Nz-xC6"/>
@@ -5477,7 +5476,7 @@ MixoType Identity!</string>
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p1F-j7-mXf">
-                                <rect key="frame" x="20" y="702" width="374" height="111"/>
+                                <rect key="frame" x="60" y="702" width="294" height="111"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-zE-W5d" userLabel="Iv Progress 0">
                                         <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
@@ -5487,28 +5486,28 @@ MixoType Identity!</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CM1-AQ-LK7" userLabel="Iv Progress 1">
-                                        <rect key="frame" x="88.666666666666671" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="68.666666666666657" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="8Gu-Ni-oa9"/>
                                             <constraint firstAttribute="width" constant="20" id="b1R-Od-MgE"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y7V-db-0Kg" userLabel="Iv Progress 2">
-                                        <rect key="frame" x="177" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="137" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="8UN-h4-Zkr"/>
                                             <constraint firstAttribute="width" constant="20" id="nO1-j6-pTd"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCc-Do-EUW" userLabel="Iv Progress 3">
-                                        <rect key="frame" x="265.66666666666669" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="205.66666666666669" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="CSu-hJ-R6U"/>
                                             <constraint firstAttribute="width" constant="20" id="LS8-nE-TsL"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-RY-und" userLabel="Iv Progress 4">
-                                        <rect key="frame" x="354" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="274" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="wEb-nn-25L"/>
                                             <constraint firstAttribute="height" constant="20" id="xSO-C9-Y0j"/>
@@ -5534,14 +5533,14 @@ MixoType Identity!</string>
                             <constraint firstItem="J55-Uo-Zeg" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="EX2-5F-CMw"/>
                             <constraint firstAttribute="trailing" secondItem="vQ6-mk-rCT" secondAttribute="trailing" id="I8U-jP-65g"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="OZW-pY-kJM"/>
-                            <constraint firstItem="p1F-j7-mXf" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" constant="20" id="PQI-Qj-lzM"/>
+                            <constraint firstItem="p1F-j7-mXf" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" constant="60" id="PQI-Qj-lzM"/>
                             <constraint firstAttribute="trailing" secondItem="frf-uv-EEH" secondAttribute="trailing" constant="100" id="Yiw-Rl-cWg"/>
                             <constraint firstItem="frf-uv-EEH" firstAttribute="top" secondItem="J55-Uo-Zeg" secondAttribute="bottom" constant="50.000000000000028" id="avI-OC-h0v"/>
                             <constraint firstItem="frf-uv-EEH" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="ck4-zM-Dzm"/>
                             <constraint firstItem="42n-xr-kF3" firstAttribute="top" secondItem="vQ6-mk-rCT" secondAttribute="bottom" id="kV6-xn-hDt"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="top" secondItem="Jjy-wY-2nF" secondAttribute="bottom" constant="8" id="klf-qb-Yad"/>
                             <constraint firstItem="N7t-ma-FwK" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="sO6-Ad-KKX"/>
-                            <constraint firstAttribute="trailing" secondItem="p1F-j7-mXf" secondAttribute="trailing" constant="20" id="so5-vj-yNH"/>
+                            <constraint firstAttribute="trailing" secondItem="p1F-j7-mXf" secondAttribute="trailing" constant="60" id="so5-vj-yNH"/>
                             <constraint firstItem="vQ6-mk-rCT" firstAttribute="top" secondItem="p1F-j7-mXf" secondAttribute="bottom" constant="8" symbolic="YES" id="xiz-gm-3xH"/>
                         </constraints>
                     </view>
@@ -5610,49 +5609,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="cmy-Mz-jqs">
-                                <rect key="frame" x="20" y="710" width="376" height="111"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ape-Zt-qN0" userLabel="Iv Progress 0">
-                                        <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="lQ6-GC-F8u"/>
-                                            <constraint firstAttribute="height" constant="20" id="vLq-or-QVS"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="op5-jw-dfb" userLabel="Iv Progress 1">
-                                        <rect key="frame" x="89" y="45.666666666666629" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="QiE-AC-kKZ"/>
-                                            <constraint firstAttribute="width" constant="20" id="Y6Q-Bc-qtG"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-mz-zuW" userLabel="Iv Progress 2">
-                                        <rect key="frame" x="178" y="45.666666666666629" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="DX3-Ho-JmP"/>
-                                            <constraint firstAttribute="height" constant="20" id="Zgc-gN-ElF"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1u-Ek-wuo" userLabel="Iv Progress 3">
-                                        <rect key="frame" x="267" y="45.666666666666629" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="NuF-h7-mm7"/>
-                                            <constraint firstAttribute="height" constant="20" id="QUt-yC-ArF"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-73-mjL" userLabel="Iv Progress 4">
-                                        <rect key="frame" x="356" y="45.666666666666629" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="DLc-7D-NwS"/>
-                                            <constraint firstAttribute="width" constant="20" id="Ef5-Gn-OoI"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="c79-75-Aij"/>
-                                </constraints>
-                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput">
                                 <rect key="frame" x="20" y="153.33333333333337" width="374" height="212"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5682,36 +5638,83 @@ MixoType Identity!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eAN-CT-S5m">
+                                <rect key="frame" x="40" y="702" width="334" height="111"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5PV-26-dYA" userLabel="Iv Progress 0">
+                                        <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="KJ2-Hx-AtU"/>
+                                            <constraint firstAttribute="width" constant="20" id="eNl-0F-Ulf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RxX-91-ZzZ" userLabel="Iv Progress 1">
+                                        <rect key="frame" x="78.666666666666671" y="45.666666666666629" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="MNl-Nq-IaZ"/>
+                                            <constraint firstAttribute="width" constant="20" id="sjB-gd-jJl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O24-7e-QaP" userLabel="Iv Progress 2">
+                                        <rect key="frame" x="157" y="45.666666666666629" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="IYG-D0-b5m"/>
+                                            <constraint firstAttribute="height" constant="20" id="edX-yS-Skx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="udg-uq-UMl" userLabel="Iv Progress 3">
+                                        <rect key="frame" x="235.66666666666669" y="45.666666666666629" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="07Z-V4-Upe"/>
+                                            <constraint firstAttribute="height" constant="20" id="Wtv-Dc-lOY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-Nu-jEd" userLabel="Iv Progress 4">
+                                        <rect key="frame" x="314" y="45.666666666666629" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Rag-Z8-Yh6"/>
+                                            <constraint firstAttribute="width" constant="20" id="eVr-YB-kDR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="2Ah-bv-uP7"/>
+                                    <constraint firstAttribute="height" constant="111" id="EOj-fv-rJY"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="ofD-8T-aCV"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="022-QN-9Ww"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eAN-CT-S5m" secondAttribute="trailing" constant="20" id="0YW-NN-oOE"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" constant="8" id="1ZS-Dm-rsk"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
+                            <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="eAN-CT-S5m" secondAttribute="bottom" constant="8" symbolic="YES" id="6rK-8a-2DW"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailing" id="FgO-QG-WSr"/>
+                            <constraint firstItem="eAN-CT-S5m" firstAttribute="centerX" secondItem="qbb-GA-FCZ" secondAttribute="centerX" id="I7w-Lk-tbm"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="top" secondItem="KpM-IA-Tkb" secondAttribute="bottom" constant="16" id="MCE-7x-scM"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
+                            <constraint firstItem="eAN-CT-S5m" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" constant="20" id="dsz-06-DxZ"/>
                             <constraint firstItem="K6J-hw-GVO" firstAttribute="top" secondItem="xa0-8Q-8NG" secondAttribute="bottom" constant="26" id="eTl-X4-ydo"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="gUx-MW-D9N"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="15" id="khB-CL-zdK"/>
                             <constraint firstAttribute="trailing" secondItem="K6J-hw-GVO" secondAttribute="trailing" constant="18" id="l4W-6Q-Ar3"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
-                            <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="cmy-Mz-jqs" secondAttribute="bottom" id="vKQ-3Q-PgP"/>
-                            <constraint firstItem="cmy-Mz-jqs" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="xyY-0a-xBN"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailingMargin" id="zMM-vi-SCc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="qbb-GA-FCZ" id="mQg-Lm-dMN"/>
                         <outlet property="charLimit" destination="K6J-hw-GVO" id="hCJ-CM-fWo"/>
-                        <outlet property="ivProgressIndicator0" destination="ape-Zt-qN0" id="c6W-we-TWy"/>
-                        <outlet property="ivProgressIndicator1" destination="op5-jw-dfb" id="VSD-Ea-MWx"/>
-                        <outlet property="ivProgressIndicator2" destination="QR5-mz-zuW" id="BhE-a3-LuD"/>
-                        <outlet property="ivProgressIndicator3" destination="w1u-Ek-wuo" id="pZO-IP-lA5"/>
-                        <outlet property="ivProgressIndicator4" destination="Xoe-73-mjL" id="glU-hl-VgQ"/>
+                        <outlet property="ivProgressIndicator0" destination="5PV-26-dYA" id="4IP-QX-U1U"/>
+                        <outlet property="ivProgressIndicator1" destination="RxX-91-ZzZ" id="fck-hT-e9U"/>
+                        <outlet property="ivProgressIndicator2" destination="O24-7e-QaP" id="yI3-Ka-cvV"/>
+                        <outlet property="ivProgressIndicator3" destination="udg-uq-UMl" id="gMn-M4-u5R"/>
+                        <outlet property="ivProgressIndicator4" destination="LWI-Nu-jEd" id="vXs-xh-sAC"/>
                         <outlet property="userInput" destination="xa0-8Q-8NG" id="Ilw-ls-bTR"/>
                     </connections>
                 </viewController>
@@ -5783,7 +5786,7 @@ MixoType Identity!</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M1D-wM-zOO">
-                                <rect key="frame" x="19" y="702" width="374" height="111"/>
+                                <rect key="frame" x="60" y="702" width="294" height="111"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-Fe-mEi" userLabel="Iv Progress 0">
                                         <rect key="frame" x="0.0" y="45.666666666666629" width="20" height="20"/>
@@ -5793,28 +5796,28 @@ MixoType Identity!</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-Ec-F9P" userLabel="Iv Progress 1">
-                                        <rect key="frame" x="88.666666666666671" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="68.666666666666657" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="QfL-AX-MqJ"/>
                                             <constraint firstAttribute="width" constant="20" id="jLQ-O7-WLj"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-j6-p5I" userLabel="Iv Progress 2">
-                                        <rect key="frame" x="177" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="137" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="6kz-qH-JgY"/>
                                             <constraint firstAttribute="height" constant="20" id="tqm-Ps-f74"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oI5-6q-b3W" userLabel="Iv Progress 3">
-                                        <rect key="frame" x="265.66666666666669" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="205.66666666666669" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="eku-QG-ZYp"/>
                                             <constraint firstAttribute="height" constant="20" id="pAm-fx-DbE"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3be-tm-Rri" userLabel="Iv Progress 4">
-                                        <rect key="frame" x="354" y="45.666666666666629" width="20" height="20"/>
+                                        <rect key="frame" x="274" y="45.666666666666629" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="aH0-uv-cmU"/>
                                             <constraint firstAttribute="width" constant="20" id="nGo-HJ-mJw"/>
@@ -5825,7 +5828,7 @@ MixoType Identity!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="M1D-wM-zOO" secondAttribute="trailing" constant="1" id="4QB-Ny-eCQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M1D-wM-zOO" secondAttribute="trailing" constant="40" id="4QB-Ny-eCQ"/>
                             <constraint firstItem="bU0-Nh-N7s" firstAttribute="top" secondItem="7nI-3q-ZPV" secondAttribute="bottom" constant="43.5" id="7E5-Q5-2fT"/>
                             <constraint firstItem="7nI-3q-ZPV" firstAttribute="top" secondItem="kzA-Dh-Sd7" secondAttribute="bottom" constant="16" id="G4r-Bv-l8r"/>
                             <constraint firstItem="bU0-Nh-N7s" firstAttribute="width" secondItem="CbR-dv-N4t" secondAttribute="width" multiplier="0.25" constant="-3.75" id="GG0-zu-2XH"/>
@@ -5844,7 +5847,7 @@ MixoType Identity!</string>
                             <constraint firstItem="M1D-wM-zOO" firstAttribute="top" secondItem="CbR-dv-N4t" secondAttribute="top" constant="702" id="lwQ-9r-to9"/>
                             <constraint firstItem="7nI-3q-ZPV" firstAttribute="centerX" secondItem="CbR-dv-N4t" secondAttribute="centerX" id="sw5-1B-J5x"/>
                             <constraint firstAttribute="trailing" secondItem="fmN-fg-3sY" secondAttribute="trailing" id="u67-jO-Ya4"/>
-                            <constraint firstItem="M1D-wM-zOO" firstAttribute="leading" secondItem="CbR-dv-N4t" secondAttribute="leadingMargin" constant="-1" id="vrQ-c7-kGS"/>
+                            <constraint firstItem="M1D-wM-zOO" firstAttribute="leading" secondItem="CbR-dv-N4t" secondAttribute="leadingMargin" constant="40" id="vrQ-c7-kGS"/>
                             <constraint firstItem="kzA-Dh-Sd7" firstAttribute="trailing" secondItem="CbR-dv-N4t" secondAttribute="trailing" id="xHy-7P-vpR"/>
                         </constraints>
                     </view>

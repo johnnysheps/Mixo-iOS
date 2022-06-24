@@ -19,6 +19,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var ivProgressIndicator3: UIImageView!
     @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
+    
     // Controls
     
     @IBOutlet weak var userInput: UITextView!
