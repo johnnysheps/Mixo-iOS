@@ -143,35 +143,35 @@ class MixoScene2aVC: UIViewController {
         archActiveImages.append("selfimprovementas") //collect - 9 - [26]
         
        //load imagelocations
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/actoras.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/leaderas.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/philosopheras.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/athleteas.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/musicianas.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/scientistas.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/designeras.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/naturalistas.png")
-        archHeroImageLocs.append("http://www.mixotype.com/app/images/heroes/selfreflectoras.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/actoras.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/leaderas.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/philosopheras.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/athleteas.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/musicianas.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/scientistas.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/designeras.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/naturalistas.png")
+        archHeroImageLocs.append("http://engine.mixotype.com/app/images/heroes/selfreflectoras.png")
         
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/verbalas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/naturalisticas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/interpersonalas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/logicalas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/bodilyas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/intrapersonalas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/musicalas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/visualas.png")
-        archIntelImageLocs.append("http://www.mixotype.com/app/images/intelligences/existentialas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/verbalas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/naturalisticas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/interpersonalas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/logicalas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/bodilyas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/intrapersonalas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/musicalas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/visualas.png")
+        archIntelImageLocs.append("http://engine.mixotype.com/app/images/intelligences/existentialas.png")
         
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/socialactivitiesas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/musicas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/heirloomsas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/fitnessas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/aestheticsas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/natureas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/technologyas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/theatricalas.png")
-        archCollectImageLocs.append("http://www.mixotype.com/app/images/collections/selfimprovementas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/socialactivitiesas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/musicas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/heirloomsas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/fitnessas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/aestheticsas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/natureas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/technologyas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/theatricalas.png")
+        archCollectImageLocs.append("http://engine.mixotype.com/app/images/collections/selfimprovementas.png")
         
         
         lngArch1 = UILongPressGestureRecognizer(target: self, action: #selector(MixoScene2aVC.lpArch1(_:)))
@@ -1853,9 +1853,14 @@ class MixoScene2aVC: UIViewController {
             "type": archType
         ]
         
+        print("/****/ tag")
+        print(archTag);
+        print("/****/ type")
+        print(archType)
+        
         var urlComponents = URLComponents()
         urlComponents.scheme = "http"
-        urlComponents.host = "mixotype.com"
+        urlComponents.host = "engine.mixotype.com"
         urlComponents.path = "/app/webapis/ios/mixodefios.php"
         urlComponents.setQueryItems(with: queryParams)
         let urlString = urlComponents.url?.absoluteString

@@ -2062,7 +2062,7 @@ class MixoScene3VC: UIViewController {
                 
                 var urlComponents = URLComponents()
                 urlComponents.scheme = "http"
-                urlComponents.host = "mixotype.com"
+                urlComponents.host = "engine.mixotype.com"
                 urlComponents.path = "/echo/app/tmdefios.php"
                 urlComponents.setQueryItems(with: queryParams)
                 let urlString = urlComponents.url?.absoluteString
@@ -2110,7 +2110,7 @@ class MixoScene3VC: UIViewController {
                 
                 var urlComponents = URLComponents()
                 urlComponents.scheme = "http"
-                urlComponents.host = "mixotype.com"
+                urlComponents.host = "engine.mixotype.com"
                 urlComponents.path = "/echo/app/tmdefios.php"
                 urlComponents.setQueryItems(with: queryParams)
                 let urlString = urlComponents.url?.absoluteString
@@ -2157,7 +2157,7 @@ class MixoScene3VC: UIViewController {
                 
                 var urlComponents = URLComponents()
                 urlComponents.scheme = "http"
-                urlComponents.host = "mixotype.com"
+                urlComponents.host = "engine.mixotype.com"
                 urlComponents.path = "/echo/app/tmdefios.php"
                 urlComponents.setQueryItems(with: queryParams)
                 let urlString = urlComponents.url?.absoluteString
