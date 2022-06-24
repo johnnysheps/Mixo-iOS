@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="-1300" y="-242"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--SignUpVC-->
         <scene sceneID="XbC-6t-laq">
             <objects>
-                <viewController id="leq-3m-0vY" customClass="SignUpVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="leq-3m-0vY" userLabel="SignUpVC" customClass="SignUpVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqq-mK-Db7"/>
                         <viewControllerLayoutGuide type="bottom" id="jeP-bI-1iX"/>
@@ -908,32 +908,32 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qa6-e3-f9S" userLabel="Stack View Alt Actions">
-                                <rect key="frame" x="0.0" y="556" width="414" height="45"/>
+                                <rect key="frame" x="116.66666666666667" y="556" width="180.66666666666663" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New user?‏‎" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-Vo-byH">
-                                        <rect key="frame" x="0.0" y="12.333333333333369" width="205.66666666666666" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="12.333333333333369" width="80.666666666666671" height="20.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80.670000000000002" id="DyL-cA-Gjo"/>
+                                            <constraint firstAttribute="height" constant="20.329999999999998" id="ip2-Oe-KqL"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgx-5E-B7o" userLabel="Lbl Spacer">
-                                        <rect key="frame" x="205.66666666666666" y="12.333333333333369" width="10" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6J-HH-E0r">
-                                        <rect key="frame" x="215.66666666666663" y="12.333333333333369" width="198.33333333333337" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" scrollEnabled="NO" text="Sign up" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-BL-m4w" userLabel="Sign up alt text">
+                                        <rect key="frame" x="80.666666666666686" y="4.3333333333333712" width="100" height="36.333333333333336"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="pTR-85-h33"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="systemPurpleColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Blt-rw-Bbz"/>
-                                    <constraint firstItem="S6J-HH-E0r" firstAttribute="leading" secondItem="ukR-Vo-byH" secondAttribute="trailing" constant="10" id="gbb-6l-lGB"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="iPU-ef-JKb"/>
-                                    <constraint firstAttribute="width" constant="414" id="tts-Ku-QFD"/>
+                                    <constraint firstItem="ukR-Vo-byH" firstAttribute="top" secondItem="Qa6-e3-f9S" secondAttribute="top" constant="12.33" id="2LK-UV-4kH" userLabel="New user?‏‎.top = top"/>
+                                    <constraint firstItem="ex7-BL-m4w" firstAttribute="top" secondItem="Qa6-e3-f9S" secondAttribute="top" constant="4.3333333333333712" id="HhW-6h-UYF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -957,13 +957,14 @@
                     <connections>
                         <outlet property="btnLogin" destination="wYN-3Y-FNG" id="gfE-8V-wPC"/>
                         <outlet property="lblError" destination="BnZ-7E-SoX" id="34s-Wb-ap4"/>
+                        <outlet property="signupAltText" destination="ex7-BL-m4w" id="pP6-6A-FEs"/>
                         <outlet property="txtEmail" destination="nRt-zb-4Mb" id="d1G-fY-JYk"/>
                         <outlet property="txtPassword" destination="eb5-F3-B9q" id="DAo-ba-eAZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hif-bY-dUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="495"/>
+            <point key="canvasLocation" x="-97.101449275362327" y="494.86607142857139"/>
         </scene>
         <!--IntroVC-->
         <scene sceneID="rKF-Nt-oon">

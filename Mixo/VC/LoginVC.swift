@@ -16,16 +16,31 @@ import Firebase
 var docRef = db.collection("users").document(userUID)
 
 @available(iOS 13.0, *)
-class LoginVC: UIViewController, UITextFieldDelegate {
+class LoginVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var lblError: UILabel!
+    @IBOutlet weak var signupAltText: UITextView!
+
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        guard textView == signupAltText else {
+            return true
+        }
+        
+        let signupVC = mainSB.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
+        self.present(signupVC, animated: true, completion: nil)
+        
+        return false
+    }
+
     
     override func viewDidLoad() {
+        signupAltText.delegate = self;
         super.viewDidLoad()
+        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
             
