@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FontAwesome_swift
 
 struct Archetype : Decodable {
     let title: String
@@ -24,6 +25,9 @@ var warningInt = Int()
 
 @available(iOS 13.0, *)
 class MixoScene2aVC: UIViewController {
+    
+    @IBOutlet weak var chevron: UITextView!
+    
     
     var archChoiceState: [Int] = []
     var cl = String()
@@ -78,6 +82,9 @@ class MixoScene2aVC: UIViewController {
     var lngArch9 = UILongPressGestureRecognizer()
     
     override func viewDidLoad() {
+        
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
 
         //load archInactiveImages array
@@ -1324,6 +1331,7 @@ class MixoScene2aVC: UIViewController {
 
                    if(archChoiceState.count == 4 && !archChoiceState.contains(0)){
                        btnNext.isHidden = false
+                       chevron.isHidden = false
                    }
 
                } else {
