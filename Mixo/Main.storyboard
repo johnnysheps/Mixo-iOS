@@ -338,6 +338,7 @@
                     <connections>
                         <outlet property="btnSignUp" destination="UNv-Rx-jcP" id="1vG-JX-dAj"/>
                         <outlet property="lblError" destination="kqe-Xc-uuF" id="0KI-ms-9ap"/>
+                        <outlet property="signInAltText" destination="eLM-vh-E7L" id="qPw-W6-BZ1"/>
                         <outlet property="txtEmail" destination="i1e-mv-lUt" id="kyE-S4-BKi"/>
                         <outlet property="txtLastName" destination="EpD-59-86J" id="ejA-4h-Cfc"/>
                         <outlet property="txtName" destination="c63-oP-AYR" id="I1s-Kv-97K"/>

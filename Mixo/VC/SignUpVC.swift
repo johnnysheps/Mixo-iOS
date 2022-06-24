@@ -11,7 +11,7 @@ import FirebaseAuth
 import Firebase
 
 @available(iOS 13.0, *)
-class SignUpVC: UIViewController, UITextFieldDelegate {
+class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
     var errored = false
     
@@ -21,7 +21,21 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var lblError: UILabel!
+    @IBOutlet weak var signInAltText: UITextView!
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        guard textView == signInAltText else {
+            return true
+        }
+        
+        let loginVC = mainSB.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        self.present(loginVC, animated: true, completion: nil)
+        
+        return false
+    }
+    
     override func viewDidLoad() {
+        signInAltText.delegate = self;
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
