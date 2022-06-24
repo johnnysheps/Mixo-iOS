@@ -5633,25 +5633,6 @@ MixoType Identity!</string>
                                     <action selector="btnNext:" destination="I9X-uc-3uP" eventType="touchUpInside" id="nb6-IB-NcL"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput">
-                                <rect key="frame" x="20" y="152.33333333333337" width="374" height="212"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="212" id="7ln-qG-ddy"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Mission Statement"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="I9X-uc-3uP" id="cSk-Sy-ftD"/>
-                                </connections>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6J-hw-GVO" userLabel="CharLimit">
                                 <rect key="frame" x="306" y="390.33333333333331" width="90" height="20.333333333333314"/>
                                 <constraints>
@@ -5707,12 +5688,43 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="374" id="ofD-8T-aCV"/>
                                 </constraints>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42Q-Lq-8gF" userLabel="BorderText">
+                                <rect key="frame" x="20" y="161" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rCV-uy-6ex"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xa0-8Q-8NG" userLabel="UserInput">
+                                <rect key="frame" x="20" y="170" width="374" height="212"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="7ln-qG-ddy"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Mission Statement"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="I9X-uc-3uP" id="cSk-Sy-ftD"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="022-QN-9Ww"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eAN-CT-S5m" secondAttribute="trailing" constant="20" id="0YW-NN-oOE"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" constant="8" id="1ZS-Dm-rsk"/>
+                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="42Q-Lq-8gF" secondAttribute="bottom" constant="8" symbolic="YES" id="2xE-Dp-M7j"/>
+                            <constraint firstItem="42Q-Lq-8gF" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="20" id="5Ec-Qr-3g3"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="eAN-CT-S5m" secondAttribute="bottom" constant="8" symbolic="YES" id="6rK-8a-2DW"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
@@ -5721,14 +5733,15 @@ MixoType Identity!</string>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="top" secondItem="KpM-IA-Tkb" secondAttribute="bottom" constant="16" id="MCE-7x-scM"/>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
+                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="20" id="bri-aB-Ktq"/>
                             <constraint firstItem="eAN-CT-S5m" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" constant="20" id="dsz-06-DxZ"/>
-                            <constraint firstItem="K6J-hw-GVO" firstAttribute="top" secondItem="xa0-8Q-8NG" secondAttribute="bottom" constant="26" id="eTl-X4-ydo"/>
+                            <constraint firstItem="K6J-hw-GVO" firstAttribute="top" secondItem="xa0-8Q-8NG" secondAttribute="bottom" constant="8.3333333333333144" id="eTl-X4-ydo"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
-                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" id="gUx-MW-D9N"/>
-                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="15" id="khB-CL-zdK"/>
+                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="32.666666666666657" id="khB-CL-zdK"/>
                             <constraint firstAttribute="trailing" secondItem="K6J-hw-GVO" secondAttribute="trailing" constant="18" id="l4W-6Q-Ar3"/>
+                            <constraint firstAttribute="trailing" secondItem="42Q-Lq-8gF" secondAttribute="trailing" constant="20" id="loj-LR-pjQ"/>
+                            <constraint firstAttribute="trailing" secondItem="xa0-8Q-8NG" secondAttribute="trailing" constant="20" id="o9h-Tv-X0F"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="top" secondItem="BOx-ff-Blh" secondAttribute="bottom" id="v89-O8-tVv"/>
-                            <constraint firstItem="xa0-8Q-8NG" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailingMargin" id="zMM-vi-SCc"/>
                         </constraints>
                     </view>
                     <connections>
