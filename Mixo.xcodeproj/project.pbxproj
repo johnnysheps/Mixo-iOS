@@ -38,6 +38,7 @@
 		A25D7FC2283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */; };
 		A25D7FC428377D690054444B /* Ruled lines.png in Resources */ = {isa = PBXBuildFile; fileRef = A25D7FC328377D5C0054444B /* Ruled lines.png */; };
 		A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */; };
+		A27BB47C286549E500F03989 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BB47B286549E500F03989 /* TestApp.swift */; };
 		A29EAD612772D23500350321 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD602772D23400350321 /* Onboarding.swift */; };
 		A2B95D2E2857253F0023F2D3 /* AnyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B95D2D2857253F0023F2D3 /* AnyUser.swift */; };
 		A2BCEB6A277D874200EB7BC0 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */; };
@@ -109,6 +110,7 @@
 		A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R _ Create Your Profile - Profile Photo Camera Icon.png"; sourceTree = "<group>"; };
 		A25D7FC328377D5C0054444B /* Ruled lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruled lines.png"; sourceTree = "<group>"; };
 		A261B63A2772E5AA008D5778 /* EngineLoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLoadVC.swift; sourceTree = "<group>"; };
+		A27BB47B286549E500F03989 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		A29EAD602772D23400350321 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		A2B95D2D2857253F0023F2D3 /* AnyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUser.swift; sourceTree = "<group>"; };
 		A2BCEB69277D874200EB7BC0 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				A30A076523515A26002387B6 /* Utilities.swift */,
 				A30A076B235180B9002387B6 /* Constants.swift */,
 				2A03F271263AF5020077DDB2 /* UIImage+Gif.swift */,
+				A27BB47B286549E500F03989 /* TestApp.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				A3E2FD38235ABDC400DE0474 /* MixoScene2aVC.swift in Sources */,
 				A300E60223673C800062790C /* ResultsVC.swift in Sources */,
 				A3E2FD42235ABFEA00DE0474 /* MixoScene4bVC.swift in Sources */,
+				A27BB47C286549E500F03989 /* TestApp.swift in Sources */,
 				A363A35823563AAB00672BE9 /* DefinitionsVC.swift in Sources */,
 				A30A075E23515135002387B6 /* DashboardVC.swift in Sources */,
 				A32A700E2350B9EA00B6E6A7 /* AppDelegate.swift in Sources */,

@@ -7,6 +7,12 @@
 //
 
 import Foundation
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
+
+var userUID = String();
+var db = Firestore.firestore()
 
 struct Constants {
     
