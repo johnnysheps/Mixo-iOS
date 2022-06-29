@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class MixoScene5VC: UIViewController {
-
+    @IBOutlet weak var chevronR: UITextView!
+    @IBOutlet weak var chevronL: UITextView!
+    
     @IBOutlet weak var btnHeroNav: UIButton!
     @IBOutlet weak var btnIntelNav: UIButton!
     @IBOutlet weak var btnTalNav: UIButton!
@@ -64,6 +67,12 @@ class MixoScene5VC: UIViewController {
     
     
     override func viewDidLoad() {
+        
+        chevronR.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevronR.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
+        
+        chevronL.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevronL.text = String.fontAwesomeIcon(name: FontAwesome.chevronLeft)
         super.viewDidLoad()
         
 //        mixoState+=1;

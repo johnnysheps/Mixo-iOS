@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FontAwesome_swift
 
 struct TM : Decodable {
     let title: String
@@ -32,6 +33,9 @@ var alertType = String() // for temps and mods
 
 @available(iOS 13.0, *)
 class MixoScene3VC: UIViewController {
+    
+    @IBOutlet weak var chevron: UITextView!
+    
 
     var tmState: [String] = [] //temporary holder for each temperament choice
     var finalState: [String] = [] //temporary holder for each temperament choice
@@ -85,6 +89,8 @@ class MixoScene3VC: UIViewController {
     @IBOutlet weak var imgCheck4: UIImageView!
     
     override func viewDidLoad() {
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
 
         imgCheck1.isHidden = true
