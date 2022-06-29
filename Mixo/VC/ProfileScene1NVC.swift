@@ -15,7 +15,9 @@ import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class ProfileScene1NVC: UIViewController {
-
+    
+    @IBOutlet weak var chevron: UITextView!
+    
     var dateString = String()
 
     @IBOutlet weak var btnNext: UIButton!
@@ -53,6 +55,9 @@ class ProfileScene1NVC: UIViewController {
     var decidedDay = false;
     
     override func viewDidLoad() {
+        
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
         
         ddYear.layer.borderWidth = 2

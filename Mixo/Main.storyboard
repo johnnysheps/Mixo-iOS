@@ -195,7 +195,7 @@
                                             <constraint firstAttribute="height" constant="130" id="cgs-fm-Ala"/>
                                         </constraints>
                                     </imageView>
-                                    <textView multipleTouchEnabled="YES" contentMode="scaleAspectFit" text="Become a Mixo" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iht-Vn-Tnp" userLabel="Txt Become a Mixo">
+                                    <textView multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Become a Mixo" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iht-Vn-Tnp" userLabel="Txt Become a Mixo">
                                         <rect key="frame" x="0.0" y="130" width="414" height="56"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -222,6 +222,9 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpD-59-86J">
                                         <rect key="frame" x="0.0" y="66" width="414" height="34"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" keyboardKey="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="Dsp-wi-wUq" userLabel="height ≤ 34"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="34" id="ce8-Ek-jCg"/>
@@ -258,7 +261,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-RJ-HU6" userLabel="Stack View Already have account">
                                 <rect key="frame" x="57" y="533" width="300" height="40"/>
                                 <subviews>
-                                    <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="I already have an account?" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="kt1-4G-kvv" userLabel="Already have an account">
+                                    <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" editable="NO" text="I already have an account?" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt1-4G-kvv" userLabel="Already have an account">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="210" id="Akk-Q8-HY8" userLabel="width ≤ 210"/>
@@ -267,16 +270,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" text="Sign in" translatesAutoresizingMaskIntoConstraints="NO" id="eLM-vh-E7L" userLabel="Sign In Instead">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETl-eM-ceg">
                                         <rect key="frame" x="210" y="0.0" width="90" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="HeZ-zY-gGh" userLabel="width ≤ 90"/>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="WBl-CQ-vaH"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.63921568627450975" green="0.37647058823529411" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="altSignInTouched:" destination="leq-3m-0vY" eventType="touchUpInside" id="MXm-0K-PZv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JYq-Sy-Ewr"/>
@@ -334,9 +338,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="aMZ-wS-aD9"/>
                     <connections>
+                        <outlet property="altSignInBtn" destination="ETl-eM-ceg" id="Mvq-Hg-QNj"/>
                         <outlet property="btnSignUp" destination="UNv-Rx-jcP" id="1vG-JX-dAj"/>
                         <outlet property="lblError" destination="kqe-Xc-uuF" id="0KI-ms-9ap"/>
-                        <outlet property="signInAltText" destination="eLM-vh-E7L" id="qPw-W6-BZ1"/>
                         <outlet property="txtEmail" destination="i1e-mv-lUt" id="kyE-S4-BKi"/>
                         <outlet property="txtLastName" destination="EpD-59-86J" id="ejA-4h-Cfc"/>
                         <outlet property="txtName" destination="c63-oP-AYR" id="I1s-Kv-97K"/>
@@ -824,7 +828,7 @@
                                             <constraint firstAttribute="height" constant="130" id="8lf-ao-ghJ"/>
                                         </constraints>
                                     </imageView>
-                                    <textView multipleTouchEnabled="YES" contentMode="scaleAspectFit" text="Welcome back" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ll-fq-OAX" userLabel="Txt Become a Mixo">
+                                    <textView multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Welcome back" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ll-fq-OAX" userLabel="Txt Become a Mixo">
                                         <rect key="frame" x="0.0" y="130" width="414" height="56"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -907,10 +911,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qa6-e3-f9S" userLabel="Stack View Alt Actions">
-                                <rect key="frame" x="116.66666666666667" y="556" width="180.66666666666663" height="45"/>
+                                <rect key="frame" x="125.66666666666667" y="556" width="162.66666666666663" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New user?‏‎" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-Vo-byH">
-                                        <rect key="frame" x="0.0" y="12.333333333333369" width="80.666666666666671" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="12.333333333333369" width="81" height="20.333333333333329"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80.670000000000002" id="DyL-cA-Gjo"/>
                                             <constraint firstAttribute="height" constant="20.329999999999998" id="ip2-Oe-KqL"/>
@@ -919,20 +923,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" scrollEnabled="NO" text="Sign up" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-BL-m4w" userLabel="Sign up alt text">
-                                        <rect key="frame" x="80.666666666666686" y="4.3333333333333712" width="100" height="36.333333333333336"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="pTR-85-h33"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="systemPurpleColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-vQ-BDC">
+                                        <rect key="frame" x="80.999999999999972" y="5.3333333333333712" width="81.666666666666657" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign up">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="altSignUpTouched:" destination="vLy-b3-mKD" eventType="touchUpInside" id="ENf-i4-cqK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ukR-Vo-byH" firstAttribute="top" secondItem="Qa6-e3-f9S" secondAttribute="top" constant="12.33" id="2LK-UV-4kH" userLabel="New user?‏‎.top = top"/>
-                                    <constraint firstItem="ex7-BL-m4w" firstAttribute="top" secondItem="Qa6-e3-f9S" secondAttribute="top" constant="4.3333333333333712" id="HhW-6h-UYF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -954,9 +958,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="7fQ-xH-JgQ"/>
                     <connections>
+                        <outlet property="altSignUpBtn" destination="0PY-vQ-BDC" id="GAp-g5-fCS"/>
                         <outlet property="btnLogin" destination="wYN-3Y-FNG" id="gfE-8V-wPC"/>
                         <outlet property="lblError" destination="BnZ-7E-SoX" id="34s-Wb-ap4"/>
-                        <outlet property="signupAltText" destination="ex7-BL-m4w" id="pP6-6A-FEs"/>
                         <outlet property="txtEmail" destination="nRt-zb-4Mb" id="d1G-fY-JYk"/>
                         <outlet property="txtPassword" destination="eb5-F3-B9q" id="DAo-ba-eAZ"/>
                     </connections>
@@ -5312,6 +5316,18 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="Ug8-S5-Thx"/>
                                 </constraints>
                             </stackView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQa-IA-F7R">
+                                <rect key="frame" x="374" y="821" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="E0z-0f-jyc"/>
+                                    <constraint firstAttribute="height" constant="38" id="SXa-Gc-Eqh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="l5s-Kb-NV1"/>
+                                    <constraint firstAttribute="width" constant="40" id="nlt-Nb-FYz"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5325,9 +5341,11 @@ MixoType Identity!</string>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="top" secondItem="bcR-ic-G7M" secondAttribute="bottom" id="MO4-nK-p64"/>
                             <constraint firstItem="Xyq-Dl-gA9" firstAttribute="width" secondItem="Xyq-Dl-gA9" secondAttribute="height" multiplier="1:1" id="Maj-PJ-5Gr"/>
                             <constraint firstAttribute="trailing" secondItem="c8y-lj-3QS" secondAttribute="trailing" id="OAN-gC-z34"/>
+                            <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="qQa-IA-F7R" secondAttribute="bottom" constant="3" id="RSx-7g-ort"/>
                             <constraint firstItem="gzq-sT-dfI" firstAttribute="top" secondItem="ese-Ni-kfH" secondAttribute="bottom" constant="16" id="T5F-z0-LuC"/>
                             <constraint firstItem="Xyq-Dl-gA9" firstAttribute="top" secondItem="9JU-oP-pNv" secondAttribute="top" constant="170" id="TR8-KS-9i6"/>
                             <constraint firstItem="36P-Iy-pmY" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailingMargin" id="YaV-G1-dfb"/>
+                            <constraint firstAttribute="trailing" secondItem="qQa-IA-F7R" secondAttribute="trailing" id="cSx-Fh-lpw"/>
                             <constraint firstItem="ese-Ni-kfH" firstAttribute="trailing" secondItem="9JU-oP-pNv" secondAttribute="trailing" id="eKY-qm-bWF"/>
                             <constraint firstItem="vcH-3e-NXT" firstAttribute="leading" secondItem="9JU-oP-pNv" secondAttribute="leadingMargin" id="ghm-Z8-iRH"/>
                             <constraint firstItem="JGL-dP-7QN" firstAttribute="top" secondItem="c8y-lj-3QS" secondAttribute="bottom" id="hjm-tq-ONb"/>
@@ -5346,6 +5364,7 @@ MixoType Identity!</string>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="c8y-lj-3QS" id="rv6-8s-ARi"/>
+                        <outlet property="chevron" destination="qQa-IA-F7R" id="Lz5-5i-s5d"/>
                         <outlet property="chevron1" destination="HmP-TN-mi2" id="rS6-xq-7vi"/>
                         <outlet property="chevron2" destination="oaP-bF-qMb" id="Yhq-Bo-fBX"/>
                         <outlet property="chevron3" destination="DVm-W9-5fI" id="tDQ-bA-x1k"/>
@@ -5523,6 +5542,20 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="K5Q-Vi-UW5" userLabel="Stack view.trailing = 20"/>
                                 </constraints>
                             </stackView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2u-3P-fZ7">
+                                <rect key="frame" x="374" y="820" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="8A0-N2-Fx8"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="EaM-Cw-OAV"/>
+                                    <constraint firstAttribute="width" constant="40" id="Eku-fO-cs1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="KSe-wJ-JEZ"/>
+                                    <constraint firstAttribute="height" constant="38" id="fLM-yu-fEh"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="iyC-Xh-pcm"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5532,6 +5565,7 @@ MixoType Identity!</string>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerY" secondItem="lHo-aD-ICs" secondAttribute="centerY" id="58R-xe-FPq"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="centerX" secondItem="lHo-aD-ICs" secondAttribute="centerX" id="8gH-Ig-rDe"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerY" secondItem="tg4-gF-5D3" secondAttribute="centerY" id="9Hv-71-Y6k"/>
+                            <constraint firstItem="bhR-Uj-vgi" firstAttribute="top" secondItem="I2u-3P-fZ7" secondAttribute="bottom" constant="4" id="9PF-Zx-hQj"/>
                             <constraint firstItem="w1J-PG-vFU" firstAttribute="top" secondItem="I85-3C-Byl" secondAttribute="bottom" constant="8" symbolic="YES" id="9Z3-Li-ANb"/>
                             <constraint firstItem="lHo-aD-ICs" firstAttribute="leading" secondItem="tg4-gF-5D3" secondAttribute="trailing" constant="20" id="A22-f1-si0"/>
                             <constraint firstItem="eBy-8A-bS3" firstAttribute="width" secondItem="eBy-8A-bS3" secondAttribute="height" multiplier="1:1" id="BRt-xe-lOS"/>
@@ -5543,6 +5577,7 @@ MixoType Identity!</string>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="OOz-eC-Pa2"/>
                             <constraint firstItem="Rl3-En-s9A" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="aFw-NT-FyG"/>
                             <constraint firstItem="ElK-Ir-2kb" firstAttribute="centerX" secondItem="tg4-gF-5D3" secondAttribute="centerX" id="abq-vB-YqC"/>
+                            <constraint firstAttribute="trailing" secondItem="I2u-3P-fZ7" secondAttribute="trailing" id="b9f-GS-bm8"/>
                             <constraint firstItem="BZf-on-QbV" firstAttribute="centerX" secondItem="SKJ-7x-wPv" secondAttribute="centerX" id="bzf-YB-h8v"/>
                             <constraint firstAttribute="trailing" secondItem="I85-3C-Byl" secondAttribute="trailing" constant="60" id="dGd-Uj-BDY"/>
                             <constraint firstItem="tg4-gF-5D3" firstAttribute="baseline" secondItem="lHo-aD-ICs" secondAttribute="baseline" id="eRD-Em-HIf"/>
@@ -5560,6 +5595,7 @@ MixoType Identity!</string>
                         <outlet property="btnMale" destination="iUM-gw-f72" id="vfI-vB-4e3"/>
                         <outlet property="btnNext" destination="w1J-PG-vFU" id="GUt-Y5-SDm"/>
                         <outlet property="btnOther" destination="tg4-gF-5D3" id="cPv-xR-6cw"/>
+                        <outlet property="chevron" destination="I2u-3P-fZ7" id="9SS-Un-CYC"/>
                         <outlet property="imgCheck1" destination="nnj-kf-A6M" id="l23-Ze-c8c"/>
                         <outlet property="imgCheck2" destination="ElK-Ir-2kb" id="MCf-ER-bVW"/>
                         <outlet property="imgCheck3" destination="eBy-8A-bS3" id="hs3-l5-FhG"/>
@@ -5680,6 +5716,22 @@ MixoType Identity!</string>
                                     <constraint firstAttribute="height" constant="111" id="lby-pW-GxG"/>
                                 </constraints>
                             </stackView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wp-Ja-kjC">
+                                <rect key="frame" x="374" y="821" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7o6-46-hmO"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="8AF-jc-3TS"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="IoA-V6-70e"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="me6-Ci-5kk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="reF-P1-xxl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="s18-Q2-CAe"/>
+                                    <constraint firstAttribute="height" constant="38" id="uZW-Pc-juw"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="w8K-Lf-wF2"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5692,6 +5744,7 @@ MixoType Identity!</string>
                             <constraint firstItem="GoU-cl-aTA" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" id="CNm-h0-B0R"/>
                             <constraint firstItem="J55-Uo-Zeg" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="EX2-5F-CMw"/>
                             <constraint firstAttribute="trailing" secondItem="vQ6-mk-rCT" secondAttribute="trailing" id="I8U-jP-65g"/>
+                            <constraint firstAttribute="trailing" secondItem="0Wp-Ja-kjC" secondAttribute="trailing" id="KFe-qo-pLA"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="OZW-pY-kJM"/>
                             <constraint firstItem="p1F-j7-mXf" firstAttribute="leading" secondItem="FJH-3W-dSh" secondAttribute="leading" constant="60" id="PQI-Qj-lzM"/>
                             <constraint firstAttribute="trailing" secondItem="frf-uv-EEH" secondAttribute="trailing" constant="100" id="Yiw-Rl-cWg"/>
@@ -5699,6 +5752,7 @@ MixoType Identity!</string>
                             <constraint firstItem="frf-uv-EEH" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="ck4-zM-Dzm"/>
                             <constraint firstItem="42n-xr-kF3" firstAttribute="top" secondItem="vQ6-mk-rCT" secondAttribute="bottom" id="kV6-xn-hDt"/>
                             <constraint firstItem="Nd2-Nz-LGF" firstAttribute="top" secondItem="Jjy-wY-2nF" secondAttribute="bottom" constant="8" id="klf-qb-Yad"/>
+                            <constraint firstItem="42n-xr-kF3" firstAttribute="top" secondItem="0Wp-Ja-kjC" secondAttribute="bottom" constant="3" id="lsZ-MN-fg2"/>
                             <constraint firstItem="N7t-ma-FwK" firstAttribute="centerX" secondItem="FJH-3W-dSh" secondAttribute="centerX" id="sO6-Ad-KKX"/>
                             <constraint firstAttribute="trailing" secondItem="p1F-j7-mXf" secondAttribute="trailing" constant="60" id="so5-vj-yNH"/>
                             <constraint firstItem="vQ6-mk-rCT" firstAttribute="top" secondItem="p1F-j7-mXf" secondAttribute="bottom" constant="8" symbolic="YES" id="xiz-gm-3xH"/>
@@ -5706,6 +5760,7 @@ MixoType Identity!</string>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="vQ6-mk-rCT" id="dsU-jB-4lB"/>
+                        <outlet property="chevron" destination="0Wp-Ja-kjC" id="ARV-Ho-e5C"/>
                         <outlet property="ivProgressIndicator0" destination="wMr-zE-W5d" id="aaK-vr-7Xv"/>
                         <outlet property="ivProgressIndicator1" destination="CM1-AQ-LK7" id="S2t-kp-1YT"/>
                         <outlet property="ivProgressIndicator2" destination="y7V-db-0Kg" id="8Ga-PV-aOE"/>
@@ -5853,6 +5908,26 @@ MixoType Identity!</string>
                                     <outlet property="delegate" destination="I9X-uc-3uP" id="cSk-Sy-ftD"/>
                                 </connections>
                             </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skp-6R-Gt0">
+                                <rect key="frame" x="374" y="821" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="HJY-c7-sKB"/>
+                                    <constraint firstAttribute="height" constant="38" id="M3X-tb-gNq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="O7m-Ax-rh5"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="Ykl-DX-Qeu"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="ZY4-bS-YA2"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="b5F-hP-JhD"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="esX-gG-IVg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="fF0-ll-vi9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="kbA-hx-NLZ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="mjl-q4-1Oc"/>
+                                    <constraint firstAttribute="width" constant="40" id="npj-xc-OPn"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="txv-Se-dxE"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5863,7 +5938,9 @@ MixoType Identity!</string>
                             <constraint firstItem="42Q-Lq-8gF" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="20" id="5Ec-Qr-3g3"/>
                             <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="qbb-GA-FCZ" secondAttribute="bottom" id="69Y-6W-q6F"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="top" secondItem="eAN-CT-S5m" secondAttribute="bottom" constant="8" symbolic="YES" id="6rK-8a-2DW"/>
+                            <constraint firstItem="k6O-kW-mz3" firstAttribute="top" secondItem="skp-6R-Gt0" secondAttribute="bottom" constant="3" id="AN2-KB-3Mz"/>
                             <constraint firstAttribute="trailing" secondItem="qbb-GA-FCZ" secondAttribute="trailing" id="DNv-dp-zhZ"/>
+                            <constraint firstAttribute="trailing" secondItem="skp-6R-Gt0" secondAttribute="trailing" id="Exr-kv-EYK"/>
                             <constraint firstItem="KpM-IA-Tkb" firstAttribute="trailing" secondItem="nZ3-54-RSc" secondAttribute="trailing" id="FgO-QG-WSr"/>
                             <constraint firstItem="eAN-CT-S5m" firstAttribute="centerX" secondItem="qbb-GA-FCZ" secondAttribute="centerX" id="I7w-Lk-tbm"/>
                             <constraint firstItem="qbb-GA-FCZ" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" id="JqU-TA-otX"/>
@@ -5883,6 +5960,7 @@ MixoType Identity!</string>
                     <connections>
                         <outlet property="btnNext" destination="qbb-GA-FCZ" id="mQg-Lm-dMN"/>
                         <outlet property="charLimit" destination="K6J-hw-GVO" id="hCJ-CM-fWo"/>
+                        <outlet property="chevron" destination="skp-6R-Gt0" id="BSw-yV-ylU"/>
                         <outlet property="ivProgressIndicator0" destination="5PV-26-dYA" id="4IP-QX-U1U"/>
                         <outlet property="ivProgressIndicator1" destination="RxX-91-ZzZ" id="fck-hT-e9U"/>
                         <outlet property="ivProgressIndicator2" destination="O24-7e-QaP" id="yI3-Ka-cvV"/>
@@ -5998,15 +6076,37 @@ MixoType Identity!</string>
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78f-bZ-to2">
+                                <rect key="frame" x="374" y="821" width="40" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="7PJ-W9-NBV"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="Akb-8o-Jw0"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="UNc-27-sZB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="Wiq-ei-qPj"/>
+                                    <constraint firstAttribute="height" constant="38" id="ZAv-q1-me3"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="cXs-MT-vUE"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="eNq-YL-plX"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="mku-IX-SBc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="mzb-jv-zvB"/>
+                                    <constraint firstAttribute="width" constant="40" id="oLR-8k-92Z"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="rj3-gS-AaJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ziU-Qq-edD"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="M1D-wM-zOO" secondAttribute="trailing" constant="40" id="4QB-Ny-eCQ"/>
+                            <constraint firstItem="4fp-4O-2c1" firstAttribute="top" secondItem="78f-bZ-to2" secondAttribute="bottom" constant="3" id="758-eL-d6y"/>
                             <constraint firstItem="bU0-Nh-N7s" firstAttribute="top" secondItem="7nI-3q-ZPV" secondAttribute="bottom" constant="43.5" id="7E5-Q5-2fT"/>
                             <constraint firstItem="7nI-3q-ZPV" firstAttribute="top" secondItem="kzA-Dh-Sd7" secondAttribute="bottom" constant="16" id="G4r-Bv-l8r"/>
                             <constraint firstItem="bU0-Nh-N7s" firstAttribute="width" secondItem="CbR-dv-N4t" secondAttribute="width" multiplier="0.25" constant="-3.75" id="GG0-zu-2XH"/>
                             <constraint firstItem="5HL-uM-ZIp" firstAttribute="top" secondItem="kvg-pd-PL2" secondAttribute="bottom" constant="8" id="GRs-qg-HUy"/>
                             <constraint firstItem="fbO-TP-ZCR" firstAttribute="top" secondItem="bU0-Nh-N7s" secondAttribute="bottom" constant="51.329999999999998" id="GYJ-oW-D9A"/>
+                            <constraint firstAttribute="trailing" secondItem="78f-bZ-to2" secondAttribute="trailing" id="Qhr-0i-mdb"/>
                             <constraint firstItem="kzA-Dh-Sd7" firstAttribute="top" secondItem="kvg-pd-PL2" secondAttribute="bottom" id="Qjd-gd-hAO"/>
                             <constraint firstItem="5HL-uM-ZIp" firstAttribute="centerX" secondItem="CbR-dv-N4t" secondAttribute="centerX" id="Rk0-0a-Sez"/>
                             <constraint firstItem="bU0-Nh-N7s" firstAttribute="centerX" secondItem="CbR-dv-N4t" secondAttribute="centerX" id="W55-m6-3Vk"/>
@@ -6015,8 +6115,10 @@ MixoType Identity!</string>
                             <constraint firstItem="fbO-TP-ZCR" firstAttribute="centerX" secondItem="CbR-dv-N4t" secondAttribute="centerX" id="ZJG-BY-bRh"/>
                             <constraint firstItem="kzA-Dh-Sd7" firstAttribute="leading" secondItem="CbR-dv-N4t" secondAttribute="leading" id="b5s-np-38u"/>
                             <constraint firstItem="4fp-4O-2c1" firstAttribute="top" secondItem="fmN-fg-3sY" secondAttribute="bottom" id="ch7-4d-SIf"/>
+                            <constraint firstItem="4fp-4O-2c1" firstAttribute="top" secondItem="78f-bZ-to2" secondAttribute="bottom" constant="3" id="dut-b8-FSV"/>
                             <constraint firstItem="M1D-wM-zOO" firstAttribute="top" secondItem="fbO-TP-ZCR" secondAttribute="bottom" constant="35.333333333333258" id="fDP-PN-PQ6"/>
                             <constraint firstItem="fmN-fg-3sY" firstAttribute="top" secondItem="M1D-wM-zOO" secondAttribute="bottom" constant="8" symbolic="YES" id="fIz-Ad-91u"/>
+                            <constraint firstAttribute="trailing" secondItem="78f-bZ-to2" secondAttribute="trailing" id="hsB-Tv-J6f"/>
                             <constraint firstItem="M1D-wM-zOO" firstAttribute="top" secondItem="CbR-dv-N4t" secondAttribute="top" constant="702" id="lwQ-9r-to9"/>
                             <constraint firstItem="7nI-3q-ZPV" firstAttribute="centerX" secondItem="CbR-dv-N4t" secondAttribute="centerX" id="sw5-1B-J5x"/>
                             <constraint firstAttribute="trailing" secondItem="fmN-fg-3sY" secondAttribute="trailing" id="u67-jO-Ya4"/>
@@ -6027,6 +6129,7 @@ MixoType Identity!</string>
                     <connections>
                         <outlet property="btnCamera" destination="bU0-Nh-N7s" id="muZ-au-Nkt"/>
                         <outlet property="btnNext" destination="fmN-fg-3sY" id="y6L-IO-pZQ"/>
+                        <outlet property="chevron" destination="78f-bZ-to2" id="NEc-o0-Iwm"/>
                         <outlet property="imgProfilePic" destination="fbO-TP-ZCR" id="4IQ-Pk-zle"/>
                         <outlet property="ivProgressIndicator0" destination="vqa-Fe-mEi" id="2Dl-48-0g5"/>
                         <outlet property="ivProgressIndicator1" destination="gxa-Ec-F9P" id="n2Z-I0-2i7"/>

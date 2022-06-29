@@ -125,8 +125,12 @@ class ViewController: UIViewController {
 //        let discovery2VC = mainSB.instantiateViewController(withIdentifier: "Discovery2VC") as! Discovery2VC
 //        self.present(discovery2VC, animated:true, completion:nil)
         
-        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-        self.present(dashboardVC, animated:true, completion:nil)
+//        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+//        self.present(dashboardVC, animated:true, completion:nil)
+        
+        let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC
+        self.present(mixoScene5VC, animated:true, completion:nil)
+        
     }
 
     @IBAction func btnStart(_ sender: Any) {

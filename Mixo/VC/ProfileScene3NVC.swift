@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 struct Location : Decodable {
     let city: String
@@ -18,7 +19,8 @@ var state = String()
 
 @available(iOS 13.0, *)
 class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
-
+    @IBOutlet weak var chevron: UITextView!
+    
     // Multistep progress bar
     @IBOutlet weak var ivProgressIndicator0: UIImageView!
     @IBOutlet weak var ivProgressIndicator1: UIImageView!
@@ -34,6 +36,8 @@ class ProfileScene3NVC: UIViewController, UITextFieldDelegate {
     
     var zipCode = String()
     override func viewDidLoad() {
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
 
         lblCityState.isHidden = true

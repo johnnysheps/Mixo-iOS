@@ -54,8 +54,8 @@
             filePath = "Mixo/VC/ProfileScene4NVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "ProfileScene4NVC"
             landmarkType = "3">
             <Locations>
@@ -117,8 +117,8 @@
             filePath = "Mixo/VC/SignUpVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "btnSignUp(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -133,8 +133,8 @@
             filePath = "Mixo/VC/SignUpVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "btnSignUp(_:)"
             landmarkType = "7">
          </BreakpointContent>

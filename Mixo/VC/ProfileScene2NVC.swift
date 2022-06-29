@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class ProfileScene2NVC: UIViewController {
+    
+    @IBOutlet weak var chevron: UITextView!
+    
 
     // Multistep progress bar
     
@@ -31,6 +35,8 @@ class ProfileScene2NVC: UIViewController {
     
     var gender = String()
     override func viewDidLoad() {
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

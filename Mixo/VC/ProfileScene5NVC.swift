@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class ProfileScene5NVC: UIViewController, UITextViewDelegate {
+    
+    @IBOutlet weak var chevron: UITextView!
     var lastTextEntered = "";
     
     // Multistep progress bar
@@ -27,6 +30,8 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var btnNext: UIButton!
     
     override func viewDidLoad() {
+        chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.

@@ -21,21 +21,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var lblError: UILabel!
-    @IBOutlet weak var signInAltText: UITextView!
+    @IBOutlet weak var altSignInBtn: UIButton!
     
-    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        guard textView == signInAltText else {
-            return true
-        }
-        
+    @IBAction func altSignInTouched(_ sender: Any) {
         let loginVC = mainSB.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         self.present(loginVC, animated: true, completion: nil)
-        
-        return false
     }
     
     override func viewDidLoad() {
-        signInAltText.delegate = self;
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -46,7 +39,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         txtLastName.delegate = self
         txtEmail.delegate = self
         txtPassword.delegate = self
-        
     }
     
     func setUpUI() {
@@ -60,13 +52,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         //Utilities.styleTextField(txtPassword)
         
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-        {
-
-            textField.resignFirstResponder()
-            return true
-        }
     
     //check the fields and validate the data is correct
     func validateFields() -> String? {
