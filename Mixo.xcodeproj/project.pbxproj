@@ -32,6 +32,7 @@
 		A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */; };
 		A23014DC284C774200F71495 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23014DB284C774200F71495 /* DiscoveryVC.swift */; };
 		A23A10AF284ADDE60014D9C5 /* icon-mobile-rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */; };
+		A2456B44286DA4A800AA360A /* TestDrivenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2456B43286DA4A800AA360A /* TestDrivenVC.swift */; };
 		A2518710284060FB00A8DB2A /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = A251870F284060B700A8DB2A /* Calendar.png */; };
 		A25187132840B34F00A8DB2A /* progress-indicator-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = A25187112840B34F00A8DB2A /* progress-indicator-purple.png */; };
 		A25187142840B34F00A8DB2A /* progress-indicator-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A25187122840B34F00A8DB2A /* progress-indicator-gray.png */; };
@@ -104,6 +105,7 @@
 		A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeMyAvatar.png; sourceTree = "<group>"; };
 		A23014DB284C774200F71495 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-mobile-rainbow.png"; sourceTree = "<group>"; };
+		A2456B43286DA4A800AA360A /* TestDrivenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrivenVC.swift; sourceTree = "<group>"; };
 		A251870F284060B700A8DB2A /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		A25187112840B34F00A8DB2A /* progress-indicator-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-indicator-purple.png"; sourceTree = "<group>"; };
 		A25187122840B34F00A8DB2A /* progress-indicator-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-indicator-gray.png"; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		A375FC0323510E2C00E7FC50 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				A2456B43286DA4A800AA360A /* TestDrivenVC.swift */,
 				A23014DB284C774200F71495 /* DiscoveryVC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
 				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
@@ -497,6 +500,7 @@
 				2A6ADC4C236B1C5200687EFC /* ProfileScene5NVC.swift in Sources */,
 				2A6ADC46236B16DB00687EFC /* ProfileScene1NVC.swift in Sources */,
 				A30A075A2351510C002387B6 /* LoginVC.swift in Sources */,
+				A2456B44286DA4A800AA360A /* TestDrivenVC.swift in Sources */,
 				A3E2FD3C235ABE8A00DE0474 /* MixoScene4aVC.swift in Sources */,
 				A29EAD612772D23500350321 /* Onboarding.swift in Sources */,
 				A30A076623515A26002387B6 /* Utilities.swift in Sources */,

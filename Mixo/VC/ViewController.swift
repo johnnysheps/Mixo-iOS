@@ -128,8 +128,8 @@ class ViewController: UIViewController {
 //        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
 //        self.present(dashboardVC, animated:true, completion:nil)
         
-        let mixoScene5VC = mainSB.instantiateViewController(withIdentifier: "MixoScene5VC") as! MixoScene5VC
-        self.present(mixoScene5VC, animated:true, completion:nil)
+        let testDrivenVC = mainSB.instantiateViewController(withIdentifier: "TestDrivenVC") as! TestDrivenVC
+        self.present(testDrivenVC, animated:true, completion:nil)
         
     }
 
