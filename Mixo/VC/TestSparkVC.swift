@@ -12,6 +12,11 @@ import UIKit
 
 class TestSparkVC: UIViewController
 {
+//    @IBOutlet weak var label1: UILabel!
+//    @IBOutlet weak var TV1: UITextView!
+//    @IBOutlet weak var TV2: UITextView!
+//    @IBOutlet weak var TV3: UITextView!
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var TV1: UITextView!
     @IBOutlet weak var TV2: UITextView!

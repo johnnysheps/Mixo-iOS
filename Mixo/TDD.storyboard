@@ -12,7 +12,7 @@
         <!--Test SparkVC-->
         <scene sceneID="TiK-kA-2zN">
             <objects>
-                <viewController storyboardIdentifier="TestSparkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ExI-Na-DTD" customClass="TestSparkVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestSparkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ExI-Na-DTD" customClass="TestSparkVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l4v-Ix-HIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,12 @@
                             <constraint firstItem="7IQ-c7-KmU" firstAttribute="leading" secondItem="nDw-vf-dIt" secondAttribute="leading" id="zYd-eu-MDH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TV1" destination="7IQ-c7-KmU" id="Wr3-vk-fXh"/>
+                        <outlet property="TV2" destination="nDw-vf-dIt" id="FJj-RH-Nsg"/>
+                        <outlet property="TV3" destination="Hx7-Ap-Edg" id="wdk-Vf-rR6"/>
+                        <outlet property="label1" destination="pa5-QK-wmk" id="1nm-F5-gnG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3V-68-73E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
