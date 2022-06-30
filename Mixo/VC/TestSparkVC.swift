@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class TestDrivenVC: UIViewController
+class TestSparkVC: UIViewController
 {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var TV1: UITextView!

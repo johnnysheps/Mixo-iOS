@@ -19,6 +19,7 @@ let defSB : UIStoryboard  = UIStoryboard(name: "Definitions", bundle: .main)
 let warningSB : UIStoryboard = UIStoryboard(name: "Warning", bundle: .main)
 let tempDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
 let modDefSB : UIStoryboard = UIStoryboard(name: "TMDef", bundle: .main)
+let tddSB : UIStoryboard = UIStoryboard(name: "TDD", bundle: .main)
 let resultsSB : UIStoryboard = UIStoryboard(name: "Results", bundle: .main)
 
 
@@ -128,8 +129,8 @@ class ViewController: UIViewController {
 //        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
 //        self.present(dashboardVC, animated:true, completion:nil)
         
-        let testDrivenVC = mainSB.instantiateViewController(withIdentifier: "TestDrivenVC") as! TestDrivenVC
-        self.present(testDrivenVC, animated:true, completion:nil)
+        let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
+        self.present(testSparkVC, animated:true, completion:nil)
         
     }
 
