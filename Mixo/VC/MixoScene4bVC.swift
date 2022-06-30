@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FontAwesome_swift
 
 @available(iOS 13.0, *)
 class MixoScene4bVC: UIViewController {
@@ -28,10 +29,19 @@ class MixoScene4bVC: UIViewController {
     @IBOutlet weak var btnRestart: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     
+    @IBOutlet weak var chevronR: UITextView!
+    @IBOutlet weak var chevronL: UITextView!
+    
     var intelImages: [String] = [] //array that holds the intels
     var intelDone = String()
     
     override func viewDidLoad() {
+        chevronL.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevronL.text = String.fontAwesomeIcon(name: FontAwesome.chevronLeft)
+        
+        chevronR.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+        chevronR.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
+        
         super.viewDidLoad()
         
         

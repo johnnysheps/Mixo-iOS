@@ -99,6 +99,9 @@ class MixoScene3VC: UIViewController {
         imgCheck4.isHidden = true
         
         btnNext.isHidden = true
+chevron.isHidden = true
+
+        
         
         heroImages.append("actoras")
         heroImages.append("leaderas")
@@ -277,6 +280,9 @@ class MixoScene3VC: UIViewController {
                 switch(archStep){
                     case 1:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 2
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -286,6 +292,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 2:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 3
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -295,6 +304,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 3:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 4
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -314,6 +326,9 @@ class MixoScene3VC: UIViewController {
                 switch(archStep){
                     case 1:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 2
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -323,6 +338,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 2:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 3
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -332,6 +350,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 3:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 4
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -351,6 +372,9 @@ class MixoScene3VC: UIViewController {
                 switch(archStep){
                     case 1:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 2
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -360,6 +384,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 2:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 3
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -369,6 +396,9 @@ class MixoScene3VC: UIViewController {
                         break
                     case 3:
                         btnNext.isHidden = true
+chevron.isHidden = true
+
+                        
                         archStep = 4
                         imgCheck1.isHidden = true
                         imgCheck2.isHidden = true
@@ -806,11 +836,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             case 2:
@@ -830,11 +866,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             case 3:
@@ -854,11 +896,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             case 4:
@@ -878,11 +926,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             default:
@@ -908,11 +962,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             case 2:
@@ -932,11 +992,17 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
+                                    
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
+                                    
                                 }
                                 break
                             case 3:
@@ -956,11 +1022,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -980,11 +1050,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1010,11 +1084,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1034,11 +1112,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1058,11 +1140,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1082,11 +1168,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1112,11 +1202,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1136,11 +1230,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1160,11 +1258,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1184,11 +1286,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1227,11 +1333,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1251,11 +1361,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1275,11 +1389,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1299,11 +1417,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1329,11 +1451,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1353,11 +1479,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1377,11 +1507,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1401,11 +1535,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1431,11 +1569,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1455,11 +1597,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1479,11 +1625,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1503,11 +1653,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1533,11 +1687,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1557,11 +1715,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1581,11 +1743,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1605,11 +1771,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1647,11 +1817,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1671,11 +1845,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1695,11 +1873,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1719,11 +1901,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1749,11 +1935,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1773,11 +1963,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1797,11 +1991,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1821,11 +2019,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1851,11 +2053,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1875,11 +2081,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -1899,11 +2109,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -1923,11 +2137,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:
@@ -1953,11 +2171,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck1.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 2:
@@ -1977,11 +2199,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck2.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 3:
@@ -2001,11 +2227,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck3.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             case 4:
@@ -2025,11 +2255,15 @@ class MixoScene3VC: UIViewController {
                                     
                                     //show btnNext1
                                     btnNext.isHidden = false
+chevron.isHidden = false
+
                                 } else {
                                     imgCheck4.isHidden = true
                                     tmState.removeLast()
                                     print(tmState, " on remove")
                                     btnNext.isHidden = true
+chevron.isHidden = true
+
                                 }
                                 break
                             default:

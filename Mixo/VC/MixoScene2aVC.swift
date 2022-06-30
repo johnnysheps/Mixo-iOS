@@ -223,6 +223,7 @@ class MixoScene2aVC: UIViewController {
         
         //hide the btnNext
         btnNext.isHidden = true
+        chevron.isHidden = true
         
         //set up the UI
         Utilities.colorizeNavTabs(btnHeroNav,btnIntelNav,btnTalNav,btnColNav)
@@ -1525,6 +1526,7 @@ class MixoScene2aVC: UIViewController {
 
                        if(archChoiceState.contains(0)){
                            btnNext.isHidden = true
+                           chevron.isHidden = true
                        }
                    } else {
 
@@ -1733,6 +1735,7 @@ class MixoScene2aVC: UIViewController {
                            
                            if(archChoiceState.count == 4 && !archChoiceState.contains(0)){
                                btnNext.isHidden = false
+                               chevron.isHidden = false
                            }
                        }
 
