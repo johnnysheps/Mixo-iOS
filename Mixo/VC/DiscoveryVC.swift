@@ -30,6 +30,7 @@ func getUserData(_ userUID:String) {
             
             //user profile data
             
+//            let user_name = document.documentID;
             let user_name = document.get("name") as! String
             let user_pic = document.get("profile_pic") as! String
             let user_city = document.get("city") as! String

@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+    
         
         // Clear Firebase cache to fix the: Document path must not be empty
 //        FirebaseFirestore.instance.clearPersistence();
@@ -52,10 +52,6 @@ class ViewController: UIViewController {
                     userUID = result!.user.uid
                     docRef.getDocument { (document, error) in
                         if let document = document, document.exists {
-                            
-                            if(skipToScreen) {
-                                self.skipToScreenAt();
-                            }
                             
                             let roleDone = document.get("role_done")  as! String
                             let intelDone = document.get("intel_done")  as! String
@@ -135,8 +131,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnStart(_ sender: Any) {
-        
-        
         // Interaction required to load a screen?
         if(skipToScreen) {
             self.skipToScreenAt();

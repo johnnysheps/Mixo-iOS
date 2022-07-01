@@ -138,7 +138,6 @@
 		A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A32A70112350B9EA00B6E6A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A32A70162350B9EB00B6E6A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A32A701B2350B9EB00B6E6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A703F2350C08B00B6E6A7 /* gibson.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gibson.ttf; sourceTree = "<group>"; };
 		A363A35723563AAB00672BE9 /* DefinitionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsVC.swift; sourceTree = "<group>"; };
 		A363C72223524DA500900766 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -180,7 +179,6 @@
 		A23A10B0284ADDED0014D9C5 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				A32A701B2350B9EB00B6E6A7 /* Info.plist */,
 				A251870F284060B700A8DB2A /* Calendar.png */,
 				A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */,
 				A25D7FC1283773D60054444B /* R _ Create Your Profile - Profile Photo Camera Icon.png */,
@@ -274,9 +272,9 @@
 			isa = PBXGroup;
 			children = (
 				A2456B43286DA4A800AA360A /* TestSparkVC.swift */,
+				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
 				A23014DB284C774200F71495 /* DiscoveryVC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
-				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
 				A30A076223515194002387B6 /* StartVC.swift */,
 				A30A07592351510C002387B6 /* LoginVC.swift */,
 				A30A076923515CFD002387B6 /* SignUpVC.swift */,

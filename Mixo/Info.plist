@@ -43,6 +43,10 @@
 	<string>To allow users to use the camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To allow user to share their photos</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>fa-solid-900.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -79,10 +83,6 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>fa-solid-900.ttf</string>
 	</array>
 </dict>
 </plist>

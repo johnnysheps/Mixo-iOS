@@ -213,8 +213,8 @@
             filePath = "Mixo/VC/DiscoveryVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "setupAvatars()"
             landmarkType = "9">
          </BreakpointContent>
