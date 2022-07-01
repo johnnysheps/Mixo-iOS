@@ -146,7 +146,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3V-68-73E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="-230"/>
+            <point key="canvasLocation" x="-230" y="-230"/>
+        </scene>
+        <!--Click To Test StateVC-->
+        <scene sceneID="VCv-ux-kbZ">
+            <objects>
+                <viewController storyboardIdentifier="ClickToTestStateVC" id="hMQ-MV-lg0" customClass="ClickToTestStateVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gsg-8p-Avr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aW-pv-5eo">
+                                <rect key="frame" x="147" y="434" width="120" height="28"/>
+                                <color key="backgroundColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Test States">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="testStatesTouchedDown:" destination="hMQ-MV-lg0" eventType="touchUpInside" id="vp7-or-cBw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="weE-PN-egG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4aW-pv-5eo" firstAttribute="centerX" secondItem="Gsg-8p-Avr" secondAttribute="centerX" id="rsx-dT-Dxs"/>
+                            <constraint firstItem="4aW-pv-5eo" firstAttribute="leading" secondItem="weE-PN-egG" secondAttribute="leading" constant="147" id="xKk-wR-xZb"/>
+                            <constraint firstItem="4aW-pv-5eo" firstAttribute="centerY" secondItem="Gsg-8p-Avr" secondAttribute="centerY" id="yYe-X8-LDb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SKf-Ux-Cf5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="-230"/>
+        </scene>
+        <!--Test StateVC-->
+        <scene sceneID="peV-nT-tUG">
+            <objects>
+                <hostingController storyboardIdentifier="TestStateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E80-Qw-qj2" customClass="TestStateVC" customModule="Mixo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSB-J5-kcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429" y="-230"/>
         </scene>
     </scenes>
     <resources>

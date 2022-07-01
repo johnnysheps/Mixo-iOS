@@ -125,8 +125,13 @@ class ViewController: UIViewController {
 //        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
 //        self.present(dashboardVC, animated:true, completion:nil)
         
-        let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
-        self.present(testSparkVC, animated:true, completion:nil)
+//        let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
+//        self.present(testSparkVC, animated:true, completion:nil)
+        
+        let cickToTestStateVC = tddSB.instantiateViewController(withIdentifier: "ClickToTestStateVC") as! ClickToTestStateVC
+        self.present(cickToTestStateVC, animated:true, completion:nil)
+        
+        
         
     }
 

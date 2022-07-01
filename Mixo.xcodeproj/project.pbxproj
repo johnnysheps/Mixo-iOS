@@ -30,6 +30,8 @@
 		A223AC702797D79B0034305C /* instructions-alt-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6B2797D78D0034305C /* instructions-alt-4.png */; };
 		A223AC712797D79B0034305C /* instructions-alt-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC6C2797D7960034305C /* instructions-alt-3.png */; };
 		A22A8DBC283F55DA0080D330 /* AnalyzeMyAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */; };
+		A22D4E74286F06EA001013BD /* ClickToTestStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22D4E73286F06EA001013BD /* ClickToTestStateVC.swift */; };
+		A22D4E76286F08B3001013BD /* TestStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22D4E75286F08B3001013BD /* TestStateVC.swift */; };
 		A23014DC284C774200F71495 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23014DB284C774200F71495 /* DiscoveryVC.swift */; };
 		A23A10AF284ADDE60014D9C5 /* icon-mobile-rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */; };
 		A2456B44286DA4A800AA360A /* TestSparkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2456B43286DA4A800AA360A /* TestSparkVC.swift */; };
@@ -104,6 +106,8 @@
 		A223AC6B2797D78D0034305C /* instructions-alt-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-4.png"; sourceTree = "<group>"; };
 		A223AC6C2797D7960034305C /* instructions-alt-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instructions-alt-3.png"; sourceTree = "<group>"; };
 		A22A8DBB283F55DA0080D330 /* AnalyzeMyAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AnalyzeMyAvatar.png; sourceTree = "<group>"; };
+		A22D4E73286F06EA001013BD /* ClickToTestStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickToTestStateVC.swift; sourceTree = "<group>"; };
+		A22D4E75286F08B3001013BD /* TestStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStateVC.swift; sourceTree = "<group>"; };
 		A23014DB284C774200F71495 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		A23A10AE284ADDDF0014D9C5 /* icon-mobile-rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-mobile-rainbow.png"; sourceTree = "<group>"; };
 		A2456B43286DA4A800AA360A /* TestSparkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSparkVC.swift; sourceTree = "<group>"; };
@@ -174,6 +178,16 @@
 				DF8E58BED71703C0AB9BDE55 /* Pods-Mixo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A22D4E72286F069A001013BD /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				A2456B43286DA4A800AA360A /* TestSparkVC.swift */,
+				A22D4E73286F06EA001013BD /* ClickToTestStateVC.swift */,
+				A22D4E75286F08B3001013BD /* TestStateVC.swift */,
+			);
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		A23A10B0284ADDED0014D9C5 /* Graphics */ = {
@@ -255,6 +269,7 @@
 				A32A700D2350B9EA00B6E6A7 /* AppDelegate.swift */,
 				A32A700F2350B9EA00B6E6A7 /* SceneDelegate.swift */,
 				A32A70162350B9EB00B6E6A7 /* Assets.xcassets */,
+				A22D4E72286F069A001013BD /* TestVC */,
 				A23A10B0284ADDED0014D9C5 /* Graphics */,
 				A2F4335127482BB900F30D0F /* LaunchScreen.storyboard */,
 				A2F4334F27482B5700F30D0F /* Main.storyboard */,
@@ -271,7 +286,6 @@
 		A375FC0323510E2C00E7FC50 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				A2456B43286DA4A800AA360A /* TestSparkVC.swift */,
 				A32A70112350B9EA00B6E6A7 /* ViewController.swift */,
 				A23014DB284C774200F71495 /* DiscoveryVC.swift */,
 				A30A075D23515135002387B6 /* DashboardVC.swift */,
@@ -495,6 +509,7 @@
 				A32A700E2350B9EA00B6E6A7 /* AppDelegate.swift in Sources */,
 				A3E2FD36235ABDAE00DE0474 /* MixoScene1VC.swift in Sources */,
 				A2B95D2E2857253F0023F2D3 /* AnyUser.swift in Sources */,
+				A22D4E74286F06EA001013BD /* ClickToTestStateVC.swift in Sources */,
 				A261B63B2772E5AA008D5778 /* EngineLoadVC.swift in Sources */,
 				A30A076C235180B9002387B6 /* Constants.swift in Sources */,
 				A363C72323524DA500900766 /* IntroVC.swift in Sources */,
@@ -511,6 +526,7 @@
 				A32A70102350B9EA00B6E6A7 /* SceneDelegate.swift in Sources */,
 				A23014DC284C774200F71495 /* DiscoveryVC.swift in Sources */,
 				A30A076323515194002387B6 /* StartVC.swift in Sources */,
+				A22D4E76286F08B3001013BD /* TestStateVC.swift in Sources */,
 				2A6ADC4A236B1B1A00687EFC /* ProfileScene3NVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

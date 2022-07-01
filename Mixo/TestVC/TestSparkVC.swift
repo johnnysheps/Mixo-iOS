@@ -14,10 +14,6 @@ import FirebaseFirestore
 
 @available(iOS 13.0, *)
 class TestSparkVC: UIViewController {
-//    @IBOutlet weak var label1: UILabel!
-//    @IBOutlet weak var TV1: UITextView!
-//    @IBOutlet weak var TV2: UITextView!
-//    @IBOutlet weak var TV3: UITextView!
     
     // Test constants:
     var userIDForSparkTest = "WobITu1KL8cSSuu86ahQ1YIRGrZ2";
@@ -60,6 +56,7 @@ class TestSparkVC: UIViewController {
 //        print("/****/ yourUID");
 //        print(yourUID)
 //        fatalError()
+        var theirUID:String = "";
 
         
         self.TV1.text = "user ID obtained from authentication: " + userUID;
@@ -80,18 +77,37 @@ class TestSparkVC: UIViewController {
             }
         }
         
+        // Test setup
         self.TV5.text = "user 2's number of sparks: ";
-        let mixRef = db.collection("mix");
+        theirUID = userIDForSparkTest;
         
-        mixRef.whereField("userID", isEqualTo: userIDForSparkTest).getDocuments { (querySnapshot, error) in
-                for document in querySnapshot!.documents {
-                    var sparkedByRaw = document.get("sparkedBy") as! String;
-                    let userIDs = sparkedByRaw.components(separatedBy:"_")
-                    for uid in userIDs {
+        // Test limits: Will only show an end of all the mixes, rather than all of them, because the text gets replaced on each for loop on the mixes
+        
+        // Test run
+        let mixRef = db.collection("mix");
+        mixRef.whereField("userID", isEqualTo: theirUID).getDocuments { (querySnapshot, error) in
+                for mix in querySnapshot!.documents {
+                    var sparkedByRaw = mix.get("sparkedBy") as! String;
+                    let UIDsWhoSparked = sparkedByRaw.components(separatedBy:"_")
+                    for uid in UIDsWhoSparked {
                         self.TV5.text = self.TV5.text + " " + uid;
                     }
+                    self.TV6.text = "(" + String(UIDsWhoSparked.count) + ")"
+                    
+                    let sparkedByYou = UIDsWhoSparked.contains(yourUID)
+                    if(sparkedByYou) {
+                        self.TV7.text = "Unspark";
+                    } else {
+                        self.TV7.text = "Spark";
+                    }
+                    
+                    // [ ] Test for false positive by changing it at the database
+                    
                 } // for each mix the user has
             }
+        
+        
+        
 
     } // runBody
         
