@@ -22,18 +22,8 @@ class ClickToTestStateVC: UIViewController {
     } // viewDidLoad
 
     @IBAction func testStatesTouchedDown(_ sender: Any) {
-        let settingsView = TestStateVC(
-            returnToUIKit: {
-                for view in self.view.subviews {
-                    view.removeFromSuperview()
-                }
-                
-                let clickToTestStateVC = tddSB.instantiateViewController(withIdentifier: "ClickToTestStateVC") as! ClickToTestStateVC
-                self.present(clickToTestStateVC, animated: true, completion: nil)
-            }
-        )
         
-        let contentViewInHC = UIHostingController(rootView: settingsView)
+        let contentViewInHC = UIHostingController(rootView: TestStateVC())
         
         addChild(contentViewInHC)
         view.addSubview(contentViewInHC.view)

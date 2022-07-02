@@ -8,26 +8,31 @@
 
 import SwiftUI
 
+class Store: ObservableObject {
+    @Published var count: Int = 0;
+
+    func registerRequest() {
+        count = count + 1;
+    }
+}
+
 struct TestStateVC: View {
-    var returnToUIKit: (() -> Void)?
+    @ObservedObject var myStore: Store = Store();
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text(String(myStore.count))
                 .frame(maxHeight:100, alignment: .topLeading)
                 .padding([.top], 50)
             Spacer()
-            Button(action: self.returnToUIKit!) {
-                Text(" <- Back")
-                .foregroundColor(Color.gray)
-                .opacity(0.5)
+            Button(action: { myStore.registerRequest() }) {
+                    Text("Increment")
             }
+            .frame(maxWidth:100, maxHeight:50)
+            .padding([.top, .bottom], 50)
         }
+        
     }
-    
-    init(returnToUIKit:(()->Void)?) {
-        self.returnToUIKit = returnToUIKit;
-    } // init
 }
 
 //struct TestStateVC_Previews: PreviewProvider {
