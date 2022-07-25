@@ -53,7 +53,7 @@ class InstructionsVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if(devMode) {
+        if(fasterUX) {
             index = 4 // If developer mode, skip most instruction screens so we can get to testing faster. Index 4 first because it pre-increments before doing switch cases
         }
         
@@ -134,7 +134,7 @@ class InstructionsVC: UIViewController{
         index = index + 1
         switch index {
             case 5:
-                if(devMode) { // If developer mode, skip the Engine loading splash screen, so we can test faster
+                if(fasterUX) { // If developer mode, skip the Engine loading splash screen, so we can test faster
                     let IntroVCLoader = mainSB.instantiateViewController(withIdentifier: "IntroVC") as! IntroVC
                     self.present(IntroVCLoader, animated: true, completion: nil)
                 } else {

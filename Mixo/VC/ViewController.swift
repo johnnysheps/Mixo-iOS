@@ -116,28 +116,41 @@ class ViewController: UIViewController {
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
     }
     
+    // User interaction required to load a screen, so assocciated to Get Started button
     func skipToScreenAt() {
+        Auth.auth().signIn(withEmail: "donotremove@mixotype.com", password: "DoNotRemove1!") { (result, error) in
+
+        }
+        
 //        let profileScene5NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene5NVC") as! ProfileScene5NVC
 //        self.present(profileScene5NVC, animated:true, completion:nil)
 //        let discovery2VC = mainSB.instantiateViewController(withIdentifier: "Discovery2VC") as! Discovery2VC
 //        self.present(discovery2VC, animated:true, completion:nil)
         
-//        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-//        self.present(dashboardVC, animated:true, completion:nil)
-        
-//        let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
-//        self.present(testSparkVC, animated:true, completion:nil)
-        
-        let cickToTestStateVC = tddSB.instantiateViewController(withIdentifier: "ClickToTestStateVC") as! ClickToTestStateVC
-        self.present(cickToTestStateVC, animated:true, completion:nil)
-        
-        
+        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+        self.present(dashboardVC, animated:true, completion:nil)
         
     }
+    
+    func skipToTestScreenAt() {
+        Auth.auth().signIn(withEmail: "donotremove@mixotype.com", password: "DoNotRemove1!") { (result, error) in
 
+        }
+        
+//        let cickToTestStateVC = tddSB.instantiateViewController(withIdentifier: "ClickToTestStateVC") as! ClickToTestStateVC
+//        self.present(cickToTestStateVC, animated:true, completion:nil)
+        
+        let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
+        self.present(testSparkVC, animated:true, completion:nil)
+    }
+    
+    // User interaction required to load a screen, so assocciated to Get Started button
     @IBAction func btnStart(_ sender: Any) {
-        // Interaction required to load a screen?
-        if(skipToScreen) {
+        
+        if (skipToTestScreen) {
+            self.skipToTestScreenAt();
+        }
+        else if(skipToScreen) {
             self.skipToScreenAt();
         }
     }

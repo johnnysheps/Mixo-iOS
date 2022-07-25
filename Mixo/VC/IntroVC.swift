@@ -45,7 +45,7 @@ class IntroVC: UIViewController {
         chevron.alpha = 0
         ivCircle.alpha = 0
         
-        if(devMode) {
+        if(fasterUX) {
             btnStart.alpha = 1 // If developer mode, let user skip right into the Mixotype Identity choosing screens, so we can test faster.
         }
         
