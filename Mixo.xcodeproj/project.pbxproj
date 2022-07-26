@@ -19,6 +19,7 @@
 		2A6ADC4A236B1B1A00687EFC /* ProfileScene3NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */; };
 		2A6ADC4C236B1C5200687EFC /* ProfileScene5NVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */; };
 		2ADE096C2636E7F900B0FAF0 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */; };
+		6EECFB33FB3CB0491D4F3240 /* Pods_Mixo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DF9957E0E05EBE1C6D6A81 /* Pods_Mixo.framework */; };
 		A20341DC277D8BCE0044B778 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */; };
 		A223AC5A2797D67B0034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */; };
 		A223AC5B2797D67B0034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = A223AC572797D6670034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png */; };
@@ -78,7 +79,6 @@
 		A3E2FD3E235ABEA600DE0474 /* MixoScene5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD3D235ABEA600DE0474 /* MixoScene5VC.swift */; };
 		A3E2FD40235ABFD400DE0474 /* MixoScene2bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD3F235ABFD400DE0474 /* MixoScene2bVC.swift */; };
 		A3E2FD42235ABFEA00DE0474 /* MixoScene4bVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2FD41235ABFEA00DE0474 /* MixoScene4bVC.swift */; };
-		B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +94,7 @@
 		2A6ADC49236B1B1A00687EFC /* ProfileScene3NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene3NVC.swift; sourceTree = "<group>"; };
 		2A6ADC4B236B1C5200687EFC /* ProfileScene5NVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScene5NVC.swift; sourceTree = "<group>"; };
 		2ADE096B2636E7F900B0FAF0 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
-		6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DF9957E0E05EBE1C6D6A81 /* Pods_Mixo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20341DB277D8BCE0044B778 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		A223AC562797D6610034305C /* L _ MixoType Engine - Collections Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L _ MixoType Engine - Collections Section Intro Graphic.png"; sourceTree = "<group>"; };
 		A223AC572797D6670034305C /* I _ MixoType Engine - Heroes Section Intro Graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I _ MixoType Engine - Heroes Section Intro Graphic.png"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57BFA45742C90D54F260EA2 /* Pods_Mixo.framework in Frameworks */,
+				6EECFB33FB3CB0491D4F3240 /* Pods_Mixo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +319,7 @@
 		FE0D2341BF81E1AE7DB54BCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E8056D013D07A650583ADA7 /* Pods_Mixo.framework */,
+				46DF9957E0E05EBE1C6D6A81 /* Pods_Mixo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -695,6 +695,7 @@
 				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixotype.mixobeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

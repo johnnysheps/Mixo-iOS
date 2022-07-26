@@ -97,30 +97,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework/DropDownCell.nib"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAnonymousAuthUI/FirebaseAnonymousAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthUI/FirebaseAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseEmailAuthUI/FirebaseEmailAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFacebookAuthUI/FirebaseFacebookAuthUI.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseGoogleAuthUI/FirebaseGoogleAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseOAuthUI/FirebaseOAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebasePhoneAuthUI/FirebasePhoneAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift/FontAwesome.swift.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework/DropDownCell.nib"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAnonymousAuthUI/FirebaseAnonymousAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuthUI/FirebaseAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseEmailAuthUI/FirebaseEmailAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFacebookAuthUI/FirebaseFacebookAuthUI.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseGoogleAuthUI/FirebaseGoogleAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseOAuthUI/FirebaseOAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FirebasePhoneAuthUI/FirebasePhoneAuthUI.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FontAwesome.swift/FontAwesome.swift.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -216,6 +216,7 @@ func setupAvatars() {
 
 
 
+@available(iOS 13.0, *)
 struct ProfilePic: View {
     var responseIndex:Int;
     var screenWidth:CGFloat;
@@ -224,7 +225,7 @@ struct ProfilePic: View {
     var midY:CGFloat;
     
     var body: some View {
-        // WebImage(url: URL(string: "https://engine.mixotype.com/mobile/ios/graphics/profile-pic-placeholder.png"))
+
         WebImage(url: URL(string: MVMConverters.to(responses![responseIndex], MVMc.profile_pic)))
         // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
         .onSuccess { image, data, cacheType in
