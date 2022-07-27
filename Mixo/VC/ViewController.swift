@@ -114,6 +114,12 @@ class ViewController: UIViewController {
         Utilities.styleFilledButton(btnStart)
         chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
+        
+        if(skipToTestScreen) {
+            btnStart.setTitle("Load Test Screen", for: .normal)
+        } else if(skipToScreen) {
+                btnStart.setTitle("Jump Screens", for: .normal)
+        }
     }
     
     // User interaction required to load a screen, so assocciated to Get Started button
@@ -137,9 +143,11 @@ class ViewController: UIViewController {
 
         }
         
+        // Tests State with increment button and counter label
 //        let cickToTestStateVC = tddSB.instantiateViewController(withIdentifier: "ClickToTestStateVC") as! ClickToTestStateVC
 //        self.present(cickToTestStateVC, animated:true, completion:nil)
         
+        // Tests basic spark info
         let testSparkVC = tddSB.instantiateViewController(withIdentifier: "TestSparkVC") as! TestSparkVC
         self.present(testSparkVC, animated:true, completion:nil)
     }

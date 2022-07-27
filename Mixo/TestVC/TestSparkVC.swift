@@ -15,8 +15,15 @@ import FirebaseFirestore
 @available(iOS 13.0, *)
 class TestSparkVC: UIViewController {
     
-    // Test constants:
-    var userIDForSparkTest = "WobITu1KL8cSSuu86ahQ1YIRGrZ2";
+    /**
+     * Test Summary: Test sparking (aka liking) of mixes (aka events) of users
+     *
+     * Required setup:
+     *  An user whose ID "WobITu1KL8cSSuu86ahQ1YIRGrZ2" must exist
+     *  And there should be mix or mixes that belong to user "WobITu1KL8cSSuu86ahQ1YIRGrZ2"
+     *
+     */
+
     
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var TV1: UITextView!
@@ -31,10 +38,17 @@ class TestSparkVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Why dispatch queue? Wait to request Spark info because had to authenticate you
         overrideLogin();
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.runBody();
+            self.requestMixesList(yourUID:userUID, theirUID: "WobITu1KL8cSSuu86ahQ1YIRGrZ2");
         }
+        
+        // Setup UI
+        label1.adjustsFontSizeToFitWidth = true;
+        TV1.font = .systemFont(ofSize: 9.0);
+        TV2.font = .systemFont(ofSize: 9.0);
     } // viewDidLoad
 
     
@@ -50,66 +64,61 @@ class TestSparkVC: UIViewController {
             }
         }
     } // overrideLogin
+    
+    
         
-    func runBody() {
-        var yourUID = userUID;
-//        print("/****/ yourUID");
-//        print(yourUID)
-//        fatalError()
-        var theirUID:String = "";
+    func requestMixesList(yourUID:String, theirUID: String) {
 
-        
-        self.TV1.text = "user ID obtained from authentication: " + userUID;
-        docRef = db.collection("users").document(userUID);
-        self.TV2.text = "document ID at current user document:" + docRef.documentID;
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                self.TV3.text = "user's field name is: " + (document.get("name") as! String)
-            }
-        }
-        
-        self.TV4.text = "user 2's document ID cannot be found. add a user whose name is 'mike'";
-        let collectionRef = db.collection("users");
-        collectionRef.whereField("name", isEqualTo: "mike").limit(to:1).getDocuments { (querySnapshot, error) in
-            for document in querySnapshot!.documents {
-                
-                self.TV4.text = "user 2's document ID is: " + document.documentID;
-            }
-        }
-        
-        // Test setup
-        self.TV5.text = "user 2's number of sparks: ";
-        theirUID = userIDForSparkTest;
-        
-        // Test limits: Will only show an end of all the mixes, rather than all of them, because the text gets replaced on each for loop on the mixes
-        
-        // Test run
+        // The mixes an user owns
         let mixRef = db.collection("mix");
         mixRef.whereField("userID", isEqualTo: theirUID).getDocuments { (querySnapshot, error) in
-                for mix in querySnapshot!.documents {
-                    var sparkedByRaw = mix.get("sparkedBy") as! String;
-                    let UIDsWhoSparked = sparkedByRaw.components(separatedBy:"_")
-                    for uid in UIDsWhoSparked {
-                        self.TV5.text = self.TV5.text + " " + uid;
-                    }
-                    self.TV6.text = "(" + String(UIDsWhoSparked.count) + ")"
-                    
-                    let sparkedByYou = UIDsWhoSparked.contains(yourUID)
-                    if(sparkedByYou) {
-                        self.TV7.text = "Unspark";
-                    } else {
-                        self.TV7.text = "Spark";
-                    }
-                    
-                    // [ ] Test for false positive by changing it at the database
-                    
-                } // for each mix the user has
+            let mixCount = querySnapshot!.documents.count;
+            
+            // Get name and number of mixes - Mixes header
+            let docRef = db.collection("users").document(theirUID);
+            docRef.getDocument { (document, error) in
+                if let userDoc = document, userDoc.exists {
+//                    self.TV3.text = "user's field name is: " + (document.get("name") as! String)
+                    self.TV1.text = "\( userDoc.get("name") as! String ) has \( String(mixCount) ) mixes";
+                }
             }
-        
-        
-        
+            
+            // A Mix accordion row
+            for mixDoc in querySnapshot!.documents {
+                let UIDSWhoSparkedString = (mixDoc.get("sparkedBy") as! String)
+                let UIDsWhoSparked = UIDSWhoSparkedString.components(separatedBy:"_")
+                let howManySparked = UIDsWhoSparked.count;
 
-    } // runBody
+                if(UIDsWhoSparked.count==0 || UIDsWhoSparked.count==1) {
+                    self.TV2.text = "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Spark";
+                } else {
+                    self.TV2.text = "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Sparks";
+                }
+            } // for
+            
+
+//            Next is it unspark or spark? Think unlikable or likable. Make modular.
+//                for mix in querySnapshot!.documents {
+//                    var sparkedByRaw = mix.get("sparkedBy") as! String;
+//                    let UIDsWhoSparked = sparkedByRaw.components(separatedBy:"_")
+//                    for uid in UIDsWhoSparked {
+//                        self.TV5.text = self.TV5.text + " " + uid;
+//                    }
+//                    self.TV6.text = "(" + String(UIDsWhoSparked.count) + ")"
+//
+//                    let sparkedByYou = UIDsWhoSparked.contains(yourUID)
+//                    if(sparkedByYou) {
+//                        self.TV7.text = "Unspark";
+//                    } else {
+//                        self.TV7.text = "Spark";
+//                    }
+//
+//
+//                } // for each mix the user has
+            
+            } // mixRef.whereField("userID"
+
+    } // requestMixesList
         
 
 
