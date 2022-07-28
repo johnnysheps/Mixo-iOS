@@ -84,15 +84,21 @@ class TestSparkVC: UIViewController {
             }
             
             // A Mix accordion row
+            self.TV2.text = "";
             for mixDoc in querySnapshot!.documents {
                 let UIDSWhoSparkedString = (mixDoc.get("sparkedBy") as! String)
                 let UIDsWhoSparked = UIDSWhoSparkedString.components(separatedBy:"_")
-                let howManySparked = UIDsWhoSparked.count;
+                var howManySparked = UIDsWhoSparked.count;
+                if(UIDSWhoSparkedString=="") {
+                    howManySparked = 0;
+                }
+//                print("/*******/ UIDsWhoSparked")
+//                print(UIDsWhoSparked);
 
                 if(UIDsWhoSparked.count==0 || UIDsWhoSparked.count==1) {
-                    self.TV2.text = "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Spark";
+                    self.TV2.text += "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Spark\n\n";
                 } else {
-                    self.TV2.text = "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Sparks";
+                    self.TV2.text += "\(mixDoc.get("name") as! String): \(mixDoc.get("desc") as! String)\n\(howManySparked) Sparks\n\n";
                 }
             } // for
             
