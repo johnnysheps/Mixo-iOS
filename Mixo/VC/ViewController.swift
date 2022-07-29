@@ -31,6 +31,14 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
+        if(productionMode) {
+            fasterUX = false;
+            autoLogin = false;
+            skipToTestScreen = false;
+            skipToTestScreen = false;
+        }
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
