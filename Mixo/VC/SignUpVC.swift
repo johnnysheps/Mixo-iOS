@@ -41,6 +41,11 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         txtPassword.delegate = self
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
     func setUpUI() {
         
         //hide the error label
@@ -173,7 +178,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         
         
-    }
+    } // btnSignUp
     
     func showError(_ message:String) {
         lblError.text = message

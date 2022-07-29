@@ -117,8 +117,8 @@
             filePath = "Mixo/VC/SignUpVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "btnSignUp(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -133,8 +133,8 @@
             filePath = "Mixo/VC/SignUpVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "btnSignUp(_:)"
             landmarkType = "7">
          </BreakpointContent>

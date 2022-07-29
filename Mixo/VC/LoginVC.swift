@@ -49,7 +49,13 @@ class LoginVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         txtEmail.delegate = self
         txtPassword.delegate = self
+        self.txtPassword.delegate = self
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func setUpUI() {

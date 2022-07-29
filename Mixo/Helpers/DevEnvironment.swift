@@ -13,7 +13,7 @@ import Foundation
 let fasterUX = true; // faster UX flow by automatically skipping irrelevant screens inbetween, like before-breathing scre    en and giving you the button to skip the breathing screen (rather than forcing you to wait)
 let autoLogin = false; // if true, automatically logs in and goes to relevant screen after logging in. Setup your credentials at ViewController.swift searching for "autologin"
 
-let skipToTestScreen = true; // if true, skip to a particular test screen. Setup which test scene at ViewController.swift:skipToTestScreenAt(). Higher priority.
+let skipToTestScreen = false; // if true, skip to a particular test screen. Setup which test scene at ViewController.swift:skipToTestScreenAt(). Higher priority.
 let skipToScreen = false; // if true, skip to a particular screen. Setup which scene at ViewController.swift:skipToScreenAt(). Lower priority.
 
 
