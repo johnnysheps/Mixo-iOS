@@ -24,6 +24,8 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var btnDiscovery: UIButton!
     
     @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var profilePicView: UIView!
+    @IBOutlet weak var userMixoView: UIView!
     @IBOutlet weak var lblNameAge: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var menuIcon: UIButton!
@@ -62,6 +64,10 @@ class DashboardVC: UIViewController {
     //Top Nav buttons
     @IBOutlet weak var btnMixoType: UIButton!
     @IBOutlet weak var btnSettings: UIButton!
+    
+    @IBOutlet weak var labelY: UILabel!
+    @IBOutlet weak var labelXneg: UILabel!
+    @IBOutlet weak var labelXpos: UILabel!
     
     
     func signOut() {
@@ -214,13 +220,26 @@ class DashboardVC: UIViewController {
         collectImages.append("selfimprovementnb")
         
         setUpUI()
-        getUserData()
+        getUserData() // callback responsiveAvatar()
     }
     
     func setUpUI() {
         setupProfilePic();
         setUpMenuIcon();
     }
+    
+    func responsiveMixoView() {
+        let screenRect = UIScreen.main.bounds
+        let screenWidth = screenRect.size.width
+        
+        // print("/***/ screenwidth")
+        // print(screenWidth);
+        
+        if(screenWidth>=1024) {
+            self.profilePicView.translatesAutoresizingMaskIntoConstraints = false;
+            self.profilePicView.bottomAnchor.constraint(equalTo: self.userMixoView.topAnchor, constant: -100).isActive = true;
+        } // if
+    } // responsiveMixoView
     
     func setupProfilePic() {
         if(profilePic == nil) { return; }
@@ -727,9 +746,12 @@ class DashboardVC: UIViewController {
                                 default:
                                     break
                             }
-                    }
+                    } // if collect done
                     
-                }
+                    
+                    self.responsiveMixoView();
+                    
+                } // if document exists
                 
                 
             } else {
