@@ -34,6 +34,12 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
         super.viewDidLoad()
         
+        print("/***/ Struct Creational missionStatement");
+        if(!(Creational.missionStatement==nil)) {
+            print("Is nil");
+            userInput.text = Creational.missionStatement
+        }
+        
         // Do any additional setup after loading the view.
         setUpUI()
     }
@@ -49,6 +55,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     }
     
     internal func textViewDidChange(_ textView: UITextView) {
+        
         let countInt = userInput.text!.count
         let countStr = String(countInt);
         if(countInt<60) {
@@ -68,6 +75,9 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     
     
     @IBAction func btnNext(_ sender: Any) {
+        
+        Creational.missionStatement = userInput.text = Creational.missionStatement
+        
         //save tagline
         docRef.updateData([
             "tagline": userInput.text!,
