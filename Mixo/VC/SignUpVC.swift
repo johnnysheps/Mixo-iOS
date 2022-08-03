@@ -64,6 +64,17 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         }
         
         // check if email is valid
+        func isValidEmail(_ email: String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailPred.evaluate(with: email)
+        }
+        let cleanedEmail = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if(!isValidEmail(cleanedEmail)) {
+            return "Invalid email format. Follow email format ***@***.***, Eg. some.user@gmail.com"
+        }
+        
         
         //check if password is strong
         let cleanedPassword = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -77,15 +88,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             }
         }
 
-        func isPasswordFailed(_ password:String) -> String {
+        func isPasswordStrong(_ password:String) -> String {
             if(password.count<8) { return "Please make sure your password is 8 characters long"; }
             else if(!contains(cleanedPassword, "0123456789")) { return "Please make sure your password has a number 0-9"; }
             else if(!contains(cleanedPassword, ".*[$@$#!%*?& ]")) { return "Please make sure your password has a special character like:.*[$@$#!%*?& ]"; }
             else {return "PASSED";}
         } // isPasswordFailed
                         
-        if(!(isPasswordFailed(cleanedPassword)=="PASSED")) {
-            return("Weak password. " + isPasswordFailed(cleanedPassword));
+        if(!(isPasswordStrong(cleanedPassword)=="PASSED")) {
+            return("Weak password. " + isPasswordStrong(cleanedPassword));
         }
         
         
