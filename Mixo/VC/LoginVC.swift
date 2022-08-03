@@ -35,12 +35,10 @@ class LoginVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         super.viewDidLoad()
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-            
-        }
-        
-        
-        print(db.collection("users"));
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+//
+//        }
+//        print(db.collection("users"));
         
 
         // Do any additional setup after loading the view.
@@ -51,6 +49,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         txtPassword.delegate = self
         self.txtPassword.delegate = self
         
+//        Utilities.logFirebaseError(message: "Test Firebase Logger");
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

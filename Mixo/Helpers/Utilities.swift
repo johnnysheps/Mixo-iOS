@@ -133,7 +133,7 @@ class Utilities {
     
     static func isPasswordValid(_ password : String) -> Bool {
         
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?& ])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
     
@@ -150,6 +150,50 @@ class Utilities {
         
         // rounded corner style
         view.layer.cornerRadius = 5
+    }
+    
+    static func logFirebaseError(message:String? = nil) {
+        
+        /*
+         Firebase Swift-PHP Logger
+         Purpose: Logs Firebase errors onto mixotype.com's log.txt
+
+         Request to: https://engine.mixotype.com/rosalind-server/server/logger-firebase-ios/?access_token=abc&message=ios
+         ^ Note you'd pass the error message to the URL query "message"
+         ^ Keep access token as is. Is a password to make the request authorized.
+         
+         View messages at: https://engine.mixotype.com/rosalind-server/server/logger-firebase-ios/logs.txt
+         
+         https://engine.mixotype.com/rosalind-server/test-firebase-ios/?test-firebase-ios?access_token=abc&message=hello
+         */
+        
+        let urlMessage = message!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let urlRaw = "https://engine.mixotype.com/rosalind-server/server/logger-firebase-ios/?access_token=abc&message=" + urlMessage!;
+        let url = URL(string: urlRaw)!
+
+        var request = URLRequest(url: url)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "GET"
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data,
+                let response = response as? HTTPURLResponse,
+                error == nil else { // check for fundamental networking error
+                print("error", error ?? "Unknown error")
+                return
+            }
+
+            guard (200 ... 299) ~= response.statusCode else { // check for http errors
+                print("statusCode should be 2xx, but is \(response.statusCode)")
+                print("response = \(response)")
+                return
+            }
+
+            let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(String(describing: responseString!))")
+        } // requested
+
+        task.resume()
     }
     
 }

@@ -55,7 +55,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         //Utilities.styleTextField(txtName)
         //Utilities.styleTextField(txtEmail)
         //Utilities.styleTextField(txtPassword)
-        
     }
     
     //check the fields and validate the data is correct
@@ -99,12 +98,19 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             //create the user
             Auth.auth().createUser(withEmail: email, password: pass) { (result, err) in
                 
+//                print("/***/ email")
+//                print(email)
+//
+//                print("/***/ result")
+//                print(result)
+                
                 //check for errors
-                if err != nil {
+                if result == nil {
                     //error creating user
                     self.showError("Error creating user.")
                     print(err!);
                     self.errored = true
+//                    err = nil; // reset err to nil so the user can overtype the textfield and try Sign Up button again, otherwise even if successful account creation on the backend then subsequently err is still defined and will show "Error creating user"
                 } else {
 //                    user created
                     //let db = Firestore.firestore()
@@ -183,7 +189,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     func showError(_ message:String) {
         lblError.text = message
         lblError.alpha = 1
+        // lblError.translatesAutoresizingMaskIntoConstraints = false;
+        // lblError.heightAnchor.constraint(equalToConstant: 200).isActive = true;
     }
-    
-
 }
