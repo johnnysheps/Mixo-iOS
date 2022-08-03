@@ -5931,6 +5931,20 @@ MixoType Identity!</string>
                                 <fontDescription key="fontDescription" name="FontAwesome6Free-Solid" family="Font Awesome 6 Free" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSu-OC-gSq" userLabel="Blinking Caret" customClass="UIVIew">
+                                <rect key="frame" x="24" y="175" width="2" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0AQ-IN-1Vh"/>
+                                    <constraint firstAttribute="width" constant="2" id="Jbe-f8-H0u"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -5949,9 +5963,11 @@ MixoType Identity!</string>
                             <constraint firstItem="LUT-8g-dmm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="RFb-0d-Wy1"/>
                             <constraint firstItem="eAN-CT-S5m" firstAttribute="bottom" secondItem="g6R-O1-RoN" secondAttribute="top" constant="-10" id="VN8-c5-SPV" userLabel="Stack View.bottom =  Btn Next.top + 30"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leading" constant="20" id="bri-aB-Ktq"/>
+                            <constraint firstItem="JSu-OC-gSq" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" constant="4" id="cUo-5V-9mP"/>
                             <constraint firstItem="eAN-CT-S5m" firstAttribute="leading" secondItem="nZ3-54-RSc" secondAttribute="leadingMargin" constant="20" id="dsz-06-DxZ"/>
                             <constraint firstItem="K6J-hw-GVO" firstAttribute="top" secondItem="xa0-8Q-8NG" secondAttribute="bottom" constant="8.3333333333333144" id="eTl-X4-ydo"/>
                             <constraint firstItem="nth-c6-pLm" firstAttribute="centerX" secondItem="nZ3-54-RSc" secondAttribute="centerX" id="fIm-Db-vG6"/>
+                            <constraint firstItem="JSu-OC-gSq" firstAttribute="top" secondItem="42Q-Lq-8gF" secondAttribute="bottomMargin" constant="20" id="gcW-fU-rmv"/>
                             <constraint firstItem="xa0-8Q-8NG" firstAttribute="top" secondItem="LUT-8g-dmm" secondAttribute="bottom" constant="32.666666666666657" id="khB-CL-zdK"/>
                             <constraint firstAttribute="trailing" secondItem="K6J-hw-GVO" secondAttribute="trailing" constant="18" id="l4W-6Q-Ar3"/>
                             <constraint firstAttribute="trailing" secondItem="42Q-Lq-8gF" secondAttribute="trailing" constant="20" id="loj-LR-pjQ"/>
@@ -5960,6 +5976,7 @@ MixoType Identity!</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blinkingCaret" destination="JSu-OC-gSq" id="8cu-XM-aqf"/>
                         <outlet property="btnNext" destination="qbb-GA-FCZ" id="mQg-Lm-dMN"/>
                         <outlet property="charLimit" destination="K6J-hw-GVO" id="hCJ-CM-fWo"/>
                         <outlet property="chevron" destination="skp-6R-Gt0" id="BSw-yV-ylU"/>
@@ -6189,6 +6206,9 @@ MixoType Identity!</string>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

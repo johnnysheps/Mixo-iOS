@@ -14,6 +14,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var chevron: UITextView!
     var lastTextEntered = "";
+    @IBOutlet weak var blinkingCaret: UIView!
     
     // Multistep progress bar
     @IBOutlet weak var ivProgressIndicator0: UIImageView!
@@ -36,12 +37,29 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
         
         print("/***/ Struct Creational missionStatement");
         if(!(Creational.missionStatement==nil)) {
-            print("Is nil");
+            print("Is NOT nil");
             userInput.text = Creational.missionStatement
+            blinkingCaret.isHidden = true;
+        } else {
+            print("Is nil");
         }
         
         // Do any additional setup after loading the view.
         setUpUI()
+        
+//        blinkingCaret.alpha = 1.0
+//        UIView.animate(withDuration: 1.0, delay: 1.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+//
+//            self.blinkingCaret.alpha = 0.0
+//
+//        }, completion: nil)
+        
+        blinkingCaret.blink()
+        
+        //UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0, options: [.curveLinear,.repeat], animations: {
+        //       UIView.setAnimationRepeatCount(3000)
+        //       self.blinkingCaret.alpha = 0.0
+        // }, completion: {_ in   })
     }
     
     func setUpUI() {
@@ -55,6 +73,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     }
     
     internal func textViewDidChange(_ textView: UITextView) {
+        blinkingCaret.isHidden = true;
         
         let countInt = userInput.text!.count
         let countStr = String(countInt);
@@ -91,4 +110,18 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
         }
     }
 
+}
+
+extension UIView {
+    func blink() {
+      let animation = CABasicAnimation(keyPath: "opacity")
+          animation.isRemovedOnCompletion = false
+          animation.fromValue           = 1
+          animation.toValue             = 0
+          animation.duration            = 0.8
+          animation.autoreverses        = true
+          animation.repeatCount         = 999
+          animation.beginTime           = CACurrentMediaTime() + 0.5
+          self.layer.add(animation, forKey: nil)
+      }
 }
