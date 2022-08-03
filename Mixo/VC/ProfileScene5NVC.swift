@@ -76,7 +76,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     
     @IBAction func btnNext(_ sender: Any) {
         
-        Creational.missionStatement = userInput.text = Creational.missionStatement
+        Creational.missionStatement = userInput.text
         
         //save tagline
         docRef.updateData([

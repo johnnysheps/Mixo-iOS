@@ -142,8 +142,8 @@ class ViewController: UIViewController {
 //        let discovery2VC = mainSB.instantiateViewController(withIdentifier: "Discovery2VC") as! Discovery2VC
 //        self.present(discovery2VC, animated:true, completion:nil)
         
-        let dashboardVC = mainSB.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
-        self.present(dashboardVC, animated:true, completion:nil)
+        let profileScene4NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene4NVC") as! ProfileScene4NVC
+        self.present(profileScene4NVC, animated:true, completion:nil)
         
     }
     
