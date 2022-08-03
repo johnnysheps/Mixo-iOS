@@ -23,7 +23,6 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var ivProgressIndicator3: UIImageView!
     @IBOutlet weak var ivProgressIndicator4: UIImageView!
     
-    
     // Controls
     
     @IBOutlet weak var userInput: UITextView!
@@ -47,19 +46,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
         // Do any additional setup after loading the view.
         setUpUI()
         
-//        blinkingCaret.alpha = 1.0
-//        UIView.animate(withDuration: 1.0, delay: 1.0, options: UIView.AnimationOptions.curveEaseOut, animations: {
-//
-//            self.blinkingCaret.alpha = 0.0
-//
-//        }, completion: nil)
-        
         blinkingCaret.blink()
-        
-        //UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 1, delay: 0, options: [.curveLinear,.repeat], animations: {
-        //       UIView.setAnimationRepeatCount(3000)
-        //       self.blinkingCaret.alpha = 0.0
-        // }, completion: {_ in   })
     }
     
     func setUpUI() {
