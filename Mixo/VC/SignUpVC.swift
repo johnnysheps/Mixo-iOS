@@ -12,8 +12,6 @@ import Firebase
 
 @available(iOS 13.0, *)
 class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
-
-    var errored = false
     
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtLastName: UITextField!
@@ -65,14 +63,30 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             return "Please fill in all fields."
         }
         
-        //check if password is secure
+        // check if email is valid
+        
+        //check if password is strong
         let cleanedPassword = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        if Utilities.isPasswordValid(cleanedPassword) == false {
-            return "Please make sure your password is 8 characters long, contains a special character and a number."
+
+        func contains(_ subject:String, _ possible:String) -> Bool {
+            let charset = CharacterSet(charactersIn: possible)
+            if subject.rangeOfCharacter(from: charset) != nil {
+                return true;
+            } else {
+                return false;
+            }
         }
-        
-        //check if email exists in Firebase
+
+        func isPasswordFailed(_ password:String) -> String {
+            if(password.count<8) { return "Please make sure your password is 8 characters long"; }
+            else if(!contains(cleanedPassword, "0123456789")) { return "Please make sure your password has a number 0-9"; }
+            else if(!contains(cleanedPassword, ".*[$@$#!%*?& ]")) { return "Please make sure your password has a special character like:.*[$@$#!%*?& ]"; }
+            else {return "PASSED";}
+        } // isPasswordFailed
+                        
+        if(!(isPasswordFailed(cleanedPassword)=="PASSED")) {
+            return("Weak password. " + isPasswordFailed(cleanedPassword));
+        }
         
         
         return nil
@@ -85,8 +99,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
         if error != nil {
             //somethign wrong, show error
-            showError(error!)
-            errored = true
+            showError(error!) // The error validating textfields is pretty reliable that it'll be human friendly to read
         } else {
 
             //create cleaned version of the data
@@ -106,13 +119,27 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
                 
                 //check for errors
                 if result == nil {
-                    //error creating user
-                    self.showError("Error creating user.")
-                    print(err!);
-                    self.errored = true
-//                    err = nil; // reset err to nil so the user can overtype the textfield and try Sign Up button again, otherwise even if successful account creation on the backend then subsequently err is still defined and will show "Error creating user"
+                    // error creating user
+                    var errorCreatingAuth = "Error creating user. ";
+                    if(err.debugDescription.contains("ERROR_EMAIL_ALREADY_IN_USE")) {
+                        errorCreatingAuth = errorCreatingAuth + "This email already exists.";
+                    }
+                    else if(err.debugDescription.contains("ERROR_INVALID_EMAIL")) {
+                        errorCreatingAuth = errorCreatingAuth + "Email address is not correct format";
+                    }
+                    else if(err.debugDescription.contains("ERROR_TOO_MANY_REQUESTS")) {
+                        errorCreatingAuth = errorCreatingAuth + "Too many requests";
+                    }
+                    else {
+                        errorCreatingAuth = errorCreatingAuth + "Please contact us.";
+                        print("/***/ Error signing up");
+                        print(err.debugDescription);
+                    }
+                    
+                    self.showError(errorCreatingAuth)
+                    
                 } else {
-//                    user created
+//                  User created
                     //let db = Firestore.firestore()
                     userUID = result!.user.uid
                     
@@ -165,19 +192,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
                     ]) { (error) in
                         if error != nil {
-                            self.showError("error saving user data")
+                            self.showError("Error saving user data. Please contact us.")
+                            print("/***/ Error saving user data")
                             print(error!);
-                            self.errored = true
+                        } else {
+                            self.goNextScene();
                         }
                     }
                     
                 }
-            }
-            
-            //transition to the Instructions
-                if(!self.errored) {
-                    let instructionsVC = mainSB.instantiateViewController(withIdentifier: "InstructionsVC") as! InstructionsVC
-                    self.present(instructionsVC, animated: true, completion: nil)
             }
         }
         
@@ -185,6 +208,12 @@ class SignUpVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         
     } // btnSignUp
+    
+    
+    func goNextScene() {
+        let instructionsVC = mainSB.instantiateViewController(withIdentifier: "InstructionsVC") as! InstructionsVC
+        self.present(instructionsVC, animated: true, completion: nil)
+    }
     
     func showError(_ message:String) {
         lblError.text = message
