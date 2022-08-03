@@ -29,6 +29,17 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var charLimit: UILabel!
     @IBOutlet weak var btnNext: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("/***/ Struct Creational missionStatement");
+        if(!(Creational.missionStatement==nil)) {
+            print("Is NOT nil");
+            userInput.text = Creational.missionStatement
+            blinkingCaret.isHidden = true;
+        } else {
+            print("Is nil");
+        }
+    }
+    
     override func viewDidLoad() {
         chevron.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
         chevron.text = String.fontAwesomeIcon(name: FontAwesome.chevronRight)
@@ -77,6 +88,7 @@ class ProfileScene5NVC: UIViewController, UITextViewDelegate {
             charLimit.text = "(60/60)";
             userInput.text = lastTextEntered;
         }
+        Creational.missionStatement = lastTextEntered;
     }
     
     

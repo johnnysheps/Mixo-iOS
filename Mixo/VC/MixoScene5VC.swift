@@ -702,6 +702,9 @@ class MixoScene5VC: UIViewController {
         //proceed to the Profile Creation Scenes
         let profileScene1NVC = mainSB.instantiateViewController(withIdentifier: "ProfileScene1NVC") as! ProfileScene1NVC
         self.present(profileScene1NVC, animated:true, completion:nil)
+        
+        //view.window?.rootViewController = profileScene1NVC
+        //view.window?.makeKeyAndVisible()
     }
     
     
